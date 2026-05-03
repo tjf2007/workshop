@@ -1,0 +1,112 @@
+name,category,material,shape,x,y,z,w_or_r,d_or_axis,h,cutlist_part,lumber,note
+TopLeg_FrontStud_0,frame,stud,box,0.0,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_1,frame,stud,box,24.0,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_2,frame,stud,box,46.5,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_3,frame,stud,box,86.0,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_4,frame,stud,box,104.5,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_5,frame,stud,box,132.0,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontStud_6,frame,stud,box,140.5,34.5,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_0,frame,stud,box,0.0,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_1,frame,stud,box,24.0,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_2,frame,stud,box,46.5,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_3,frame,stud,box,86.0,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_4,frame,stud,box,104.5,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_5,frame,stud,box,132.0,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_BackStud_6,frame,stud,box,140.5,0.0,5.5,3.5,1.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+TopLeg_FrontTopRail,frame,rail,box,0,32.5,34.0,144.0,3.5,1.5,"Top rail, top leg front (144in)",2x4 SPF,"Horizontal 2x4, 144.0in long"
+TopLeg_FrontBottomRail,frame,rail,box,0,32.5,4.0,144.0,3.5,1.5,"Bottom rail, top leg front (144in)",2x4 SPF,"Horizontal 2x4, 144.0in long"
+TopLeg_BackTopRail,frame,rail,box,0,0,34.0,144.0,3.5,1.5,"Top rail, top leg back (144in)",2x4 SPF,"Horizontal 2x4, 144.0in long"
+TopLeg_BackBottomRail,frame,rail,box,0,0,4.0,144.0,3.5,1.5,"Bottom rail, top leg back (144in)",2x4 SPF,"Horizontal 2x4, 144.0in long"
+TopLeg_TopStretcher_0,frame,stretcher,box,0.0,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_0,frame,stretcher,box,0.0,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_1,frame,stretcher,box,24.0,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_1,frame,stretcher,box,24.0,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_2,frame,stretcher,box,46.5,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_2,frame,stretcher,box,46.5,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_3,frame,stretcher,box,86.0,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_3,frame,stretcher,box,86.0,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_4,frame,stretcher,box,104.5,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_4,frame,stretcher,box,104.5,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_5,frame,stretcher,box,132.0,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_5,frame,stretcher,box,132.0,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_TopStretcher_6,frame,stretcher,box,140.5,3.5,34.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_BottomStretcher_6,frame,stretcher,box,140.5,3.5,4.0,3.5,29.0,1.5,"Cross stretcher, top leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+Miter_Recess_BlockingFront,frame,blocking,box,50.0,28.5,31.5,36.0,3.5,1.5,"Blocking, miter recess (36in)",2x4 SPF,"Horizontal 2x4, 36.0in long"
+Miter_Recess_BlockingBack,frame,blocking,box,50.0,2.0,31.5,36.0,3.5,1.5,"Blocking, miter recess (36in)",2x4 SPF,"Horizontal 2x4, 36.0in long"
+Miter_Recess_BlockingLeft,frame,blocking,box,50.0,5.5,31.5,3.5,23.0,1.5,"Blocking, miter recess sides (22in)",2x4 SPF,"Horizontal 2x4, 23.0in long"
+Miter_Recess_BlockingRight,frame,blocking,box,82.5,5.5,31.5,3.5,23.0,1.5,"Blocking, miter recess sides (22in)",2x4 SPF,"Horizontal 2x4, 23.0in long"
+Router_Cabinet_Left,panel,ply_router,box,108.0,4.0,4.0,0.75,32.0,31.5,Router cabinet side panel,3/4 in plywood,Panel 0.8 x 32.0 x 31.50
+Router_Cabinet_Right,panel,ply_router,box,131.25,4.0,4.0,0.75,32.0,31.5,Router cabinet side panel,3/4 in plywood,Panel 0.8 x 32.0 x 31.50
+Router_Cabinet_Back,panel,ply_router,box,108.0,4.0,4.0,24.0,0.75,31.5,Router cabinet back panel,3/4 in plywood,Panel 24.0 x 0.8 x 31.50
+Router_Cabinet_Floor,panel,ply_router,box,108.0,4.0,4.0,24.0,32.0,0.75,Router cabinet floor panel,3/4 in plywood,Panel 24.0 x 32.0 x 0.75
+LeftLeg_LeftSideStud_0,frame,stud,box,0.0,38.5,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_RightSideStud_0,frame,stud,box,34.5,38.5,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_LeftSideStud_1,frame,stud,box,0.0,72.0,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_RightSideStud_1,frame,stud,box,34.5,72.0,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_LeftSideStud_2,frame,stud,box,0.0,80.5,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_RightSideStud_2,frame,stud,box,34.5,80.5,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_LeftSideStud_3,frame,stud,box,0.0,116.0,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_RightSideStud_3,frame,stud,box,34.5,116.0,5.5,1.5,3.5,28.5,"Stud, frame vertical (28.5in)",2x4 SPF,"Vertical 2x4, 28.5in long"
+LeftLeg_LeftTopRail,frame,rail,box,0,36.0,34.0,3.5,84.0,1.5,"Top rail, left leg sides (84in)",2x4 SPF,"Horizontal 2x4, 84.0in long"
+LeftLeg_RightTopRail,frame,rail,box,32.5,36.0,34.0,3.5,84.0,1.5,"Top rail, left leg sides (84in)",2x4 SPF,"Horizontal 2x4, 84.0in long"
+LeftLeg_LeftBottomRail,frame,rail,box,0,36.0,4.0,3.5,84.0,1.5,"Bottom rail, left leg sides (84in)",2x4 SPF,"Horizontal 2x4, 84.0in long"
+LeftLeg_RightBottomRail,frame,rail,box,32.5,36.0,4.0,3.5,84.0,1.5,"Bottom rail, left leg sides (84in)",2x4 SPF,"Horizontal 2x4, 84.0in long"
+LeftLeg_TopStretcher_0,frame,stretcher,box,3.5,38.5,34.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_BottomStretcher_0,frame,stretcher,box,3.5,38.5,4.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_TopStretcher_1,frame,stretcher,box,3.5,72.0,34.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_BottomStretcher_1,frame,stretcher,box,3.5,72.0,4.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_TopStretcher_2,frame,stretcher,box,3.5,80.5,34.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_BottomStretcher_2,frame,stretcher,box,3.5,80.5,4.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_TopStretcher_3,frame,stretcher,box,3.5,116.0,34.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+LeftLeg_BottomStretcher_3,frame,stretcher,box,3.5,116.0,4.0,29.0,3.5,1.5,"Cross stretcher, left leg (29in)",2x4 SPF,"Horizontal 2x4, 29.0in long"
+TopLeg_Top_Left,panel,ply_top,box,0,0,35.5,50.0,36.0,1.5,"Top panel, top leg sections",3/4 in plywood,Panel 50.0 x 36.0 x 1.50
+Miter_Recess_Bottom,panel,ply_recess,box,50.0,2.0,33.0,36.0,30.0,0.75,Miter recess bottom panel (36 x 30 x 3/4),3/4 in plywood,Panel 36.0 x 30.0 x 0.75
+TopLeg_Top_MiterBackLip,panel,ply_top,box,50.0,0,35.5,36.0,2.0,1.5,"Top panel, top leg sections",3/4 in plywood,Panel 36.0 x 2.0 x 1.50
+TopLeg_Top_MiterFrontLip,panel,ply_top,box,50.0,32.0,35.5,36.0,4.0,1.5,"Top panel, top leg sections",3/4 in plywood,Panel 36.0 x 4.0 x 1.50
+TopLeg_Top_MidRight,panel,ply_top,box,86.0,0,35.5,22.0,36.0,1.5,"Top panel, top leg sections",3/4 in plywood,Panel 22.0 x 36.0 x 1.50
+TopLeg_Top_RouterBack,panel,ply_top,box,108.0,0,35.5,24.0,15.375,1.5,"Top panel, router area (4 sub-panels around insert)",3/4 in plywood,Panel 24.0 x 15.4 x 1.50
+TopLeg_Top_RouterFront,panel,ply_top,box,108.0,24.625,35.5,24.0,11.375,1.5,"Top panel, router area (4 sub-panels around insert)",3/4 in plywood,Panel 24.0 x 11.4 x 1.50
+TopLeg_Top_RouterLeft,panel,ply_top,box,108.0,15.375,35.5,6.125,9.25,1.5,"Top panel, router area (4 sub-panels around insert)",3/4 in plywood,Panel 6.1 x 9.2 x 1.50
+TopLeg_Top_RouterRight,panel,ply_top,box,125.875,15.375,35.5,6.125,9.25,1.5,"Top panel, router area (4 sub-panels around insert)",3/4 in plywood,Panel 6.1 x 9.2 x 1.50
+Router_Insert_Plate,tool,router_insert,box,114.125,15.375,36.5,11.75,9.25,0.5,,,Phenolic/aluminum router insert plate (commercial)
+TopLeg_Top_FarRight,panel,ply_top,box,132.0,0,35.5,12.0,36.0,1.5,"Top panel, top leg sections",3/4 in plywood,Panel 12.0 x 36.0 x 1.50
+LeftLeg_Top_AbovePlaner,panel,ply_top,box,0,36.0,35.5,36.0,6.0,1.5,"Top panel, left leg sections",3/4 in plywood,Panel 36.0 x 6.0 x 1.50
+LeftLeg_Top_PlanerLeftStrip,panel,ply_top,box,0,42.0,35.5,3.0,30.0,1.5,"Top panel, planer cavity strips",3/4 in plywood,Panel 3.0 x 30.0 x 1.50
+LeftLeg_Top_PlanerRightStrip,panel,ply_top,box,33.0,42.0,35.5,3.0,30.0,1.5,"Top panel, planer cavity strips",3/4 in plywood,Panel 3.0 x 30.0 x 1.50
+LeftLeg_Top_BetweenCavities,panel,ply_top,box,0,72.0,35.5,36.0,12.0,1.5,"Top panel, left leg sections",3/4 in plywood,Panel 36.0 x 12.0 x 1.50
+LeftLeg_Top_SawLeftStrip,panel,ply_top,box,0,84.0,35.5,2.0,32.0,1.5,"Top panel, saw cavity strips",3/4 in plywood,Panel 2.0 x 32.0 x 1.50
+LeftLeg_Top_SawRightStrip,panel,ply_top,box,34.0,84.0,35.5,2.0,32.0,1.5,"Top panel, saw cavity strips",3/4 in plywood,Panel 2.0 x 32.0 x 1.50
+LeftLeg_Top_End,panel,ply_top,box,0,116.0,35.5,36.0,4.0,1.5,"Top panel, left leg sections",3/4 in plywood,Panel 36.0 x 4.0 x 1.50
+TopLeg_ToeKick_Front,panel,ply_panel,box,0,32.25,0,144.0,0.75,4.0,Toe kick board (4in tall),3/4 in plywood,Panel 144.0 x 0.8 x 4.00
+TopLeg_ToeKick_Back,panel,ply_panel,box,0,0,0,144.0,0.75,4.0,Toe kick board (4in tall),3/4 in plywood,Panel 144.0 x 0.8 x 4.00
+TopLeg_ToeKick_RightEnd,panel,ply_panel,box,143.25,0,0,0.75,36.0,4.0,Toe kick end cap (4 x 36),3/4 in plywood,Panel 0.8 x 36.0 x 4.00
+LeftLeg_ToeKick_Right,panel,ply_panel,box,32.25,36.0,0,0.75,84.0,4.0,Toe kick board (4in tall),3/4 in plywood,Panel 0.8 x 84.0 x 4.00
+LeftLeg_ToeKick_Left,panel,ply_panel,box,0,36.0,0,0.75,84.0,4.0,Toe kick board (4in tall),3/4 in plywood,Panel 0.8 x 84.0 x 4.00
+LeftLeg_ToeKick_FrontEnd,panel,ply_panel,box,0,119.25,0,36.0,0.75,4.0,Toe kick end cap (4 x 36),3/4 in plywood,Panel 36.0 x 0.8 x 4.00
+TopLeg_EndPanel_Right,panel,ply_panel,box,143.25,0,4.0,0.75,36.0,33.0,End panel (33 x 36 x 3/4),3/4 in plywood,Panel 0.8 x 36.0 x 33.00
+LeftLeg_EndPanel_Front,panel,ply_panel,box,0,119.25,4.0,36.0,0.75,33.0,End panel (33 x 36 x 3/4),3/4 in plywood,Panel 36.0 x 0.8 x 33.00
+Planer_Slide_LeftBack,hardware,drawer_slide,box,3.0,43.0,4.0,1.5,1.0,24.0,,,"HD drawer slide #1 (left-back) - 24in travel, 220lb rated"
+Planer_Slide_LeftFront,hardware,drawer_slide,box,3.0,70.0,4.0,1.5,1.0,24.0,,,"HD drawer slide #2 (left-front) - 24in travel, 220lb rated"
+Planer_Slide_RightBack,hardware,drawer_slide,box,31.5,43.0,4.0,1.5,1.0,24.0,,,"HD drawer slide #3 (right-back) - 24in travel, 220lb rated"
+Planer_Slide_RightFront,hardware,drawer_slide,box,31.5,70.0,4.0,1.5,1.0,24.0,,,"HD drawer slide #4 (right-front) - 24in travel, 220lb rated"
+Planer_GasStrut_LeftBack,hardware,gas_strut,box,5.0,44.0,4.0,3.0,3.0,24.0,,,"Gas strut, ~50lb force, mounted at angle. 4 total give near-neutral buoyancy across travel"
+Planer_GasStrut_LeftFront,hardware,gas_strut,box,5.0,67.0,4.0,3.0,3.0,24.0,,,"Gas strut, ~50lb force, mounted at angle. 4 total give near-neutral buoyancy across travel"
+Planer_GasStrut_RightBack,hardware,gas_strut,box,28.0,44.0,4.0,3.0,3.0,24.0,,,"Gas strut, ~50lb force, mounted at angle. 4 total give near-neutral buoyancy across travel"
+Planer_GasStrut_RightFront,hardware,gas_strut,box,28.0,67.0,4.0,3.0,3.0,24.0,,,"Gas strut, ~50lb force, mounted at angle. 4 total give near-neutral buoyancy across travel"
+Planer_Sled,panel,planer_sled,box,4.0,43.0,28.0,28.0,28.0,0.75,Planer sled (28 x 28 x 3/4),3/4 in plywood,Panel 28.0 x 28.0 x 0.75
+Planer_LockReceiver,hardware,lock_recv,box,31.5,56.0,27.0,1.5,2.0,1.5,,,Lock receiver bracket. Pin engages here at top position.
+Planer_Body_Working,tool,planer_body,box,5.0,46.0,33.0,26.0,22.0,17.0,,,DeWalt planer in working position - bed flush at 37in
+Planer_Body_Stored_Ghost,ghost,ghost_cavity,box,5.0,46.0,4.5,26.0,22.0,17.0,,,Planer in stored/lowered position (ghost). Cover with insert panel.
+Saw_Sled,panel,saw_sled,box,3.0,85.0,23.25,30.0,30.0,0.75,Saw sled (30 x 30 x 3/4),3/4 in plywood,Panel 30.0 x 30.0 x 0.75
+Saw_SledCleat_Back,frame,blocking,box,2.0,84.0,21.75,32.0,3.5,1.5,Saw sled cleat (32in),2x4 SPF,"Horizontal 2x4, 32.0in long"
+Saw_SledCleat_Front,frame,blocking,box,2.0,112.5,21.75,32.0,3.5,1.5,Saw sled cleat (32in),2x4 SPF,"Horizontal 2x4, 32.0in long"
+Saw_SledCleat_Left,frame,blocking,box,2.0,87.5,21.75,3.5,25.0,1.5,Saw sled cleat (25in),2x4 SPF,"Horizontal 2x4, 25.0in long"
+Saw_SledCleat_Right,frame,blocking,box,30.5,87.5,21.75,3.5,25.0,1.5,Saw sled cleat (25in),2x4 SPF,"Horizontal 2x4, 25.0in long"
+Saw_Body,tool,saw_body,box,3.5,85.5,24.0,29.0,29.0,13.0,,,"DeWalt DWE7491 jobsite saw, stand removed, deck flush at 37in"
+Saw_Deck,tool,saw_body,box,3.5,85.5,36.75,29.0,29.0,0.25,,,Saw cast deck - flush with bench top
+Tall_Husky_40x18x36,cabinet,husky,box,5.0,17.0,0,40.0,18.0,36.0,,,"Tall Husky chest, slides in from front (no wheels)"
+Short_Husky_Plinth,cabinet,husky,box,40.0,17.0,0,40.0,18.0,16.0,,,16in plinth for short Husky chest
+Short_Husky_40x18x20,cabinet,husky,box,40.0,17.0,16.0,40.0,18.0,20.0,,,"Short Husky chest, slides in from front (sits on plinth)"
+Miter_Saw_Body_Ghost,ghost,ghost_cavity,box,53.0,5.0,33.0,30.0,24.0,12,,,DeWalt 10in miter saw body sitting in recess (ghost)
+Router_Motor_Ghost,ghost,ghost_cavity,box,115.125,16.375,27.5,9.75,7.25,8,,,Router motor hanging from insert plate (ghost)
+Planer_LockPin,hardware,lock_pin,cylinder,30.0,57.0,27.75,0.25,x,6.0,,,1/2in steel locking pin. POSITIVE engagement - do NOT rely on struts.

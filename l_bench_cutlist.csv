@@ -1,0 +1,37 @@
+lumber,part,quantity,length_in,width_in,thickness_in,example_names
+2x4 SPF,"Stud, frame vertical (28.5in)",22,28.50,3.50,1.50,TopLeg_FrontStud_0; TopLeg_FrontStud_1; TopLeg_FrontStud_2
+2x4 SPF,"Top rail, top leg front (144in)",1,144.00,3.50,1.50,TopLeg_FrontTopRail
+2x4 SPF,"Bottom rail, top leg front (144in)",1,144.00,3.50,1.50,TopLeg_FrontBottomRail
+2x4 SPF,"Top rail, top leg back (144in)",1,144.00,3.50,1.50,TopLeg_BackTopRail
+2x4 SPF,"Bottom rail, top leg back (144in)",1,144.00,3.50,1.50,TopLeg_BackBottomRail
+2x4 SPF,"Cross stretcher, top leg (29in)",14,29.00,3.50,1.50,TopLeg_TopStretcher_0; TopLeg_BottomStretcher_0; TopLeg_TopStretcher_1
+2x4 SPF,"Blocking, miter recess (36in)",2,36.00,3.50,1.50,Miter_Recess_BlockingFront; Miter_Recess_BlockingBack
+2x4 SPF,"Blocking, miter recess sides (22in)",2,23.00,3.50,1.50,Miter_Recess_BlockingLeft; Miter_Recess_BlockingRight
+3/4 in plywood,Router cabinet side panel,2,32.00,31.50,0.75,Router_Cabinet_Left; Router_Cabinet_Right
+3/4 in plywood,Router cabinet back panel,1,31.50,24.00,0.75,Router_Cabinet_Back
+3/4 in plywood,Router cabinet floor panel,1,32.00,24.00,0.75,Router_Cabinet_Floor
+2x4 SPF,"Top rail, left leg sides (84in)",2,84.00,3.50,1.50,LeftLeg_LeftTopRail; LeftLeg_RightTopRail
+2x4 SPF,"Bottom rail, left leg sides (84in)",2,84.00,3.50,1.50,LeftLeg_LeftBottomRail; LeftLeg_RightBottomRail
+2x4 SPF,"Cross stretcher, left leg (29in)",8,29.00,3.50,1.50,LeftLeg_TopStretcher_0; LeftLeg_BottomStretcher_0; LeftLeg_TopStretcher_1
+3/4 in plywood,"Top panel, top leg sections",1,50.00,36.00,1.50,TopLeg_Top_Left
+3/4 in plywood,Miter recess bottom panel (36 x 30 x 3/4),1,36.00,30.00,0.75,Miter_Recess_Bottom
+3/4 in plywood,"Top panel, top leg sections",1,36.00,2.00,1.50,TopLeg_Top_MiterBackLip
+3/4 in plywood,"Top panel, top leg sections",1,36.00,4.00,1.50,TopLeg_Top_MiterFrontLip
+3/4 in plywood,"Top panel, top leg sections",1,36.00,22.00,1.50,TopLeg_Top_MidRight
+3/4 in plywood,"Top panel, router area (4 sub-panels around insert)",1,24.00,15.38,1.50,TopLeg_Top_RouterBack
+3/4 in plywood,"Top panel, router area (4 sub-panels around insert)",1,24.00,11.38,1.50,TopLeg_Top_RouterFront
+3/4 in plywood,"Top panel, router area (4 sub-panels around insert)",2,9.25,6.12,1.50,TopLeg_Top_RouterLeft; TopLeg_Top_RouterRight
+3/4 in plywood,"Top panel, top leg sections",1,36.00,12.00,1.50,TopLeg_Top_FarRight
+3/4 in plywood,"Top panel, left leg sections",1,36.00,6.00,1.50,LeftLeg_Top_AbovePlaner
+3/4 in plywood,"Top panel, planer cavity strips",2,30.00,3.00,1.50,LeftLeg_Top_PlanerLeftStrip; LeftLeg_Top_PlanerRightStrip
+3/4 in plywood,"Top panel, left leg sections",1,36.00,12.00,1.50,LeftLeg_Top_BetweenCavities
+3/4 in plywood,"Top panel, saw cavity strips",2,32.00,2.00,1.50,LeftLeg_Top_SawLeftStrip; LeftLeg_Top_SawRightStrip
+3/4 in plywood,"Top panel, left leg sections",1,36.00,4.00,1.50,LeftLeg_Top_End
+3/4 in plywood,Toe kick board (4in tall),2,144.00,4.00,0.75,TopLeg_ToeKick_Front; TopLeg_ToeKick_Back
+3/4 in plywood,Toe kick end cap (4 x 36),2,36.00,4.00,0.75,TopLeg_ToeKick_RightEnd; LeftLeg_ToeKick_FrontEnd
+3/4 in plywood,Toe kick board (4in tall),2,84.00,4.00,0.75,LeftLeg_ToeKick_Right; LeftLeg_ToeKick_Left
+3/4 in plywood,End panel (33 x 36 x 3/4),2,36.00,33.00,0.75,TopLeg_EndPanel_Right; LeftLeg_EndPanel_Front
+3/4 in plywood,Planer sled (28 x 28 x 3/4),1,28.00,28.00,0.75,Planer_Sled
+3/4 in plywood,Saw sled (30 x 30 x 3/4),1,30.00,30.00,0.75,Saw_Sled
+2x4 SPF,Saw sled cleat (32in),2,32.00,3.50,1.50,Saw_SledCleat_Back; Saw_SledCleat_Front
+2x4 SPF,Saw sled cleat (25in),2,25.00,3.50,1.50,Saw_SledCleat_Left; Saw_SledCleat_Right

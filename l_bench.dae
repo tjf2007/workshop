@@ -1,0 +1,3662 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>generate_l_bench</author>
+      <authoring_tool>generate_l_bench.py</authoring_tool>
+    </contributor>
+    <created>2026-05-03T00:00:00</created>
+    <modified>2026-05-03T00:00:00</modified>
+    <unit name="inch" meter="0.0254" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="stud-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8200 0.6800 0.4500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="rail-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.7800 0.6200 0.4000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="stretcher-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.7400 0.5800 0.3600 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blocking-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.7000 0.5500 0.3200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ply_top-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8800 0.7400 0.5000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ply_panel-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8000 0.6600 0.4200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ply_recess-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9200 0.7800 0.5500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ply_router-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.5500 0.4200 0.2500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="router_insert-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.5500 0.5500 0.5800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="saw_sled-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8500 0.7000 0.4500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="saw_body-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9500 0.7800 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="planer_sled-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8500 0.7000 0.4500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="planer_body-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9500 0.7800 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="drawer_slide-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.5500 0.5500 0.5800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="gas_strut-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.3000 0.3000 0.3200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lock_pin-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8500 0.3000 0.2000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lock_recv-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.4500 0.4500 0.5000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="husky-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.1000 0.1000 0.1200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ghost-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.3000 0.5500 0.9500 0.1800</color>
+            </diffuse>
+            <transparency>
+              <float>0.1800</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.1800</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ghost_cavity-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9500 0.3000 0.3000 0.1200</color>
+            </diffuse>
+            <transparency>
+              <float>0.1200</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.1200</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="label-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.0500 0.0500 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="stud-material" name="stud">
+      <instance_effect url="#stud-effect" />
+    </material>
+    <material id="rail-material" name="rail">
+      <instance_effect url="#rail-effect" />
+    </material>
+    <material id="stretcher-material" name="stretcher">
+      <instance_effect url="#stretcher-effect" />
+    </material>
+    <material id="blocking-material" name="blocking">
+      <instance_effect url="#blocking-effect" />
+    </material>
+    <material id="ply_top-material" name="ply_top">
+      <instance_effect url="#ply_top-effect" />
+    </material>
+    <material id="ply_panel-material" name="ply_panel">
+      <instance_effect url="#ply_panel-effect" />
+    </material>
+    <material id="ply_recess-material" name="ply_recess">
+      <instance_effect url="#ply_recess-effect" />
+    </material>
+    <material id="ply_router-material" name="ply_router">
+      <instance_effect url="#ply_router-effect" />
+    </material>
+    <material id="router_insert-material" name="router_insert">
+      <instance_effect url="#router_insert-effect" />
+    </material>
+    <material id="saw_sled-material" name="saw_sled">
+      <instance_effect url="#saw_sled-effect" />
+    </material>
+    <material id="saw_body-material" name="saw_body">
+      <instance_effect url="#saw_body-effect" />
+    </material>
+    <material id="planer_sled-material" name="planer_sled">
+      <instance_effect url="#planer_sled-effect" />
+    </material>
+    <material id="planer_body-material" name="planer_body">
+      <instance_effect url="#planer_body-effect" />
+    </material>
+    <material id="drawer_slide-material" name="drawer_slide">
+      <instance_effect url="#drawer_slide-effect" />
+    </material>
+    <material id="gas_strut-material" name="gas_strut">
+      <instance_effect url="#gas_strut-effect" />
+    </material>
+    <material id="lock_pin-material" name="lock_pin">
+      <instance_effect url="#lock_pin-effect" />
+    </material>
+    <material id="lock_recv-material" name="lock_recv">
+      <instance_effect url="#lock_recv-effect" />
+    </material>
+    <material id="husky-material" name="husky">
+      <instance_effect url="#husky-effect" />
+    </material>
+    <material id="ghost-material" name="ghost">
+      <instance_effect url="#ghost-effect" />
+    </material>
+    <material id="ghost_cavity-material" name="ghost_cavity">
+      <instance_effect url="#ghost_cavity-effect" />
+    </material>
+    <material id="label-material" name="label">
+      <instance_effect url="#label-effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom_TopLeg_FrontStud_0" name="TopLeg_FrontStud_0">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_0-positions">
+          <float_array id="geom_TopLeg_FrontStud_0-positions-array" count="24">0.0000 34.5000 5.5000 3.5000 34.5000 5.5000 3.5000 36.0000 5.5000 0.0000 36.0000 5.5000 0.0000 34.5000 34.0000 3.5000 34.5000 34.0000 3.5000 36.0000 34.0000 0.0000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_0-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_1" name="TopLeg_FrontStud_1">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_1-positions">
+          <float_array id="geom_TopLeg_FrontStud_1-positions-array" count="24">24.0000 34.5000 5.5000 27.5000 34.5000 5.5000 27.5000 36.0000 5.5000 24.0000 36.0000 5.5000 24.0000 34.5000 34.0000 27.5000 34.5000 34.0000 27.5000 36.0000 34.0000 24.0000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_1-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_2" name="TopLeg_FrontStud_2">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_2-positions">
+          <float_array id="geom_TopLeg_FrontStud_2-positions-array" count="24">46.5000 34.5000 5.5000 50.0000 34.5000 5.5000 50.0000 36.0000 5.5000 46.5000 36.0000 5.5000 46.5000 34.5000 34.0000 50.0000 34.5000 34.0000 50.0000 36.0000 34.0000 46.5000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_2-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_3" name="TopLeg_FrontStud_3">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_3-positions">
+          <float_array id="geom_TopLeg_FrontStud_3-positions-array" count="24">86.0000 34.5000 5.5000 89.5000 34.5000 5.5000 89.5000 36.0000 5.5000 86.0000 36.0000 5.5000 86.0000 34.5000 34.0000 89.5000 34.5000 34.0000 89.5000 36.0000 34.0000 86.0000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_3-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_4" name="TopLeg_FrontStud_4">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_4-positions">
+          <float_array id="geom_TopLeg_FrontStud_4-positions-array" count="24">104.5000 34.5000 5.5000 108.0000 34.5000 5.5000 108.0000 36.0000 5.5000 104.5000 36.0000 5.5000 104.5000 34.5000 34.0000 108.0000 34.5000 34.0000 108.0000 36.0000 34.0000 104.5000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_4-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_4-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_4-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_4-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_5" name="TopLeg_FrontStud_5">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_5-positions">
+          <float_array id="geom_TopLeg_FrontStud_5-positions-array" count="24">132.0000 34.5000 5.5000 135.5000 34.5000 5.5000 135.5000 36.0000 5.5000 132.0000 36.0000 5.5000 132.0000 34.5000 34.0000 135.5000 34.5000 34.0000 135.5000 36.0000 34.0000 132.0000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_5-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_5-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_5-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_5-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontStud_6" name="TopLeg_FrontStud_6">
+      <mesh>
+        <source id="geom_TopLeg_FrontStud_6-positions">
+          <float_array id="geom_TopLeg_FrontStud_6-positions-array" count="24">140.5000 34.5000 5.5000 144.0000 34.5000 5.5000 144.0000 36.0000 5.5000 140.5000 36.0000 5.5000 140.5000 34.5000 34.0000 144.0000 34.5000 34.0000 144.0000 36.0000 34.0000 140.5000 36.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontStud_6-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontStud_6-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontStud_6-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontStud_6-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_0" name="TopLeg_BackStud_0">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_0-positions">
+          <float_array id="geom_TopLeg_BackStud_0-positions-array" count="24">0.0000 0.0000 5.5000 3.5000 0.0000 5.5000 3.5000 1.5000 5.5000 0.0000 1.5000 5.5000 0.0000 0.0000 34.0000 3.5000 0.0000 34.0000 3.5000 1.5000 34.0000 0.0000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_0-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_1" name="TopLeg_BackStud_1">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_1-positions">
+          <float_array id="geom_TopLeg_BackStud_1-positions-array" count="24">24.0000 0.0000 5.5000 27.5000 0.0000 5.5000 27.5000 1.5000 5.5000 24.0000 1.5000 5.5000 24.0000 0.0000 34.0000 27.5000 0.0000 34.0000 27.5000 1.5000 34.0000 24.0000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_1-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_2" name="TopLeg_BackStud_2">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_2-positions">
+          <float_array id="geom_TopLeg_BackStud_2-positions-array" count="24">46.5000 0.0000 5.5000 50.0000 0.0000 5.5000 50.0000 1.5000 5.5000 46.5000 1.5000 5.5000 46.5000 0.0000 34.0000 50.0000 0.0000 34.0000 50.0000 1.5000 34.0000 46.5000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_2-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_3" name="TopLeg_BackStud_3">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_3-positions">
+          <float_array id="geom_TopLeg_BackStud_3-positions-array" count="24">86.0000 0.0000 5.5000 89.5000 0.0000 5.5000 89.5000 1.5000 5.5000 86.0000 1.5000 5.5000 86.0000 0.0000 34.0000 89.5000 0.0000 34.0000 89.5000 1.5000 34.0000 86.0000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_3-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_4" name="TopLeg_BackStud_4">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_4-positions">
+          <float_array id="geom_TopLeg_BackStud_4-positions-array" count="24">104.5000 0.0000 5.5000 108.0000 0.0000 5.5000 108.0000 1.5000 5.5000 104.5000 1.5000 5.5000 104.5000 0.0000 34.0000 108.0000 0.0000 34.0000 108.0000 1.5000 34.0000 104.5000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_4-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_4-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_4-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_4-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_5" name="TopLeg_BackStud_5">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_5-positions">
+          <float_array id="geom_TopLeg_BackStud_5-positions-array" count="24">132.0000 0.0000 5.5000 135.5000 0.0000 5.5000 135.5000 1.5000 5.5000 132.0000 1.5000 5.5000 132.0000 0.0000 34.0000 135.5000 0.0000 34.0000 135.5000 1.5000 34.0000 132.0000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_5-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_5-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_5-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_5-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackStud_6" name="TopLeg_BackStud_6">
+      <mesh>
+        <source id="geom_TopLeg_BackStud_6-positions">
+          <float_array id="geom_TopLeg_BackStud_6-positions-array" count="24">140.5000 0.0000 5.5000 144.0000 0.0000 5.5000 144.0000 1.5000 5.5000 140.5000 1.5000 5.5000 140.5000 0.0000 34.0000 144.0000 0.0000 34.0000 144.0000 1.5000 34.0000 140.5000 1.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackStud_6-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackStud_6-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackStud_6-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackStud_6-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontTopRail" name="TopLeg_FrontTopRail">
+      <mesh>
+        <source id="geom_TopLeg_FrontTopRail-positions">
+          <float_array id="geom_TopLeg_FrontTopRail-positions-array" count="24">0.0000 32.5000 34.0000 144.0000 32.5000 34.0000 144.0000 36.0000 34.0000 0.0000 36.0000 34.0000 0.0000 32.5000 35.5000 144.0000 32.5000 35.5000 144.0000 36.0000 35.5000 0.0000 36.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontTopRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontTopRail-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontTopRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontTopRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_FrontBottomRail" name="TopLeg_FrontBottomRail">
+      <mesh>
+        <source id="geom_TopLeg_FrontBottomRail-positions">
+          <float_array id="geom_TopLeg_FrontBottomRail-positions-array" count="24">0.0000 32.5000 4.0000 144.0000 32.5000 4.0000 144.0000 36.0000 4.0000 0.0000 36.0000 4.0000 0.0000 32.5000 5.5000 144.0000 32.5000 5.5000 144.0000 36.0000 5.5000 0.0000 36.0000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_FrontBottomRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_FrontBottomRail-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_FrontBottomRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_FrontBottomRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackTopRail" name="TopLeg_BackTopRail">
+      <mesh>
+        <source id="geom_TopLeg_BackTopRail-positions">
+          <float_array id="geom_TopLeg_BackTopRail-positions-array" count="24">0.0000 0.0000 34.0000 144.0000 0.0000 34.0000 144.0000 3.5000 34.0000 0.0000 3.5000 34.0000 0.0000 0.0000 35.5000 144.0000 0.0000 35.5000 144.0000 3.5000 35.5000 0.0000 3.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackTopRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackTopRail-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackTopRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackTopRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BackBottomRail" name="TopLeg_BackBottomRail">
+      <mesh>
+        <source id="geom_TopLeg_BackBottomRail-positions">
+          <float_array id="geom_TopLeg_BackBottomRail-positions-array" count="24">0.0000 0.0000 4.0000 144.0000 0.0000 4.0000 144.0000 3.5000 4.0000 0.0000 3.5000 4.0000 0.0000 0.0000 5.5000 144.0000 0.0000 5.5000 144.0000 3.5000 5.5000 0.0000 3.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BackBottomRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BackBottomRail-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BackBottomRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BackBottomRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_0" name="TopLeg_TopStretcher_0">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_0-positions">
+          <float_array id="geom_TopLeg_TopStretcher_0-positions-array" count="24">0.0000 3.5000 34.0000 3.5000 3.5000 34.0000 3.5000 32.5000 34.0000 0.0000 32.5000 34.0000 0.0000 3.5000 35.5000 3.5000 3.5000 35.5000 3.5000 32.5000 35.5000 0.0000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_0-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_0" name="TopLeg_BottomStretcher_0">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_0-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_0-positions-array" count="24">0.0000 3.5000 4.0000 3.5000 3.5000 4.0000 3.5000 32.5000 4.0000 0.0000 32.5000 4.0000 0.0000 3.5000 5.5000 3.5000 3.5000 5.5000 3.5000 32.5000 5.5000 0.0000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_0-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_1" name="TopLeg_TopStretcher_1">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_1-positions">
+          <float_array id="geom_TopLeg_TopStretcher_1-positions-array" count="24">24.0000 3.5000 34.0000 27.5000 3.5000 34.0000 27.5000 32.5000 34.0000 24.0000 32.5000 34.0000 24.0000 3.5000 35.5000 27.5000 3.5000 35.5000 27.5000 32.5000 35.5000 24.0000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_1-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_1" name="TopLeg_BottomStretcher_1">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_1-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_1-positions-array" count="24">24.0000 3.5000 4.0000 27.5000 3.5000 4.0000 27.5000 32.5000 4.0000 24.0000 32.5000 4.0000 24.0000 3.5000 5.5000 27.5000 3.5000 5.5000 27.5000 32.5000 5.5000 24.0000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_1-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_2" name="TopLeg_TopStretcher_2">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_2-positions">
+          <float_array id="geom_TopLeg_TopStretcher_2-positions-array" count="24">46.5000 3.5000 34.0000 50.0000 3.5000 34.0000 50.0000 32.5000 34.0000 46.5000 32.5000 34.0000 46.5000 3.5000 35.5000 50.0000 3.5000 35.5000 50.0000 32.5000 35.5000 46.5000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_2-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_2" name="TopLeg_BottomStretcher_2">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_2-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_2-positions-array" count="24">46.5000 3.5000 4.0000 50.0000 3.5000 4.0000 50.0000 32.5000 4.0000 46.5000 32.5000 4.0000 46.5000 3.5000 5.5000 50.0000 3.5000 5.5000 50.0000 32.5000 5.5000 46.5000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_2-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_3" name="TopLeg_TopStretcher_3">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_3-positions">
+          <float_array id="geom_TopLeg_TopStretcher_3-positions-array" count="24">86.0000 3.5000 34.0000 89.5000 3.5000 34.0000 89.5000 32.5000 34.0000 86.0000 32.5000 34.0000 86.0000 3.5000 35.5000 89.5000 3.5000 35.5000 89.5000 32.5000 35.5000 86.0000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_3-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_3" name="TopLeg_BottomStretcher_3">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_3-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_3-positions-array" count="24">86.0000 3.5000 4.0000 89.5000 3.5000 4.0000 89.5000 32.5000 4.0000 86.0000 32.5000 4.0000 86.0000 3.5000 5.5000 89.5000 3.5000 5.5000 89.5000 32.5000 5.5000 86.0000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_3-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_4" name="TopLeg_TopStretcher_4">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_4-positions">
+          <float_array id="geom_TopLeg_TopStretcher_4-positions-array" count="24">104.5000 3.5000 34.0000 108.0000 3.5000 34.0000 108.0000 32.5000 34.0000 104.5000 32.5000 34.0000 104.5000 3.5000 35.5000 108.0000 3.5000 35.5000 108.0000 32.5000 35.5000 104.5000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_4-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_4-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_4-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_4-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_4" name="TopLeg_BottomStretcher_4">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_4-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_4-positions-array" count="24">104.5000 3.5000 4.0000 108.0000 3.5000 4.0000 108.0000 32.5000 4.0000 104.5000 32.5000 4.0000 104.5000 3.5000 5.5000 108.0000 3.5000 5.5000 108.0000 32.5000 5.5000 104.5000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_4-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_4-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_4-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_4-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_5" name="TopLeg_TopStretcher_5">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_5-positions">
+          <float_array id="geom_TopLeg_TopStretcher_5-positions-array" count="24">132.0000 3.5000 34.0000 135.5000 3.5000 34.0000 135.5000 32.5000 34.0000 132.0000 32.5000 34.0000 132.0000 3.5000 35.5000 135.5000 3.5000 35.5000 135.5000 32.5000 35.5000 132.0000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_5-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_5-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_5-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_5-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_5" name="TopLeg_BottomStretcher_5">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_5-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_5-positions-array" count="24">132.0000 3.5000 4.0000 135.5000 3.5000 4.0000 135.5000 32.5000 4.0000 132.0000 32.5000 4.0000 132.0000 3.5000 5.5000 135.5000 3.5000 5.5000 135.5000 32.5000 5.5000 132.0000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_5-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_5-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_5-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_5-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_TopStretcher_6" name="TopLeg_TopStretcher_6">
+      <mesh>
+        <source id="geom_TopLeg_TopStretcher_6-positions">
+          <float_array id="geom_TopLeg_TopStretcher_6-positions-array" count="24">140.5000 3.5000 34.0000 144.0000 3.5000 34.0000 144.0000 32.5000 34.0000 140.5000 32.5000 34.0000 140.5000 3.5000 35.5000 144.0000 3.5000 35.5000 144.0000 32.5000 35.5000 140.5000 32.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_TopStretcher_6-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_TopStretcher_6-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_TopStretcher_6-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_TopStretcher_6-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_BottomStretcher_6" name="TopLeg_BottomStretcher_6">
+      <mesh>
+        <source id="geom_TopLeg_BottomStretcher_6-positions">
+          <float_array id="geom_TopLeg_BottomStretcher_6-positions-array" count="24">140.5000 3.5000 4.0000 144.0000 3.5000 4.0000 144.0000 32.5000 4.0000 140.5000 32.5000 4.0000 140.5000 3.5000 5.5000 144.0000 3.5000 5.5000 144.0000 32.5000 5.5000 140.5000 32.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_BottomStretcher_6-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_BottomStretcher_6-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_BottomStretcher_6-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_BottomStretcher_6-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Recess_BlockingFront" name="Miter_Recess_BlockingFront">
+      <mesh>
+        <source id="geom_Miter_Recess_BlockingFront-positions">
+          <float_array id="geom_Miter_Recess_BlockingFront-positions-array" count="24">50.0000 28.5000 31.5000 86.0000 28.5000 31.5000 86.0000 32.0000 31.5000 50.0000 32.0000 31.5000 50.0000 28.5000 33.0000 86.0000 28.5000 33.0000 86.0000 32.0000 33.0000 50.0000 32.0000 33.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Recess_BlockingFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Recess_BlockingFront-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Recess_BlockingFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Recess_BlockingFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Recess_BlockingBack" name="Miter_Recess_BlockingBack">
+      <mesh>
+        <source id="geom_Miter_Recess_BlockingBack-positions">
+          <float_array id="geom_Miter_Recess_BlockingBack-positions-array" count="24">50.0000 2.0000 31.5000 86.0000 2.0000 31.5000 86.0000 5.5000 31.5000 50.0000 5.5000 31.5000 50.0000 2.0000 33.0000 86.0000 2.0000 33.0000 86.0000 5.5000 33.0000 50.0000 5.5000 33.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Recess_BlockingBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Recess_BlockingBack-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Recess_BlockingBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Recess_BlockingBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Recess_BlockingLeft" name="Miter_Recess_BlockingLeft">
+      <mesh>
+        <source id="geom_Miter_Recess_BlockingLeft-positions">
+          <float_array id="geom_Miter_Recess_BlockingLeft-positions-array" count="24">50.0000 5.5000 31.5000 53.5000 5.5000 31.5000 53.5000 28.5000 31.5000 50.0000 28.5000 31.5000 50.0000 5.5000 33.0000 53.5000 5.5000 33.0000 53.5000 28.5000 33.0000 50.0000 28.5000 33.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Recess_BlockingLeft-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Recess_BlockingLeft-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Recess_BlockingLeft-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Recess_BlockingLeft-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Recess_BlockingRight" name="Miter_Recess_BlockingRight">
+      <mesh>
+        <source id="geom_Miter_Recess_BlockingRight-positions">
+          <float_array id="geom_Miter_Recess_BlockingRight-positions-array" count="24">82.5000 5.5000 31.5000 86.0000 5.5000 31.5000 86.0000 28.5000 31.5000 82.5000 28.5000 31.5000 82.5000 5.5000 33.0000 86.0000 5.5000 33.0000 86.0000 28.5000 33.0000 82.5000 28.5000 33.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Recess_BlockingRight-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Recess_BlockingRight-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Recess_BlockingRight-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Recess_BlockingRight-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Cabinet_Left" name="Router_Cabinet_Left">
+      <mesh>
+        <source id="geom_Router_Cabinet_Left-positions">
+          <float_array id="geom_Router_Cabinet_Left-positions-array" count="24">108.0000 4.0000 4.0000 108.7500 4.0000 4.0000 108.7500 36.0000 4.0000 108.0000 36.0000 4.0000 108.0000 4.0000 35.5000 108.7500 4.0000 35.5000 108.7500 36.0000 35.5000 108.0000 36.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Cabinet_Left-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Cabinet_Left-vertices">
+          <input semantic="POSITION" source="#geom_Router_Cabinet_Left-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Cabinet_Left-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Cabinet_Right" name="Router_Cabinet_Right">
+      <mesh>
+        <source id="geom_Router_Cabinet_Right-positions">
+          <float_array id="geom_Router_Cabinet_Right-positions-array" count="24">131.2500 4.0000 4.0000 132.0000 4.0000 4.0000 132.0000 36.0000 4.0000 131.2500 36.0000 4.0000 131.2500 4.0000 35.5000 132.0000 4.0000 35.5000 132.0000 36.0000 35.5000 131.2500 36.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Cabinet_Right-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Cabinet_Right-vertices">
+          <input semantic="POSITION" source="#geom_Router_Cabinet_Right-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Cabinet_Right-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Cabinet_Back" name="Router_Cabinet_Back">
+      <mesh>
+        <source id="geom_Router_Cabinet_Back-positions">
+          <float_array id="geom_Router_Cabinet_Back-positions-array" count="24">108.0000 4.0000 4.0000 132.0000 4.0000 4.0000 132.0000 4.7500 4.0000 108.0000 4.7500 4.0000 108.0000 4.0000 35.5000 132.0000 4.0000 35.5000 132.0000 4.7500 35.5000 108.0000 4.7500 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Cabinet_Back-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Cabinet_Back-vertices">
+          <input semantic="POSITION" source="#geom_Router_Cabinet_Back-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Cabinet_Back-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Cabinet_Floor" name="Router_Cabinet_Floor">
+      <mesh>
+        <source id="geom_Router_Cabinet_Floor-positions">
+          <float_array id="geom_Router_Cabinet_Floor-positions-array" count="24">108.0000 4.0000 4.0000 132.0000 4.0000 4.0000 132.0000 36.0000 4.0000 108.0000 36.0000 4.0000 108.0000 4.0000 4.7500 132.0000 4.0000 4.7500 132.0000 36.0000 4.7500 108.0000 36.0000 4.7500</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Cabinet_Floor-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Cabinet_Floor-vertices">
+          <input semantic="POSITION" source="#geom_Router_Cabinet_Floor-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Cabinet_Floor-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftSideStud_0" name="LeftLeg_LeftSideStud_0">
+      <mesh>
+        <source id="geom_LeftLeg_LeftSideStud_0-positions">
+          <float_array id="geom_LeftLeg_LeftSideStud_0-positions-array" count="24">0.0000 38.5000 5.5000 1.5000 38.5000 5.5000 1.5000 42.0000 5.5000 0.0000 42.0000 5.5000 0.0000 38.5000 34.0000 1.5000 38.5000 34.0000 1.5000 42.0000 34.0000 0.0000 42.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftSideStud_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftSideStud_0-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftSideStud_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftSideStud_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightSideStud_0" name="LeftLeg_RightSideStud_0">
+      <mesh>
+        <source id="geom_LeftLeg_RightSideStud_0-positions">
+          <float_array id="geom_LeftLeg_RightSideStud_0-positions-array" count="24">34.5000 38.5000 5.5000 36.0000 38.5000 5.5000 36.0000 42.0000 5.5000 34.5000 42.0000 5.5000 34.5000 38.5000 34.0000 36.0000 38.5000 34.0000 36.0000 42.0000 34.0000 34.5000 42.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightSideStud_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightSideStud_0-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightSideStud_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightSideStud_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftSideStud_1" name="LeftLeg_LeftSideStud_1">
+      <mesh>
+        <source id="geom_LeftLeg_LeftSideStud_1-positions">
+          <float_array id="geom_LeftLeg_LeftSideStud_1-positions-array" count="24">0.0000 72.0000 5.5000 1.5000 72.0000 5.5000 1.5000 75.5000 5.5000 0.0000 75.5000 5.5000 0.0000 72.0000 34.0000 1.5000 72.0000 34.0000 1.5000 75.5000 34.0000 0.0000 75.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftSideStud_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftSideStud_1-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftSideStud_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftSideStud_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightSideStud_1" name="LeftLeg_RightSideStud_1">
+      <mesh>
+        <source id="geom_LeftLeg_RightSideStud_1-positions">
+          <float_array id="geom_LeftLeg_RightSideStud_1-positions-array" count="24">34.5000 72.0000 5.5000 36.0000 72.0000 5.5000 36.0000 75.5000 5.5000 34.5000 75.5000 5.5000 34.5000 72.0000 34.0000 36.0000 72.0000 34.0000 36.0000 75.5000 34.0000 34.5000 75.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightSideStud_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightSideStud_1-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightSideStud_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightSideStud_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftSideStud_2" name="LeftLeg_LeftSideStud_2">
+      <mesh>
+        <source id="geom_LeftLeg_LeftSideStud_2-positions">
+          <float_array id="geom_LeftLeg_LeftSideStud_2-positions-array" count="24">0.0000 80.5000 5.5000 1.5000 80.5000 5.5000 1.5000 84.0000 5.5000 0.0000 84.0000 5.5000 0.0000 80.5000 34.0000 1.5000 80.5000 34.0000 1.5000 84.0000 34.0000 0.0000 84.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftSideStud_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftSideStud_2-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftSideStud_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftSideStud_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightSideStud_2" name="LeftLeg_RightSideStud_2">
+      <mesh>
+        <source id="geom_LeftLeg_RightSideStud_2-positions">
+          <float_array id="geom_LeftLeg_RightSideStud_2-positions-array" count="24">34.5000 80.5000 5.5000 36.0000 80.5000 5.5000 36.0000 84.0000 5.5000 34.5000 84.0000 5.5000 34.5000 80.5000 34.0000 36.0000 80.5000 34.0000 36.0000 84.0000 34.0000 34.5000 84.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightSideStud_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightSideStud_2-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightSideStud_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightSideStud_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftSideStud_3" name="LeftLeg_LeftSideStud_3">
+      <mesh>
+        <source id="geom_LeftLeg_LeftSideStud_3-positions">
+          <float_array id="geom_LeftLeg_LeftSideStud_3-positions-array" count="24">0.0000 116.0000 5.5000 1.5000 116.0000 5.5000 1.5000 119.5000 5.5000 0.0000 119.5000 5.5000 0.0000 116.0000 34.0000 1.5000 116.0000 34.0000 1.5000 119.5000 34.0000 0.0000 119.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftSideStud_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftSideStud_3-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftSideStud_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftSideStud_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightSideStud_3" name="LeftLeg_RightSideStud_3">
+      <mesh>
+        <source id="geom_LeftLeg_RightSideStud_3-positions">
+          <float_array id="geom_LeftLeg_RightSideStud_3-positions-array" count="24">34.5000 116.0000 5.5000 36.0000 116.0000 5.5000 36.0000 119.5000 5.5000 34.5000 119.5000 5.5000 34.5000 116.0000 34.0000 36.0000 116.0000 34.0000 36.0000 119.5000 34.0000 34.5000 119.5000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightSideStud_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightSideStud_3-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightSideStud_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightSideStud_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftTopRail" name="LeftLeg_LeftTopRail">
+      <mesh>
+        <source id="geom_LeftLeg_LeftTopRail-positions">
+          <float_array id="geom_LeftLeg_LeftTopRail-positions-array" count="24">0.0000 36.0000 34.0000 3.5000 36.0000 34.0000 3.5000 120.0000 34.0000 0.0000 120.0000 34.0000 0.0000 36.0000 35.5000 3.5000 36.0000 35.5000 3.5000 120.0000 35.5000 0.0000 120.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftTopRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftTopRail-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftTopRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftTopRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightTopRail" name="LeftLeg_RightTopRail">
+      <mesh>
+        <source id="geom_LeftLeg_RightTopRail-positions">
+          <float_array id="geom_LeftLeg_RightTopRail-positions-array" count="24">32.5000 36.0000 34.0000 36.0000 36.0000 34.0000 36.0000 120.0000 34.0000 32.5000 120.0000 34.0000 32.5000 36.0000 35.5000 36.0000 36.0000 35.5000 36.0000 120.0000 35.5000 32.5000 120.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightTopRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightTopRail-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightTopRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightTopRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_LeftBottomRail" name="LeftLeg_LeftBottomRail">
+      <mesh>
+        <source id="geom_LeftLeg_LeftBottomRail-positions">
+          <float_array id="geom_LeftLeg_LeftBottomRail-positions-array" count="24">0.0000 36.0000 4.0000 3.5000 36.0000 4.0000 3.5000 120.0000 4.0000 0.0000 120.0000 4.0000 0.0000 36.0000 5.5000 3.5000 36.0000 5.5000 3.5000 120.0000 5.5000 0.0000 120.0000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_LeftBottomRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_LeftBottomRail-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_LeftBottomRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_LeftBottomRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_RightBottomRail" name="LeftLeg_RightBottomRail">
+      <mesh>
+        <source id="geom_LeftLeg_RightBottomRail-positions">
+          <float_array id="geom_LeftLeg_RightBottomRail-positions-array" count="24">32.5000 36.0000 4.0000 36.0000 36.0000 4.0000 36.0000 120.0000 4.0000 32.5000 120.0000 4.0000 32.5000 36.0000 5.5000 36.0000 36.0000 5.5000 36.0000 120.0000 5.5000 32.5000 120.0000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_RightBottomRail-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_RightBottomRail-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_RightBottomRail-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_RightBottomRail-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_TopStretcher_0" name="LeftLeg_TopStretcher_0">
+      <mesh>
+        <source id="geom_LeftLeg_TopStretcher_0-positions">
+          <float_array id="geom_LeftLeg_TopStretcher_0-positions-array" count="24">3.5000 38.5000 34.0000 32.5000 38.5000 34.0000 32.5000 42.0000 34.0000 3.5000 42.0000 34.0000 3.5000 38.5000 35.5000 32.5000 38.5000 35.5000 32.5000 42.0000 35.5000 3.5000 42.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_TopStretcher_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_TopStretcher_0-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_TopStretcher_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_TopStretcher_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_BottomStretcher_0" name="LeftLeg_BottomStretcher_0">
+      <mesh>
+        <source id="geom_LeftLeg_BottomStretcher_0-positions">
+          <float_array id="geom_LeftLeg_BottomStretcher_0-positions-array" count="24">3.5000 38.5000 4.0000 32.5000 38.5000 4.0000 32.5000 42.0000 4.0000 3.5000 42.0000 4.0000 3.5000 38.5000 5.5000 32.5000 38.5000 5.5000 32.5000 42.0000 5.5000 3.5000 42.0000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_BottomStretcher_0-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_BottomStretcher_0-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_BottomStretcher_0-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_BottomStretcher_0-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_TopStretcher_1" name="LeftLeg_TopStretcher_1">
+      <mesh>
+        <source id="geom_LeftLeg_TopStretcher_1-positions">
+          <float_array id="geom_LeftLeg_TopStretcher_1-positions-array" count="24">3.5000 72.0000 34.0000 32.5000 72.0000 34.0000 32.5000 75.5000 34.0000 3.5000 75.5000 34.0000 3.5000 72.0000 35.5000 32.5000 72.0000 35.5000 32.5000 75.5000 35.5000 3.5000 75.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_TopStretcher_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_TopStretcher_1-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_TopStretcher_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_TopStretcher_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_BottomStretcher_1" name="LeftLeg_BottomStretcher_1">
+      <mesh>
+        <source id="geom_LeftLeg_BottomStretcher_1-positions">
+          <float_array id="geom_LeftLeg_BottomStretcher_1-positions-array" count="24">3.5000 72.0000 4.0000 32.5000 72.0000 4.0000 32.5000 75.5000 4.0000 3.5000 75.5000 4.0000 3.5000 72.0000 5.5000 32.5000 72.0000 5.5000 32.5000 75.5000 5.5000 3.5000 75.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_BottomStretcher_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_BottomStretcher_1-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_BottomStretcher_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_BottomStretcher_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_TopStretcher_2" name="LeftLeg_TopStretcher_2">
+      <mesh>
+        <source id="geom_LeftLeg_TopStretcher_2-positions">
+          <float_array id="geom_LeftLeg_TopStretcher_2-positions-array" count="24">3.5000 80.5000 34.0000 32.5000 80.5000 34.0000 32.5000 84.0000 34.0000 3.5000 84.0000 34.0000 3.5000 80.5000 35.5000 32.5000 80.5000 35.5000 32.5000 84.0000 35.5000 3.5000 84.0000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_TopStretcher_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_TopStretcher_2-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_TopStretcher_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_TopStretcher_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_BottomStretcher_2" name="LeftLeg_BottomStretcher_2">
+      <mesh>
+        <source id="geom_LeftLeg_BottomStretcher_2-positions">
+          <float_array id="geom_LeftLeg_BottomStretcher_2-positions-array" count="24">3.5000 80.5000 4.0000 32.5000 80.5000 4.0000 32.5000 84.0000 4.0000 3.5000 84.0000 4.0000 3.5000 80.5000 5.5000 32.5000 80.5000 5.5000 32.5000 84.0000 5.5000 3.5000 84.0000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_BottomStretcher_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_BottomStretcher_2-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_BottomStretcher_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_BottomStretcher_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_TopStretcher_3" name="LeftLeg_TopStretcher_3">
+      <mesh>
+        <source id="geom_LeftLeg_TopStretcher_3-positions">
+          <float_array id="geom_LeftLeg_TopStretcher_3-positions-array" count="24">3.5000 116.0000 34.0000 32.5000 116.0000 34.0000 32.5000 119.5000 34.0000 3.5000 119.5000 34.0000 3.5000 116.0000 35.5000 32.5000 116.0000 35.5000 32.5000 119.5000 35.5000 3.5000 119.5000 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_TopStretcher_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_TopStretcher_3-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_TopStretcher_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_TopStretcher_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_BottomStretcher_3" name="LeftLeg_BottomStretcher_3">
+      <mesh>
+        <source id="geom_LeftLeg_BottomStretcher_3-positions">
+          <float_array id="geom_LeftLeg_BottomStretcher_3-positions-array" count="24">3.5000 116.0000 4.0000 32.5000 116.0000 4.0000 32.5000 119.5000 4.0000 3.5000 119.5000 4.0000 3.5000 116.0000 5.5000 32.5000 116.0000 5.5000 32.5000 119.5000 5.5000 3.5000 119.5000 5.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_BottomStretcher_3-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_BottomStretcher_3-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_BottomStretcher_3-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_BottomStretcher_3-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_Left" name="TopLeg_Top_Left">
+      <mesh>
+        <source id="geom_TopLeg_Top_Left-positions">
+          <float_array id="geom_TopLeg_Top_Left-positions-array" count="24">0.0000 0.0000 35.5000 50.0000 0.0000 35.5000 50.0000 36.0000 35.5000 0.0000 36.0000 35.5000 0.0000 0.0000 37.0000 50.0000 0.0000 37.0000 50.0000 36.0000 37.0000 0.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_Left-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_Left-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_Left-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_Left-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Recess_Bottom" name="Miter_Recess_Bottom">
+      <mesh>
+        <source id="geom_Miter_Recess_Bottom-positions">
+          <float_array id="geom_Miter_Recess_Bottom-positions-array" count="24">50.0000 2.0000 33.0000 86.0000 2.0000 33.0000 86.0000 32.0000 33.0000 50.0000 32.0000 33.0000 50.0000 2.0000 33.7500 86.0000 2.0000 33.7500 86.0000 32.0000 33.7500 50.0000 32.0000 33.7500</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Recess_Bottom-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Recess_Bottom-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Recess_Bottom-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Recess_Bottom-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_MiterBackLip" name="TopLeg_Top_MiterBackLip">
+      <mesh>
+        <source id="geom_TopLeg_Top_MiterBackLip-positions">
+          <float_array id="geom_TopLeg_Top_MiterBackLip-positions-array" count="24">50.0000 0.0000 35.5000 86.0000 0.0000 35.5000 86.0000 2.0000 35.5000 50.0000 2.0000 35.5000 50.0000 0.0000 37.0000 86.0000 0.0000 37.0000 86.0000 2.0000 37.0000 50.0000 2.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_MiterBackLip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_MiterBackLip-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_MiterBackLip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_MiterBackLip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_MiterFrontLip" name="TopLeg_Top_MiterFrontLip">
+      <mesh>
+        <source id="geom_TopLeg_Top_MiterFrontLip-positions">
+          <float_array id="geom_TopLeg_Top_MiterFrontLip-positions-array" count="24">50.0000 32.0000 35.5000 86.0000 32.0000 35.5000 86.0000 36.0000 35.5000 50.0000 36.0000 35.5000 50.0000 32.0000 37.0000 86.0000 32.0000 37.0000 86.0000 36.0000 37.0000 50.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_MiterFrontLip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_MiterFrontLip-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_MiterFrontLip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_MiterFrontLip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_MidRight" name="TopLeg_Top_MidRight">
+      <mesh>
+        <source id="geom_TopLeg_Top_MidRight-positions">
+          <float_array id="geom_TopLeg_Top_MidRight-positions-array" count="24">86.0000 0.0000 35.5000 108.0000 0.0000 35.5000 108.0000 36.0000 35.5000 86.0000 36.0000 35.5000 86.0000 0.0000 37.0000 108.0000 0.0000 37.0000 108.0000 36.0000 37.0000 86.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_MidRight-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_MidRight-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_MidRight-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_MidRight-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_RouterBack" name="TopLeg_Top_RouterBack">
+      <mesh>
+        <source id="geom_TopLeg_Top_RouterBack-positions">
+          <float_array id="geom_TopLeg_Top_RouterBack-positions-array" count="24">108.0000 0.0000 35.5000 132.0000 0.0000 35.5000 132.0000 15.3750 35.5000 108.0000 15.3750 35.5000 108.0000 0.0000 37.0000 132.0000 0.0000 37.0000 132.0000 15.3750 37.0000 108.0000 15.3750 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_RouterBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_RouterBack-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_RouterBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_RouterBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_RouterFront" name="TopLeg_Top_RouterFront">
+      <mesh>
+        <source id="geom_TopLeg_Top_RouterFront-positions">
+          <float_array id="geom_TopLeg_Top_RouterFront-positions-array" count="24">108.0000 24.6250 35.5000 132.0000 24.6250 35.5000 132.0000 36.0000 35.5000 108.0000 36.0000 35.5000 108.0000 24.6250 37.0000 132.0000 24.6250 37.0000 132.0000 36.0000 37.0000 108.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_RouterFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_RouterFront-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_RouterFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_RouterFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_RouterLeft" name="TopLeg_Top_RouterLeft">
+      <mesh>
+        <source id="geom_TopLeg_Top_RouterLeft-positions">
+          <float_array id="geom_TopLeg_Top_RouterLeft-positions-array" count="24">108.0000 15.3750 35.5000 114.1250 15.3750 35.5000 114.1250 24.6250 35.5000 108.0000 24.6250 35.5000 108.0000 15.3750 37.0000 114.1250 15.3750 37.0000 114.1250 24.6250 37.0000 108.0000 24.6250 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_RouterLeft-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_RouterLeft-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_RouterLeft-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_RouterLeft-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_RouterRight" name="TopLeg_Top_RouterRight">
+      <mesh>
+        <source id="geom_TopLeg_Top_RouterRight-positions">
+          <float_array id="geom_TopLeg_Top_RouterRight-positions-array" count="24">125.8750 15.3750 35.5000 132.0000 15.3750 35.5000 132.0000 24.6250 35.5000 125.8750 24.6250 35.5000 125.8750 15.3750 37.0000 132.0000 15.3750 37.0000 132.0000 24.6250 37.0000 125.8750 24.6250 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_RouterRight-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_RouterRight-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_RouterRight-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_RouterRight-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Insert_Plate" name="Router_Insert_Plate">
+      <mesh>
+        <source id="geom_Router_Insert_Plate-positions">
+          <float_array id="geom_Router_Insert_Plate-positions-array" count="24">114.1250 15.3750 36.5000 125.8750 15.3750 36.5000 125.8750 24.6250 36.5000 114.1250 24.6250 36.5000 114.1250 15.3750 37.0000 125.8750 15.3750 37.0000 125.8750 24.6250 37.0000 114.1250 24.6250 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Insert_Plate-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Insert_Plate-vertices">
+          <input semantic="POSITION" source="#geom_Router_Insert_Plate-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Insert_Plate-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_Top_FarRight" name="TopLeg_Top_FarRight">
+      <mesh>
+        <source id="geom_TopLeg_Top_FarRight-positions">
+          <float_array id="geom_TopLeg_Top_FarRight-positions-array" count="24">132.0000 0.0000 35.5000 144.0000 0.0000 35.5000 144.0000 36.0000 35.5000 132.0000 36.0000 35.5000 132.0000 0.0000 37.0000 144.0000 0.0000 37.0000 144.0000 36.0000 37.0000 132.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_Top_FarRight-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_Top_FarRight-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_Top_FarRight-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_Top_FarRight-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_AbovePlaner" name="LeftLeg_Top_AbovePlaner">
+      <mesh>
+        <source id="geom_LeftLeg_Top_AbovePlaner-positions">
+          <float_array id="geom_LeftLeg_Top_AbovePlaner-positions-array" count="24">0.0000 36.0000 35.5000 36.0000 36.0000 35.5000 36.0000 42.0000 35.5000 0.0000 42.0000 35.5000 0.0000 36.0000 37.0000 36.0000 36.0000 37.0000 36.0000 42.0000 37.0000 0.0000 42.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_AbovePlaner-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_AbovePlaner-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_AbovePlaner-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_AbovePlaner-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_PlanerLeftStrip" name="LeftLeg_Top_PlanerLeftStrip">
+      <mesh>
+        <source id="geom_LeftLeg_Top_PlanerLeftStrip-positions">
+          <float_array id="geom_LeftLeg_Top_PlanerLeftStrip-positions-array" count="24">0.0000 42.0000 35.5000 3.0000 42.0000 35.5000 3.0000 72.0000 35.5000 0.0000 72.0000 35.5000 0.0000 42.0000 37.0000 3.0000 42.0000 37.0000 3.0000 72.0000 37.0000 0.0000 72.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_PlanerLeftStrip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_PlanerLeftStrip-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_PlanerLeftStrip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_PlanerLeftStrip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_PlanerRightStrip" name="LeftLeg_Top_PlanerRightStrip">
+      <mesh>
+        <source id="geom_LeftLeg_Top_PlanerRightStrip-positions">
+          <float_array id="geom_LeftLeg_Top_PlanerRightStrip-positions-array" count="24">33.0000 42.0000 35.5000 36.0000 42.0000 35.5000 36.0000 72.0000 35.5000 33.0000 72.0000 35.5000 33.0000 42.0000 37.0000 36.0000 42.0000 37.0000 36.0000 72.0000 37.0000 33.0000 72.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_PlanerRightStrip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_PlanerRightStrip-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_PlanerRightStrip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_PlanerRightStrip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_BetweenCavities" name="LeftLeg_Top_BetweenCavities">
+      <mesh>
+        <source id="geom_LeftLeg_Top_BetweenCavities-positions">
+          <float_array id="geom_LeftLeg_Top_BetweenCavities-positions-array" count="24">0.0000 72.0000 35.5000 36.0000 72.0000 35.5000 36.0000 84.0000 35.5000 0.0000 84.0000 35.5000 0.0000 72.0000 37.0000 36.0000 72.0000 37.0000 36.0000 84.0000 37.0000 0.0000 84.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_BetweenCavities-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_BetweenCavities-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_BetweenCavities-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_BetweenCavities-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_SawLeftStrip" name="LeftLeg_Top_SawLeftStrip">
+      <mesh>
+        <source id="geom_LeftLeg_Top_SawLeftStrip-positions">
+          <float_array id="geom_LeftLeg_Top_SawLeftStrip-positions-array" count="24">0.0000 84.0000 35.5000 2.0000 84.0000 35.5000 2.0000 116.0000 35.5000 0.0000 116.0000 35.5000 0.0000 84.0000 37.0000 2.0000 84.0000 37.0000 2.0000 116.0000 37.0000 0.0000 116.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_SawLeftStrip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_SawLeftStrip-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_SawLeftStrip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_SawLeftStrip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_SawRightStrip" name="LeftLeg_Top_SawRightStrip">
+      <mesh>
+        <source id="geom_LeftLeg_Top_SawRightStrip-positions">
+          <float_array id="geom_LeftLeg_Top_SawRightStrip-positions-array" count="24">34.0000 84.0000 35.5000 36.0000 84.0000 35.5000 36.0000 116.0000 35.5000 34.0000 116.0000 35.5000 34.0000 84.0000 37.0000 36.0000 84.0000 37.0000 36.0000 116.0000 37.0000 34.0000 116.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_SawRightStrip-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_SawRightStrip-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_SawRightStrip-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_SawRightStrip-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_Top_End" name="LeftLeg_Top_End">
+      <mesh>
+        <source id="geom_LeftLeg_Top_End-positions">
+          <float_array id="geom_LeftLeg_Top_End-positions-array" count="24">0.0000 116.0000 35.5000 36.0000 116.0000 35.5000 36.0000 120.0000 35.5000 0.0000 120.0000 35.5000 0.0000 116.0000 37.0000 36.0000 116.0000 37.0000 36.0000 120.0000 37.0000 0.0000 120.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_Top_End-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_Top_End-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_Top_End-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_Top_End-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_ToeKick_Front" name="TopLeg_ToeKick_Front">
+      <mesh>
+        <source id="geom_TopLeg_ToeKick_Front-positions">
+          <float_array id="geom_TopLeg_ToeKick_Front-positions-array" count="24">0.0000 32.2500 0.0000 144.0000 32.2500 0.0000 144.0000 33.0000 0.0000 0.0000 33.0000 0.0000 0.0000 32.2500 4.0000 144.0000 32.2500 4.0000 144.0000 33.0000 4.0000 0.0000 33.0000 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_ToeKick_Front-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_ToeKick_Front-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_ToeKick_Front-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_ToeKick_Front-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_ToeKick_Back" name="TopLeg_ToeKick_Back">
+      <mesh>
+        <source id="geom_TopLeg_ToeKick_Back-positions">
+          <float_array id="geom_TopLeg_ToeKick_Back-positions-array" count="24">0.0000 0.0000 0.0000 144.0000 0.0000 0.0000 144.0000 0.7500 0.0000 0.0000 0.7500 0.0000 0.0000 0.0000 4.0000 144.0000 0.0000 4.0000 144.0000 0.7500 4.0000 0.0000 0.7500 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_ToeKick_Back-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_ToeKick_Back-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_ToeKick_Back-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_ToeKick_Back-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_ToeKick_RightEnd" name="TopLeg_ToeKick_RightEnd">
+      <mesh>
+        <source id="geom_TopLeg_ToeKick_RightEnd-positions">
+          <float_array id="geom_TopLeg_ToeKick_RightEnd-positions-array" count="24">143.2500 0.0000 0.0000 144.0000 0.0000 0.0000 144.0000 36.0000 0.0000 143.2500 36.0000 0.0000 143.2500 0.0000 4.0000 144.0000 0.0000 4.0000 144.0000 36.0000 4.0000 143.2500 36.0000 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_ToeKick_RightEnd-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_ToeKick_RightEnd-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_ToeKick_RightEnd-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_ToeKick_RightEnd-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_ToeKick_Right" name="LeftLeg_ToeKick_Right">
+      <mesh>
+        <source id="geom_LeftLeg_ToeKick_Right-positions">
+          <float_array id="geom_LeftLeg_ToeKick_Right-positions-array" count="24">32.2500 36.0000 0.0000 33.0000 36.0000 0.0000 33.0000 120.0000 0.0000 32.2500 120.0000 0.0000 32.2500 36.0000 4.0000 33.0000 36.0000 4.0000 33.0000 120.0000 4.0000 32.2500 120.0000 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_ToeKick_Right-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_ToeKick_Right-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_ToeKick_Right-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_ToeKick_Right-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_ToeKick_Left" name="LeftLeg_ToeKick_Left">
+      <mesh>
+        <source id="geom_LeftLeg_ToeKick_Left-positions">
+          <float_array id="geom_LeftLeg_ToeKick_Left-positions-array" count="24">0.0000 36.0000 0.0000 0.7500 36.0000 0.0000 0.7500 120.0000 0.0000 0.0000 120.0000 0.0000 0.0000 36.0000 4.0000 0.7500 36.0000 4.0000 0.7500 120.0000 4.0000 0.0000 120.0000 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_ToeKick_Left-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_ToeKick_Left-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_ToeKick_Left-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_ToeKick_Left-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_ToeKick_FrontEnd" name="LeftLeg_ToeKick_FrontEnd">
+      <mesh>
+        <source id="geom_LeftLeg_ToeKick_FrontEnd-positions">
+          <float_array id="geom_LeftLeg_ToeKick_FrontEnd-positions-array" count="24">0.0000 119.2500 0.0000 36.0000 119.2500 0.0000 36.0000 120.0000 0.0000 0.0000 120.0000 0.0000 0.0000 119.2500 4.0000 36.0000 119.2500 4.0000 36.0000 120.0000 4.0000 0.0000 120.0000 4.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_ToeKick_FrontEnd-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_ToeKick_FrontEnd-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_ToeKick_FrontEnd-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_ToeKick_FrontEnd-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_TopLeg_EndPanel_Right" name="TopLeg_EndPanel_Right">
+      <mesh>
+        <source id="geom_TopLeg_EndPanel_Right-positions">
+          <float_array id="geom_TopLeg_EndPanel_Right-positions-array" count="24">143.2500 0.0000 4.0000 144.0000 0.0000 4.0000 144.0000 36.0000 4.0000 143.2500 36.0000 4.0000 143.2500 0.0000 37.0000 144.0000 0.0000 37.0000 144.0000 36.0000 37.0000 143.2500 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_TopLeg_EndPanel_Right-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_TopLeg_EndPanel_Right-vertices">
+          <input semantic="POSITION" source="#geom_TopLeg_EndPanel_Right-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_TopLeg_EndPanel_Right-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LeftLeg_EndPanel_Front" name="LeftLeg_EndPanel_Front">
+      <mesh>
+        <source id="geom_LeftLeg_EndPanel_Front-positions">
+          <float_array id="geom_LeftLeg_EndPanel_Front-positions-array" count="24">0.0000 119.2500 4.0000 36.0000 119.2500 4.0000 36.0000 120.0000 4.0000 0.0000 120.0000 4.0000 0.0000 119.2500 37.0000 36.0000 119.2500 37.0000 36.0000 120.0000 37.0000 0.0000 120.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LeftLeg_EndPanel_Front-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LeftLeg_EndPanel_Front-vertices">
+          <input semantic="POSITION" source="#geom_LeftLeg_EndPanel_Front-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LeftLeg_EndPanel_Front-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Slide_LeftBack" name="Planer_Slide_LeftBack">
+      <mesh>
+        <source id="geom_Planer_Slide_LeftBack-positions">
+          <float_array id="geom_Planer_Slide_LeftBack-positions-array" count="24">3.0000 43.0000 4.0000 4.5000 43.0000 4.0000 4.5000 44.0000 4.0000 3.0000 44.0000 4.0000 3.0000 43.0000 28.0000 4.5000 43.0000 28.0000 4.5000 44.0000 28.0000 3.0000 44.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Slide_LeftBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Slide_LeftBack-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Slide_LeftBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Slide_LeftBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Slide_LeftFront" name="Planer_Slide_LeftFront">
+      <mesh>
+        <source id="geom_Planer_Slide_LeftFront-positions">
+          <float_array id="geom_Planer_Slide_LeftFront-positions-array" count="24">3.0000 70.0000 4.0000 4.5000 70.0000 4.0000 4.5000 71.0000 4.0000 3.0000 71.0000 4.0000 3.0000 70.0000 28.0000 4.5000 70.0000 28.0000 4.5000 71.0000 28.0000 3.0000 71.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Slide_LeftFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Slide_LeftFront-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Slide_LeftFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Slide_LeftFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Slide_RightBack" name="Planer_Slide_RightBack">
+      <mesh>
+        <source id="geom_Planer_Slide_RightBack-positions">
+          <float_array id="geom_Planer_Slide_RightBack-positions-array" count="24">31.5000 43.0000 4.0000 33.0000 43.0000 4.0000 33.0000 44.0000 4.0000 31.5000 44.0000 4.0000 31.5000 43.0000 28.0000 33.0000 43.0000 28.0000 33.0000 44.0000 28.0000 31.5000 44.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Slide_RightBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Slide_RightBack-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Slide_RightBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Slide_RightBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Slide_RightFront" name="Planer_Slide_RightFront">
+      <mesh>
+        <source id="geom_Planer_Slide_RightFront-positions">
+          <float_array id="geom_Planer_Slide_RightFront-positions-array" count="24">31.5000 70.0000 4.0000 33.0000 70.0000 4.0000 33.0000 71.0000 4.0000 31.5000 71.0000 4.0000 31.5000 70.0000 28.0000 33.0000 70.0000 28.0000 33.0000 71.0000 28.0000 31.5000 71.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Slide_RightFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Slide_RightFront-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Slide_RightFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Slide_RightFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_GasStrut_LeftBack" name="Planer_GasStrut_LeftBack">
+      <mesh>
+        <source id="geom_Planer_GasStrut_LeftBack-positions">
+          <float_array id="geom_Planer_GasStrut_LeftBack-positions-array" count="24">5.0000 44.0000 4.0000 8.0000 44.0000 4.0000 8.0000 47.0000 4.0000 5.0000 47.0000 4.0000 5.0000 44.0000 28.0000 8.0000 44.0000 28.0000 8.0000 47.0000 28.0000 5.0000 47.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_GasStrut_LeftBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_GasStrut_LeftBack-vertices">
+          <input semantic="POSITION" source="#geom_Planer_GasStrut_LeftBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_GasStrut_LeftBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_GasStrut_LeftFront" name="Planer_GasStrut_LeftFront">
+      <mesh>
+        <source id="geom_Planer_GasStrut_LeftFront-positions">
+          <float_array id="geom_Planer_GasStrut_LeftFront-positions-array" count="24">5.0000 67.0000 4.0000 8.0000 67.0000 4.0000 8.0000 70.0000 4.0000 5.0000 70.0000 4.0000 5.0000 67.0000 28.0000 8.0000 67.0000 28.0000 8.0000 70.0000 28.0000 5.0000 70.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_GasStrut_LeftFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_GasStrut_LeftFront-vertices">
+          <input semantic="POSITION" source="#geom_Planer_GasStrut_LeftFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_GasStrut_LeftFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_GasStrut_RightBack" name="Planer_GasStrut_RightBack">
+      <mesh>
+        <source id="geom_Planer_GasStrut_RightBack-positions">
+          <float_array id="geom_Planer_GasStrut_RightBack-positions-array" count="24">28.0000 44.0000 4.0000 31.0000 44.0000 4.0000 31.0000 47.0000 4.0000 28.0000 47.0000 4.0000 28.0000 44.0000 28.0000 31.0000 44.0000 28.0000 31.0000 47.0000 28.0000 28.0000 47.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_GasStrut_RightBack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_GasStrut_RightBack-vertices">
+          <input semantic="POSITION" source="#geom_Planer_GasStrut_RightBack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_GasStrut_RightBack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_GasStrut_RightFront" name="Planer_GasStrut_RightFront">
+      <mesh>
+        <source id="geom_Planer_GasStrut_RightFront-positions">
+          <float_array id="geom_Planer_GasStrut_RightFront-positions-array" count="24">28.0000 67.0000 4.0000 31.0000 67.0000 4.0000 31.0000 70.0000 4.0000 28.0000 70.0000 4.0000 28.0000 67.0000 28.0000 31.0000 67.0000 28.0000 31.0000 70.0000 28.0000 28.0000 70.0000 28.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_GasStrut_RightFront-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_GasStrut_RightFront-vertices">
+          <input semantic="POSITION" source="#geom_Planer_GasStrut_RightFront-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_GasStrut_RightFront-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Sled" name="Planer_Sled">
+      <mesh>
+        <source id="geom_Planer_Sled-positions">
+          <float_array id="geom_Planer_Sled-positions-array" count="24">4.0000 43.0000 28.0000 32.0000 43.0000 28.0000 32.0000 71.0000 28.0000 4.0000 71.0000 28.0000 4.0000 43.0000 28.7500 32.0000 43.0000 28.7500 32.0000 71.0000 28.7500 4.0000 71.0000 28.7500</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Sled-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Sled-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Sled-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Sled-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_LockReceiver" name="Planer_LockReceiver">
+      <mesh>
+        <source id="geom_Planer_LockReceiver-positions">
+          <float_array id="geom_Planer_LockReceiver-positions-array" count="24">31.5000 56.0000 27.0000 33.0000 56.0000 27.0000 33.0000 58.0000 27.0000 31.5000 58.0000 27.0000 31.5000 56.0000 28.5000 33.0000 56.0000 28.5000 33.0000 58.0000 28.5000 31.5000 58.0000 28.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_LockReceiver-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_LockReceiver-vertices">
+          <input semantic="POSITION" source="#geom_Planer_LockReceiver-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_LockReceiver-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Body_Working" name="Planer_Body_Working">
+      <mesh>
+        <source id="geom_Planer_Body_Working-positions">
+          <float_array id="geom_Planer_Body_Working-positions-array" count="24">5.0000 46.0000 33.0000 31.0000 46.0000 33.0000 31.0000 68.0000 33.0000 5.0000 68.0000 33.0000 5.0000 46.0000 50.0000 31.0000 46.0000 50.0000 31.0000 68.0000 50.0000 5.0000 68.0000 50.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Body_Working-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Body_Working-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Body_Working-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Body_Working-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Body_Stored_Ghost" name="Planer_Body_Stored_Ghost">
+      <mesh>
+        <source id="geom_Planer_Body_Stored_Ghost-positions">
+          <float_array id="geom_Planer_Body_Stored_Ghost-positions-array" count="24">5.0000 46.0000 4.5000 31.0000 46.0000 4.5000 31.0000 68.0000 4.5000 5.0000 68.0000 4.5000 5.0000 46.0000 21.5000 31.0000 46.0000 21.5000 31.0000 68.0000 21.5000 5.0000 68.0000 21.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Body_Stored_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Body_Stored_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Body_Stored_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Body_Stored_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_Sled" name="Saw_Sled">
+      <mesh>
+        <source id="geom_Saw_Sled-positions">
+          <float_array id="geom_Saw_Sled-positions-array" count="24">3.0000 85.0000 23.2500 33.0000 85.0000 23.2500 33.0000 115.0000 23.2500 3.0000 115.0000 23.2500 3.0000 85.0000 24.0000 33.0000 85.0000 24.0000 33.0000 115.0000 24.0000 3.0000 115.0000 24.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_Sled-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_Sled-vertices">
+          <input semantic="POSITION" source="#geom_Saw_Sled-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_Sled-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_SledCleat_Back" name="Saw_SledCleat_Back">
+      <mesh>
+        <source id="geom_Saw_SledCleat_Back-positions">
+          <float_array id="geom_Saw_SledCleat_Back-positions-array" count="24">2.0000 84.0000 21.7500 34.0000 84.0000 21.7500 34.0000 87.5000 21.7500 2.0000 87.5000 21.7500 2.0000 84.0000 23.2500 34.0000 84.0000 23.2500 34.0000 87.5000 23.2500 2.0000 87.5000 23.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_SledCleat_Back-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_SledCleat_Back-vertices">
+          <input semantic="POSITION" source="#geom_Saw_SledCleat_Back-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_SledCleat_Back-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_SledCleat_Front" name="Saw_SledCleat_Front">
+      <mesh>
+        <source id="geom_Saw_SledCleat_Front-positions">
+          <float_array id="geom_Saw_SledCleat_Front-positions-array" count="24">2.0000 112.5000 21.7500 34.0000 112.5000 21.7500 34.0000 116.0000 21.7500 2.0000 116.0000 21.7500 2.0000 112.5000 23.2500 34.0000 112.5000 23.2500 34.0000 116.0000 23.2500 2.0000 116.0000 23.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_SledCleat_Front-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_SledCleat_Front-vertices">
+          <input semantic="POSITION" source="#geom_Saw_SledCleat_Front-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_SledCleat_Front-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_SledCleat_Left" name="Saw_SledCleat_Left">
+      <mesh>
+        <source id="geom_Saw_SledCleat_Left-positions">
+          <float_array id="geom_Saw_SledCleat_Left-positions-array" count="24">2.0000 87.5000 21.7500 5.5000 87.5000 21.7500 5.5000 112.5000 21.7500 2.0000 112.5000 21.7500 2.0000 87.5000 23.2500 5.5000 87.5000 23.2500 5.5000 112.5000 23.2500 2.0000 112.5000 23.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_SledCleat_Left-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_SledCleat_Left-vertices">
+          <input semantic="POSITION" source="#geom_Saw_SledCleat_Left-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_SledCleat_Left-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_SledCleat_Right" name="Saw_SledCleat_Right">
+      <mesh>
+        <source id="geom_Saw_SledCleat_Right-positions">
+          <float_array id="geom_Saw_SledCleat_Right-positions-array" count="24">30.5000 87.5000 21.7500 34.0000 87.5000 21.7500 34.0000 112.5000 21.7500 30.5000 112.5000 21.7500 30.5000 87.5000 23.2500 34.0000 87.5000 23.2500 34.0000 112.5000 23.2500 30.5000 112.5000 23.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_SledCleat_Right-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_SledCleat_Right-vertices">
+          <input semantic="POSITION" source="#geom_Saw_SledCleat_Right-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_SledCleat_Right-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_Body" name="Saw_Body">
+      <mesh>
+        <source id="geom_Saw_Body-positions">
+          <float_array id="geom_Saw_Body-positions-array" count="24">3.5000 85.5000 24.0000 32.5000 85.5000 24.0000 32.5000 114.5000 24.0000 3.5000 114.5000 24.0000 3.5000 85.5000 37.0000 32.5000 85.5000 37.0000 32.5000 114.5000 37.0000 3.5000 114.5000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_Body-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_Body-vertices">
+          <input semantic="POSITION" source="#geom_Saw_Body-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_Body-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Saw_Deck" name="Saw_Deck">
+      <mesh>
+        <source id="geom_Saw_Deck-positions">
+          <float_array id="geom_Saw_Deck-positions-array" count="24">3.5000 85.5000 36.7500 32.5000 85.5000 36.7500 32.5000 114.5000 36.7500 3.5000 114.5000 36.7500 3.5000 85.5000 37.0000 32.5000 85.5000 37.0000 32.5000 114.5000 37.0000 3.5000 114.5000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Saw_Deck-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Saw_Deck-vertices">
+          <input semantic="POSITION" source="#geom_Saw_Deck-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Saw_Deck-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Tall_Husky_40x18x36" name="Tall_Husky_40x18x36">
+      <mesh>
+        <source id="geom_Tall_Husky_40x18x36-positions">
+          <float_array id="geom_Tall_Husky_40x18x36-positions-array" count="24">5.0000 17.0000 0.0000 45.0000 17.0000 0.0000 45.0000 35.0000 0.0000 5.0000 35.0000 0.0000 5.0000 17.0000 36.0000 45.0000 17.0000 36.0000 45.0000 35.0000 36.0000 5.0000 35.0000 36.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Tall_Husky_40x18x36-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Tall_Husky_40x18x36-vertices">
+          <input semantic="POSITION" source="#geom_Tall_Husky_40x18x36-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Tall_Husky_40x18x36-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Short_Husky_Plinth" name="Short_Husky_Plinth">
+      <mesh>
+        <source id="geom_Short_Husky_Plinth-positions">
+          <float_array id="geom_Short_Husky_Plinth-positions-array" count="24">40.0000 17.0000 0.0000 80.0000 17.0000 0.0000 80.0000 35.0000 0.0000 40.0000 35.0000 0.0000 40.0000 17.0000 16.0000 80.0000 17.0000 16.0000 80.0000 35.0000 16.0000 40.0000 35.0000 16.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Short_Husky_Plinth-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Short_Husky_Plinth-vertices">
+          <input semantic="POSITION" source="#geom_Short_Husky_Plinth-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Short_Husky_Plinth-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Short_Husky_40x18x20" name="Short_Husky_40x18x20">
+      <mesh>
+        <source id="geom_Short_Husky_40x18x20-positions">
+          <float_array id="geom_Short_Husky_40x18x20-positions-array" count="24">40.0000 17.0000 16.0000 80.0000 17.0000 16.0000 80.0000 35.0000 16.0000 40.0000 35.0000 16.0000 40.0000 17.0000 36.0000 80.0000 17.0000 36.0000 80.0000 35.0000 36.0000 40.0000 35.0000 36.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Short_Husky_40x18x20-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Short_Husky_40x18x20-vertices">
+          <input semantic="POSITION" source="#geom_Short_Husky_40x18x20-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Short_Husky_40x18x20-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Saw_Body_Ghost" name="Miter_Saw_Body_Ghost">
+      <mesh>
+        <source id="geom_Miter_Saw_Body_Ghost-positions">
+          <float_array id="geom_Miter_Saw_Body_Ghost-positions-array" count="24">53.0000 5.0000 33.0000 83.0000 5.0000 33.0000 83.0000 29.0000 33.0000 53.0000 29.0000 33.0000 53.0000 5.0000 45.0000 83.0000 5.0000 45.0000 83.0000 29.0000 45.0000 53.0000 29.0000 45.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Saw_Body_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Saw_Body_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Saw_Body_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Saw_Body_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Motor_Ghost" name="Router_Motor_Ghost">
+      <mesh>
+        <source id="geom_Router_Motor_Ghost-positions">
+          <float_array id="geom_Router_Motor_Ghost-positions-array" count="24">115.1250 16.3750 27.5000 124.8750 16.3750 27.5000 124.8750 23.6250 27.5000 115.1250 23.6250 27.5000 115.1250 16.3750 35.5000 124.8750 16.3750 35.5000 124.8750 23.6250 35.5000 115.1250 23.6250 35.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Motor_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Motor_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Router_Motor_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Motor_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_LockPin" name="Planer_LockPin">
+      <mesh>
+        <source id="geom_Planer_LockPin-positions">
+          <float_array id="geom_Planer_LockPin-positions-array" count="102">27.7500 57.2500 30.0000 27.7500 57.2310 30.0957 27.7500 57.1768 30.1768 27.7500 57.0957 30.2310 27.7500 57.0000 30.2500 27.7500 56.9043 30.2310 27.7500 56.8232 30.1768 27.7500 56.7690 30.0957 27.7500 56.7500 30.0000 27.7500 56.7690 29.9043 27.7500 56.8232 29.8232 27.7500 56.9043 29.7690 27.7500 57.0000 29.7500 27.7500 57.0957 29.7690 27.7500 57.1768 29.8232 27.7500 57.2310 29.9043 33.7500 57.2500 30.0000 33.7500 57.2310 30.0957 33.7500 57.1768 30.1768 33.7500 57.0957 30.2310 33.7500 57.0000 30.2500 33.7500 56.9043 30.2310 33.7500 56.8232 30.1768 33.7500 56.7690 30.0957 33.7500 56.7500 30.0000 33.7500 56.7690 29.9043 33.7500 56.8232 29.8232 33.7500 56.9043 29.7690 33.7500 57.0000 29.7500 33.7500 57.0957 29.7690 33.7500 57.1768 29.8232 33.7500 57.2310 29.9043 27.7500 57.0000 30.0000 33.7500 57.0000 30.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_LockPin-positions-array" count="34" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_LockPin-vertices">
+          <input semantic="POSITION" source="#geom_Planer_LockPin-positions" />
+        </vertices>
+        <triangles count="64" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_LockPin-vertices" offset="0" />
+          <p>0 1 17 0 17 16 1 2 18 1 18 17 2 3 19 2 19 18 3 4 20 3 20 19 4 5 21 4 21 20 5 6 22 5 22 21 6 7 23 6 23 22 7 8 24 7 24 23 8 9 25 8 25 24 9 10 26 9 26 25 10 11 27 10 27 26 11 12 28 11 28 27 12 13 29 12 29 28 13 14 30 13 30 29 14 15 31 14 31 30 15 0 16 15 16 31 32 1 0 33 16 17 32 2 1 33 17 18 32 3 2 33 18 19 32 4 3 33 19 20 32 5 4 33 20 21 32 6 5 33 21 22 32 7 6 33 22 23 32 8 7 33 23 24 32 9 8 33 24 25 32 10 9 33 25 26 32 11 10 33 26 27 32 12 11 33 27 28 32 13 12 33 28 29 32 14 13 33 29 30 32 15 14 33 30 31 32 0 15 33 31 16</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="LBenchScene" name="LBench">
+      <node id="node_geom_TopLeg_FrontStud_0" name="TopLeg_FrontStud_0" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_1" name="TopLeg_FrontStud_1" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_2" name="TopLeg_FrontStud_2" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_3" name="TopLeg_FrontStud_3" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_4" name="TopLeg_FrontStud_4" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_5" name="TopLeg_FrontStud_5" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_5">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontStud_6" name="TopLeg_FrontStud_6" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontStud_6">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_0" name="TopLeg_BackStud_0" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_1" name="TopLeg_BackStud_1" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_2" name="TopLeg_BackStud_2" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_3" name="TopLeg_BackStud_3" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_4" name="TopLeg_BackStud_4" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_5" name="TopLeg_BackStud_5" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_5">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackStud_6" name="TopLeg_BackStud_6" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackStud_6">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontTopRail" name="TopLeg_FrontTopRail" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontTopRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_FrontBottomRail" name="TopLeg_FrontBottomRail" type="NODE">
+        <instance_geometry url="#geom_TopLeg_FrontBottomRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackTopRail" name="TopLeg_BackTopRail" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackTopRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BackBottomRail" name="TopLeg_BackBottomRail" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BackBottomRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_0" name="TopLeg_TopStretcher_0" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_0" name="TopLeg_BottomStretcher_0" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_1" name="TopLeg_TopStretcher_1" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_1" name="TopLeg_BottomStretcher_1" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_2" name="TopLeg_TopStretcher_2" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_2" name="TopLeg_BottomStretcher_2" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_3" name="TopLeg_TopStretcher_3" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_3" name="TopLeg_BottomStretcher_3" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_4" name="TopLeg_TopStretcher_4" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_4" name="TopLeg_BottomStretcher_4" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_5" name="TopLeg_TopStretcher_5" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_5">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_5" name="TopLeg_BottomStretcher_5" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_5">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_TopStretcher_6" name="TopLeg_TopStretcher_6" type="NODE">
+        <instance_geometry url="#geom_TopLeg_TopStretcher_6">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_BottomStretcher_6" name="TopLeg_BottomStretcher_6" type="NODE">
+        <instance_geometry url="#geom_TopLeg_BottomStretcher_6">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Recess_BlockingFront" name="Miter_Recess_BlockingFront" type="NODE">
+        <instance_geometry url="#geom_Miter_Recess_BlockingFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Recess_BlockingBack" name="Miter_Recess_BlockingBack" type="NODE">
+        <instance_geometry url="#geom_Miter_Recess_BlockingBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Recess_BlockingLeft" name="Miter_Recess_BlockingLeft" type="NODE">
+        <instance_geometry url="#geom_Miter_Recess_BlockingLeft">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Recess_BlockingRight" name="Miter_Recess_BlockingRight" type="NODE">
+        <instance_geometry url="#geom_Miter_Recess_BlockingRight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Cabinet_Left" name="Router_Cabinet_Left" type="NODE">
+        <instance_geometry url="#geom_Router_Cabinet_Left">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_router-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Cabinet_Right" name="Router_Cabinet_Right" type="NODE">
+        <instance_geometry url="#geom_Router_Cabinet_Right">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_router-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Cabinet_Back" name="Router_Cabinet_Back" type="NODE">
+        <instance_geometry url="#geom_Router_Cabinet_Back">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_router-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Cabinet_Floor" name="Router_Cabinet_Floor" type="NODE">
+        <instance_geometry url="#geom_Router_Cabinet_Floor">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_router-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftSideStud_0" name="LeftLeg_LeftSideStud_0" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftSideStud_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightSideStud_0" name="LeftLeg_RightSideStud_0" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightSideStud_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftSideStud_1" name="LeftLeg_LeftSideStud_1" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftSideStud_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightSideStud_1" name="LeftLeg_RightSideStud_1" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightSideStud_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftSideStud_2" name="LeftLeg_LeftSideStud_2" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftSideStud_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightSideStud_2" name="LeftLeg_RightSideStud_2" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightSideStud_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftSideStud_3" name="LeftLeg_LeftSideStud_3" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftSideStud_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightSideStud_3" name="LeftLeg_RightSideStud_3" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightSideStud_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stud-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftTopRail" name="LeftLeg_LeftTopRail" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftTopRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightTopRail" name="LeftLeg_RightTopRail" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightTopRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_LeftBottomRail" name="LeftLeg_LeftBottomRail" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_LeftBottomRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_RightBottomRail" name="LeftLeg_RightBottomRail" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_RightBottomRail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#rail-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_TopStretcher_0" name="LeftLeg_TopStretcher_0" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_TopStretcher_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_BottomStretcher_0" name="LeftLeg_BottomStretcher_0" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_BottomStretcher_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_TopStretcher_1" name="LeftLeg_TopStretcher_1" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_TopStretcher_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_BottomStretcher_1" name="LeftLeg_BottomStretcher_1" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_BottomStretcher_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_TopStretcher_2" name="LeftLeg_TopStretcher_2" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_TopStretcher_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_BottomStretcher_2" name="LeftLeg_BottomStretcher_2" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_BottomStretcher_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_TopStretcher_3" name="LeftLeg_TopStretcher_3" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_TopStretcher_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_BottomStretcher_3" name="LeftLeg_BottomStretcher_3" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_BottomStretcher_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#stretcher-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_Left" name="TopLeg_Top_Left" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_Left">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Recess_Bottom" name="Miter_Recess_Bottom" type="NODE">
+        <instance_geometry url="#geom_Miter_Recess_Bottom">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_recess-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_MiterBackLip" name="TopLeg_Top_MiterBackLip" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_MiterBackLip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_MiterFrontLip" name="TopLeg_Top_MiterFrontLip" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_MiterFrontLip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_MidRight" name="TopLeg_Top_MidRight" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_MidRight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_RouterBack" name="TopLeg_Top_RouterBack" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_RouterBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_RouterFront" name="TopLeg_Top_RouterFront" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_RouterFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_RouterLeft" name="TopLeg_Top_RouterLeft" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_RouterLeft">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_RouterRight" name="TopLeg_Top_RouterRight" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_RouterRight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Insert_Plate" name="Router_Insert_Plate" type="NODE">
+        <instance_geometry url="#geom_Router_Insert_Plate">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#router_insert-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_Top_FarRight" name="TopLeg_Top_FarRight" type="NODE">
+        <instance_geometry url="#geom_TopLeg_Top_FarRight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_AbovePlaner" name="LeftLeg_Top_AbovePlaner" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_AbovePlaner">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_PlanerLeftStrip" name="LeftLeg_Top_PlanerLeftStrip" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_PlanerLeftStrip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_PlanerRightStrip" name="LeftLeg_Top_PlanerRightStrip" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_PlanerRightStrip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_BetweenCavities" name="LeftLeg_Top_BetweenCavities" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_BetweenCavities">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_SawLeftStrip" name="LeftLeg_Top_SawLeftStrip" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_SawLeftStrip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_SawRightStrip" name="LeftLeg_Top_SawRightStrip" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_SawRightStrip">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_Top_End" name="LeftLeg_Top_End" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_Top_End">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_ToeKick_Front" name="TopLeg_ToeKick_Front" type="NODE">
+        <instance_geometry url="#geom_TopLeg_ToeKick_Front">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_ToeKick_Back" name="TopLeg_ToeKick_Back" type="NODE">
+        <instance_geometry url="#geom_TopLeg_ToeKick_Back">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_ToeKick_RightEnd" name="TopLeg_ToeKick_RightEnd" type="NODE">
+        <instance_geometry url="#geom_TopLeg_ToeKick_RightEnd">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_ToeKick_Right" name="LeftLeg_ToeKick_Right" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_ToeKick_Right">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_ToeKick_Left" name="LeftLeg_ToeKick_Left" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_ToeKick_Left">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_ToeKick_FrontEnd" name="LeftLeg_ToeKick_FrontEnd" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_ToeKick_FrontEnd">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_TopLeg_EndPanel_Right" name="TopLeg_EndPanel_Right" type="NODE">
+        <instance_geometry url="#geom_TopLeg_EndPanel_Right">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LeftLeg_EndPanel_Front" name="LeftLeg_EndPanel_Front" type="NODE">
+        <instance_geometry url="#geom_LeftLeg_EndPanel_Front">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ply_panel-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Slide_LeftBack" name="Planer_Slide_LeftBack" type="NODE">
+        <instance_geometry url="#geom_Planer_Slide_LeftBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#drawer_slide-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Slide_LeftFront" name="Planer_Slide_LeftFront" type="NODE">
+        <instance_geometry url="#geom_Planer_Slide_LeftFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#drawer_slide-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Slide_RightBack" name="Planer_Slide_RightBack" type="NODE">
+        <instance_geometry url="#geom_Planer_Slide_RightBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#drawer_slide-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Slide_RightFront" name="Planer_Slide_RightFront" type="NODE">
+        <instance_geometry url="#geom_Planer_Slide_RightFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#drawer_slide-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_GasStrut_LeftBack" name="Planer_GasStrut_LeftBack" type="NODE">
+        <instance_geometry url="#geom_Planer_GasStrut_LeftBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#gas_strut-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_GasStrut_LeftFront" name="Planer_GasStrut_LeftFront" type="NODE">
+        <instance_geometry url="#geom_Planer_GasStrut_LeftFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#gas_strut-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_GasStrut_RightBack" name="Planer_GasStrut_RightBack" type="NODE">
+        <instance_geometry url="#geom_Planer_GasStrut_RightBack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#gas_strut-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_GasStrut_RightFront" name="Planer_GasStrut_RightFront" type="NODE">
+        <instance_geometry url="#geom_Planer_GasStrut_RightFront">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#gas_strut-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Sled" name="Planer_Sled" type="NODE">
+        <instance_geometry url="#geom_Planer_Sled">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#planer_sled-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_LockReceiver" name="Planer_LockReceiver" type="NODE">
+        <instance_geometry url="#geom_Planer_LockReceiver">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#lock_recv-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Body_Working" name="Planer_Body_Working" type="NODE">
+        <instance_geometry url="#geom_Planer_Body_Working">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#planer_body-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Body_Stored_Ghost" name="Planer_Body_Stored_Ghost" type="NODE">
+        <instance_geometry url="#geom_Planer_Body_Stored_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_cavity-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_Sled" name="Saw_Sled" type="NODE">
+        <instance_geometry url="#geom_Saw_Sled">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#saw_sled-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_SledCleat_Back" name="Saw_SledCleat_Back" type="NODE">
+        <instance_geometry url="#geom_Saw_SledCleat_Back">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_SledCleat_Front" name="Saw_SledCleat_Front" type="NODE">
+        <instance_geometry url="#geom_Saw_SledCleat_Front">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_SledCleat_Left" name="Saw_SledCleat_Left" type="NODE">
+        <instance_geometry url="#geom_Saw_SledCleat_Left">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_SledCleat_Right" name="Saw_SledCleat_Right" type="NODE">
+        <instance_geometry url="#geom_Saw_SledCleat_Right">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blocking-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_Body" name="Saw_Body" type="NODE">
+        <instance_geometry url="#geom_Saw_Body">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#saw_body-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Saw_Deck" name="Saw_Deck" type="NODE">
+        <instance_geometry url="#geom_Saw_Deck">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#saw_body-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Tall_Husky_40x18x36" name="Tall_Husky_40x18x36" type="NODE">
+        <instance_geometry url="#geom_Tall_Husky_40x18x36">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#husky-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Short_Husky_Plinth" name="Short_Husky_Plinth" type="NODE">
+        <instance_geometry url="#geom_Short_Husky_Plinth">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#husky-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Short_Husky_40x18x20" name="Short_Husky_40x18x20" type="NODE">
+        <instance_geometry url="#geom_Short_Husky_40x18x20">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#husky-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Saw_Body_Ghost" name="Miter_Saw_Body_Ghost" type="NODE">
+        <instance_geometry url="#geom_Miter_Saw_Body_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_cavity-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Motor_Ghost" name="Router_Motor_Ghost" type="NODE">
+        <instance_geometry url="#geom_Router_Motor_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_cavity-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_LockPin" name="Planer_LockPin" type="NODE">
+        <instance_geometry url="#geom_Planer_LockPin">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#lock_pin-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LBenchScene" />
+  </scene>
+</COLLADA>

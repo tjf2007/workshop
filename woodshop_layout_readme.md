@@ -7,14 +7,38 @@ zones, and lift cavities before you cut wood.
 
 ## Files
 
+### Shop-level layout (room-scale planning)
+
 | File | Purpose |
 | --- | --- |
 | `generate_woodshop.py` | Python source. Re-run any time to regenerate every output. |
-| `woodshop_layout.dae` | **Primary deliverable.** Collada with `unit=inch`, Z-up. Drag into SketchUp. |
+| `woodshop_layout.dae` | Collada with `unit=inch`, Z-up. Drag into SketchUp. |
 | `woodshop_layout.obj` + `.mtl` | Wavefront fallback for tools that don't take Collada. |
 | `woodshop_layout.svg` | 2D top-down sanity-check plan with grid + legend. Open in any browser. |
 | `woodshop_layout_objects.csv` | Flat list of every object: name, category, material, position, size, note. |
 | `build_sequence.md` | Phase-by-phase build order for the real shop. |
+
+### L-bench detailed model (build-from)
+
+| File | Purpose |
+| --- | --- |
+| `generate_l_bench.py` | Stick-frame L-bench generator. Every 2x4 + panel is a named part. |
+| `l_bench.dae` | Collada for SketchUp. 110+ named parts; explode in SketchUp to edit. |
+| `l_bench.svg` | Top-down plan with cavities, framing, hardware, legend. |
+| `l_bench_cutlist.csv` | Aggregated cut list. Identical parts grouped with quantity. |
+| `l_bench_objects.csv` | Flat list of every modeled L-bench part. |
+
+**Cut-list note on the bench top:** the cut list shows each top section as
+a 1.5 in thick piece. That's the *finished* lamination of two 3/4 in
+plywood layers. For purchasing, double the plywood quantity for any row
+where thickness = 1.50 (i.e., buy two 3/4 in sheets per top section and
+glue + screw together).
+
+**Cut-list note on the planer-lift hardware:** 4 heavy-duty 24 in vertical
+drawer slides (220 lb rated each, e.g., Accuride 7957 or Knape & Vogt
+8400-series), 4 gas struts (~50 lb force each, mounted at slight angle
+for balanced near-neutral lift), 1 1/2 in steel locking pin + receiver
+bracket. Sled is 28 x 28 x 3/4 plywood (planer bolts to top of sled).
 
 ## Coordinate system
 
