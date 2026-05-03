@@ -1,0 +1,2336 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>woodshop_layout_generator</author>
+      <authoring_tool>generate_woodshop.py</authoring_tool>
+    </contributor>
+    <created>2026-05-03T00:00:00</created>
+    <modified>2026-05-03T00:00:00</modified>
+    <unit name="inch" meter="0.0254" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="floor-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8500 0.8300 0.7800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="wall-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9400 0.9400 0.9400 0.3000</color>
+            </diffuse>
+            <transparency>
+              <float>0.3000</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.3000</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="bench-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.7800 0.6200 0.4000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="bench_existing-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.6200 0.4500 0.2500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="cabinet-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.1000 0.1000 0.1200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tool_yellow-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9500 0.7800 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tool_dark-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.1800 0.1800 0.1800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tool_metal-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.5500 0.5500 0.5800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="duct-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.7500 0.7500 0.7800 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="duct_flex-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.4500 0.4500 0.5000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blast_gate-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.8500 0.3000 0.2000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ghost-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.3000 0.5500 0.9500 0.1800</color>
+            </diffuse>
+            <transparency>
+              <float>0.1800</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.1800</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ghost_planer-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.3000 0.8500 0.5500 0.1800</color>
+            </diffuse>
+            <transparency>
+              <float>0.1800</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.1800</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="curtain-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.1200 0.1200 0.1600 0.3500</color>
+            </diffuse>
+            <transparency>
+              <float>0.3500</float>
+            </transparency>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0.3500</color>
+            </transparent>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="light-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>1.0000 0.9700 0.8500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="air_filter-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9200 0.9200 0.9200 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="fan-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.2500 0.2500 0.3000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="circuit_a-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9000 0.1000 0.1000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="circuit_b-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.1000 0.5500 0.9500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="circuit_c-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.9500 0.5500 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="circuit_d-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.2000 0.7500 0.3000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="label-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.0500 0.0500 0.0500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="platform-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.5500 0.4000 0.2500 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="plinth-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <diffuse>
+              <color>0.3000 0.2500 0.2000 1.0000</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="floor-material" name="floor">
+      <instance_effect url="#floor-effect" />
+    </material>
+    <material id="wall-material" name="wall">
+      <instance_effect url="#wall-effect" />
+    </material>
+    <material id="bench-material" name="bench">
+      <instance_effect url="#bench-effect" />
+    </material>
+    <material id="bench_existing-material" name="bench_existing">
+      <instance_effect url="#bench_existing-effect" />
+    </material>
+    <material id="cabinet-material" name="cabinet">
+      <instance_effect url="#cabinet-effect" />
+    </material>
+    <material id="tool_yellow-material" name="tool_yellow">
+      <instance_effect url="#tool_yellow-effect" />
+    </material>
+    <material id="tool_dark-material" name="tool_dark">
+      <instance_effect url="#tool_dark-effect" />
+    </material>
+    <material id="tool_metal-material" name="tool_metal">
+      <instance_effect url="#tool_metal-effect" />
+    </material>
+    <material id="duct-material" name="duct">
+      <instance_effect url="#duct-effect" />
+    </material>
+    <material id="duct_flex-material" name="duct_flex">
+      <instance_effect url="#duct_flex-effect" />
+    </material>
+    <material id="blast_gate-material" name="blast_gate">
+      <instance_effect url="#blast_gate-effect" />
+    </material>
+    <material id="ghost-material" name="ghost">
+      <instance_effect url="#ghost-effect" />
+    </material>
+    <material id="ghost_planer-material" name="ghost_planer">
+      <instance_effect url="#ghost_planer-effect" />
+    </material>
+    <material id="curtain-material" name="curtain">
+      <instance_effect url="#curtain-effect" />
+    </material>
+    <material id="light-material" name="light">
+      <instance_effect url="#light-effect" />
+    </material>
+    <material id="air_filter-material" name="air_filter">
+      <instance_effect url="#air_filter-effect" />
+    </material>
+    <material id="fan-material" name="fan">
+      <instance_effect url="#fan-effect" />
+    </material>
+    <material id="circuit_a-material" name="circuit_a">
+      <instance_effect url="#circuit_a-effect" />
+    </material>
+    <material id="circuit_b-material" name="circuit_b">
+      <instance_effect url="#circuit_b-effect" />
+    </material>
+    <material id="circuit_c-material" name="circuit_c">
+      <instance_effect url="#circuit_c-effect" />
+    </material>
+    <material id="circuit_d-material" name="circuit_d">
+      <instance_effect url="#circuit_d-effect" />
+    </material>
+    <material id="label-material" name="label">
+      <instance_effect url="#label-effect" />
+    </material>
+    <material id="platform-material" name="platform">
+      <instance_effect url="#platform-effect" />
+    </material>
+    <material id="plinth-material" name="plinth">
+      <instance_effect url="#plinth-effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom_Floor" name="Floor">
+      <mesh>
+        <source id="geom_Floor-positions">
+          <float_array id="geom_Floor-positions-array" count="24">0.0000 0.0000 -1.0000 120.0000 0.0000 -1.0000 120.0000 240.0000 -1.0000 0.0000 240.0000 -1.0000 0.0000 0.0000 0.0000 120.0000 0.0000 0.0000 120.0000 240.0000 0.0000 0.0000 240.0000 0.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Floor-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Floor-vertices">
+          <input semantic="POSITION" source="#geom_Floor-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Floor-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Wall_Back" name="Wall_Back">
+      <mesh>
+        <source id="geom_Wall_Back-positions">
+          <float_array id="geom_Wall_Back-positions-array" count="24">0.0000 -2.0000 0.0000 120.0000 -2.0000 0.0000 120.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -2.0000 96.0000 120.0000 -2.0000 96.0000 120.0000 0.0000 96.0000 0.0000 0.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Wall_Back-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Wall_Back-vertices">
+          <input semantic="POSITION" source="#geom_Wall_Back-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Wall_Back-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Wall_Left" name="Wall_Left">
+      <mesh>
+        <source id="geom_Wall_Left-positions">
+          <float_array id="geom_Wall_Left-positions-array" count="24">-2.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 240.0000 0.0000 -2.0000 240.0000 0.0000 -2.0000 0.0000 96.0000 0.0000 0.0000 96.0000 0.0000 240.0000 96.0000 -2.0000 240.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Wall_Left-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Wall_Left-vertices">
+          <input semantic="POSITION" source="#geom_Wall_Left-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Wall_Left-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Wall_Right" name="Wall_Right">
+      <mesh>
+        <source id="geom_Wall_Right-positions">
+          <float_array id="geom_Wall_Right-positions-array" count="24">120.0000 0.0000 0.0000 122.0000 0.0000 0.0000 122.0000 240.0000 0.0000 120.0000 240.0000 0.0000 120.0000 0.0000 96.0000 122.0000 0.0000 96.0000 122.0000 240.0000 96.0000 120.0000 240.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Wall_Right-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Wall_Right-vertices">
+          <input semantic="POSITION" source="#geom_Wall_Right-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Wall_Right-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Wall_Front_Header" name="Wall_Front_Header">
+      <mesh>
+        <source id="geom_Wall_Front_Header-positions">
+          <float_array id="geom_Wall_Front_Header-positions-array" count="24">0.0000 240.0000 84.0000 120.0000 240.0000 84.0000 120.0000 242.0000 84.0000 0.0000 242.0000 84.0000 0.0000 240.0000 96.0000 120.0000 240.0000 96.0000 120.0000 242.0000 96.0000 0.0000 242.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Wall_Front_Header-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Wall_Front_Header-vertices">
+          <input semantic="POSITION" source="#geom_Wall_Front_Header-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Wall_Front_Header-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_L_Bench_Top_Leg" name="L_Bench_Top_Leg">
+      <mesh>
+        <source id="geom_L_Bench_Top_Leg-positions">
+          <float_array id="geom_L_Bench_Top_Leg-positions-array" count="24">0.0000 0.0000 0.0000 120.0000 0.0000 0.0000 120.0000 36.0000 0.0000 0.0000 36.0000 0.0000 0.0000 0.0000 37.0000 120.0000 0.0000 37.0000 120.0000 36.0000 37.0000 0.0000 36.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_L_Bench_Top_Leg-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_L_Bench_Top_Leg-vertices">
+          <input semantic="POSITION" source="#geom_L_Bench_Top_Leg-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_L_Bench_Top_Leg-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_L_Bench_Left_Leg" name="L_Bench_Left_Leg">
+      <mesh>
+        <source id="geom_L_Bench_Left_Leg-positions">
+          <float_array id="geom_L_Bench_Left_Leg-positions-array" count="24">0.0000 36.0000 0.0000 36.0000 36.0000 0.0000 36.0000 144.0000 0.0000 0.0000 144.0000 0.0000 0.0000 36.0000 37.0000 36.0000 36.0000 37.0000 36.0000 144.0000 37.0000 0.0000 144.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_L_Bench_Left_Leg-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_L_Bench_Left_Leg-vertices">
+          <input semantic="POSITION" source="#geom_L_Bench_Left_Leg-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_L_Bench_Left_Leg-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Existing_3x8_Workbench" name="Existing_3x8_Workbench">
+      <mesh>
+        <source id="geom_Existing_3x8_Workbench-positions">
+          <float_array id="geom_Existing_3x8_Workbench-positions-array" count="24">84.0000 60.0000 0.0000 120.0000 60.0000 0.0000 120.0000 156.0000 0.0000 84.0000 156.0000 0.0000 84.0000 60.0000 37.0000 120.0000 60.0000 37.0000 120.0000 156.0000 37.0000 84.0000 156.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Existing_3x8_Workbench-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Existing_3x8_Workbench-vertices">
+          <input semantic="POSITION" source="#geom_Existing_3x8_Workbench-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Existing_3x8_Workbench-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Tall_Husky_40x18x36" name="Tall_Husky_40x18x36">
+      <mesh>
+        <source id="geom_Tall_Husky_40x18x36-positions">
+          <float_array id="geom_Tall_Husky_40x18x36-positions-array" count="24">40.0000 9.0000 0.0000 80.0000 9.0000 0.0000 80.0000 27.0000 0.0000 40.0000 27.0000 0.0000 40.0000 9.0000 36.0000 80.0000 9.0000 36.0000 80.0000 27.0000 36.0000 40.0000 27.0000 36.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Tall_Husky_40x18x36-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Tall_Husky_40x18x36-vertices">
+          <input semantic="POSITION" source="#geom_Tall_Husky_40x18x36-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Tall_Husky_40x18x36-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Tall_Husky_Shim" name="Tall_Husky_Shim">
+      <mesh>
+        <source id="geom_Tall_Husky_Shim-positions">
+          <float_array id="geom_Tall_Husky_Shim-positions-array" count="24">40.0000 9.0000 36.0000 80.0000 9.0000 36.0000 80.0000 27.0000 36.0000 40.0000 27.0000 36.0000 40.0000 9.0000 37.0000 80.0000 9.0000 37.0000 80.0000 27.0000 37.0000 40.0000 27.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Tall_Husky_Shim-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Tall_Husky_Shim-vertices">
+          <input semantic="POSITION" source="#geom_Tall_Husky_Shim-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Tall_Husky_Shim-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Short_Husky_Plinth" name="Short_Husky_Plinth">
+      <mesh>
+        <source id="geom_Short_Husky_Plinth-positions">
+          <float_array id="geom_Short_Husky_Plinth-positions-array" count="24">4.0000 96.0000 0.0000 40.0000 96.0000 0.0000 40.0000 114.0000 0.0000 4.0000 114.0000 0.0000 4.0000 96.0000 16.0000 40.0000 96.0000 16.0000 40.0000 114.0000 16.0000 4.0000 114.0000 16.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Short_Husky_Plinth-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Short_Husky_Plinth-vertices">
+          <input semantic="POSITION" source="#geom_Short_Husky_Plinth-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Short_Husky_Plinth-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Short_Husky_40x18x20" name="Short_Husky_40x18x20">
+      <mesh>
+        <source id="geom_Short_Husky_40x18x20-positions">
+          <float_array id="geom_Short_Husky_40x18x20-positions-array" count="24">4.0000 96.0000 16.0000 40.0000 96.0000 16.0000 40.0000 114.0000 16.0000 4.0000 114.0000 16.0000 4.0000 96.0000 36.0000 40.0000 96.0000 36.0000 40.0000 114.0000 36.0000 4.0000 114.0000 36.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Short_Husky_40x18x20-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Short_Husky_40x18x20-vertices">
+          <input semantic="POSITION" source="#geom_Short_Husky_40x18x20-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Short_Husky_40x18x20-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Saw_Recess_Surround" name="Miter_Saw_Recess_Surround">
+      <mesh>
+        <source id="geom_Miter_Saw_Recess_Surround-positions">
+          <float_array id="geom_Miter_Saw_Recess_Surround-positions-array" count="24">8.0000 4.0000 36.5000 44.0000 4.0000 36.5000 44.0000 32.0000 36.5000 8.0000 32.0000 36.5000 8.0000 4.0000 37.0000 44.0000 4.0000 37.0000 44.0000 32.0000 37.0000 8.0000 32.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Saw_Recess_Surround-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Saw_Recess_Surround-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Saw_Recess_Surround-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Saw_Recess_Surround-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_Saw_Body" name="Miter_Saw_Body">
+      <mesh>
+        <source id="geom_Miter_Saw_Body-positions">
+          <float_array id="geom_Miter_Saw_Body-positions-array" count="24">12.0000 6.0000 33.0000 42.0000 6.0000 33.0000 42.0000 30.0000 33.0000 12.0000 30.0000 33.0000 12.0000 6.0000 45.0000 42.0000 6.0000 45.0000 42.0000 30.0000 45.0000 12.0000 30.0000 45.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_Saw_Body-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_Saw_Body-vertices">
+          <input semantic="POSITION" source="#geom_Miter_Saw_Body-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_Saw_Body-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Table_Insert" name="Router_Table_Insert">
+      <mesh>
+        <source id="geom_Router_Table_Insert-positions">
+          <float_array id="geom_Router_Table_Insert-positions-array" count="24">72.0000 6.0000 37.0000 96.0000 6.0000 37.0000 96.0000 38.0000 37.0000 72.0000 38.0000 37.0000 72.0000 6.0000 37.5000 96.0000 6.0000 37.5000 96.0000 38.0000 37.5000 72.0000 38.0000 37.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Table_Insert-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Table_Insert-vertices">
+          <input semantic="POSITION" source="#geom_Router_Table_Insert-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Table_Insert-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Router_Table_Cabinet" name="Router_Table_Cabinet">
+      <mesh>
+        <source id="geom_Router_Table_Cabinet-positions">
+          <float_array id="geom_Router_Table_Cabinet-positions-array" count="24">72.0000 6.0000 0.0000 96.0000 6.0000 0.0000 96.0000 38.0000 0.0000 72.0000 38.0000 0.0000 72.0000 6.0000 37.0000 96.0000 6.0000 37.0000 96.0000 38.0000 37.0000 72.0000 38.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Router_Table_Cabinet-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Router_Table_Cabinet-vertices">
+          <input semantic="POSITION" source="#geom_Router_Table_Cabinet-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Router_Table_Cabinet-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Lift_Cavity" name="Planer_Lift_Cavity">
+      <mesh>
+        <source id="geom_Planer_Lift_Cavity-positions">
+          <float_array id="geom_Planer_Lift_Cavity-positions-array" count="24">3.0000 60.0000 0.0000 33.0000 60.0000 0.0000 33.0000 90.0000 0.0000 3.0000 90.0000 0.0000 3.0000 60.0000 37.0000 33.0000 60.0000 37.0000 33.0000 90.0000 37.0000 3.0000 90.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Lift_Cavity-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Lift_Cavity-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Lift_Cavity-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Lift_Cavity-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Lowered" name="Planer_Lowered">
+      <mesh>
+        <source id="geom_Planer_Lowered-positions">
+          <float_array id="geom_Planer_Lowered-positions-array" count="24">5.0000 64.0000 20.0000 31.0000 64.0000 20.0000 31.0000 86.0000 20.0000 5.0000 86.0000 20.0000 5.0000 64.0000 36.0000 31.0000 64.0000 36.0000 31.0000 86.0000 36.0000 5.0000 86.0000 36.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Lowered-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Lowered-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Lowered-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Lowered-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Raised_Ghost" name="Planer_Raised_Ghost">
+      <mesh>
+        <source id="geom_Planer_Raised_Ghost-positions">
+          <float_array id="geom_Planer_Raised_Ghost-positions-array" count="24">3.0000 60.0000 36.7500 33.0000 60.0000 36.7500 33.0000 90.0000 36.7500 3.0000 90.0000 36.7500 3.0000 60.0000 38.7500 33.0000 60.0000 38.7500 33.0000 90.0000 38.7500 3.0000 90.0000 38.7500</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Raised_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Raised_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Raised_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Raised_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Table_Saw_Platform" name="Table_Saw_Platform">
+      <mesh>
+        <source id="geom_Table_Saw_Platform-positions">
+          <float_array id="geom_Table_Saw_Platform-positions-array" count="24">42.0000 96.0000 0.0000 78.0000 96.0000 0.0000 78.0000 132.0000 0.0000 42.0000 132.0000 0.0000 42.0000 96.0000 3.0000 78.0000 96.0000 3.0000 78.0000 132.0000 3.0000 42.0000 132.0000 3.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Table_Saw_Platform-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Table_Saw_Platform-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Platform-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Table_Saw_Platform-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Table_Saw_Body" name="Table_Saw_Body">
+      <mesh>
+        <source id="geom_Table_Saw_Body-positions">
+          <float_array id="geom_Table_Saw_Body-positions-array" count="24">44.0000 98.0000 3.0000 76.0000 98.0000 3.0000 76.0000 130.0000 3.0000 44.0000 130.0000 3.0000 44.0000 98.0000 37.0000 76.0000 98.0000 37.0000 76.0000 130.0000 37.0000 44.0000 130.0000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Table_Saw_Body-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Table_Saw_Body-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Body-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Table_Saw_Body-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Table_Saw_Outfeed_Ghost" name="Table_Saw_Outfeed_Ghost">
+      <mesh>
+        <source id="geom_Table_Saw_Outfeed_Ghost-positions">
+          <float_array id="geom_Table_Saw_Outfeed_Ghost-positions-array" count="24">42.0000 132.0000 0.0000 78.0000 132.0000 0.0000 78.0000 228.0000 0.0000 42.0000 228.0000 0.0000 42.0000 132.0000 0.2500 78.0000 132.0000 0.2500 78.0000 228.0000 0.2500 42.0000 228.0000 0.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Table_Saw_Outfeed_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Table_Saw_Outfeed_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Outfeed_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Table_Saw_Outfeed_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Table_Saw_Infeed_Ghost" name="Table_Saw_Infeed_Ghost">
+      <mesh>
+        <source id="geom_Table_Saw_Infeed_Ghost-positions">
+          <float_array id="geom_Table_Saw_Infeed_Ghost-positions-array" count="24">42.0000 0.0000 0.0000 78.0000 0.0000 0.0000 78.0000 96.0000 0.0000 42.0000 96.0000 0.0000 42.0000 0.0000 0.2500 78.0000 0.0000 0.2500 78.0000 96.0000 0.2500 42.0000 96.0000 0.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Table_Saw_Infeed_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Table_Saw_Infeed_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Infeed_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Table_Saw_Infeed_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drill_Press_Column" name="Drill_Press_Column">
+      <mesh>
+        <source id="geom_Drill_Press_Column-positions">
+          <float_array id="geom_Drill_Press_Column-positions-array" count="24">94.0000 78.0000 37.0000 112.0000 78.0000 37.0000 112.0000 96.0000 37.0000 94.0000 96.0000 37.0000 94.0000 78.0000 73.0000 112.0000 78.0000 73.0000 112.0000 96.0000 73.0000 94.0000 96.0000 73.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drill_Press_Column-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drill_Press_Column-vertices">
+          <input semantic="POSITION" source="#geom_Drill_Press_Column-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drill_Press_Column-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Laser_Rolling_Table" name="Laser_Rolling_Table">
+      <mesh>
+        <source id="geom_Laser_Rolling_Table-positions">
+          <float_array id="geom_Laser_Rolling_Table-positions-array" count="24">60.0000 156.0000 0.0000 108.0000 156.0000 0.0000 108.0000 204.0000 0.0000 60.0000 204.0000 0.0000 60.0000 156.0000 34.0000 108.0000 156.0000 34.0000 108.0000 204.0000 34.0000 60.0000 204.0000 34.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Laser_Rolling_Table-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Laser_Rolling_Table-vertices">
+          <input semantic="POSITION" source="#geom_Laser_Rolling_Table-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Laser_Rolling_Table-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Laser_Enclosure" name="Laser_Enclosure">
+      <mesh>
+        <source id="geom_Laser_Enclosure-positions">
+          <float_array id="geom_Laser_Enclosure-positions-array" count="24">66.0000 162.0000 34.0000 102.0000 162.0000 34.0000 102.0000 192.0000 34.0000 66.0000 192.0000 34.0000 66.0000 162.0000 54.0000 102.0000 162.0000 54.0000 102.0000 192.0000 54.0000 66.0000 192.0000 54.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Laser_Enclosure-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Laser_Enclosure-vertices">
+          <input semantic="POSITION" source="#geom_Laser_Enclosure-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Laser_Enclosure-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Miter_BlastGate" name="Drop_Miter_BlastGate">
+      <mesh>
+        <source id="geom_Drop_Miter_BlastGate-positions">
+          <float_array id="geom_Drop_Miter_BlastGate-positions-array" count="24">19.0000 9.0000 56.0000 25.0000 9.0000 56.0000 25.0000 15.0000 56.0000 19.0000 15.0000 56.0000 19.0000 9.0000 60.0000 25.0000 9.0000 60.0000 25.0000 15.0000 60.0000 19.0000 15.0000 60.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Miter_BlastGate-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Miter_BlastGate-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Miter_BlastGate-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Miter_BlastGate-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Miter_FlexHose_Approx" name="Drop_Miter_FlexHose_Approx">
+      <mesh>
+        <source id="geom_Drop_Miter_FlexHose_Approx-positions">
+          <float_array id="geom_Drop_Miter_FlexHose_Approx-positions-array" count="24">20.5000 10.5000 36.5000 25.5000 10.5000 36.5000 25.5000 19.5000 36.5000 20.5000 19.5000 36.5000 20.5000 10.5000 57.5000 25.5000 10.5000 57.5000 25.5000 19.5000 57.5000 20.5000 19.5000 57.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Miter_FlexHose_Approx-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Miter_FlexHose_Approx-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Miter_FlexHose_Approx-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Miter_FlexHose_Approx-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Router_BlastGate" name="Drop_Router_BlastGate">
+      <mesh>
+        <source id="geom_Drop_Router_BlastGate-positions">
+          <float_array id="geom_Drop_Router_BlastGate-positions-array" count="24">81.0000 9.0000 56.0000 87.0000 9.0000 56.0000 87.0000 15.0000 56.0000 81.0000 15.0000 56.0000 81.0000 9.0000 60.0000 87.0000 9.0000 60.0000 87.0000 15.0000 60.0000 81.0000 15.0000 60.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Router_BlastGate-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Router_BlastGate-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Router_BlastGate-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Router_BlastGate-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Router_FlexHose_Approx" name="Drop_Router_FlexHose_Approx">
+      <mesh>
+        <source id="geom_Drop_Router_FlexHose_Approx-positions">
+          <float_array id="geom_Drop_Router_FlexHose_Approx-positions-array" count="24">82.5000 10.5000 36.5000 85.5000 10.5000 36.5000 85.5000 23.5000 36.5000 82.5000 23.5000 36.5000 82.5000 10.5000 57.5000 85.5000 10.5000 57.5000 85.5000 23.5000 57.5000 82.5000 23.5000 57.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Router_FlexHose_Approx-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Router_FlexHose_Approx-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Router_FlexHose_Approx-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Router_FlexHose_Approx-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Planer_BlastGate" name="Drop_Planer_BlastGate">
+      <mesh>
+        <source id="geom_Drop_Planer_BlastGate-positions">
+          <float_array id="geom_Drop_Planer_BlastGate-positions-array" count="24">1.0000 77.0000 56.0000 7.0000 77.0000 56.0000 7.0000 83.0000 56.0000 1.0000 83.0000 56.0000 1.0000 77.0000 60.0000 7.0000 77.0000 60.0000 7.0000 83.0000 60.0000 1.0000 83.0000 60.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Planer_BlastGate-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Planer_BlastGate-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Planer_BlastGate-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Planer_BlastGate-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Planer_FlexHose_Approx" name="Drop_Planer_FlexHose_Approx">
+      <mesh>
+        <source id="geom_Drop_Planer_FlexHose_Approx-positions">
+          <float_array id="geom_Drop_Planer_FlexHose_Approx-positions-array" count="24">2.5000 73.5000 22.5000 11.5000 73.5000 22.5000 11.5000 81.5000 22.5000 2.5000 81.5000 22.5000 2.5000 73.5000 57.5000 11.5000 73.5000 57.5000 11.5000 81.5000 57.5000 2.5000 81.5000 57.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Planer_FlexHose_Approx-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Planer_FlexHose_Approx-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Planer_FlexHose_Approx-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Planer_FlexHose_Approx-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_TableSaw_BlastGate" name="Drop_TableSaw_BlastGate">
+      <mesh>
+        <source id="geom_Drop_TableSaw_BlastGate-positions">
+          <float_array id="geom_Drop_TableSaw_BlastGate-positions-array" count="24">57.0000 93.0000 56.0000 63.0000 93.0000 56.0000 63.0000 99.0000 56.0000 57.0000 99.0000 56.0000 57.0000 93.0000 60.0000 63.0000 93.0000 60.0000 63.0000 99.0000 60.0000 57.0000 99.0000 60.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_TableSaw_BlastGate-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_TableSaw_BlastGate-vertices">
+          <input semantic="POSITION" source="#geom_Drop_TableSaw_BlastGate-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_TableSaw_BlastGate-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_TableSaw_FlexHose_Approx" name="Drop_TableSaw_FlexHose_Approx">
+      <mesh>
+        <source id="geom_Drop_TableSaw_FlexHose_Approx-positions">
+          <float_array id="geom_Drop_TableSaw_FlexHose_Approx-positions-array" count="24">56.5000 94.5000 16.5000 61.5000 94.5000 16.5000 61.5000 111.5000 16.5000 56.5000 111.5000 16.5000 56.5000 94.5000 57.5000 61.5000 94.5000 57.5000 61.5000 111.5000 57.5000 56.5000 111.5000 57.5000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_TableSaw_FlexHose_Approx-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_TableSaw_FlexHose_Approx-vertices">
+          <input semantic="POSITION" source="#geom_Drop_TableSaw_FlexHose_Approx-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_TableSaw_FlexHose_Approx-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Air_Filter_DWXAF101" name="Air_Filter_DWXAF101">
+      <mesh>
+        <source id="geom_Air_Filter_DWXAF101-positions">
+          <float_array id="geom_Air_Filter_DWXAF101-positions-array" count="24">48.0000 84.0000 84.0000 72.0000 84.0000 84.0000 72.0000 102.0000 84.0000 48.0000 102.0000 84.0000 48.0000 84.0000 96.0000 72.0000 84.0000 96.0000 72.0000 102.0000 96.0000 48.0000 102.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Air_Filter_DWXAF101-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Air_Filter_DWXAF101-vertices">
+          <input semantic="POSITION" source="#geom_Air_Filter_DWXAF101-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Air_Filter_DWXAF101-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Box_Fan_1" name="Box_Fan_1">
+      <mesh>
+        <source id="geom_Box_Fan_1-positions">
+          <float_array id="geom_Box_Fan_1-positions-array" count="24">6.0000 220.0000 6.0000 26.0000 220.0000 6.0000 26.0000 224.0000 6.0000 6.0000 224.0000 6.0000 6.0000 220.0000 26.0000 26.0000 220.0000 26.0000 26.0000 224.0000 26.0000 6.0000 224.0000 26.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Box_Fan_1-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Box_Fan_1-vertices">
+          <input semantic="POSITION" source="#geom_Box_Fan_1-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Box_Fan_1-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Box_Fan_2" name="Box_Fan_2">
+      <mesh>
+        <source id="geom_Box_Fan_2-positions">
+          <float_array id="geom_Box_Fan_2-positions-array" count="24">94.0000 220.0000 6.0000 114.0000 220.0000 6.0000 114.0000 224.0000 6.0000 94.0000 224.0000 6.0000 94.0000 220.0000 26.0000 114.0000 220.0000 26.0000 114.0000 224.0000 26.0000 94.0000 224.0000 26.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Box_Fan_2-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Box_Fan_2-vertices">
+          <input semantic="POSITION" source="#geom_Box_Fan_2-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Box_Fan_2-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Curtain_Track" name="Curtain_Track">
+      <mesh>
+        <source id="geom_Curtain_Track-positions">
+          <float_array id="geom_Curtain_Track-positions-array" count="24">0.0000 169.5000 94.0000 120.0000 169.5000 94.0000 120.0000 170.5000 94.0000 0.0000 170.5000 94.0000 0.0000 169.5000 96.0000 120.0000 169.5000 96.0000 120.0000 170.5000 96.0000 0.0000 170.5000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Curtain_Track-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Curtain_Track-vertices">
+          <input semantic="POSITION" source="#geom_Curtain_Track-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Curtain_Track-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Curtain_Closed" name="Curtain_Closed">
+      <mesh>
+        <source id="geom_Curtain_Closed-positions">
+          <float_array id="geom_Curtain_Closed-positions-array" count="24">0.0000 169.7500 0.0000 120.0000 169.7500 0.0000 120.0000 170.2500 0.0000 0.0000 170.2500 0.0000 0.0000 169.7500 94.0000 120.0000 169.7500 94.0000 120.0000 170.2500 94.0000 0.0000 170.2500 94.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Curtain_Closed-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Curtain_Closed-vertices">
+          <input semantic="POSITION" source="#geom_Curtain_Closed-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Curtain_Closed-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Curtain_Open_Stack" name="Curtain_Open_Stack">
+      <mesh>
+        <source id="geom_Curtain_Open_Stack-positions">
+          <float_array id="geom_Curtain_Open_Stack-positions-array" count="24">108.0000 168.0000 0.0000 120.0000 168.0000 0.0000 120.0000 172.0000 0.0000 108.0000 172.0000 0.0000 108.0000 168.0000 94.0000 120.0000 168.0000 94.0000 120.0000 172.0000 94.0000 108.0000 172.0000 94.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Curtain_Open_Stack-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Curtain_Open_Stack-vertices">
+          <input semantic="POSITION" source="#geom_Curtain_Open_Stack-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Curtain_Open_Stack-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LED_Shop_Light_1_Miter_Router" name="LED_Shop_Light_1_Miter_Router">
+      <mesh>
+        <source id="geom_LED_Shop_Light_1_Miter_Router-positions">
+          <float_array id="geom_LED_Shop_Light_1_Miter_Router-positions-array" count="24">12.0000 16.0000 94.0000 60.0000 16.0000 94.0000 60.0000 20.0000 94.0000 12.0000 20.0000 94.0000 12.0000 16.0000 96.0000 60.0000 16.0000 96.0000 60.0000 20.0000 96.0000 12.0000 20.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LED_Shop_Light_1_Miter_Router-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LED_Shop_Light_1_Miter_Router-vertices">
+          <input semantic="POSITION" source="#geom_LED_Shop_Light_1_Miter_Router-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LED_Shop_Light_1_Miter_Router-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LED_Shop_Light_2_Planer_LeftLeg" name="LED_Shop_Light_2_Planer_LeftLeg">
+      <mesh>
+        <source id="geom_LED_Shop_Light_2_Planer_LeftLeg-positions">
+          <float_array id="geom_LED_Shop_Light_2_Planer_LeftLeg-positions-array" count="24">2.0000 88.0000 94.0000 50.0000 88.0000 94.0000 50.0000 92.0000 94.0000 2.0000 92.0000 94.0000 2.0000 88.0000 96.0000 50.0000 88.0000 96.0000 50.0000 92.0000 96.0000 2.0000 92.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LED_Shop_Light_2_Planer_LeftLeg-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LED_Shop_Light_2_Planer_LeftLeg-vertices">
+          <input semantic="POSITION" source="#geom_LED_Shop_Light_2_Planer_LeftLeg-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LED_Shop_Light_2_Planer_LeftLeg-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_LED_Shop_Light_3_TableSaw_Outfeed" name="LED_Shop_Light_3_TableSaw_Outfeed">
+      <mesh>
+        <source id="geom_LED_Shop_Light_3_TableSaw_Outfeed-positions">
+          <float_array id="geom_LED_Shop_Light_3_TableSaw_Outfeed-positions-array" count="24">36.0000 128.0000 94.0000 84.0000 128.0000 94.0000 84.0000 132.0000 94.0000 36.0000 132.0000 94.0000 36.0000 128.0000 96.0000 84.0000 128.0000 96.0000 84.0000 132.0000 96.0000 36.0000 132.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_LED_Shop_Light_3_TableSaw_Outfeed-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_LED_Shop_Light_3_TableSaw_Outfeed-vertices">
+          <input semantic="POSITION" source="#geom_LED_Shop_Light_3_TableSaw_Outfeed-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_LED_Shop_Light_3_TableSaw_Outfeed-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Back_12in" name="Outlet_Back_12in">
+      <mesh>
+        <source id="geom_Outlet_Back_12in-positions">
+          <float_array id="geom_Outlet_Back_12in-positions-array" count="24">10.5000 0.0000 44.0000 13.5000 0.0000 44.0000 13.5000 1.0000 44.0000 10.5000 1.0000 44.0000 10.5000 0.0000 49.0000 13.5000 0.0000 49.0000 13.5000 1.0000 49.0000 10.5000 1.0000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Back_12in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Back_12in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Back_12in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Back_12in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Back_36in" name="Outlet_Back_36in">
+      <mesh>
+        <source id="geom_Outlet_Back_36in-positions">
+          <float_array id="geom_Outlet_Back_36in-positions-array" count="24">34.5000 0.0000 44.0000 37.5000 0.0000 44.0000 37.5000 1.0000 44.0000 34.5000 1.0000 44.0000 34.5000 0.0000 49.0000 37.5000 0.0000 49.0000 37.5000 1.0000 49.0000 34.5000 1.0000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Back_36in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Back_36in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Back_36in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Back_36in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Back_60in" name="Outlet_Back_60in">
+      <mesh>
+        <source id="geom_Outlet_Back_60in-positions">
+          <float_array id="geom_Outlet_Back_60in-positions-array" count="24">58.5000 0.0000 44.0000 61.5000 0.0000 44.0000 61.5000 1.0000 44.0000 58.5000 1.0000 44.0000 58.5000 0.0000 49.0000 61.5000 0.0000 49.0000 61.5000 1.0000 49.0000 58.5000 1.0000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Back_60in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Back_60in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Back_60in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Back_60in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Back_84in" name="Outlet_Back_84in">
+      <mesh>
+        <source id="geom_Outlet_Back_84in-positions">
+          <float_array id="geom_Outlet_Back_84in-positions-array" count="24">82.5000 0.0000 44.0000 85.5000 0.0000 44.0000 85.5000 1.0000 44.0000 82.5000 1.0000 44.0000 82.5000 0.0000 49.0000 85.5000 0.0000 49.0000 85.5000 1.0000 49.0000 82.5000 1.0000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Back_84in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Back_84in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Back_84in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Back_84in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Back_108in" name="Outlet_Back_108in">
+      <mesh>
+        <source id="geom_Outlet_Back_108in-positions">
+          <float_array id="geom_Outlet_Back_108in-positions-array" count="24">106.5000 0.0000 44.0000 109.5000 0.0000 44.0000 109.5000 1.0000 44.0000 106.5000 1.0000 44.0000 106.5000 0.0000 49.0000 109.5000 0.0000 49.0000 109.5000 1.0000 49.0000 106.5000 1.0000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Back_108in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Back_108in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Back_108in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Back_108in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Left_48in" name="Outlet_Left_48in">
+      <mesh>
+        <source id="geom_Outlet_Left_48in-positions">
+          <float_array id="geom_Outlet_Left_48in-positions-array" count="24">0.0000 46.5000 44.0000 1.0000 46.5000 44.0000 1.0000 49.5000 44.0000 0.0000 49.5000 44.0000 0.0000 46.5000 49.0000 1.0000 46.5000 49.0000 1.0000 49.5000 49.0000 0.0000 49.5000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Left_48in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Left_48in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Left_48in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Left_48in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Left_96in" name="Outlet_Left_96in">
+      <mesh>
+        <source id="geom_Outlet_Left_96in-positions">
+          <float_array id="geom_Outlet_Left_96in-positions-array" count="24">0.0000 94.5000 44.0000 1.0000 94.5000 44.0000 1.0000 97.5000 44.0000 0.0000 97.5000 44.0000 0.0000 94.5000 49.0000 1.0000 94.5000 49.0000 1.0000 97.5000 49.0000 0.0000 97.5000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Left_96in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Left_96in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Left_96in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Left_96in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Left_144in" name="Outlet_Left_144in">
+      <mesh>
+        <source id="geom_Outlet_Left_144in-positions">
+          <float_array id="geom_Outlet_Left_144in-positions-array" count="24">0.0000 142.5000 44.0000 1.0000 142.5000 44.0000 1.0000 145.5000 44.0000 0.0000 145.5000 44.0000 0.0000 142.5000 49.0000 1.0000 142.5000 49.0000 1.0000 145.5000 49.0000 0.0000 145.5000 49.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Left_144in-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Left_144in-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Left_144in-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Left_144in-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_Ceiling_AirFilter" name="Outlet_Ceiling_AirFilter">
+      <mesh>
+        <source id="geom_Outlet_Ceiling_AirFilter-positions">
+          <float_array id="geom_Outlet_Ceiling_AirFilter-positions-array" count="24">58.0000 88.0000 94.0000 62.0000 88.0000 94.0000 62.0000 92.0000 94.0000 58.0000 92.0000 94.0000 58.0000 88.0000 96.0000 62.0000 88.0000 96.0000 62.0000 92.0000 96.0000 58.0000 92.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_Ceiling_AirFilter-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_Ceiling_AirFilter-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_Ceiling_AirFilter-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_Ceiling_AirFilter-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Outlet_High_DustCollector" name="Outlet_High_DustCollector">
+      <mesh>
+        <source id="geom_Outlet_High_DustCollector-positions">
+          <float_array id="geom_Outlet_High_DustCollector-positions-array" count="24">58.0000 0.0000 72.0000 62.0000 0.0000 72.0000 62.0000 1.0000 72.0000 58.0000 1.0000 72.0000 58.0000 0.0000 77.0000 62.0000 0.0000 77.0000 62.0000 1.0000 77.0000 58.0000 1.0000 77.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Outlet_High_DustCollector-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Outlet_High_DustCollector-vertices">
+          <input semantic="POSITION" source="#geom_Outlet_High_DustCollector-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Outlet_High_DustCollector-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Walking_Aisle_RightSide" name="Walking_Aisle_RightSide">
+      <mesh>
+        <source id="geom_Walking_Aisle_RightSide-positions">
+          <float_array id="geom_Walking_Aisle_RightSide-positions-array" count="24">84.0000 0.0000 0.0000 120.0000 0.0000 0.0000 120.0000 240.0000 0.0000 84.0000 240.0000 0.0000 84.0000 0.0000 0.2500 120.0000 0.0000 0.2500 120.0000 240.0000 0.2500 84.0000 240.0000 0.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Walking_Aisle_RightSide-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Walking_Aisle_RightSide-vertices">
+          <input semantic="POSITION" source="#geom_Walking_Aisle_RightSide-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Walking_Aisle_RightSide-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Miter_LongStock_Support_Ghost" name="Miter_LongStock_Support_Ghost">
+      <mesh>
+        <source id="geom_Miter_LongStock_Support_Ghost-positions">
+          <float_array id="geom_Miter_LongStock_Support_Ghost-positions-array" count="24">0.0000 0.0000 37.0000 120.0000 0.0000 37.0000 120.0000 36.0000 37.0000 0.0000 36.0000 37.0000 0.0000 0.0000 37.2500 120.0000 0.0000 37.2500 120.0000 36.0000 37.2500 0.0000 36.0000 37.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Miter_LongStock_Support_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Miter_LongStock_Support_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Miter_LongStock_Support_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Miter_LongStock_Support_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Infeed_Ghost" name="Planer_Infeed_Ghost">
+      <mesh>
+        <source id="geom_Planer_Infeed_Ghost-positions">
+          <float_array id="geom_Planer_Infeed_Ghost-positions-array" count="24">3.0000 -12.0000 0.0000 33.0000 -12.0000 0.0000 33.0000 60.0000 0.0000 3.0000 60.0000 0.0000 3.0000 -12.0000 0.2500 33.0000 -12.0000 0.2500 33.0000 60.0000 0.2500 3.0000 60.0000 0.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Infeed_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Infeed_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Infeed_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Infeed_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Planer_Outfeed_Ghost" name="Planer_Outfeed_Ghost">
+      <mesh>
+        <source id="geom_Planer_Outfeed_Ghost-positions">
+          <float_array id="geom_Planer_Outfeed_Ghost-positions-array" count="24">3.0000 90.0000 0.0000 33.0000 90.0000 0.0000 33.0000 162.0000 0.0000 3.0000 162.0000 0.0000 3.0000 90.0000 0.2500 33.0000 90.0000 0.2500 33.0000 162.0000 0.2500 3.0000 162.0000 0.2500</float_array>
+          <technique_common>
+            <accessor source="#geom_Planer_Outfeed_Ghost-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Planer_Outfeed_Ghost-vertices">
+          <input semantic="POSITION" source="#geom_Planer_Outfeed_Ghost-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Planer_Outfeed_Ghost-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Dust_Collector_Body" name="Dust_Collector_Body">
+      <mesh>
+        <source id="geom_Dust_Collector_Body-positions">
+          <float_array id="geom_Dust_Collector_Body-positions-array" count="126">72.0000 12.0000 36.0000 71.4127 15.7082 36.0000 69.7082 19.0534 36.0000 67.0534 21.7082 36.0000 63.7082 23.4127 36.0000 60.0000 24.0000 36.0000 56.2918 23.4127 36.0000 52.9466 21.7082 36.0000 50.2918 19.0534 36.0000 48.5873 15.7082 36.0000 48.0000 12.0000 36.0000 48.5873 8.2918 36.0000 50.2918 4.9466 36.0000 52.9466 2.2918 36.0000 56.2918 0.5873 36.0000 60.0000 0.0000 36.0000 63.7082 0.5873 36.0000 67.0534 2.2918 36.0000 69.7082 4.9466 36.0000 71.4127 8.2918 36.0000 72.0000 12.0000 84.0000 71.4127 15.7082 84.0000 69.7082 19.0534 84.0000 67.0534 21.7082 84.0000 63.7082 23.4127 84.0000 60.0000 24.0000 84.0000 56.2918 23.4127 84.0000 52.9466 21.7082 84.0000 50.2918 19.0534 84.0000 48.5873 15.7082 84.0000 48.0000 12.0000 84.0000 48.5873 8.2918 84.0000 50.2918 4.9466 84.0000 52.9466 2.2918 84.0000 56.2918 0.5873 84.0000 60.0000 0.0000 84.0000 63.7082 0.5873 84.0000 67.0534 2.2918 84.0000 69.7082 4.9466 84.0000 71.4127 8.2918 84.0000 60.0000 12.0000 36.0000 60.0000 12.0000 84.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Dust_Collector_Body-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Dust_Collector_Body-vertices">
+          <input semantic="POSITION" source="#geom_Dust_Collector_Body-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Dust_Collector_Body-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Dust_Main_BackWall" name="Dust_Main_BackWall">
+      <mesh>
+        <source id="geom_Dust_Main_BackWall-positions">
+          <float_array id="geom_Dust_Main_BackWall-positions-array" count="126">82.0000 14.0000 0.0000 82.0000 13.9021 0.6180 82.0000 13.6180 1.1756 82.0000 13.1756 1.6180 82.0000 12.6180 1.9021 82.0000 12.0000 2.0000 82.0000 11.3820 1.9021 82.0000 10.8244 1.6180 82.0000 10.3820 1.1756 82.0000 10.0979 0.6180 82.0000 10.0000 0.0000 82.0000 10.0979 -0.6180 82.0000 10.3820 -1.1756 82.0000 10.8244 -1.6180 82.0000 11.3820 -1.9021 82.0000 12.0000 -2.0000 82.0000 12.6180 -1.9021 82.0000 13.1756 -1.6180 82.0000 13.6180 -1.1756 82.0000 13.9021 -0.6180 202.0000 14.0000 0.0000 202.0000 13.9021 0.6180 202.0000 13.6180 1.1756 202.0000 13.1756 1.6180 202.0000 12.6180 1.9021 202.0000 12.0000 2.0000 202.0000 11.3820 1.9021 202.0000 10.8244 1.6180 202.0000 10.3820 1.1756 202.0000 10.0979 0.6180 202.0000 10.0000 0.0000 202.0000 10.0979 -0.6180 202.0000 10.3820 -1.1756 202.0000 10.8244 -1.6180 202.0000 11.3820 -1.9021 202.0000 12.0000 -2.0000 202.0000 12.6180 -1.9021 202.0000 13.1756 -1.6180 202.0000 13.6180 -1.1756 202.0000 13.9021 -0.6180 82.0000 12.0000 0.0000 202.0000 12.0000 0.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Dust_Main_BackWall-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Dust_Main_BackWall-vertices">
+          <input semantic="POSITION" source="#geom_Dust_Main_BackWall-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Dust_Main_BackWall-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Dust_Riser_From_Collector" name="Dust_Riser_From_Collector">
+      <mesh>
+        <source id="geom_Dust_Riser_From_Collector-positions">
+          <float_array id="geom_Dust_Riser_From_Collector-positions-array" count="126">62.0000 12.0000 82.0000 61.9021 12.6180 82.0000 61.6180 13.1756 82.0000 61.1756 13.6180 82.0000 60.6180 13.9021 82.0000 60.0000 14.0000 82.0000 59.3820 13.9021 82.0000 58.8244 13.6180 82.0000 58.3820 13.1756 82.0000 58.0979 12.6180 82.0000 58.0000 12.0000 82.0000 58.0979 11.3820 82.0000 58.3820 10.8244 82.0000 58.8244 10.3820 82.0000 59.3820 10.0979 82.0000 60.0000 10.0000 82.0000 60.6180 10.0979 82.0000 61.1756 10.3820 82.0000 61.6180 10.8244 82.0000 61.9021 11.3820 82.0000 62.0000 12.0000 96.0000 61.9021 12.6180 96.0000 61.6180 13.1756 96.0000 61.1756 13.6180 96.0000 60.6180 13.9021 96.0000 60.0000 14.0000 96.0000 59.3820 13.9021 96.0000 58.8244 13.6180 96.0000 58.3820 13.1756 96.0000 58.0979 12.6180 96.0000 58.0000 12.0000 96.0000 58.0979 11.3820 96.0000 58.3820 10.8244 96.0000 58.8244 10.3820 96.0000 59.3820 10.0979 96.0000 60.0000 10.0000 96.0000 60.6180 10.0979 96.0000 61.1756 10.3820 96.0000 61.6180 10.8244 96.0000 61.9021 11.3820 96.0000 60.0000 12.0000 82.0000 60.0000 12.0000 96.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Dust_Riser_From_Collector-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Dust_Riser_From_Collector-vertices">
+          <input semantic="POSITION" source="#geom_Dust_Riser_From_Collector-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Dust_Riser_From_Collector-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Dust_Branch_LeftWall" name="Dust_Branch_LeftWall">
+      <mesh>
+        <source id="geom_Dust_Branch_LeftWall-positions">
+          <float_array id="geom_Dust_Branch_LeftWall-positions-array" count="126">6.0000 82.0000 12.0000 5.9021 82.0000 12.6180 5.6180 82.0000 13.1756 5.1756 82.0000 13.6180 4.6180 82.0000 13.9021 4.0000 82.0000 14.0000 3.3820 82.0000 13.9021 2.8244 82.0000 13.6180 2.3820 82.0000 13.1756 2.0979 82.0000 12.6180 2.0000 82.0000 12.0000 2.0979 82.0000 11.3820 2.3820 82.0000 10.8244 2.8244 82.0000 10.3820 3.3820 82.0000 10.0979 4.0000 82.0000 10.0000 4.6180 82.0000 10.0979 5.1756 82.0000 10.3820 5.6180 82.0000 10.8244 5.9021 82.0000 11.3820 6.0000 162.0000 12.0000 5.9021 162.0000 12.6180 5.6180 162.0000 13.1756 5.1756 162.0000 13.6180 4.6180 162.0000 13.9021 4.0000 162.0000 14.0000 3.3820 162.0000 13.9021 2.8244 162.0000 13.6180 2.3820 162.0000 13.1756 2.0979 162.0000 12.6180 2.0000 162.0000 12.0000 2.0979 162.0000 11.3820 2.3820 162.0000 10.8244 2.8244 162.0000 10.3820 3.3820 162.0000 10.0979 4.0000 162.0000 10.0000 4.6180 162.0000 10.0979 5.1756 162.0000 10.3820 5.6180 162.0000 10.8244 5.9021 162.0000 11.3820 4.0000 82.0000 12.0000 4.0000 162.0000 12.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Dust_Branch_LeftWall-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Dust_Branch_LeftWall-vertices">
+          <input semantic="POSITION" source="#geom_Dust_Branch_LeftWall-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Dust_Branch_LeftWall-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Miter_Pipe" name="Drop_Miter_Pipe">
+      <mesh>
+        <source id="geom_Drop_Miter_Pipe-positions">
+          <float_array id="geom_Drop_Miter_Pipe-positions-array" count="126">24.0000 12.0000 52.0000 23.9021 12.6180 52.0000 23.6180 13.1756 52.0000 23.1756 13.6180 52.0000 22.6180 13.9021 52.0000 22.0000 14.0000 52.0000 21.3820 13.9021 52.0000 20.8244 13.6180 52.0000 20.3820 13.1756 52.0000 20.0979 12.6180 52.0000 20.0000 12.0000 52.0000 20.0979 11.3820 52.0000 20.3820 10.8244 52.0000 20.8244 10.3820 52.0000 21.3820 10.0979 52.0000 22.0000 10.0000 52.0000 22.6180 10.0979 52.0000 23.1756 10.3820 52.0000 23.6180 10.8244 52.0000 23.9021 11.3820 52.0000 24.0000 12.0000 82.0000 23.9021 12.6180 82.0000 23.6180 13.1756 82.0000 23.1756 13.6180 82.0000 22.6180 13.9021 82.0000 22.0000 14.0000 82.0000 21.3820 13.9021 82.0000 20.8244 13.6180 82.0000 20.3820 13.1756 82.0000 20.0979 12.6180 82.0000 20.0000 12.0000 82.0000 20.0979 11.3820 82.0000 20.3820 10.8244 82.0000 20.8244 10.3820 82.0000 21.3820 10.0979 82.0000 22.0000 10.0000 82.0000 22.6180 10.0979 82.0000 23.1756 10.3820 82.0000 23.6180 10.8244 82.0000 23.9021 11.3820 82.0000 22.0000 12.0000 52.0000 22.0000 12.0000 82.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Miter_Pipe-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Miter_Pipe-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Miter_Pipe-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Miter_Pipe-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Router_Pipe" name="Drop_Router_Pipe">
+      <mesh>
+        <source id="geom_Drop_Router_Pipe-positions">
+          <float_array id="geom_Drop_Router_Pipe-positions-array" count="126">86.0000 12.0000 52.0000 85.9021 12.6180 52.0000 85.6180 13.1756 52.0000 85.1756 13.6180 52.0000 84.6180 13.9021 52.0000 84.0000 14.0000 52.0000 83.3820 13.9021 52.0000 82.8244 13.6180 52.0000 82.3820 13.1756 52.0000 82.0979 12.6180 52.0000 82.0000 12.0000 52.0000 82.0979 11.3820 52.0000 82.3820 10.8244 52.0000 82.8244 10.3820 52.0000 83.3820 10.0979 52.0000 84.0000 10.0000 52.0000 84.6180 10.0979 52.0000 85.1756 10.3820 52.0000 85.6180 10.8244 52.0000 85.9021 11.3820 52.0000 86.0000 12.0000 82.0000 85.9021 12.6180 82.0000 85.6180 13.1756 82.0000 85.1756 13.6180 82.0000 84.6180 13.9021 82.0000 84.0000 14.0000 82.0000 83.3820 13.9021 82.0000 82.8244 13.6180 82.0000 82.3820 13.1756 82.0000 82.0979 12.6180 82.0000 82.0000 12.0000 82.0000 82.0979 11.3820 82.0000 82.3820 10.8244 82.0000 82.8244 10.3820 82.0000 83.3820 10.0979 82.0000 84.0000 10.0000 82.0000 84.6180 10.0979 82.0000 85.1756 10.3820 82.0000 85.6180 10.8244 82.0000 85.9021 11.3820 82.0000 84.0000 12.0000 52.0000 84.0000 12.0000 82.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Router_Pipe-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Router_Pipe-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Router_Pipe-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Router_Pipe-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_Planer_Pipe" name="Drop_Planer_Pipe">
+      <mesh>
+        <source id="geom_Drop_Planer_Pipe-positions">
+          <float_array id="geom_Drop_Planer_Pipe-positions-array" count="126">6.0000 80.0000 52.0000 5.9021 80.6180 52.0000 5.6180 81.1756 52.0000 5.1756 81.6180 52.0000 4.6180 81.9021 52.0000 4.0000 82.0000 52.0000 3.3820 81.9021 52.0000 2.8244 81.6180 52.0000 2.3820 81.1756 52.0000 2.0979 80.6180 52.0000 2.0000 80.0000 52.0000 2.0979 79.3820 52.0000 2.3820 78.8244 52.0000 2.8244 78.3820 52.0000 3.3820 78.0979 52.0000 4.0000 78.0000 52.0000 4.6180 78.0979 52.0000 5.1756 78.3820 52.0000 5.6180 78.8244 52.0000 5.9021 79.3820 52.0000 6.0000 80.0000 82.0000 5.9021 80.6180 82.0000 5.6180 81.1756 82.0000 5.1756 81.6180 82.0000 4.6180 81.9021 82.0000 4.0000 82.0000 82.0000 3.3820 81.9021 82.0000 2.8244 81.6180 82.0000 2.3820 81.1756 82.0000 2.0979 80.6180 82.0000 2.0000 80.0000 82.0000 2.0979 79.3820 82.0000 2.3820 78.8244 82.0000 2.8244 78.3820 82.0000 3.3820 78.0979 82.0000 4.0000 78.0000 82.0000 4.6180 78.0979 82.0000 5.1756 78.3820 82.0000 5.6180 78.8244 82.0000 5.9021 79.3820 82.0000 4.0000 80.0000 52.0000 4.0000 80.0000 82.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_Planer_Pipe-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_Planer_Pipe-vertices">
+          <input semantic="POSITION" source="#geom_Drop_Planer_Pipe-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_Planer_Pipe-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Drop_TableSaw_Pipe" name="Drop_TableSaw_Pipe">
+      <mesh>
+        <source id="geom_Drop_TableSaw_Pipe-positions">
+          <float_array id="geom_Drop_TableSaw_Pipe-positions-array" count="126">62.0000 96.0000 32.0000 61.9021 96.6180 32.0000 61.6180 97.1756 32.0000 61.1756 97.6180 32.0000 60.6180 97.9021 32.0000 60.0000 98.0000 32.0000 59.3820 97.9021 32.0000 58.8244 97.6180 32.0000 58.3820 97.1756 32.0000 58.0979 96.6180 32.0000 58.0000 96.0000 32.0000 58.0979 95.3820 32.0000 58.3820 94.8244 32.0000 58.8244 94.3820 32.0000 59.3820 94.0979 32.0000 60.0000 94.0000 32.0000 60.6180 94.0979 32.0000 61.1756 94.3820 32.0000 61.6180 94.8244 32.0000 61.9021 95.3820 32.0000 62.0000 96.0000 82.0000 61.9021 96.6180 82.0000 61.6180 97.1756 82.0000 61.1756 97.6180 82.0000 60.6180 97.9021 82.0000 60.0000 98.0000 82.0000 59.3820 97.9021 82.0000 58.8244 97.6180 82.0000 58.3820 97.1756 82.0000 58.0979 96.6180 82.0000 58.0000 96.0000 82.0000 58.0979 95.3820 82.0000 58.3820 94.8244 82.0000 58.8244 94.3820 82.0000 59.3820 94.0979 82.0000 60.0000 94.0000 82.0000 60.6180 94.0979 82.0000 61.1756 94.3820 82.0000 61.6180 94.8244 82.0000 61.9021 95.3820 82.0000 60.0000 96.0000 32.0000 60.0000 96.0000 82.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Drop_TableSaw_Pipe-positions-array" count="42" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Drop_TableSaw_Pipe-vertices">
+          <input semantic="POSITION" source="#geom_Drop_TableSaw_Pipe-positions" />
+        </vertices>
+        <triangles count="80" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Drop_TableSaw_Pipe-vertices" offset="0" />
+          <p>0 1 21 0 21 20 1 2 22 1 22 21 2 3 23 2 23 22 3 4 24 3 24 23 4 5 25 4 25 24 5 6 26 5 26 25 6 7 27 6 27 26 7 8 28 7 28 27 8 9 29 8 29 28 9 10 30 9 30 29 10 11 31 10 31 30 11 12 32 11 32 31 12 13 33 12 33 32 13 14 34 13 34 33 14 15 35 14 35 34 15 16 36 15 36 35 16 17 37 16 37 36 17 18 38 17 38 37 18 19 39 18 39 38 19 0 20 19 20 39 40 1 0 41 20 21 40 2 1 41 21 22 40 3 2 41 22 23 40 4 3 41 23 24 40 5 4 41 24 25 40 6 5 41 25 26 40 7 6 41 26 27 40 8 7 41 27 28 40 9 8 41 28 29 40 10 9 41 29 30 40 11 10 41 30 31 40 12 11 41 31 32 40 13 12 41 32 33 40 14 13 41 33 34 40 15 14 41 34 35 40 16 15 41 35 36 40 17 16 41 36 37 40 18 17 41 37 38 40 19 18 41 38 39 40 0 19 41 39 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="WoodshopScene" name="Woodshop">
+      <node id="node_geom_Floor" name="Floor" type="NODE">
+        <instance_geometry url="#geom_Floor">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#floor-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Wall_Back" name="Wall_Back" type="NODE">
+        <instance_geometry url="#geom_Wall_Back">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#wall-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Wall_Left" name="Wall_Left" type="NODE">
+        <instance_geometry url="#geom_Wall_Left">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#wall-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Wall_Right" name="Wall_Right" type="NODE">
+        <instance_geometry url="#geom_Wall_Right">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#wall-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Wall_Front_Header" name="Wall_Front_Header" type="NODE">
+        <instance_geometry url="#geom_Wall_Front_Header">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#wall-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_L_Bench_Top_Leg" name="L_Bench_Top_Leg" type="NODE">
+        <instance_geometry url="#geom_L_Bench_Top_Leg">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#bench-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_L_Bench_Left_Leg" name="L_Bench_Left_Leg" type="NODE">
+        <instance_geometry url="#geom_L_Bench_Left_Leg">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#bench-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Existing_3x8_Workbench" name="Existing_3x8_Workbench" type="NODE">
+        <instance_geometry url="#geom_Existing_3x8_Workbench">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#bench_existing-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Tall_Husky_40x18x36" name="Tall_Husky_40x18x36" type="NODE">
+        <instance_geometry url="#geom_Tall_Husky_40x18x36">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#cabinet-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Tall_Husky_Shim" name="Tall_Husky_Shim" type="NODE">
+        <instance_geometry url="#geom_Tall_Husky_Shim">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#platform-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Short_Husky_Plinth" name="Short_Husky_Plinth" type="NODE">
+        <instance_geometry url="#geom_Short_Husky_Plinth">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#plinth-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Short_Husky_40x18x20" name="Short_Husky_40x18x20" type="NODE">
+        <instance_geometry url="#geom_Short_Husky_40x18x20">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#cabinet-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Saw_Recess_Surround" name="Miter_Saw_Recess_Surround" type="NODE">
+        <instance_geometry url="#geom_Miter_Saw_Recess_Surround">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#platform-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_Saw_Body" name="Miter_Saw_Body" type="NODE">
+        <instance_geometry url="#geom_Miter_Saw_Body">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_yellow-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Table_Insert" name="Router_Table_Insert" type="NODE">
+        <instance_geometry url="#geom_Router_Table_Insert">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Router_Table_Cabinet" name="Router_Table_Cabinet" type="NODE">
+        <instance_geometry url="#geom_Router_Table_Cabinet">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_dark-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Lift_Cavity" name="Planer_Lift_Cavity" type="NODE">
+        <instance_geometry url="#geom_Planer_Lift_Cavity">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Lowered" name="Planer_Lowered" type="NODE">
+        <instance_geometry url="#geom_Planer_Lowered">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_yellow-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Raised_Ghost" name="Planer_Raised_Ghost" type="NODE">
+        <instance_geometry url="#geom_Planer_Raised_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_planer-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Table_Saw_Platform" name="Table_Saw_Platform" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Platform">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#platform-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Table_Saw_Body" name="Table_Saw_Body" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Body">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_yellow-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Table_Saw_Outfeed_Ghost" name="Table_Saw_Outfeed_Ghost" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Outfeed_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Table_Saw_Infeed_Ghost" name="Table_Saw_Infeed_Ghost" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Infeed_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drill_Press_Column" name="Drill_Press_Column" type="NODE">
+        <instance_geometry url="#geom_Drill_Press_Column">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Laser_Rolling_Table" name="Laser_Rolling_Table" type="NODE">
+        <instance_geometry url="#geom_Laser_Rolling_Table">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_dark-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Laser_Enclosure" name="Laser_Enclosure" type="NODE">
+        <instance_geometry url="#geom_Laser_Enclosure">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Miter_BlastGate" name="Drop_Miter_BlastGate" type="NODE">
+        <instance_geometry url="#geom_Drop_Miter_BlastGate">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blast_gate-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Miter_FlexHose_Approx" name="Drop_Miter_FlexHose_Approx" type="NODE">
+        <instance_geometry url="#geom_Drop_Miter_FlexHose_Approx">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct_flex-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Router_BlastGate" name="Drop_Router_BlastGate" type="NODE">
+        <instance_geometry url="#geom_Drop_Router_BlastGate">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blast_gate-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Router_FlexHose_Approx" name="Drop_Router_FlexHose_Approx" type="NODE">
+        <instance_geometry url="#geom_Drop_Router_FlexHose_Approx">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct_flex-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Planer_BlastGate" name="Drop_Planer_BlastGate" type="NODE">
+        <instance_geometry url="#geom_Drop_Planer_BlastGate">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blast_gate-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Planer_FlexHose_Approx" name="Drop_Planer_FlexHose_Approx" type="NODE">
+        <instance_geometry url="#geom_Drop_Planer_FlexHose_Approx">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct_flex-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_TableSaw_BlastGate" name="Drop_TableSaw_BlastGate" type="NODE">
+        <instance_geometry url="#geom_Drop_TableSaw_BlastGate">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#blast_gate-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_TableSaw_FlexHose_Approx" name="Drop_TableSaw_FlexHose_Approx" type="NODE">
+        <instance_geometry url="#geom_Drop_TableSaw_FlexHose_Approx">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct_flex-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Air_Filter_DWXAF101" name="Air_Filter_DWXAF101" type="NODE">
+        <instance_geometry url="#geom_Air_Filter_DWXAF101">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#air_filter-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Box_Fan_1" name="Box_Fan_1" type="NODE">
+        <instance_geometry url="#geom_Box_Fan_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#fan-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Box_Fan_2" name="Box_Fan_2" type="NODE">
+        <instance_geometry url="#geom_Box_Fan_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#fan-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Curtain_Track" name="Curtain_Track" type="NODE">
+        <instance_geometry url="#geom_Curtain_Track">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Curtain_Closed" name="Curtain_Closed" type="NODE">
+        <instance_geometry url="#geom_Curtain_Closed">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#curtain-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Curtain_Open_Stack" name="Curtain_Open_Stack" type="NODE">
+        <instance_geometry url="#geom_Curtain_Open_Stack">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#curtain-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LED_Shop_Light_1_Miter_Router" name="LED_Shop_Light_1_Miter_Router" type="NODE">
+        <instance_geometry url="#geom_LED_Shop_Light_1_Miter_Router">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#light-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LED_Shop_Light_2_Planer_LeftLeg" name="LED_Shop_Light_2_Planer_LeftLeg" type="NODE">
+        <instance_geometry url="#geom_LED_Shop_Light_2_Planer_LeftLeg">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#light-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_LED_Shop_Light_3_TableSaw_Outfeed" name="LED_Shop_Light_3_TableSaw_Outfeed" type="NODE">
+        <instance_geometry url="#geom_LED_Shop_Light_3_TableSaw_Outfeed">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#light-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Back_12in" name="Outlet_Back_12in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Back_12in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_b-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Back_36in" name="Outlet_Back_36in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Back_36in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_d-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Back_60in" name="Outlet_Back_60in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Back_60in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_b-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Back_84in" name="Outlet_Back_84in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Back_84in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_b-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Back_108in" name="Outlet_Back_108in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Back_108in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_d-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Left_48in" name="Outlet_Left_48in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Left_48in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_b-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Left_96in" name="Outlet_Left_96in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Left_96in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_c-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Left_144in" name="Outlet_Left_144in" type="NODE">
+        <instance_geometry url="#geom_Outlet_Left_144in">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_b-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_Ceiling_AirFilter" name="Outlet_Ceiling_AirFilter" type="NODE">
+        <instance_geometry url="#geom_Outlet_Ceiling_AirFilter">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_d-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Outlet_High_DustCollector" name="Outlet_High_DustCollector" type="NODE">
+        <instance_geometry url="#geom_Outlet_High_DustCollector">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#circuit_a-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Walking_Aisle_RightSide" name="Walking_Aisle_RightSide" type="NODE">
+        <instance_geometry url="#geom_Walking_Aisle_RightSide">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Miter_LongStock_Support_Ghost" name="Miter_LongStock_Support_Ghost" type="NODE">
+        <instance_geometry url="#geom_Miter_LongStock_Support_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Infeed_Ghost" name="Planer_Infeed_Ghost" type="NODE">
+        <instance_geometry url="#geom_Planer_Infeed_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_planer-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Planer_Outfeed_Ghost" name="Planer_Outfeed_Ghost" type="NODE">
+        <instance_geometry url="#geom_Planer_Outfeed_Ghost">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#ghost_planer-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Dust_Collector_Body" name="Dust_Collector_Body" type="NODE">
+        <instance_geometry url="#geom_Dust_Collector_Body">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Dust_Main_BackWall" name="Dust_Main_BackWall" type="NODE">
+        <instance_geometry url="#geom_Dust_Main_BackWall">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Dust_Riser_From_Collector" name="Dust_Riser_From_Collector" type="NODE">
+        <instance_geometry url="#geom_Dust_Riser_From_Collector">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Dust_Branch_LeftWall" name="Dust_Branch_LeftWall" type="NODE">
+        <instance_geometry url="#geom_Dust_Branch_LeftWall">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Miter_Pipe" name="Drop_Miter_Pipe" type="NODE">
+        <instance_geometry url="#geom_Drop_Miter_Pipe">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Router_Pipe" name="Drop_Router_Pipe" type="NODE">
+        <instance_geometry url="#geom_Drop_Router_Pipe">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_Planer_Pipe" name="Drop_Planer_Pipe" type="NODE">
+        <instance_geometry url="#geom_Drop_Planer_Pipe">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Drop_TableSaw_Pipe" name="Drop_TableSaw_Pipe" type="NODE">
+        <instance_geometry url="#geom_Drop_TableSaw_Pipe">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#duct-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#WoodshopScene" />
+  </scene>
+</COLLADA>

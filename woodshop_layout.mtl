@@ -1,0 +1,192 @@
+newmtl floor
+Ka 0.850 0.830 0.780
+Kd 0.850 0.830 0.780
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl wall
+Ka 0.940 0.940 0.940
+Kd 0.940 0.940 0.940
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.300
+illum 2
+
+newmtl bench
+Ka 0.780 0.620 0.400
+Kd 0.780 0.620 0.400
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl bench_existing
+Ka 0.620 0.450 0.250
+Kd 0.620 0.450 0.250
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl cabinet
+Ka 0.100 0.100 0.120
+Kd 0.100 0.100 0.120
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl tool_yellow
+Ka 0.950 0.780 0.050
+Kd 0.950 0.780 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl tool_dark
+Ka 0.180 0.180 0.180
+Kd 0.180 0.180 0.180
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl tool_metal
+Ka 0.550 0.550 0.580
+Kd 0.550 0.550 0.580
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl duct
+Ka 0.750 0.750 0.780
+Kd 0.750 0.750 0.780
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl duct_flex
+Ka 0.450 0.450 0.500
+Kd 0.450 0.450 0.500
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl blast_gate
+Ka 0.850 0.300 0.200
+Kd 0.850 0.300 0.200
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ghost
+Ka 0.300 0.550 0.950
+Kd 0.300 0.550 0.950
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.180
+illum 2
+
+newmtl ghost_planer
+Ka 0.300 0.850 0.550
+Kd 0.300 0.850 0.550
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.180
+illum 2
+
+newmtl curtain
+Ka 0.120 0.120 0.160
+Kd 0.120 0.120 0.160
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.350
+illum 2
+
+newmtl light
+Ka 1.000 0.970 0.850
+Kd 1.000 0.970 0.850
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl air_filter
+Ka 0.920 0.920 0.920
+Kd 0.920 0.920 0.920
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl fan
+Ka 0.250 0.250 0.300
+Kd 0.250 0.250 0.300
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl circuit_a
+Ka 0.900 0.100 0.100
+Kd 0.900 0.100 0.100
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl circuit_b
+Ka 0.100 0.550 0.950
+Kd 0.100 0.550 0.950
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl circuit_c
+Ka 0.950 0.550 0.050
+Kd 0.950 0.550 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl circuit_d
+Ka 0.200 0.750 0.300
+Kd 0.200 0.750 0.300
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl label
+Ka 0.050 0.050 0.050
+Kd 0.050 0.050 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl platform
+Ka 0.550 0.400 0.250
+Kd 0.550 0.400 0.250
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl plinth
+Ka 0.300 0.250 0.200
+Kd 0.300 0.250 0.200
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
