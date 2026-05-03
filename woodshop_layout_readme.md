@@ -18,12 +18,18 @@ zones, and lift cavities before you cut wood.
 
 ## Coordinate system
 
+Landscape orientation, matching the user's pencil sketch.
+
 - Origin `(0, 0, 0)` = back-left corner of the shop footprint, floor level.
-- **X** = shop width, 0 -> 120 in, left to right
-- **Y** = shop length, 0 -> 240 in, back wall to garage door
-- **Z** = height, 0 -> 96 in
+- **X** = shop length along the 20 ft back wall, 0 -> 240 in, left to right.
+- **Y** = shop depth, 0 -> 120 in, back wall (Y=0) to garage opening (Y=120).
+- **Z** = height, 0 -> 96 in.
 - Up axis: `Z_UP`
 - Units: inches (`<unit name="inch" meter="0.0254"/>`)
+
+When you look at the SVG plan with the title at the top, the back wall is
+along the top edge, the garage opening is along the bottom edge, the L-bench
+fills the upper-left, and the laser cutter lives in the lower-right.
 
 SketchUp respects the `<unit>` tag on import. If something looks 1/40th the
 expected size in another tool, that tool likely ignored the unit declaration -
@@ -49,31 +55,34 @@ If your SketchUp version chokes on the Collada (rare), import
 - Front wall left open above 84 in to represent the garage-door opening.
 
 ### Fixed L-bench (37 in tall, 36 in deep)
-- `L_Bench_Top_Leg`: 120 x 36 x 37 along the back wall.
-- `L_Bench_Left_Leg`: 36 x 108 x 37 along the left wall.
-- The plan brief asked for ~12 ft x 10 ft. The bay is only 10 ft wide, so
-  the top leg is 10 ft and the long leg is 9 ft. Going past 108 in
-  collides with the table-saw outfeed zone and steals the right-side
-  walking aisle - if you want a longer left leg, you have to give up the
-  table-saw position or the aisle.
+- `L_Bench_Top_Leg`: 144 x 36 x 37 along the back wall (12 ft long).
+- `L_Bench_Left_Leg`: 36 x 84 x 37 down the left side (7 ft long).
+- The plan brief asked for ~12 ft x 10 ft. The bay is 20 ft along the back
+  wall and 10 ft deep, so 12 ft of new bench fits comfortably along the
+  back; the right 8 ft of the back wall is the existing 3 x 8 bench (see
+  next item). The left leg is 7 ft - long enough for the planer cavity
+  plus the table-saw platform extending past its end.
 
 ### Existing 3' x 8' workbench
-- 36 x 96 x 37 along the right wall, y = 60..156. Drill press lives on it.
+- 36 x 96 x 37, sits in the top-right of the back wall (X = 144..240,
+  Y = 0..36) so it abuts the new top leg. Drill press lives on top.
 - Darker tan material so it reads as "existing, keep" vs "new, build."
 
 ### Husky chests
-- Tall (40 x 18 x 36) under the back bench, with a 1 in shim to meet 37 in.
-- Short (40 x 18 x 20) on a 16 in plinth along the left leg, also 37 in top.
+- Both sit under the existing 3 x 8 bench (right portion of back wall),
+  matching the photo of the current shop. Both reach 37 in via shims.
+- Tall (40 x 18 x 36) at X = 148..188, Y = 12..30, with a 1 in shim.
+- Short (40 x 18 x 20) on a 16 in plinth at X = 196..236, Y = 12..30.
 
 ### Tools
 | Tool | Position note |
 | --- | --- |
-| Miter saw (DeWalt 10") | Recessed in top bench, deck flush at 37 in. Recess depth 4 in. |
-| Router table | Flush in top bench, x = 72..96. Insert plate as a thin top layer. |
-| Planer (DeWalt) | Vertical lift cavity in left leg, 30 x 30 opening. Stored at z = 20, raises to 37. Both states are in the model: solid block lowered, ghost outline raised. |
-| Table saw (DeWalt jobsite) | On a 36 x 36 x 3 in fixed platform, deck reaches 37 in. Outfeed faces the back bench. |
-| Drill press | On the existing 3 x 8 bench. |
-| Laser cutter | 4 x 4 rolling table near the front, away from the L bench. |
+| Miter saw (DeWalt 10") | Recessed in top leg, deck flush at 37 in. X = 54..84, Y = 4..28. Recess depth 4 in. |
+| Router table | Flush in top leg, X = 108..132, Y = 4..36. Insert plate as a thin top layer. |
+| Planer (DeWalt) | Vertical lift cavity in left leg, 30 x 30 opening at X = 3..33, Y = 42..72. Stored at z = 16, raises to 37. Both states modeled (solid block lowered, ghost outline raised). |
+| Table saw (DeWalt jobsite) | On a 36 x 36 x 3 in fixed floor platform at X = 42..78, Y = 60..96. Deck flush at 37 in. Outfeed -Y toward the L-bench. |
+| Drill press | On top of the existing 3 x 8 bench at X = 198..216, Y = 6..24. |
+| Laser cutter | 4 x 4 rolling table at X = 180..228, Y = 60..108 (lower-right open quadrant). |
 
 ### Dust collection
 - `Dust_Collector_Body`: Harbor Freight 1800 CFM, mounted high on the back wall (z = 36..84).
@@ -101,9 +110,10 @@ in the CSV):
   a respiratory hazard.
 
 ### Curtain
-- Track at y = 170 across the full 10 ft width, z = 94.
+- 20 ft track parallel to the back wall at Y = 108, z = 94, full X length.
+  Closes off the work zone (Y < 108) from the garage-opening side.
 - Two states: closed (translucent panel hanging from track to floor) and
-  open (folded stack at the right end).
+  open (folded stack at the right end of the track).
 
 ### Lighting
 - Three 48 in LED shop lights at z = 94, over the miter/router zone, the
@@ -121,13 +131,32 @@ Color-coded outlet blocks at z = 44 on walls and z = 72/94 on the ceiling:
 > above are layout intent only.
 
 ### Ghost / clearance zones (transparent)
-- Table saw infeed and outfeed: 96 x 36 each.
-- Planer infeed and outfeed: 72 x 30 each.
-- Miter saw long-stock support: 96 in either side along the top bench.
-- Right-side walking aisle: 36 in clear path full length.
+- Table saw outfeed: 36 x 60 toward the L-bench (-Y direction). Infeed
+  is only 36 x 24 (front of bay is tight - see tradeoff note below).
+- Planer infeed: 30 x 42 toward back wall. Outfeed: 30 x 48 toward front.
+- Miter long-stock support: 192 in span across the back-wall bench.
+- Front walking lane: 36 in clear across most of the bay width at Y = 84..108.
 
 These are real geometry with low alpha so they show up in SketchUp but
 don't get in the way.
+
+### Known layout tradeoffs
+
+- **Table-saw infeed is short.** With the saw at the bottom of the left
+  leg and outfeed pointed at the bench, the operator stands ~24 in from
+  the front wall. Fine for short rips and sheet goods that come in from
+  the side; long boards need diagonal feed or you reposition the saw to
+  the middle of the bay during the cut.
+- **Two windows, dust collector between.** The dust-collector cylinder
+  is centered at X = 120 on the back wall. If your window centers are
+  not symmetric around X = 120, edit `Dust_Collector_Body` in
+  `generate_woodshop.py` and re-run.
+- **Garage door direction not modeled.** The "GARAGE" label on your
+  sketch points off the left short wall. The model treats Y = 120
+  (front long wall) as the curtained opening, since the curtain is
+  20 ft long and must run parallel to a long wall. If your actual
+  garage door is on the X = 0 short wall, the curtain orientation
+  needs to flip - flag it and I'll regenerate.
 
 ## Regenerating
 
