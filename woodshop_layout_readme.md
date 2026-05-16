@@ -81,35 +81,32 @@ If your SketchUp version chokes on the Collada (rare), import
 - 120 x 240 x 96 in shell, walls drawn at 30% opacity so you can see in.
 - Front wall left open above 84 in to represent the garage-door opening.
 
-### Fixed L-bench (37 in tall, 36 in deep)
-- `L_Bench_Top_Leg`: 144 x 36 x 37 along the back wall (12 ft long).
-- `L_Bench_Left_Leg`: 36 x 84 x 37 down the left side (7 ft long).
-- The plan brief asked for ~12 ft x 10 ft. The bay is 20 ft along the back
-  wall and 10 ft deep, so 12 ft of new bench fits comfortably along the
-  back; the right 8 ft of the back wall is the existing 3 x 8 bench (see
-  next item). The left leg is 7 ft - long enough for the planer cavity
-  plus the table-saw platform extending past its end.
+### Fixed L-bench (37 in tall, 36 in deep) - MIRRORED
+- `L_Bench_Top_Leg`: 144 x 36 x 37 along the back wall (12 ft, RIGHT portion).
+- `L_Bench_Short_Leg`: 36 x 84 x 37 down the RIGHT side (7 ft long, against
+  the solid right wall).
+- After the mirror, the existing 3 x 8 bench moves to the LEFT portion of
+  the back wall (X = 0..96) and the new L occupies X = 96..240 with the
+  short leg dropping down the right side at X = 204..240.
 
 ### Existing 3' x 8' workbench
-- 36 x 96 x 37, sits in the top-right of the back wall (X = 144..240,
-  Y = 0..36) so it abuts the new top leg. Drill press lives on top.
-- Darker tan material so it reads as "existing, keep" vs "new, build."
+- 36 x 96 x 37, sits at the TOP-LEFT of the back wall (X = 0..96, Y = 0..36)
+  so it abuts the new top leg of the L. Drill press lives on top.
 
 ### Husky chests
-- Both sit under the existing 3 x 8 bench (right portion of back wall),
-  matching the photo of the current shop. Both reach 37 in via shims.
-- Tall (40 x 18 x 36) at X = 148..188, Y = 12..30, with a 1 in shim.
-- Short (40 x 18 x 20) on a 16 in plinth at X = 196..236, Y = 12..30.
+- Both sit under the existing 3 x 8 bench (LEFT portion of back wall).
+- Tall (40 x 18 x 36) at X = 52..92, Y = 12..30, with a 1 in shim.
+- Short (40 x 18 x 20) on a 16 in plinth at X = 4..44, Y = 12..30.
 
 ### Tools
 | Tool | Position note |
 | --- | --- |
-| Miter saw (DeWalt 10") | Recessed in top leg, deck flush at 37 in. X = 54..84, Y = 4..28. Recess depth 4 in. |
-| Router table | Flush in top leg, X = 108..132, Y = 4..36. Insert plate as a thin top layer. |
-| Planer (DeWalt) | Vertical lift cavity in left leg, 30 x 30 opening at X = 3..33, Y = 42..72. Stored at z = 16, raises to 37. Both states modeled (solid block lowered, ghost outline raised). |
-| Table saw (DeWalt jobsite) | On a 36 x 36 x 3 in fixed floor platform at X = 42..78, Y = 60..96. Deck flush at 37 in. Outfeed -Y toward the L-bench. |
-| Drill press | On top of the existing 3 x 8 bench at X = 198..216, Y = 6..24. |
-| Laser cutter | 4 x 4 rolling table at X = 180..228, Y = 60..108 (lower-right open quadrant). |
+| Miter saw (DeWalt 10") | Recessed in top leg, deck flush at 37 in. X = 99..129, Y = 4..28. FAR from new corner (left end of top leg). |
+| Router table | Flush in top leg, X = 180..204, Y = 4..36. CLOSE to new corner. |
+| Planer (DeWalt) | Vertical lift cavity in short leg, X = 207..237, Y = 84..114. FAR from corner (front of bay). Stored at z = 16, raises to 37. **See tradeoffs below - planer infeed is now short.** |
+| Table saw (DeWalt jobsite) | Drop-in cavity in short leg at X = 206..238, Y = 42..74. CLOSE to corner. Outfeed -Y catches the top-leg bench surface (6 in gap, then 36 in supported). |
+| Drill press | On top of the existing 3 x 8 bench at X = 24..42, Y = 6..24. |
+| Laser cutter | 4 x 4 rolling table at X = 12..60, Y = 60..108 (lower-left open quadrant). |
 
 ### Dust collection
 - `Dust_Collector_Body`: Harbor Freight 1800 CFM, mounted high on the back wall (z = 36..84).
@@ -169,11 +166,19 @@ don't get in the way.
 
 ### Known layout tradeoffs
 
-- **Table-saw infeed is short.** With the saw at the bottom of the left
-  leg and outfeed pointed at the bench, the operator stands ~24 in from
-  the front wall. Fine for short rips and sheet goods that come in from
-  the side; long boards need diagonal feed or you reposition the saw to
-  the middle of the bay during the cut.
+- **Table-saw outfeed is now excellent** (close-to-corner placement).
+  Workpiece exits the saw at Y = 42, drops 6 in to the top-leg bench
+  surface at Y = 36, and continues across the bench for 36 in of supported
+  outfeed. Better than the original (which had a 48 in unsupported gap).
+- **Planer infeed/outfeed is now constrained.** The planer at Y = 84..114
+  has only 6 in of clearance on the +Y side and 84 in on the -Y side. To
+  use it effectively, either:
+  (a) feed boards from the BACK side (operator reaches across the bench
+      to feed, board exits toward operator), or
+  (b) accept a maximum board length of ~36 in.
+  This is a consequence of swapping the planer and saw positions per
+  user direction. If you find this limits you in practice, swap them back
+  (set `PLANER_Y0=42` and `SAW_Y0=84` in `generate_l_bench.py`).
 - **Two windows, dust collector between.** The dust-collector cylinder
   is centered at X = 120 on the back wall. If your window centers are
   not symmetric around X = 120, edit `Dust_Collector_Body` in

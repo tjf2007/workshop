@@ -159,70 +159,71 @@ def build_scene() -> Scene:
     s.box("Wall_Front", 0, ROOM_L, 0, ROOM_W, wall_t, ROOM_H, "wall", category="room")
 
     # ------- L-shaped fixed bench (NEW build) --------------------------------
+    # MIRRORED: L is now on the UPPER-RIGHT of the shop. Top leg occupies
+    # x=96..240 along the back wall, short leg drops down the RIGHT (solid)
+    # wall at x=204..240.
     BENCH_H = 37.0
 
-    # Top leg: 12 ft along the back wall (left portion). The right 8 ft of
-    # the back wall is the existing 3x8 workbench.
-    s.box("L_Bench_Top_Leg", 0, 0, 0, 144, 36, BENCH_H, "bench",
-          note="L Bench top leg 144Wx36Dx37H along back wall", category="bench")
+    # Top leg: 12 ft along the back wall (right portion).
+    s.box("L_Bench_Top_Leg", 96, 0, 0, 144, 36, BENCH_H, "bench",
+          note="L Bench top leg 144Wx36Dx37H along back wall (right portion)",
+          category="bench")
 
-    # Left leg: 7 ft drop down the left side, 3 ft wide. Starts below the
-    # corner of the top leg (Y=36) so the two pieces don't double up.
-    s.box("L_Bench_Left_Leg", 0, 36, 0, 36, 84, BENCH_H, "bench",
-          note="L Bench left leg 36Wx84Dx37H", category="bench")
+    # Short leg: 7 ft drop down the right side, 3 ft wide.
+    s.box("L_Bench_Short_Leg", 204, 36, 0, 36, 84, BENCH_H, "bench",
+          note="L Bench short leg 36Wx84Dx37H against right wall",
+          category="bench")
 
-    # ------- Existing 3x8 workbench (right portion of back wall) -------------
-    s.box("Existing_3x8_Workbench", 144, 0, 0, 96, 36, BENCH_H, "bench_existing",
+    # ------- Existing 3x8 workbench (LEFT portion of back wall) --------------
+    s.box("Existing_3x8_Workbench", 0, 0, 0, 96, 36, BENCH_H, "bench_existing",
           note="Existing 3'x8' bench, drill press on top", category="bench")
 
     # ------- Husky tool chests -----------------------------------------------
-    # Per the photo: both chests sit in the right portion of the shop, under
-    # the existing bench area. They serve as structural / storage modules.
-    # Tall Husky under the existing bench, mid-right.
-    s.box("Tall_Husky_40x18x36", 148, 12, 0, 40, 18, 36, "cabinet",
+    # Both chests live under the existing bench in the upper-LEFT of the shop.
+    # Tall Husky mirrored from x=148 to x=52.
+    s.box("Tall_Husky_40x18x36", 52, 12, 0, 40, 18, 36, "cabinet",
           note="Tall Husky chest 40Wx18Dx36H under existing bench", category="cabinet")
-    s.box("Tall_Husky_Shim", 148, 12, 36, 40, 18, 1, "platform", category="cabinet")
-    # Short Husky on a 16" plinth, far right.
-    s.box("Short_Husky_Plinth", 196, 12, 0, 40, 18, 16, "plinth",
+    s.box("Tall_Husky_Shim", 52, 12, 36, 40, 18, 1, "platform", category="cabinet")
+    # Short Husky on a 16" plinth, far left.
+    s.box("Short_Husky_Plinth", 4, 12, 0, 40, 18, 16, "plinth",
           note="16in plinth so 20H Husky reaches 37in top", category="cabinet")
-    s.box("Short_Husky_40x18x20", 196, 12, 16, 40, 18, 20, "cabinet",
+    s.box("Short_Husky_40x18x20", 4, 12, 16, 40, 18, 20, "cabinet",
           note="Short Husky chest 40Wx18Dx20H on plinth", category="cabinet")
-    s.box("Short_Husky_Shim", 196, 12, 36, 40, 18, 1, "platform", category="cabinet")
+    s.box("Short_Husky_Shim", 4, 12, 36, 40, 18, 1, "platform", category="cabinet")
 
-    # ------- Miter saw station (recessed in top leg, left of center) --------
-    # Per sketch: miter is in the left third of the back-wall bench.
-    s.box("Miter_Saw_Recess_Surround", 50, 2, BENCH_H - 0.5, 36, 30, 0.5,
+    # ------- Miter saw station (recessed in top leg, LEFT end after mirror) --
+    # Per swap: miter is at the LEFT end of the top leg, far from new corner.
+    s.box("Miter_Saw_Recess_Surround", 96, 2, BENCH_H - 0.5, 36, 30, 0.5,
           "platform", note="Visual frame for miter recess", category="tool")
-    s.box("Miter_Saw_Body", 54, 4, BENCH_H - 4, 30, 24, 12, "tool_yellow",
+    s.box("Miter_Saw_Body", 99, 4, BENCH_H - 4, 30, 24, 12, "tool_yellow",
           note="DeWalt 10in miter saw, deck flush to 37in bench (recessed 4in)",
           category="tool")
 
-    # ------- Router table (flush in top leg, right portion of new bench) ----
-    s.box("Router_Table_Cabinet", 108, 4, 0, 24, 32, BENCH_H, "tool_dark",
-          note="Router enclosure inside bench", category="tool")
-    s.box("Router_Table_Insert", 108, 4, BENCH_H, 24, 32, 0.5, "tool_metal",
+    # ------- Router table (flush in top leg, RIGHT end against new corner) --
+    s.box("Router_Table_Cabinet", 180, 4, 0, 24, 32, BENCH_H, "tool_dark",
+          note="Router enclosure inside bench (close to L corner)", category="tool")
+    s.box("Router_Table_Insert", 180, 4, BENCH_H, 24, 32, 0.5, "tool_metal",
           note="Phenolic insert plate flush with bench top", category="tool")
 
     # ------- Planer vertical lift cavity / mechanism -------------------------
-    # Cavity inside the left-leg bench. Planer rises through the bench top
-    # to deck-flush 37in for use, drops to 16in stored.
-    s.box("Planer_Lift_Cavity", 3, 42, 0, 30, 30, BENCH_H, "ghost",
-          note="Planer lift cavity opening (30x30)", category="ghost")
-    s.box("Planer_Lowered", 5, 44, 16, 26, 22, 16, "tool_yellow",
+    # Cavity inside the short leg at y=84..114 (FAR from corner after swap).
+    s.box("Planer_Lift_Cavity", 207, 84, 0, 30, 30, BENCH_H, "ghost",
+          note="Planer lift cavity opening (30x30) - far end of short leg",
+          category="ghost")
+    s.box("Planer_Lowered", 209, 86, 16, 26, 22, 16, "tool_yellow",
           note="DeWalt planer in lowered/stored position", category="tool")
-    s.box("Planer_Raised_Ghost", 3, 42, BENCH_H - 0.25, 30, 30, 2,
+    s.box("Planer_Raised_Ghost", 207, 84, BENCH_H - 0.25, 30, 30, 2,
           "ghost_planer",
           note="Planer raised position - bed flush to 37in (ghost)",
           category="ghost")
 
-    # ------- Table saw drop-in cavity (in left leg of L-bench) --------------
-    # Saw drops into a 32x32 cavity in the bottom of the left leg, with the
-    # cast deck flush at 37in. Stand removed. Saw bolts to a sled inside the
-    # cavity (see l_bench.dae for the full hardware detail). Outfeed faces
-    # -Y toward the L-bench top leg, infeed +Y toward the front of the bay.
-    SAW_X, SAW_Y, SAW_W, SAW_D = 2, 84, 32, 32
+    # ------- Table saw drop-in cavity (CLOSE to corner after swap) ----------
+    # Saw drops into a 32x32 cavity at y=42..74 inside the short leg, so the
+    # cast deck flush at 37in. Outfeed toward -Y catches the top-leg bench
+    # surface starting at y=36 - excellent rip support.
+    SAW_X, SAW_Y, SAW_W, SAW_D = 206, 42, 32, 32
     s.box("Table_Saw_Cavity", SAW_X, SAW_Y, 0, SAW_W, SAW_D, BENCH_H, "ghost",
-          note="Saw drop-in cavity in L-bench left leg (32x32 opening)",
+          note="Saw drop-in cavity in L-bench short leg (32x32 opening)",
           category="ghost")
     s.box("Table_Saw_Body", SAW_X + 1.5, SAW_Y + 1.5, BENCH_H - 13,
           SAW_W - 3, SAW_D - 3, 13, "tool_yellow",
@@ -232,16 +233,17 @@ def build_scene() -> Scene:
           SAW_W - 3, SAW_D - 3, 0.25, "tool_metal",
           note="Cast deck flush with bench top", category="tool")
 
-    # ------- Drill press on existing bench -----------------------------------
-    # Per sketch: drill is on the right portion of the existing bench.
-    s.box("Drill_Press_Column", 198, 6, BENCH_H, 18, 18, 36, "tool_metal",
-          note="Drill press on existing 3x8 bench", category="tool")
+    # ------- Drill press on existing bench (now at LEFT) --------------------
+    s.box("Drill_Press_Column", 24, 6, BENCH_H, 18, 18, 36, "tool_metal",
+          note="Drill press on existing 3x8 bench (upper-left after mirror)",
+          category="tool")
 
     # ------- Laser cutter rolling table --------------------------------------
-    # Per sketch: 4'x4' rolling table in lower-right open quadrant.
-    s.box("Laser_Rolling_Table", 180, 60, 0, 48, 48, 34, "tool_dark",
-          note="4'x4' rolling table for laser", category="tool")
-    s.box("Laser_Enclosure", 186, 66, 34, 36, 30, 20, "tool_metal",
+    # Rolling 4'x4' table - moved to lower-LEFT open quadrant after mirror.
+    s.box("Laser_Rolling_Table", 12, 60, 0, 48, 48, 34, "tool_dark",
+          note="4'x4' rolling table for laser (lower-left after mirror)",
+          category="tool")
+    s.box("Laser_Enclosure", 18, 66, 34, 36, 30, 20, "tool_metal",
           note="Laser cutter enclosure", category="tool")
 
     # ------- Dust collector (high, between windows on back wall) ------------
@@ -259,18 +261,18 @@ def build_scene() -> Scene:
     s.cyl("Dust_Riser_From_Collector", 120, 12, 82, 2.0, 14, "duct",
           axis="z", note="Riser from collector to main trunk", category="dust")
     # Secondary branch running out from the back-wall trunk along Y to feed
-    # the planer (mid left leg) and the table saw (lower left leg).
-    s.cyl("Dust_Branch_ToFloorTools", 18, 12, 82, 2.0, 84, "duct",
+    # the planer (far end of short leg) and the table saw (near corner).
+    s.cyl("Dust_Branch_ToFloorTools", 222, 12, 82, 2.0, 84, "duct",
           axis="y", note="Branch out from back wall to floor-tool drops",
           category="dust")
 
     # Drops + blast gates + flex hoses
     # name, drop_x, drop_y, top_z, drop_height, gate_z, flex_target (x,y,z)
     drops = [
-        ("Drop_Miter",    69, 12, 82, 30, 56, (69, 16, 38)),
-        ("Drop_Router",  120, 12, 82, 30, 56, (120, 20, 38)),
-        ("Drop_Planer",   18, 57, 82, 30, 56, (18, 57, 24)),
-        ("Drop_TableSaw", 18, 100, 82, 50, 56, (18, 100, 24)),
+        ("Drop_Miter",    114, 12, 82, 30, 56, (114, 16, 38)),
+        ("Drop_Router",   192, 12, 82, 30, 56, (192, 20, 38)),
+        ("Drop_TableSaw", 222, 58, 82, 50, 56, (222, 58, 24)),
+        ("Drop_Planer",   222, 99, 82, 30, 56, (222, 99, 24)),
     ]
     for name, dx, dy, top_z, height, gate_z, target in drops:
         s.cyl(f"{name}_Pipe", dx, dy, top_z - height, 2.0, height, "duct",
@@ -290,7 +292,7 @@ def build_scene() -> Scene:
     # ------- Air filter (DWXAF101) -------------------------------------------
     # Ceiling-mounted, over the open quadrant so airflow circulates across
     # the work zone without directly fighting the dust-collector intake.
-    s.box("Air_Filter_DWXAF101", 138, 54, 84, 24, 18, 12, "air_filter",
+    s.box("Air_Filter_DWXAF101", 78, 54, 84, 24, 18, 12, "air_filter",
           note="DeWalt DWXAF101 ceiling-mounted air filter", category="air")
 
     # ------- Box fans --------------------------------------------------------
@@ -317,9 +319,9 @@ def build_scene() -> Scene:
     # Three 48in LED fixtures, length oriented along the long X axis at z=94.
     lights = [
         # name, center_x, center_y
-        ("LED_Shop_Light_1_BackBench",   72,  18),  # over miter + router
-        ("LED_Shop_Light_2_LeftLeg",     30,  60),  # over planer + saw zone
-        ("LED_Shop_Light_3_OpenZone",   168,  60),  # over laser + open floor
+        ("LED_Shop_Light_1_BackBench",  168,  18),  # over miter + router (right side now)
+        ("LED_Shop_Light_2_ShortLeg",   210,  60),  # over planer + saw zone (right)
+        ("LED_Shop_Light_3_OpenZone",    72,  60),  # over laser + open floor (left)
     ]
     for name, lx, ly in lights:
         s.box(name, lx - 24, ly - 2, 94, 48, 4, 2, "light",
@@ -331,23 +333,24 @@ def build_scene() -> Scene:
         circuit = "circuit_b" if x in (72, 168) else "circuit_d"
         s.box(f"Outlet_Back_{x}in", x - 1.5, 0, 44, 3, 1, 5, circuit,
               note=f"Back-wall outlet @ x={x}in", category="electrical")
-    # Left wall every ~48 in (skip top corner since the bench is there).
+    # Right wall every ~48 in (skip top corner since the bench is there).
+    # Serves the planer (y=99) and the table saw (y=58) inside the short leg.
     for y in (60, 108):
         circuit = "circuit_c" if y == 60 else "circuit_b"
-        s.box(f"Outlet_Left_{y}in", 0, y - 1.5, 44, 1, 3, 5, circuit,
-              note=f"Left-wall outlet @ y={y}in", category="electrical")
-    # Right wall outlets - serve the existing bench / drill press / Husky bays.
-    for y in (24, 72):
-        s.box(f"Outlet_Right_{y}in", ROOM_W - 1, y - 1.5, 44, 1, 3, 5,
-              "circuit_b",
+        s.box(f"Outlet_Right_{y}in", ROOM_W - 1, y - 1.5, 44, 1, 3, 5, circuit,
               note=f"Right-wall outlet @ y={y}in", category="electrical")
+    # Left wall outlets - serve the existing bench / drill press / Husky bays.
+    for y in (24, 72):
+        s.box(f"Outlet_Left_{y}in", 0, y - 1.5, 44, 1, 3, 5,
+              "circuit_b",
+              note=f"Left-wall outlet @ y={y}in", category="electrical")
     # Front wall - power for fans, charging, optional laser.
     for x in (60, 180):
         s.box(f"Outlet_Front_{x}in", x - 1.5, ROOM_L - 1, 44, 3, 1, 5,
               "circuit_d", note=f"Front-wall outlet @ x={x}in",
               category="electrical")
     # Ceiling outlet for air filter.
-    s.box("Outlet_Ceiling_AirFilter", 138, 50, 94, 4, 4, 2, "circuit_d",
+    s.box("Outlet_Ceiling_AirFilter", 78, 50, 94, 4, 4, 2, "circuit_d",
           note="Ceiling outlet for DWXAF101", category="electrical")
     # High back-wall outlet for dust collector (dedicated).
     s.box("Outlet_High_DustCollector", 118, 0, 72, 4, 1, 5, "circuit_a",
@@ -355,31 +358,38 @@ def build_scene() -> Scene:
           category="electrical")
 
     # ------- Walking aisle clearance ghost ----------------------------------
-    # 36in walking lane across the front of the bay.
-    s.box("Walking_Aisle_Front", 36, 84, 0, ROOM_W - 36, 24, 0.25, "ghost",
+    # 36in walking lane across the front of the bay (clear of new short leg).
+    s.box("Walking_Aisle_Front", 0, 84, 0, 204, 24, 0.25, "ghost",
           note="36in walking clearance across the front", category="ghost")
 
     # ------- Miter saw long-stock support ghost ------------------------------
     # 96in left + right along the back-wall bench at deck height.
     s.box("Miter_LongStock_Support_Ghost", 0, 0, BENCH_H, ROOM_W, 36, 0.25,
-          "ghost", note="Long-stock support along top bench (192in span)",
+          "ghost", note="Long-stock support along top bench (240in span)",
           category="ghost")
 
     # ------- Table saw infeed / outfeed clearance ghost ----------------------
-    # Outfeed is toward -Y (back bench). Infeed is toward +Y (front).
-    s.box("Table_Saw_Outfeed_Ghost", 2, 0, 0, 32, 84, 0.25, "ghost",
-          note="Outfeed clearance toward L-bench top leg (84in, bench acts as outfeed)",
+    # Saw is CLOSE to corner now (y=42..74). Outfeed -Y catches the top-leg
+    # bench at y=36, only 6in of unsupported gap. Infeed +Y has 46in clearance.
+    s.box("Table_Saw_Outfeed_Ghost", SAW_X, 0, 0, SAW_W, SAW_Y, 0.25, "ghost",
+          note="Outfeed clearance toward back, top-leg bench supports workpiece",
           category="ghost")
-    s.box("Table_Saw_Infeed_Ghost", 2, 116, 0, 32, 4, 0.25, "ghost",
-          note="Infeed clearance toward front (4in - tight, see README)",
+    s.box("Table_Saw_Infeed_Ghost", SAW_X, SAW_Y + SAW_D, 0,
+          SAW_W, ROOM_L - (SAW_Y + SAW_D), 0.25, "ghost",
+          note="Infeed clearance toward front (46in, comfortable)",
           category="ghost")
 
     # ------- Planer infeed/outfeed ghost zones -------------------------------
-    # Planer is in the left-leg bench at y=42..72, feeds along Y.
-    s.box("Planer_Infeed_Ghost", 3, 0, 0, 30, 42, 0.25, "ghost_planer",
-          note="Planer infeed 42in toward back wall", category="ghost")
-    s.box("Planer_Outfeed_Ghost", 3, 72, 0, 30, 48, 0.25, "ghost_planer",
-          note="Planer outfeed 48in toward front of bay", category="ghost")
+    # Planer is FAR from corner now (y=84..114). Only 6in infeed clearance
+    # toward +Y - see README, this requires feeding from the back side or
+    # accepting a max board length of ~36in. The original layout was better
+    # for planer rip length; the swap was per user direction.
+    s.box("Planer_Infeed_Ghost", 207, 0, 0, 30, 84, 0.25, "ghost_planer",
+          note="Planer infeed/outfeed from back direction (84in bench-supported)",
+          category="ghost")
+    s.box("Planer_Outfeed_Ghost", 207, 114, 0, 30, 6, 0.25, "ghost_planer",
+          note="Planer +Y clearance only 6in - LIMITS board length, see README",
+          category="ghost")
 
     return s
 
