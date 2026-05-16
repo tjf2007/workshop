@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 44.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
+<rect x="0.000" y="44.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
+<rect x="0.500" y="44.500" width="7.500" height="0.550" fill="#2E2A26" opacity="1.0" rx="0.06" ry="0.06" />
+<text x="0.680" y="44.900" font-size="0.26" fill="#FFFFFF" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cut Day 2: Plywood Sheet Goods</text>
+<text x="4.250" y="54.700" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Page 5 of 19</text>
+<line x1="0.000" y1="44.000" x2="8.500" y2="44.000" stroke="#DDD8C8" stroke-width="0.015" stroke-dasharray="0.08,0.08" />
+<text x="0.700" y="45.500" font-size="0.14" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Print l_bench_partsheets.svg for per-piece diagrams.</text>
+<text x="0.700" y="45.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Major panels (each doubled = 2 cut from 3/4):</text>
+<text x="0.900" y="46.100" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="46.100" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TopLeg_Top_Left (50 x 36)</text>
+<text x="0.900" y="46.320" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="46.320" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TopLeg_Top_MidRight (36 x 22)</text>
+<text x="0.900" y="46.540" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="46.540" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TopLeg_Top_FarRight (36 x 12)</text>
+<text x="0.900" y="46.760" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="46.760" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">LeftLeg_Top_AbovePlaner (36 x 6)</text>
+<text x="0.900" y="46.980" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="46.980" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">LeftLeg_Top_BetweenCavities (36 x 12)</text>
+<text x="0.900" y="47.200" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="47.200" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">LeftLeg_Top_End (36 x 4)</text>
+<text x="0.900" y="47.420" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="47.420" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">End panels (36 x 33, single ply)</text>
+<text x="0.900" y="47.640" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="47.640" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Toe kicks (144 x 4) and (84 x 4)</text>
+<text x="0.900" y="47.860" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="47.860" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Router cabinet sides (32 x 31.5)</text>
+<text x="0.900" y="48.080" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
+<text x="1.100" y="48.080" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Saw sled (30 x 30) and Planer sled (28 x 28, set aside)</text>
+<rect x="0.500" y="49.950" width="7.500" height="3.950" fill="#FFFFFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
+<rect x="6.000" y="50.050" width="1.900" height="3.750" fill="#F2EFE2" opacity="1.0" rx="0.04" ry="0.04" />
+<text x="6.120" y="50.300" font-size="0.11" fill="#4A6FA5" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TOOLS</text>
+<text x="6.120" y="50.480" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Circular saw + straight edge OR track saw</text>
+<text x="6.120" y="50.660" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Tape</text>
+<text x="6.120" y="50.840" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Pencil</text>
+<text x="6.120" y="51.200" font-size="0.11" fill="#6C8C3B" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TIME</text>
+<text x="6.120" y="51.380" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">4-6 hours</text>
+<text x="0.750" y="50.350" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Instructions</text>
+<text x="0.750" y="50.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Print l_bench_partsheets.svg as a per-piece reference.</text>
+<text x="0.750" y="50.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Layout the cuts on each 4x8 sheet to minimize waste (see SVG).</text>
+<text x="0.750" y="51.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cut largest panels first - small pieces from offcuts.</text>
+<text x="0.750" y="51.250" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Use a straight-edge guide or track saw for clean factory edges.</text>
+<text x="0.750" y="51.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Label every piece in sharpie as it comes off the saw.</text>
+<rect x="0.750" y="53.530" width="0.180" height="0.100" fill="#F18F4C" opacity="1.0" stroke="#9A3F0A" stroke-width="0.005" />
+<text x="0.990" y="53.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">New this step</text>
+<rect x="2.250" y="53.530" width="0.180" height="0.100" fill="#E4DECF" opacity="1.0" stroke="#BBB2A0" stroke-width="0.005" />
+<text x="2.490" y="53.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Already built</text>
+</svg>

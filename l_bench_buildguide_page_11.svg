@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 110.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
+<rect x="0.000" y="110.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
+<rect x="0.500" y="110.500" width="7.500" height="0.550" fill="#2E2A26" opacity="1.0" rx="0.06" ry="0.06" />
+<text x="0.680" y="110.900" font-size="0.26" fill="#FFFFFF" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Step 6: Short Leg Side Walls</text>
+<text x="4.250" y="120.700" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Page 11 of 19</text>
+<line x1="0.000" y1="110.000" x2="8.500" y2="110.000" stroke="#DDD8C8" stroke-width="0.015" stroke-dasharray="0.08,0.08" />
+<rect x="0.500" y="111.200" width="7.500" height="4.500" fill="#FFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
+<line x1="1.550" y1="111.200" x2="1.550" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.775" y1="111.200" x2="1.775" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="2.000" y1="111.200" x2="2.000" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="2.225" y1="111.200" x2="2.225" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="2.450" y1="111.200" x2="2.450" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="2.675" y1="111.200" x2="2.675" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="2.900" y1="111.200" x2="2.900" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="3.125" y1="111.200" x2="3.125" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="3.350" y1="111.200" x2="3.350" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="3.575" y1="111.200" x2="3.575" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="3.800" y1="111.200" x2="3.800" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="4.025" y1="111.200" x2="4.025" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="4.250" y1="111.200" x2="4.250" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="4.475" y1="111.200" x2="4.475" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="4.700" y1="111.200" x2="4.700" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="4.925" y1="111.200" x2="4.925" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="5.150" y1="111.200" x2="5.150" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="5.375" y1="111.200" x2="5.375" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="5.600" y1="111.200" x2="5.600" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="5.825" y1="111.200" x2="5.825" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="6.050" y1="111.200" x2="6.050" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="6.275" y1="111.200" x2="6.275" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="6.500" y1="111.200" x2="6.500" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="6.725" y1="111.200" x2="6.725" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="6.950" y1="111.200" x2="6.950" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="111.200" x2="6.950" y2="111.200" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="111.425" x2="6.950" y2="111.425" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="111.650" x2="6.950" y2="111.650" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="111.875" x2="6.950" y2="111.875" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="112.100" x2="6.950" y2="112.100" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="112.325" x2="6.950" y2="112.325" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="112.550" x2="6.950" y2="112.550" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="112.775" x2="6.950" y2="112.775" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="113.000" x2="6.950" y2="113.000" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="113.225" x2="6.950" y2="113.225" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="113.450" x2="6.950" y2="113.450" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="113.675" x2="6.950" y2="113.675" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="113.900" x2="6.950" y2="113.900" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="114.125" x2="6.950" y2="114.125" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="114.350" x2="6.950" y2="114.350" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="114.575" x2="6.950" y2="114.575" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="114.800" x2="6.950" y2="114.800" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="115.025" x2="6.950" y2="115.025" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="115.250" x2="6.950" y2="115.250" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="115.475" x2="6.950" y2="115.475" stroke="#EEE7D3" stroke-width="0.005" />
+<line x1="1.550" y1="115.700" x2="6.950" y2="115.700" stroke="#EEE7D3" stroke-width="0.005" />
+<rect x="1.550" y="111.200" width="5.400" height="1.350" fill="#F8F4E3" opacity="1.0" stroke="#D8D0B0" stroke-width="0.005" />
+<rect x="1.550" y="112.550" width="1.350" height="3.150" fill="#F8F4E3" opacity="1.0" stroke="#D8D0B0" stroke-width="0.005" />
+<rect x="1.550" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="2.450" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.294" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="4.775" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.469" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.500" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.819" y="112.494" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="2.450" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.294" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="4.775" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.469" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.500" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.819" y="111.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="112.419" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="112.419" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="111.200" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="111.200" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="2.450" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="2.450" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.294" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.294" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="4.775" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="4.775" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.469" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.469" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.500" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.500" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.819" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.819" y="111.331" width="0.131" height="1.087" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.425" y="112.269" width="1.350" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.425" y="111.275" width="1.350" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="3.425" y="111.406" width="0.131" height="0.862" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="4.644" y="111.406" width="0.131" height="0.862" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.600" y="111.350" width="0.028" height="1.200" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="6.472" y="111.350" width="0.028" height="1.200" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.600" y="111.350" width="0.900" height="0.028" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="5.600" y="111.350" width="0.900" height="1.200" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
+<rect x="1.550" y="112.644" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.844" y="112.644" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="1.550" y="113.900" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.844" y="113.900" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="1.550" y="114.219" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.844" y="114.219" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="1.550" y="115.550" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.844" y="115.550" width="0.056" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="1.550" y="112.550" width="0.131" height="3.150" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.769" y="112.550" width="0.131" height="3.150" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="1.550" y="112.550" width="0.131" height="3.150" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<rect x="2.769" y="112.550" width="0.131" height="3.150" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
+<text x="1.550" y="111.140" font-size="0.09" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">X = back wall (in)</text>
+<text x="1.500" y="115.820" font-size="0.09" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Y = depth into room (in)</text>
+<text x="7.820" y="111.380" font-size="0.09" fill="#555" font-weight="normal" text-anchor="end" font-family="Helvetica,Arial,sans-serif">BACK WALL (windows) is at TOP of plan</text>
+<text x="7.820" y="111.520" font-size="0.09" fill="#555" font-weight="normal" text-anchor="end" font-family="Helvetica,Arial,sans-serif">LHS wall (garage door side) is at LEFT</text>
+<rect x="0.500" y="115.950" width="7.500" height="3.950" fill="#FFFFFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
+<rect x="6.000" y="116.050" width="1.900" height="3.750" fill="#F2EFE2" opacity="1.0" rx="0.04" ry="0.04" />
+<text x="6.120" y="116.300" font-size="0.11" fill="#4A6FA5" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TOOLS</text>
+<text x="6.120" y="116.480" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Drill</text>
+<text x="6.120" y="116.660" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Square</text>
+<text x="6.120" y="116.840" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Tape</text>
+<text x="6.120" y="117.020" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Glue</text>
+<text x="6.120" y="117.200" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Screws</text>
+<text x="6.120" y="117.560" font-size="0.11" fill="#6C8C3B" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TIME</text>
+<text x="6.120" y="117.740" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">1.5 hours</text>
+<text x="0.750" y="116.350" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Instructions</text>
+<text x="0.750" y="116.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Build the short leg as TWO side walls (left + right), each 84</text>
+<text x="0.750" y="116.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">in long x 37 in tall, on the floor like the top leg walls.</text>
+<text x="0.750" y="117.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Each wall: bottom rail (84 in) + top rail (84 in) + 4 studs</text>
+<text x="0.750" y="117.250" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">at Y positions 38.5, 72, 80.5, 116.</text>
+<text x="0.750" y="117.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Square each wall (diagonal check), set aside vertically.</text>
+<rect x="0.750" y="119.530" width="0.180" height="0.100" fill="#F18F4C" opacity="1.0" stroke="#9A3F0A" stroke-width="0.005" />
+<text x="0.990" y="119.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">New this step</text>
+<rect x="2.250" y="119.530" width="0.180" height="0.100" fill="#E4DECF" opacity="1.0" stroke="#BBB2A0" stroke-width="0.005" />
+<text x="2.490" y="119.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Already built</text>
+</svg>
