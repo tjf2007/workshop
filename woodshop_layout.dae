@@ -795,23 +795,23 @@
         </triangles>
       </mesh>
     </geometry>
-    <geometry id="geom_Table_Saw_Platform" name="Table_Saw_Platform">
+    <geometry id="geom_Table_Saw_Cavity" name="Table_Saw_Cavity">
       <mesh>
-        <source id="geom_Table_Saw_Platform-positions">
-          <float_array id="geom_Table_Saw_Platform-positions-array" count="24">42.0000 60.0000 0.0000 78.0000 60.0000 0.0000 78.0000 96.0000 0.0000 42.0000 96.0000 0.0000 42.0000 60.0000 3.0000 78.0000 60.0000 3.0000 78.0000 96.0000 3.0000 42.0000 96.0000 3.0000</float_array>
+        <source id="geom_Table_Saw_Cavity-positions">
+          <float_array id="geom_Table_Saw_Cavity-positions-array" count="24">2.0000 84.0000 0.0000 34.0000 84.0000 0.0000 34.0000 116.0000 0.0000 2.0000 116.0000 0.0000 2.0000 84.0000 37.0000 34.0000 84.0000 37.0000 34.0000 116.0000 37.0000 2.0000 116.0000 37.0000</float_array>
           <technique_common>
-            <accessor source="#geom_Table_Saw_Platform-positions-array" count="8" stride="3">
+            <accessor source="#geom_Table_Saw_Cavity-positions-array" count="8" stride="3">
               <param name="X" type="float" />
               <param name="Y" type="float" />
               <param name="Z" type="float" />
             </accessor>
           </technique_common>
         </source>
-        <vertices id="geom_Table_Saw_Platform-vertices">
-          <input semantic="POSITION" source="#geom_Table_Saw_Platform-positions" />
+        <vertices id="geom_Table_Saw_Cavity-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Cavity-positions" />
         </vertices>
         <triangles count="12" material="mat_symbol">
-          <input semantic="VERTEX" source="#geom_Table_Saw_Platform-vertices" offset="0" />
+          <input semantic="VERTEX" source="#geom_Table_Saw_Cavity-vertices" offset="0" />
           <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
         </triangles>
       </mesh>
@@ -819,7 +819,7 @@
     <geometry id="geom_Table_Saw_Body" name="Table_Saw_Body">
       <mesh>
         <source id="geom_Table_Saw_Body-positions">
-          <float_array id="geom_Table_Saw_Body-positions-array" count="24">44.0000 62.0000 3.0000 76.0000 62.0000 3.0000 76.0000 94.0000 3.0000 44.0000 94.0000 3.0000 44.0000 62.0000 37.0000 76.0000 62.0000 37.0000 76.0000 94.0000 37.0000 44.0000 94.0000 37.0000</float_array>
+          <float_array id="geom_Table_Saw_Body-positions-array" count="24">3.5000 85.5000 24.0000 32.5000 85.5000 24.0000 32.5000 114.5000 24.0000 3.5000 114.5000 24.0000 3.5000 85.5000 37.0000 32.5000 85.5000 37.0000 32.5000 114.5000 37.0000 3.5000 114.5000 37.0000</float_array>
           <technique_common>
             <accessor source="#geom_Table_Saw_Body-positions-array" count="8" stride="3">
               <param name="X" type="float" />
@@ -833,6 +833,27 @@
         </vertices>
         <triangles count="12" material="mat_symbol">
           <input semantic="VERTEX" source="#geom_Table_Saw_Body-vertices" offset="0" />
+          <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom_Table_Saw_Deck" name="Table_Saw_Deck">
+      <mesh>
+        <source id="geom_Table_Saw_Deck-positions">
+          <float_array id="geom_Table_Saw_Deck-positions-array" count="24">3.5000 85.5000 36.7500 32.5000 85.5000 36.7500 32.5000 114.5000 36.7500 3.5000 114.5000 36.7500 3.5000 85.5000 37.0000 32.5000 85.5000 37.0000 32.5000 114.5000 37.0000 3.5000 114.5000 37.0000</float_array>
+          <technique_common>
+            <accessor source="#geom_Table_Saw_Deck-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom_Table_Saw_Deck-vertices">
+          <input semantic="POSITION" source="#geom_Table_Saw_Deck-positions" />
+        </vertices>
+        <triangles count="12" material="mat_symbol">
+          <input semantic="VERTEX" source="#geom_Table_Saw_Deck-vertices" offset="0" />
           <p>0 3 2 0 2 1 4 5 6 4 6 7 0 1 5 0 5 4 2 3 7 2 7 6 1 2 6 1 6 5 3 0 4 3 4 7</p>
         </triangles>
       </mesh>
@@ -1029,7 +1050,7 @@
     <geometry id="geom_Drop_TableSaw_BlastGate" name="Drop_TableSaw_BlastGate">
       <mesh>
         <source id="geom_Drop_TableSaw_BlastGate-positions">
-          <float_array id="geom_Drop_TableSaw_BlastGate-positions-array" count="24">15.0000 75.0000 56.0000 21.0000 75.0000 56.0000 21.0000 81.0000 56.0000 15.0000 81.0000 56.0000 15.0000 75.0000 60.0000 21.0000 75.0000 60.0000 21.0000 81.0000 60.0000 15.0000 81.0000 60.0000</float_array>
+          <float_array id="geom_Drop_TableSaw_BlastGate-positions-array" count="24">15.0000 97.0000 56.0000 21.0000 97.0000 56.0000 21.0000 103.0000 56.0000 15.0000 103.0000 56.0000 15.0000 97.0000 60.0000 21.0000 97.0000 60.0000 21.0000 103.0000 60.0000 15.0000 103.0000 60.0000</float_array>
           <technique_common>
             <accessor source="#geom_Drop_TableSaw_BlastGate-positions-array" count="8" stride="3">
               <param name="X" type="float" />
@@ -1050,7 +1071,7 @@
     <geometry id="geom_Drop_TableSaw_FlexHose_Approx" name="Drop_TableSaw_FlexHose_Approx">
       <mesh>
         <source id="geom_Drop_TableSaw_FlexHose_Approx-positions">
-          <float_array id="geom_Drop_TableSaw_FlexHose_Approx-positions-array" count="24">16.5000 76.5000 16.5000 61.5000 76.5000 16.5000 61.5000 79.5000 16.5000 16.5000 79.5000 16.5000 16.5000 76.5000 57.5000 61.5000 76.5000 57.5000 61.5000 79.5000 57.5000 16.5000 79.5000 57.5000</float_array>
+          <float_array id="geom_Drop_TableSaw_FlexHose_Approx-positions-array" count="24">16.5000 98.5000 22.5000 19.5000 98.5000 22.5000 19.5000 101.5000 22.5000 16.5000 101.5000 22.5000 16.5000 98.5000 57.5000 19.5000 98.5000 57.5000 19.5000 101.5000 57.5000 16.5000 101.5000 57.5000</float_array>
           <technique_common>
             <accessor source="#geom_Drop_TableSaw_FlexHose_Approx-positions-array" count="8" stride="3">
               <param name="X" type="float" />
@@ -1575,7 +1596,7 @@
     <geometry id="geom_Table_Saw_Outfeed_Ghost" name="Table_Saw_Outfeed_Ghost">
       <mesh>
         <source id="geom_Table_Saw_Outfeed_Ghost-positions">
-          <float_array id="geom_Table_Saw_Outfeed_Ghost-positions-array" count="24">42.0000 0.0000 0.0000 78.0000 0.0000 0.0000 78.0000 60.0000 0.0000 42.0000 60.0000 0.0000 42.0000 0.0000 0.2500 78.0000 0.0000 0.2500 78.0000 60.0000 0.2500 42.0000 60.0000 0.2500</float_array>
+          <float_array id="geom_Table_Saw_Outfeed_Ghost-positions-array" count="24">2.0000 0.0000 0.0000 34.0000 0.0000 0.0000 34.0000 84.0000 0.0000 2.0000 84.0000 0.0000 2.0000 0.0000 0.2500 34.0000 0.0000 0.2500 34.0000 84.0000 0.2500 2.0000 84.0000 0.2500</float_array>
           <technique_common>
             <accessor source="#geom_Table_Saw_Outfeed_Ghost-positions-array" count="8" stride="3">
               <param name="X" type="float" />
@@ -1596,7 +1617,7 @@
     <geometry id="geom_Table_Saw_Infeed_Ghost" name="Table_Saw_Infeed_Ghost">
       <mesh>
         <source id="geom_Table_Saw_Infeed_Ghost-positions">
-          <float_array id="geom_Table_Saw_Infeed_Ghost-positions-array" count="24">42.0000 96.0000 0.0000 78.0000 96.0000 0.0000 78.0000 120.0000 0.0000 42.0000 120.0000 0.0000 42.0000 96.0000 0.2500 78.0000 96.0000 0.2500 78.0000 120.0000 0.2500 42.0000 120.0000 0.2500</float_array>
+          <float_array id="geom_Table_Saw_Infeed_Ghost-positions-array" count="24">2.0000 116.0000 0.0000 34.0000 116.0000 0.0000 34.0000 120.0000 0.0000 2.0000 120.0000 0.0000 2.0000 116.0000 0.2500 34.0000 116.0000 0.2500 34.0000 120.0000 0.2500 2.0000 120.0000 0.2500</float_array>
           <technique_common>
             <accessor source="#geom_Table_Saw_Infeed_Ghost-positions-array" count="8" stride="3">
               <param name="X" type="float" />
@@ -1806,7 +1827,7 @@
     <geometry id="geom_Drop_TableSaw_Pipe" name="Drop_TableSaw_Pipe">
       <mesh>
         <source id="geom_Drop_TableSaw_Pipe-positions">
-          <float_array id="geom_Drop_TableSaw_Pipe-positions-array" count="126">20.0000 78.0000 32.0000 19.9021 78.6180 32.0000 19.6180 79.1756 32.0000 19.1756 79.6180 32.0000 18.6180 79.9021 32.0000 18.0000 80.0000 32.0000 17.3820 79.9021 32.0000 16.8244 79.6180 32.0000 16.3820 79.1756 32.0000 16.0979 78.6180 32.0000 16.0000 78.0000 32.0000 16.0979 77.3820 32.0000 16.3820 76.8244 32.0000 16.8244 76.3820 32.0000 17.3820 76.0979 32.0000 18.0000 76.0000 32.0000 18.6180 76.0979 32.0000 19.1756 76.3820 32.0000 19.6180 76.8244 32.0000 19.9021 77.3820 32.0000 20.0000 78.0000 82.0000 19.9021 78.6180 82.0000 19.6180 79.1756 82.0000 19.1756 79.6180 82.0000 18.6180 79.9021 82.0000 18.0000 80.0000 82.0000 17.3820 79.9021 82.0000 16.8244 79.6180 82.0000 16.3820 79.1756 82.0000 16.0979 78.6180 82.0000 16.0000 78.0000 82.0000 16.0979 77.3820 82.0000 16.3820 76.8244 82.0000 16.8244 76.3820 82.0000 17.3820 76.0979 82.0000 18.0000 76.0000 82.0000 18.6180 76.0979 82.0000 19.1756 76.3820 82.0000 19.6180 76.8244 82.0000 19.9021 77.3820 82.0000 18.0000 78.0000 32.0000 18.0000 78.0000 82.0000</float_array>
+          <float_array id="geom_Drop_TableSaw_Pipe-positions-array" count="126">20.0000 100.0000 32.0000 19.9021 100.6180 32.0000 19.6180 101.1756 32.0000 19.1756 101.6180 32.0000 18.6180 101.9021 32.0000 18.0000 102.0000 32.0000 17.3820 101.9021 32.0000 16.8244 101.6180 32.0000 16.3820 101.1756 32.0000 16.0979 100.6180 32.0000 16.0000 100.0000 32.0000 16.0979 99.3820 32.0000 16.3820 98.8244 32.0000 16.8244 98.3820 32.0000 17.3820 98.0979 32.0000 18.0000 98.0000 32.0000 18.6180 98.0979 32.0000 19.1756 98.3820 32.0000 19.6180 98.8244 32.0000 19.9021 99.3820 32.0000 20.0000 100.0000 82.0000 19.9021 100.6180 82.0000 19.6180 101.1756 82.0000 19.1756 101.6180 82.0000 18.6180 101.9021 82.0000 18.0000 102.0000 82.0000 17.3820 101.9021 82.0000 16.8244 101.6180 82.0000 16.3820 101.1756 82.0000 16.0979 100.6180 82.0000 16.0000 100.0000 82.0000 16.0979 99.3820 82.0000 16.3820 98.8244 82.0000 16.8244 98.3820 82.0000 17.3820 98.0979 82.0000 18.0000 98.0000 82.0000 18.6180 98.0979 82.0000 19.1756 98.3820 82.0000 19.6180 98.8244 82.0000 19.9021 99.3820 82.0000 18.0000 100.0000 32.0000 18.0000 100.0000 82.0000</float_array>
           <technique_common>
             <accessor source="#geom_Drop_TableSaw_Pipe-positions-array" count="42" stride="3">
               <param name="X" type="float" />
@@ -2007,11 +2028,11 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="node_geom_Table_Saw_Platform" name="Table_Saw_Platform" type="NODE">
-        <instance_geometry url="#geom_Table_Saw_Platform">
+      <node id="node_geom_Table_Saw_Cavity" name="Table_Saw_Cavity" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Cavity">
           <bind_material>
             <technique_common>
-              <instance_material symbol="mat_symbol" target="#platform-material" />
+              <instance_material symbol="mat_symbol" target="#ghost-material" />
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -2021,6 +2042,15 @@
           <bind_material>
             <technique_common>
               <instance_material symbol="mat_symbol" target="#tool_yellow-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="node_geom_Table_Saw_Deck" name="Table_Saw_Deck" type="NODE">
+        <instance_geometry url="#geom_Table_Saw_Deck">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_symbol" target="#tool_metal-material" />
             </technique_common>
           </bind_material>
         </instance_geometry>

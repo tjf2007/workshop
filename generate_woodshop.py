@@ -215,17 +215,22 @@ def build_scene() -> Scene:
           note="Planer raised position - bed flush to 37in (ghost)",
           category="ghost")
 
-    # ------- Table saw on fixed floor platform -------------------------------
-    # Sketch puts the saw at the lower end of the left leg, on the floor.
-    # Platform extends the bench's left-leg footprint past the bench end.
-    # Outfeed direction is toward the L-bench (-Y), with the bench acting as
-    # outfeed support beyond the platform. Operator stands at the high-Y end
-    # (front of room); short infeed clearance there is the main tradeoff.
-    s.box("Table_Saw_Platform", 42, 60, 0, 36, 36, 3, "platform",
-          note="Fixed platform raises saw deck to 37in flush with bench",
+    # ------- Table saw drop-in cavity (in left leg of L-bench) --------------
+    # Saw drops into a 32x32 cavity in the bottom of the left leg, with the
+    # cast deck flush at 37in. Stand removed. Saw bolts to a sled inside the
+    # cavity (see l_bench.dae for the full hardware detail). Outfeed faces
+    # -Y toward the L-bench top leg, infeed +Y toward the front of the bay.
+    SAW_X, SAW_Y, SAW_W, SAW_D = 2, 84, 32, 32
+    s.box("Table_Saw_Cavity", SAW_X, SAW_Y, 0, SAW_W, SAW_D, BENCH_H, "ghost",
+          note="Saw drop-in cavity in L-bench left leg (32x32 opening)",
+          category="ghost")
+    s.box("Table_Saw_Body", SAW_X + 1.5, SAW_Y + 1.5, BENCH_H - 13,
+          SAW_W - 3, SAW_D - 3, 13, "tool_yellow",
+          note="DeWalt DWE7491 jobsite saw, stand removed, deck flush @ 37in",
           category="tool")
-    s.box("Table_Saw_Body", 44, 62, 3, 32, 32, 34, "tool_yellow",
-          note="DeWalt jobsite table saw, deck @ 37in", category="tool")
+    s.box("Table_Saw_Deck", SAW_X + 1.5, SAW_Y + 1.5, BENCH_H - 0.25,
+          SAW_W - 3, SAW_D - 3, 0.25, "tool_metal",
+          note="Cast deck flush with bench top", category="tool")
 
     # ------- Drill press on existing bench -----------------------------------
     # Per sketch: drill is on the right portion of the existing bench.
@@ -265,7 +270,7 @@ def build_scene() -> Scene:
         ("Drop_Miter",    69, 12, 82, 30, 56, (69, 16, 38)),
         ("Drop_Router",  120, 12, 82, 30, 56, (120, 20, 38)),
         ("Drop_Planer",   18, 57, 82, 30, 56, (18, 57, 24)),
-        ("Drop_TableSaw", 18, 78, 82, 50, 56, (60, 78, 18)),
+        ("Drop_TableSaw", 18, 100, 82, 50, 56, (18, 100, 24)),
     ]
     for name, dx, dy, top_z, height, gate_z, target in drops:
         s.cyl(f"{name}_Pipe", dx, dy, top_z - height, 2.0, height, "duct",
@@ -362,10 +367,11 @@ def build_scene() -> Scene:
 
     # ------- Table saw infeed / outfeed clearance ghost ----------------------
     # Outfeed is toward -Y (back bench). Infeed is toward +Y (front).
-    s.box("Table_Saw_Outfeed_Ghost", 42, 0, 0, 36, 60, 0.25, "ghost",
-          note="Outfeed clearance toward L-bench (60in)", category="ghost")
-    s.box("Table_Saw_Infeed_Ghost", 42, 96, 0, 36, 24, 0.25, "ghost",
-          note="Infeed clearance toward front (24in - tight, see README)",
+    s.box("Table_Saw_Outfeed_Ghost", 2, 0, 0, 32, 84, 0.25, "ghost",
+          note="Outfeed clearance toward L-bench top leg (84in, bench acts as outfeed)",
+          category="ghost")
+    s.box("Table_Saw_Infeed_Ghost", 2, 116, 0, 32, 4, 0.25, "ghost",
+          note="Infeed clearance toward front (4in - tight, see README)",
           category="ghost")
 
     # ------- Planer infeed/outfeed ghost zones -------------------------------

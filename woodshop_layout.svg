@@ -38,10 +38,11 @@
 <rect x="60" y="60" width="960.0" height="480.0" fill="none" stroke="#222" stroke-width="2"/>
 <rect x="72.00" y="228.00" width="120.00" height="120.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="72.00" y="228.00" width="120.00" height="120.00" fill="#4CD88C" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
+<rect x="68.00" y="396.00" width="128.00" height="128.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="204.00" y="396.00" width="816.00" height="96.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="60.00" y="60.00" width="960.00" height="144.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
-<rect x="228.00" y="60.00" width="144.00" height="240.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
-<rect x="228.00" y="444.00" width="144.00" height="96.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
+<rect x="68.00" y="60.00" width="128.00" height="336.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
+<rect x="68.00" y="524.00" width="128.00" height="16.00" fill="#4C8CF2" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="72.00" y="60.00" width="120.00" height="168.00" fill="#4CD88C" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="72.00" y="348.00" width="120.00" height="192.00" fill="#4CD88C" fill-opacity="0.18" stroke="none" stroke-width="0.6"/>
 <rect x="60.00" y="60.00" width="960.00" height="480.00" fill="#D8D3C6" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
@@ -61,8 +62,8 @@
 <rect x="492.00" y="76.00" width="96.00" height="128.00" fill="#2D2D2D" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
 <rect x="492.00" y="76.00" width="96.00" height="128.00" fill="#8C8C93" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
 <rect x="80.00" y="236.00" width="104.00" height="88.00" fill="#F2C60C" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
-<rect x="228.00" y="300.00" width="144.00" height="144.00" fill="#8C663F" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
-<rect x="236.00" y="308.00" width="128.00" height="128.00" fill="#F2C60C" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
+<rect x="74.00" y="402.00" width="116.00" height="116.00" fill="#F2C60C" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
+<rect x="74.00" y="402.00" width="116.00" height="116.00" fill="#8C8C93" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
 <rect x="852.00" y="84.00" width="72.00" height="72.00" fill="#8C8C93" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
 <rect x="780.00" y="300.00" width="192.00" height="192.00" fill="#2D2D2D" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
 <rect x="804.00" y="324.00" width="144.00" height="120.00" fill="#8C8C93" fill-opacity="1.00" stroke="#222" stroke-width="0.6"/>
@@ -72,8 +73,8 @@
 <rect x="534.00" y="102.00" width="12.00" height="44.00" fill="#72727F" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <rect x="120.00" y="276.00" width="24.00" height="24.00" fill="#D84C33" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <rect x="126.00" y="282.00" width="12.00" height="12.00" fill="#72727F" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
-<rect x="120.00" y="360.00" width="24.00" height="24.00" fill="#D84C33" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
-<rect x="126.00" y="366.00" width="180.00" height="12.00" fill="#72727F" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
+<rect x="120.00" y="448.00" width="24.00" height="24.00" fill="#D84C33" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
+<rect x="126.00" y="454.00" width="12.00" height="12.00" fill="#72727F" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <circle cx="540.00" cy="108.00" r="48.00" fill="#8C8C93" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <line x1="60.00" y1="108.00" x2="1020.00" y2="108.00" stroke="#BFBFC6" stroke-width="3"/>
 <circle cx="540.00" cy="108.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
@@ -81,7 +82,7 @@
 <circle cx="336.00" cy="108.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <circle cx="540.00" cy="108.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <circle cx="132.00" cy="288.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
-<circle cx="132.00" cy="372.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
+<circle cx="132.00" cy="460.00" r="8.00" fill="#BFBFC6" fill-opacity="1.00" stroke="#444" stroke-width="0.6"/>
 <rect x="612.00" y="276.00" width="96.00" height="72.00" fill="#EAEAEA" fill-opacity="1.00" stroke="#333" stroke-width="0.6"/>
 <rect x="108.00" y="460.00" width="80.00" height="16.00" fill="#3F3F4C" fill-opacity="1.00" stroke="#333" stroke-width="0.6"/>
 <rect x="892.00" y="460.00" width="80.00" height="16.00" fill="#3F3F4C" fill-opacity="1.00" stroke="#333" stroke-width="0.6"/>
@@ -117,8 +118,8 @@
 <text class="label" x="540.00" y="140.00" text-anchor="middle" alignment-baseline="middle">Router Table Cabinet</text>
 <text class="label" x="540.00" y="140.00" text-anchor="middle" alignment-baseline="middle">Router Table Insert</text>
 <text class="label" x="132.00" y="280.00" text-anchor="middle" alignment-baseline="middle">Planer Lowered</text>
-<text class="label" x="300.00" y="372.00" text-anchor="middle" alignment-baseline="middle">Table Saw Platform</text>
-<text class="label" x="300.00" y="372.00" text-anchor="middle" alignment-baseline="middle">Table Saw Body</text>
+<text class="label" x="132.00" y="460.00" text-anchor="middle" alignment-baseline="middle">Table Saw Body</text>
+<text class="label" x="132.00" y="460.00" text-anchor="middle" alignment-baseline="middle">Table Saw Deck</text>
 <text class="label" x="888.00" y="120.00" text-anchor="middle" alignment-baseline="middle">Drill Press Column</text>
 <text class="label" x="876.00" y="396.00" text-anchor="middle" alignment-baseline="middle">Laser Rolling Table</text>
 <text class="label" x="876.00" y="384.00" text-anchor="middle" alignment-baseline="middle">Laser Enclosure</text>
