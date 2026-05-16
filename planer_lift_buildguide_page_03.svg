@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 22.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="22.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Tools + Pre-Build Verification</text>
+<line x1="0.500" y1="23.050" x2="8.000" y2="23.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="32.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">3 / 17</text>
+<text x="0.500" y="23.500" font-size="0.18" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Tools you need</text>
+<line x1="0.500" y1="23.820" x2="8.000" y2="23.820" stroke="#777777" stroke-width="0.006" />
+<rect x="0.500" y="23.890" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="24.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Drill / driver + bits (1/16, 3/16, 5/16, 1/2 in)</text>
+<rect x="0.500" y="24.150" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="24.280" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Hacksaw (for cutting steel angle)</text>
+<rect x="0.500" y="24.410" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="24.540" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Forstner bit 1.5 in (drill body cradle)</text>
+<rect x="0.500" y="24.670" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="24.800" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Socket wrench set (1/2 in for lag bolts)</text>
+<rect x="0.500" y="24.930" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="25.060" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Multimeter (continuity test for reed switches)</text>
+<rect x="0.500" y="25.190" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="25.320" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Soldering iron + solder OR wire nuts</text>
+<rect x="0.500" y="25.450" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="25.580" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Wire strippers, side cutters</text>
+<rect x="0.500" y="25.710" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="25.840" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Tape measure, square, pencil</text>
+<rect x="0.500" y="25.970" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="26.100" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Level (4 ft minimum)</text>
+<rect x="0.500" y="26.230" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="26.360" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Shop vac</text>
+<rect x="0.500" y="26.490" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="26.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Safety glasses, ear protection</text>
+<text x="0.500" y="27.130" font-size="0.16" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Pre-build verification (do these BEFORE Step 1)</text>
+<line x1="0.500" y1="27.450" x2="8.000" y2="27.450" stroke="#777777" stroke-width="0.006" />
+<rect x="0.500" y="27.520" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="27.650" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Open the HF #96406 box in-store. MEASURE the input hex shaft.</text>
+<rect x="0.500" y="27.780" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="27.910" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Compare to 3/4 in vs 13/16 in socket - buy the matching one.</text>
+<rect x="0.500" y="28.040" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="28.170" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Measure the jack collapsed-height and extended-height in person.</text>
+<rect x="0.500" y="28.300" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="28.430" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Confirm your drill clutch goes low enough (5-10 setting min).</text>
+<rect x="0.500" y="28.560" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="28.690" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Identify which direction on your drill is JACK EXTEND (usually CW).</text>
+<rect x="0.500" y="28.820" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="28.950" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Inventory all bolts, screws, magnets - everything on shopping list.</text>
+<rect x="0.500" y="29.080" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="29.210" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Confirm L-bench planer cavity is fully open + framing rails clear.</text>
+<rect x="0.500" y="29.340" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="29.470" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Plan the relay + wire routing inside the bench (where does power come from?)</text>
+</svg>

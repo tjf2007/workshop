@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 0.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="4.250" y="1.900" font-size="1.0" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">PLANER</text>
+<text x="4.250" y="2.600" font-size="1.0" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">LIFT</text>
+<text x="4.250" y="3.100" font-size="0.42" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">BUILD GUIDE</text>
+<line x1="2.000" y1="3.400" x2="6.500" y2="3.400" stroke="#000000" stroke-width="0.02" />
+<text x="4.250" y="3.800" font-size="0.2" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Scissor stabilizer + drill motor mechanism</text>
+<text x="4.250" y="4.100" font-size="0.14" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(install after the L-bench frame is complete)</text>
+<rect x="3.050" y="4.700" width="2.400" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" stroke-dasharray="0.06,0.04" />
+<text x="4.250" y="4.500" font-size="0.1" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(cavity, 30 x 30 x 37 in)</text>
+<rect x="3.350" y="4.800" width="1.800" height="0.300" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.01" />
+<text x="4.250" y="5.000" font-size="0.1" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">PLANER</text>
+<rect x="3.250" y="5.150" width="2.000" height="0.150" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.008" />
+<text x="4.250" y="5.280" font-size="0.09" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">sled (28 x 28 x 3/4)</text>
+<line x1="3.750" y1="5.350" x2="4.750" y2="6.050" stroke="#3A3A48" stroke-width="0.015" />
+<line x1="4.750" y1="5.350" x2="3.750" y2="6.050" stroke="#3A3A48" stroke-width="0.015" />
+<rect x="3.700" y="6.050" width="1.100" height="0.100" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.008" />
+<text x="4.950" y="5.700" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">scissor</text>
+<text x="4.950" y="5.850" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">jack</text>
+<rect x="3.450" y="6.150" width="0.100" height="0.200" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.008" />
+<rect x="3.550" y="6.250" width="0.500" height="0.100" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.008" />
+<text x="2.950" y="6.300" font-size="0.09" fill="#000000" font-weight="400" text-anchor="end" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.250" y="6.400" width="2.000" height="0.120" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.008" />
+<text x="4.250" y="6.540" font-size="0.09" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">platform (28 x 28 x 3/4)</text>
+<line x1="3.050" y1="7.000" x2="5.450" y2="7.000" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="7.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">cavity floor (bench bottom rails)</text>
+<text x="4.250" y="9.000" font-size="0.18" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">~$90 in parts  +  one old drill</text>
+<text x="4.250" y="9.300" font-size="0.13" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Build time: 1 weekend (5-7 hours)</text>
+<text x="4.250" y="10.500" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">17 pages total - print the whole document</text>
+</svg>

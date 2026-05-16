@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 77.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="77.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 5: Build the Drill Bracket</text>
+<text x="8.000" y="77.850" font-size="0.14" fill="#555555" font-weight="400" text-anchor="end" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">DETAIL DRAWING</text>
+<line x1="0.500" y1="78.050" x2="8.000" y2="78.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="87.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">8 / 17</text>
+<text x="0.800" y="78.400" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">STEEL ANGLE 2 x 2 x 1/8 in  -  cut to 12 in</text>
+<text x="0.800" y="78.800" font-size="0.1" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP VIEW (looking down)</text>
+<rect x="0.800" y="78.900" width="2.400" height="0.400" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.012" />
+<polygon points="1.150,79.100 1.125,79.143 1.075,79.143 1.050,79.100 1.075,79.057 1.125,79.057" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<polygon points="2.950,79.100 2.925,79.143 2.875,79.143 2.850,79.100 2.875,79.057 2.925,79.057" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<line x1="0.800" y1="79.380" x2="3.200" y2="79.380" stroke="#000000" stroke-width="0.006" />
+<text x="2.000" y="79.500" font-size="0.1" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">12 in</text>
+<line x1="1.100" y1="78.840" x2="2.900" y2="78.840" stroke="#000000" stroke-width="0.006" />
+<text x="2.000" y="78.740" font-size="0.09" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">9 in (hole spacing)</text>
+<text x="0.800" y="79.800" font-size="0.1" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">FRONT VIEW (looking at the standing leg)</text>
+<rect x="0.800" y="80.260" width="2.400" height="0.040" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.008" />
+<rect x="0.800" y="79.900" width="0.040" height="0.400" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.008" />
+<line x1="0.800" y1="79.900" x2="0.840" y2="79.940" stroke="#3A3A48" stroke-width="0.006" />
+<text x="3.250" y="80.100" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1/8 in thick</text>
+<text x="0.750" y="80.340" font-size="0.09" fill="#000000" font-weight="400" text-anchor="end" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2 in</text>
+<text x="5.300" y="78.800" font-size="0.1" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">DRILL CRADLE (cut from 2x4 scrap)</text>
+<rect x="5.300" y="78.900" width="1.500" height="1.050" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.012" />
+<path d="M 5.825 78.900 A 0.225 0.225 0 0 0 6.275 78.900" fill="white" stroke="#9A8E70" stroke-width="0.012" />
+<text x="6.050" y="78.800" font-size="0.09" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1.5 in dia Forstner</text>
+<text x="5.450" y="79.800" font-size="0.08" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">screw</text>
+<line x1="5.410" y1="79.860" x2="5.490" y2="79.860" stroke="#000000" stroke-width="0.012" />
+<line x1="5.450" y1="79.820" x2="5.450" y2="79.900" stroke="#000000" stroke-width="0.012" />
+<text x="6.900" y="79.200" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">5 in long</text>
+<line x1="0.500" y1="83.500" x2="8.000" y2="83.500" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="83.800" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">FABRICATION</text>
+<text x="0.500" y="84.100" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1. Cut the 2 x 2 x 1/8 steel angle to 12 in length with a hacksaw.</text>
+<text x="0.500" y="84.300" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   Deburr both ends with a file.</text>
+<text x="0.500" y="84.500" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2. Mark 2 hole positions on the HORIZONTAL leg, 1.5 and 10.5 in</text>
+<text x="0.500" y="84.700" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   from one end, centered along the 2 in width.</text>
+<text x="0.500" y="84.900" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">3. Drill 2 x 5/16 in clearance holes at the marks.</text>
+<text x="0.500" y="85.100" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4. Cut a 5 in piece of 2x4 scrap for the drill cradle.</text>
+<text x="0.500" y="85.300" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">5. With a 1.5 in Forstner bit, drill a SHALLOW (about 1/2 in deep)</text>
+<text x="0.500" y="85.500" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   half-circle crater across the top face of the 2x4 to receive</text>
+<text x="0.500" y="85.700" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   the drill body. The crater axis should run perpendicular to</text>
+<text x="0.500" y="85.900" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   the 2x4's long dimension.</text>
+<text x="0.500" y="86.100" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">6. Adjust crater diameter to match YOUR drill body. Mock-fit the</text>
+<text x="0.500" y="86.300" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">   drill into it - should sit snug, no play, no binding.</text>
+<text x="0.500" y="86.500" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">7. Pre-drill 2 holes in the cradle for #10 wood screws.</text>
+<text x="0.500" y="86.700" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">8. Screw the cradle to the STANDING leg of the steel angle.</text>
+<text x="0.500" y="86.900" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif"></text>
+<text x="0.500" y="87.100" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">When done you have an L-shaped bracket: horizontal leg lag-bolts</text>
+<text x="0.500" y="87.300" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">to the platform; standing leg holds the drill cradle facing UP.</text>
+</svg>

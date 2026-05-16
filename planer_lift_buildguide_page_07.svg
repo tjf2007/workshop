@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 66.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="66.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 4: Mount the Scissor Jack</text>
+<line x1="0.500" y1="67.050" x2="8.000" y2="67.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="76.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">7 / 17</text>
+<text x="0.500" y="67.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (looking into the cavity from above)</text>
+<line x1="0.500" y1="67.300" x2="0.500" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.220" y1="67.300" x2="1.220" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.940" y1="67.300" x2="1.940" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.660" y1="67.300" x2="2.660" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.380" y1="67.300" x2="3.380" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.100" y1="67.300" x2="4.100" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="67.300" x2="4.100" y2="67.300" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.020" x2="4.100" y2="68.020" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.740" x2="4.100" y2="68.740" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="69.460" x2="4.100" y2="69.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="70.180" x2="4.100" y2="70.180" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="70.900" x2="4.100" y2="70.900" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="67.300" width="3.600" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="0.620" y="67.420" width="3.360" height="3.360" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.700" y="68.740" width="1.200" height="0.720" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="1.820" y="68.860" width="0.960" height="0.480" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="1.820" y="68.860" width="0.960" height="0.480" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<polygon points="1.870,68.860 1.845,68.903 1.795,68.903 1.770,68.860 1.795,68.817 1.845,68.817" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<polygon points="2.830,68.860 2.805,68.903 2.755,68.903 2.730,68.860 2.755,68.817 2.805,68.817" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<polygon points="1.870,69.340 1.845,69.383 1.795,69.383 1.770,69.340 1.795,69.297 1.845,69.297" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<polygon points="2.830,69.340 2.805,69.383 2.755,69.383 2.730,69.340 2.755,69.297 2.805,69.297" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<text x="0.500" y="71.180" font-size="0.08" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Y = depth (in)   &lt;- room side at Y=0</text>
+<text x="4.400" y="67.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view, walls partial)</text>
+<polygon points="6.200,69.299 7.674,70.149 6.200,71.000 4.726,70.149" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,67.200 7.674,68.051 6.200,68.901 4.726,68.051" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,69.299 4.726,70.149 4.726,68.051 6.200,67.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.200,69.299 7.674,70.149 7.674,68.051 6.200,67.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="7.575,69.965 6.200,70.759 6.200,70.716 7.575,69.922" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="4.825,69.965 6.200,70.759 6.200,70.716 4.825,69.922" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,69.128 7.575,69.922 6.200,70.716 4.825,69.922" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,69.979 6.298,70.149 6.298,70.093 6.593,69.922" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.807,69.866 6.298,70.149 6.298,70.093 5.807,69.809" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.102,69.639 6.593,69.922 6.298,70.093 5.807,69.809" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.495,69.922 6.298,70.036 6.298,69.922 6.495,69.809" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.905,69.809 6.298,70.036 6.298,69.922 5.905,69.696" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.102,69.582 6.495,69.809 6.298,69.922 5.905,69.696" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.495,69.809 6.298,69.922 6.298,69.866 6.495,69.752" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.905,69.696 6.298,69.922 6.298,69.866 5.905,69.639" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.102,69.525 6.495,69.752 6.298,69.866 5.905,69.639" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<line x1="0.500" y1="71.200" x2="8.000" y2="71.200" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="71.300" x2="6.000" y2="76.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="71.520" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="71.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Open the HF #96406 jack in fully-collapsed position.</text>
+<text x="0.500" y="72.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Identify the input shaft side - this is where the drill mounts.</text>
+<text x="0.500" y="72.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Orient jack so input shaft points toward the FRONT of the cavity</text>
+<text x="0.500" y="72.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(toward Y=0 in local coords = the room-facing side).</text>
+<text x="0.500" y="72.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Center jack on platform: 10 in left margin, 12 in front margin.</text>
+<text x="0.500" y="72.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Mark the 4 base bolt holes on the platform through the jack base.</text>
+<text x="0.500" y="73.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Pre-drill platform (3/16 in pilot, do NOT drill all the way through).</text>
+<text x="0.500" y="73.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Bolt jack to platform with 4 x (5/16 x 2 in) lag bolts.</text>
+<text x="6.100" y="71.520" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="71.760" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Drill + 3/16 in bit</text>
+<text x="6.100" y="71.940" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Socket wrench 1/2 in</text>
+<text x="6.100" y="72.120" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Pencil + square</text>
+<text x="6.100" y="72.480" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="72.720" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">30 minutes</text>
+<rect x="0.500" y="76.170" width="0.130" height="0.080" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="0.670" y="76.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">ply</text>
+<rect x="1.500" y="76.170" width="0.130" height="0.080" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.005" />
+<text x="1.670" y="76.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">steel</text>
+<rect x="2.500" y="76.170" width="0.130" height="0.080" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="2.670" y="76.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.500" y="76.170" width="0.130" height="0.080" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.005" />
+<text x="3.670" y="76.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">planer</text>
+<rect x="4.500" y="76.170" width="0.130" height="0.080" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="4.670" y="76.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+<polygon points="0.630,75.920 0.605,75.963 0.555,75.963 0.530,75.920 0.555,75.877 0.605,75.877" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<text x="0.700" y="75.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">lag bolt</text>
+<line x1="1.540" y1="75.920" x2="1.620" y2="75.920" stroke="#000000" stroke-width="0.012" />
+<line x1="1.580" y1="75.880" x2="1.580" y2="75.960" stroke="#000000" stroke-width="0.012" />
+<text x="1.700" y="75.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">wood screw</text>
+<circle cx="2.580" cy="75.920" r="0.050" fill="#000" stroke="#000" stroke-width="0.004" />
+<text x="2.700" y="75.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">machine bolt</text>
+<circle cx="3.580" cy="75.920" r="0.060" fill="#FFF" stroke="#000" stroke-width="0.012" />
+<text x="3.700" y="75.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">hose clamp</text>
+</svg>

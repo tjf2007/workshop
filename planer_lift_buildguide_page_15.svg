@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 154.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="154.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 12: Test Cycle (No Planer Yet)</text>
+<line x1="0.500" y1="155.050" x2="8.000" y2="155.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="164.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">15 / 17</text>
+<text x="0.500" y="155.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (looking into the cavity from above)</text>
+<line x1="0.500" y1="155.300" x2="0.500" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.220" y1="155.300" x2="1.220" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.940" y1="155.300" x2="1.940" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.660" y1="155.300" x2="2.660" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.380" y1="155.300" x2="3.380" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.100" y1="155.300" x2="4.100" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="155.300" x2="4.100" y2="155.300" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="156.020" x2="4.100" y2="156.020" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="156.740" x2="4.100" y2="156.740" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="157.460" x2="4.100" y2="157.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="158.180" x2="4.100" y2="158.180" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="158.900" x2="4.100" y2="158.900" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="155.300" width="3.600" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="0.620" y="155.420" width="3.360" height="3.360" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.700" y="156.740" width="1.200" height="0.720" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="156.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="156.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.460" y="156.020" width="1.440" height="0.240" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.700" y="156.140" width="0.600" height="0.480" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.760" y="156.260" width="0.480" height="0.300" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.004" />
+<rect x="1.940" y="156.380" width="0.120" height="0.120" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.976" y="156.416" width="0.048" height="0.048" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.500" y="156.980" width="0.060" height="0.240" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.500" y="156.980" width="0.060" height="0.240" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.620" y="156.980" width="0.060" height="0.120" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.620" y="156.980" width="0.060" height="0.120" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.500" y="156.140" width="0.060" height="0.120" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.620" y="156.140" width="0.060" height="0.120" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="0.620" y="155.420" width="3.360" height="3.360" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<text x="0.500" y="159.180" font-size="0.08" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Y = depth (in)   &lt;- room side at Y=0</text>
+<text x="4.400" y="155.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view, walls partial)</text>
+<polygon points="6.200,157.299 7.674,158.149 6.200,159.000 4.726,158.149" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,155.200 7.674,156.051 6.200,156.901 4.726,156.051" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,157.299 4.726,158.149 4.726,156.051 6.200,155.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.200,157.299 7.674,158.149 7.674,156.051 6.200,155.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="5.537,157.256 5.439,157.313 5.439,157.256 5.537,157.199" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.414,157.299 5.439,157.313 5.439,157.256 5.414,157.242" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.512,157.185 5.537,157.199 5.439,157.256 5.414,157.242" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.586,157.284 5.537,157.313 5.537,157.284 5.586,157.256" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.512,157.299 5.537,157.313 5.537,157.284 5.512,157.270" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.561,157.242 5.586,157.256 5.537,157.284 5.512,157.270" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.888,157.809 6.789,157.866 6.789,157.859 6.888,157.802" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,157.525 6.789,157.866 6.789,157.859 6.200,157.518" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.298,157.462 6.888,157.802 6.789,157.859 6.200,157.518" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,157.688 6.396,157.802 6.396,157.688 6.593,157.575" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.151,157.660 6.396,157.802 6.396,157.688 6.151,157.547" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.347,157.433 6.593,157.575 6.396,157.688 6.151,157.547" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.519,157.589 6.396,157.660 6.396,157.206 6.519,157.135" fill="#222222" stroke="#000000" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,157.547 6.396,157.660 6.396,157.206 6.200,157.093" fill="#333333" stroke="#000000" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.323,157.022 6.519,157.135 6.396,157.206 6.200,157.093" fill="#444444" stroke="#000000" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.881,156.150 5.832,156.178 5.832,156.122 5.881,156.093" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.807,156.164 5.832,156.178 5.832,156.122 5.807,156.107" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.856,156.079 5.881,156.093 5.832,156.122 5.807,156.107" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.930,156.178 5.881,156.207 5.881,156.150 5.930,156.122" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.856,156.193 5.881,156.207 5.881,156.150 5.856,156.136" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,156.107 5.930,156.122 5.881,156.150 5.856,156.136" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.575,157.965 6.200,158.759 6.200,158.716 7.575,157.922" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="4.825,157.965 6.200,158.759 6.200,158.716 4.825,157.922" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,157.128 7.575,157.922 6.200,158.716 4.825,157.922" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,157.979 6.298,158.149 6.298,158.093 6.593,157.922" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.807,157.866 6.298,158.149 6.298,158.093 5.807,157.809" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,157.639 6.593,157.922 6.298,158.093 5.807,157.809" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.495,157.922 6.298,158.036 6.298,157.922 6.495,157.809" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,157.809 6.298,158.036 6.298,157.922 5.905,157.696" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,157.582 6.495,157.809 6.298,157.922 5.905,157.696" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.396,157.128 6.347,157.157 6.347,157.015 6.396,156.987" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.298,157.128 6.347,157.157 6.347,157.015 6.298,156.987" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.347,156.958 6.396,156.987 6.347,157.015 6.298,156.987" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.495,157.809 6.298,157.922 6.298,157.866 6.495,157.752" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,157.696 6.298,157.922 6.298,157.866 5.905,157.639" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,157.525 6.495,157.752 6.298,157.866 5.905,157.639" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.367,156.987 6.347,156.998 6.347,156.913 6.367,156.901" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.328,156.987 6.347,156.998 6.347,156.913 6.328,156.901" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.347,156.890 6.367,156.901 6.347,156.913 6.328,156.901" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.586,156.377 5.537,156.405 5.537,156.377 5.586,156.349" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.512,156.391 5.537,156.405 5.537,156.377 5.512,156.363" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.561,156.334 5.586,156.349 5.537,156.377 5.512,156.363" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.537,155.895 5.439,155.951 5.439,155.895 5.537,155.838" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.414,155.937 5.439,155.951 5.439,155.895 5.414,155.881" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.512,155.824 5.537,155.838 5.439,155.895 5.414,155.881" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.575,156.788 6.200,157.582 6.200,157.540 7.575,156.746" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="4.825,156.788 6.200,157.582 6.200,157.540 4.825,156.746" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,155.951 7.575,156.746 6.200,157.540 4.825,156.746" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<line x1="0.500" y1="159.200" x2="8.000" y2="159.200" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="159.300" x2="6.000" y2="164.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="159.520" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="159.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Set the empty sled on the jack top plate (no planer yet).</text>
+<text x="0.500" y="160.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Plug in / power the drill through the relay circuit. Run the drill</text>
+<text x="0.500" y="160.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">in EXTEND direction (CW typ).</text>
+<text x="0.500" y="160.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Watch the sled rise. Verify:</text>
+<text x="0.500" y="160.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">  - sled rises smoothly without binding</text>
+<text x="0.500" y="160.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">  - reed switch + relay CUTS DRILL POWER at top of travel</text>
+<text x="0.500" y="161.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">  - magnet alignment with switches is correct</text>
+<text x="0.500" y="161.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Reverse drill direction. Watch sled lower. Verify bottom cutoff.</text>
+<text x="0.500" y="161.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Test the hitch pin at top - it should slide in cleanly.</text>
+<text x="0.500" y="161.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">REPEAT 3 full cycles before adding the planer.</text>
+<text x="6.100" y="159.520" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="159.760" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Multimeter (for verifying cutoff)</text>
+<text x="6.100" y="160.120" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="160.360" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">30 minutes</text>
+<rect x="0.500" y="164.170" width="0.130" height="0.080" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="0.670" y="164.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">ply</text>
+<rect x="1.500" y="164.170" width="0.130" height="0.080" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.005" />
+<text x="1.670" y="164.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">steel</text>
+<rect x="2.500" y="164.170" width="0.130" height="0.080" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="2.670" y="164.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.500" y="164.170" width="0.130" height="0.080" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.005" />
+<text x="3.670" y="164.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">planer</text>
+<rect x="4.500" y="164.170" width="0.130" height="0.080" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="4.670" y="164.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+</svg>

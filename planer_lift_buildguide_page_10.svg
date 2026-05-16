@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 99.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="99.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 7: Mount the Drill</text>
+<line x1="0.500" y1="100.050" x2="8.000" y2="100.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="109.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">10 / 17</text>
+<text x="0.500" y="100.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (looking into the cavity from above)</text>
+<line x1="0.500" y1="100.300" x2="0.500" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.220" y1="100.300" x2="1.220" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.940" y1="100.300" x2="1.940" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.660" y1="100.300" x2="2.660" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.380" y1="100.300" x2="3.380" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.100" y1="100.300" x2="4.100" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="100.300" x2="4.100" y2="100.300" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="101.020" x2="4.100" y2="101.020" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="101.740" x2="4.100" y2="101.740" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="102.460" x2="4.100" y2="102.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="103.180" x2="4.100" y2="103.180" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="103.900" x2="4.100" y2="103.900" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="100.300" width="3.600" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="0.620" y="100.420" width="3.360" height="3.360" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.700" y="101.740" width="1.200" height="0.720" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="101.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="101.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.460" y="101.020" width="1.440" height="0.240" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.700" y="101.140" width="0.600" height="0.480" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.760" y="101.260" width="0.480" height="0.300" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="1.940" y="101.380" width="0.120" height="0.120" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="1.976" y="101.416" width="0.048" height="0.048" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<circle cx="1.820" cy="101.320" r="0.060" fill="#FFF" stroke="#000" stroke-width="0.012" />
+<circle cx="2.180" cy="101.320" r="0.060" fill="#FFF" stroke="#000" stroke-width="0.012" />
+<text x="0.500" y="104.180" font-size="0.08" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Y = depth (in)   &lt;- room side at Y=0</text>
+<text x="4.400" y="100.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view, walls partial)</text>
+<polygon points="6.200,102.299 7.674,103.149 6.200,104.000 4.726,103.149" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,100.200 7.674,101.051 6.200,101.901 4.726,101.051" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,102.299 4.726,103.149 4.726,101.051 6.200,100.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.200,102.299 7.674,103.149 7.674,101.051 6.200,100.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.888,102.809 6.789,102.866 6.789,102.859 6.888,102.802" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,102.525 6.789,102.866 6.789,102.859 6.200,102.518" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.298,102.462 6.888,102.802 6.789,102.859 6.200,102.518" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,102.688 6.396,102.802 6.396,102.688 6.593,102.575" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.151,102.660 6.396,102.802 6.396,102.688 6.151,102.547" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.347,102.433 6.593,102.575 6.396,102.688 6.151,102.547" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.519,102.589 6.396,102.660 6.396,102.206 6.519,102.135" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.200,102.547 6.396,102.660 6.396,102.206 6.200,102.093" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.323,102.022 6.519,102.135 6.396,102.206 6.200,102.093" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.575,102.965 6.200,103.759 6.200,103.716 7.575,102.922" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="4.825,102.965 6.200,103.759 6.200,103.716 4.825,102.922" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,102.128 7.575,102.922 6.200,103.716 4.825,102.922" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,102.979 6.298,103.149 6.298,103.093 6.593,102.922" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.807,102.866 6.298,103.149 6.298,103.093 5.807,102.809" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,102.639 6.593,102.922 6.298,103.093 5.807,102.809" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.495,102.922 6.298,103.036 6.298,102.922 6.495,102.809" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,102.809 6.298,103.036 6.298,102.922 5.905,102.696" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,102.582 6.495,102.809 6.298,102.922 5.905,102.696" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.396,102.128 6.347,102.157 6.347,102.015 6.396,101.987" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.298,102.128 6.347,102.157 6.347,102.015 6.298,101.987" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.347,101.958 6.396,101.987 6.347,102.015 6.298,101.987" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.495,102.809 6.298,102.922 6.298,102.866 6.495,102.752" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,102.696 6.298,102.922 6.298,102.866 5.905,102.639" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,102.525 6.495,102.752 6.298,102.866 5.905,102.639" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.367,101.987 6.347,101.998 6.347,101.913 6.367,101.901" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.328,101.987 6.347,101.998 6.347,101.913 6.328,101.901" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.347,101.890 6.367,101.901 6.347,101.913 6.328,101.901" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<line x1="0.500" y1="104.200" x2="8.000" y2="104.200" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="104.300" x2="6.000" y2="109.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="104.520" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="104.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Set the drill in the cradle, chuck facing UP toward the jack input</text>
+<text x="0.500" y="105.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">shaft. Drill body horizontal. Confirm the chuck is RIGHT BELOW the</text>
+<text x="0.500" y="105.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">jack's input hex - within 1/4 in alignment.</text>
+<text x="0.500" y="105.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Insert the 1/4 in hex to 3/4 in socket adapter into the drill chuck.</text>
+<text x="0.500" y="105.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Snap a 3/4 in socket onto the adapter (verify your jack's hex size</text>
+<text x="0.500" y="105.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">first - some are 13/16 in).</text>
+<text x="0.500" y="106.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Push the socket up onto the jack's input shaft.</text>
+<text x="0.500" y="106.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Wrap 2 hose clamps around the drill body to hold it tight in cradle.</text>
+<text x="0.500" y="106.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Verify the drill's clutch is set to a LOW torque (start at 5-10).</text>
+<text x="6.100" y="104.520" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="104.760" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Drill</text>
+<text x="6.100" y="104.940" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Hex-to-socket adapter</text>
+<text x="6.100" y="105.120" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- 3/4 socket OR 13/16</text>
+<text x="6.100" y="105.300" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- 2 hose clamps</text>
+<text x="6.100" y="105.480" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Hose clamp screwdriver</text>
+<text x="6.100" y="105.840" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="106.080" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">20 minutes</text>
+<rect x="0.500" y="109.170" width="0.130" height="0.080" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="0.670" y="109.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">ply</text>
+<rect x="1.500" y="109.170" width="0.130" height="0.080" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.005" />
+<text x="1.670" y="109.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">steel</text>
+<rect x="2.500" y="109.170" width="0.130" height="0.080" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="2.670" y="109.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.500" y="109.170" width="0.130" height="0.080" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.005" />
+<text x="3.670" y="109.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">planer</text>
+<rect x="4.500" y="109.170" width="0.130" height="0.080" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="4.670" y="109.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+<polygon points="0.630,108.920 0.605,108.963 0.555,108.963 0.530,108.920 0.555,108.877 0.605,108.877" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<text x="0.700" y="108.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">lag bolt</text>
+<line x1="1.540" y1="108.920" x2="1.620" y2="108.920" stroke="#000000" stroke-width="0.012" />
+<line x1="1.580" y1="108.880" x2="1.580" y2="108.960" stroke="#000000" stroke-width="0.012" />
+<text x="1.700" y="108.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">wood screw</text>
+<circle cx="2.580" cy="108.920" r="0.050" fill="#000" stroke="#000" stroke-width="0.004" />
+<text x="2.700" y="108.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">machine bolt</text>
+<circle cx="3.580" cy="108.920" r="0.060" fill="#FFF" stroke="#000" stroke-width="0.012" />
+<text x="3.700" y="108.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">hose clamp</text>
+</svg>

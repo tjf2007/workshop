@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 33.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="33.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 1: Prepare the Cavity</text>
+<line x1="0.500" y1="34.050" x2="8.000" y2="34.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="43.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4 / 17</text>
+<text x="0.500" y="34.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (looking into the cavity from above)</text>
+<line x1="0.500" y1="34.300" x2="0.500" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.220" y1="34.300" x2="1.220" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.940" y1="34.300" x2="1.940" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.660" y1="34.300" x2="2.660" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.380" y1="34.300" x2="3.380" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.100" y1="34.300" x2="4.100" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="34.300" x2="4.100" y2="34.300" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="35.020" x2="4.100" y2="35.020" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="35.740" x2="4.100" y2="35.740" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="36.460" x2="4.100" y2="36.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="37.180" x2="4.100" y2="37.180" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="37.900" x2="4.100" y2="37.900" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="34.300" width="3.600" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<text x="0.500" y="38.180" font-size="0.08" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Y = depth (in)   &lt;- room side at Y=0</text>
+<text x="4.400" y="34.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view, walls partial)</text>
+<polygon points="6.200,36.299 7.674,37.149 6.200,38.000 4.726,37.149" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,34.200 7.674,35.051 6.200,35.901 4.726,35.051" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,36.299 4.726,37.149 4.726,35.051 6.200,34.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.200,36.299 7.674,37.149 7.674,35.051 6.200,34.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<line x1="0.500" y1="38.200" x2="8.000" y2="38.200" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="38.300" x2="6.000" y2="43.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="38.520" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="38.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Open up the L-bench's planer cavity (X=3..33, Y=42..72 in shop coords).</text>
+<text x="0.500" y="39.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Vacuum out any sawdust. Check that the cavity floor is clear -</text>
+<text x="0.500" y="39.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">no cleats, no internal blocking. Cavity should be a 30 x 30 in</text>
+<text x="0.500" y="39.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">hole, fully open from z=0 to z=37 in.</text>
+<text x="0.500" y="39.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Verify the bench bottom rails frame the cavity at z=0..4 (toe-kick zone).</text>
+<text x="0.500" y="39.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Verify the bench top opening is exactly 30 x 30 in (no overhang).</text>
+<text x="6.100" y="38.520" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="38.760" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Shop vac</text>
+<text x="6.100" y="38.940" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Tape measure</text>
+<text x="6.100" y="39.120" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Square</text>
+<text x="6.100" y="39.300" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Flashlight</text>
+<text x="6.100" y="39.660" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="39.900" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">20 minutes</text>
+<rect x="0.500" y="43.170" width="0.130" height="0.080" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="0.670" y="43.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">ply</text>
+<rect x="1.500" y="43.170" width="0.130" height="0.080" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.005" />
+<text x="1.670" y="43.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">steel</text>
+<rect x="2.500" y="43.170" width="0.130" height="0.080" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="2.670" y="43.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.500" y="43.170" width="0.130" height="0.080" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.005" />
+<text x="3.670" y="43.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">planer</text>
+<rect x="4.500" y="43.170" width="0.130" height="0.080" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="4.670" y="43.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+</svg>

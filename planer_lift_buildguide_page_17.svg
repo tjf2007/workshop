@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 176.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="176.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Final Safety Check + Operation</text>
+<line x1="0.500" y1="177.050" x2="8.000" y2="177.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="186.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">17 / 17</text>
+<text x="0.500" y="177.500" font-size="0.18" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Before every use</text>
+<line x1="0.500" y1="177.820" x2="8.000" y2="177.820" stroke="#777777" stroke-width="0.006" />
+<rect x="0.500" y="177.910" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="178.040" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Hitch pin is OUT before you raise or lower (cycling against pin = damage).</text>
+<rect x="0.500" y="178.190" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="178.320" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">All cables clear of the moving sled travel path.</text>
+<rect x="0.500" y="178.470" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="178.600" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Planer power cord has slack for full travel (don't yank from outlet).</text>
+<rect x="0.500" y="178.750" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="178.880" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Drill clutch set to LOW torque (5-10) - clutch should slip before damage.</text>
+<rect x="0.500" y="179.030" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="179.160" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Reed switches respond to magnets (test with multimeter occasionally).</text>
+<text x="0.500" y="179.690" font-size="0.18" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Operation sequence</text>
+<line x1="0.500" y1="180.010" x2="8.000" y2="180.010" stroke="#777777" stroke-width="0.006" />
+<text x="0.600" y="180.230" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1. Verify hitch pin is OUT.</text>
+<text x="0.600" y="180.450" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2. Set drill direction to EXTEND (CW).</text>
+<text x="0.600" y="180.670" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">3. Pull foot-pedal / engage relay - drill spins, jack rises.</text>
+<text x="0.600" y="180.890" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4. Drill cuts out automatically when top reed engages.</text>
+<text x="0.600" y="181.110" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">5. SLIDE THE HITCH PIN through wall + sled couplings.</text>
+<text x="0.600" y="181.330" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">6. Plug in planer, do your planing work.</text>
+<text x="0.600" y="181.550" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">7. When done: unplug planer, REMOVE hitch pin.</text>
+<text x="0.600" y="181.770" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">8. Set drill direction to RETRACT (CCW).</text>
+<text x="0.600" y="181.990" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">9. Engage relay - drill spins backward, jack lowers.</text>
+<text x="0.600" y="182.210" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">10. Drill cuts out automatically at bottom reed.</text>
+<text x="0.600" y="182.430" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">11. Drop a 30 x 30 cover panel over the cavity opening.</text>
+<line x1="0.500" y1="182.950" x2="8.000" y2="182.950" stroke="#000000" stroke-width="0.015" />
+<text x="0.500" y="183.250" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">MAINTENANCE</text>
+<text x="0.500" y="183.510" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">After first 10 cycles: re-tighten all lag bolts (initial settling).</text>
+<text x="0.500" y="183.710" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Annually: lube jack screw with white lithium grease.</text>
+<text x="0.500" y="183.910" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">If drill bogs or stalls during lift: increase clutch ONE step.</text>
+<text x="0.500" y="184.110" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Replace drill brushes after ~1 year of regular use.</text>
+</svg>

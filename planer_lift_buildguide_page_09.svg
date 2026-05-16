@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 88.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="88.850" font-size="0.32" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 6: Install the Drill Bracket</text>
+<line x1="0.500" y1="89.050" x2="8.000" y2="89.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="98.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">9 / 17</text>
+<text x="0.500" y="89.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (looking into the cavity from above)</text>
+<line x1="0.500" y1="89.300" x2="0.500" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.220" y1="89.300" x2="1.220" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.940" y1="89.300" x2="1.940" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.660" y1="89.300" x2="2.660" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.380" y1="89.300" x2="3.380" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.100" y1="89.300" x2="4.100" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="89.300" x2="4.100" y2="89.300" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="90.020" x2="4.100" y2="90.020" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="90.740" x2="4.100" y2="90.740" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="91.460" x2="4.100" y2="91.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="92.180" x2="4.100" y2="92.180" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="92.900" x2="4.100" y2="92.900" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="89.300" width="3.600" height="3.600" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="0.620" y="89.420" width="3.360" height="3.360" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.004" />
+<rect x="1.700" y="90.740" width="1.200" height="0.720" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="90.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.820" y="90.860" width="0.960" height="0.480" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.004" />
+<rect x="1.460" y="90.020" width="1.440" height="0.240" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<rect x="1.700" y="90.140" width="0.600" height="0.480" fill="#F4BB70" opacity="1.0" stroke="#000000" stroke-width="0.012" />
+<polygon points="1.630,90.140 1.605,90.183 1.555,90.183 1.530,90.140 1.555,90.097 1.605,90.097" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<polygon points="2.830,90.140 2.805,90.183 2.755,90.183 2.730,90.140 2.755,90.097 2.805,90.097" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<line x1="1.780" y1="90.260" x2="1.860" y2="90.260" stroke="#000000" stroke-width="0.012" />
+<line x1="1.820" y1="90.220" x2="1.820" y2="90.300" stroke="#000000" stroke-width="0.012" />
+<line x1="2.140" y1="90.260" x2="2.220" y2="90.260" stroke="#000000" stroke-width="0.012" />
+<line x1="2.180" y1="90.220" x2="2.180" y2="90.300" stroke="#000000" stroke-width="0.012" />
+<text x="0.500" y="93.180" font-size="0.08" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Y = depth (in)   &lt;- room side at Y=0</text>
+<text x="4.400" y="89.150" font-size="0.09" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view, walls partial)</text>
+<polygon points="6.200,91.299 7.674,92.149 6.200,93.000 4.726,92.149" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,89.200 7.674,90.051 6.200,90.901 4.726,90.051" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" />
+<polygon points="6.200,91.299 4.726,92.149 4.726,90.051 6.200,89.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.200,91.299 7.674,92.149 7.674,90.051 6.200,89.200" fill="none" stroke="#AAAAAA" stroke-width="0.005" opacity="0.6" />
+<polygon points="6.888,91.809 6.789,91.866 6.789,91.859 6.888,91.802" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.200,91.525 6.789,91.866 6.789,91.859 6.200,91.518" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.298,91.462 6.888,91.802 6.789,91.859 6.200,91.518" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.593,91.688 6.396,91.802 6.396,91.688 6.593,91.575" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.151,91.660 6.396,91.802 6.396,91.688 6.151,91.547" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.347,91.433 6.593,91.575 6.396,91.688 6.151,91.547" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.575,91.965 6.200,92.759 6.200,92.716 7.575,91.922" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="4.825,91.965 6.200,92.759 6.200,92.716 4.825,91.922" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.200,91.128 7.575,91.922 6.200,92.716 4.825,91.922" fill="#EFE6D2" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.593,91.979 6.298,92.149 6.298,92.093 6.593,91.922" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.807,91.866 6.298,92.149 6.298,92.093 5.807,91.809" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,91.639 6.593,91.922 6.298,92.093 5.807,91.809" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.495,91.922 6.298,92.036 6.298,91.922 6.495,91.809" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,91.809 6.298,92.036 6.298,91.922 5.905,91.696" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,91.582 6.495,91.809 6.298,91.922 5.905,91.696" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.495,91.809 6.298,91.922 6.298,91.866 6.495,91.752" fill="#7C7C88" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.905,91.696 6.298,91.922 6.298,91.866 5.905,91.639" fill="#9C9CA8" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.102,91.525 6.495,91.752 6.298,91.866 5.905,91.639" fill="#B8B8C2" stroke="#3A3A48" stroke-width="0.004" opacity="1.0" />
+<line x1="0.500" y1="93.200" x2="8.000" y2="93.200" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="93.300" x2="6.000" y2="98.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="93.520" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="93.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cut the 2x2x1/8 in steel angle to 12 in length. Deburr.</text>
+<text x="0.500" y="94.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Drill 2 mounting holes through one leg of the angle, 9 in apart</text>
+<text x="0.500" y="94.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(use 5/16 in bit, slot or oversize for adjustment).</text>
+<text x="0.500" y="94.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cut a 5 in piece of 2x4 to use as drill cradle. With a 1.5 in</text>
+<text x="0.500" y="94.620" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Forstner bit, drill 2 shallow craters in the top face of the 2x4</text>
+<text x="0.500" y="94.820" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">to receive the drill body. (Adjust to fit YOUR drill - mock-up first.)</text>
+<text x="0.500" y="95.020" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Bolt the cradle to the standing leg of the steel angle with 2</text>
+<text x="0.500" y="95.220" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">wood screws.</text>
+<text x="0.500" y="95.420" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Position the bracket on the platform, lag-bolt the base leg.</text>
+<text x="6.100" y="93.520" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="93.760" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Hacksaw</text>
+<text x="6.100" y="93.940" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Drill + bits</text>
+<text x="6.100" y="94.120" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Forstner 1.5 in</text>
+<text x="6.100" y="94.300" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Wood screws #10 x 1.5</text>
+<text x="6.100" y="94.480" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- 2 lag bolts 5/16 x 1.5</text>
+<text x="6.100" y="94.840" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="95.080" font-size="0.11" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1 hour</text>
+<rect x="0.500" y="98.170" width="0.130" height="0.080" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="0.670" y="98.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">ply</text>
+<rect x="1.500" y="98.170" width="0.130" height="0.080" fill="#B8B8C2" opacity="1.0" stroke="#3A3A48" stroke-width="0.005" />
+<text x="1.670" y="98.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">steel</text>
+<rect x="2.500" y="98.170" width="0.130" height="0.080" fill="#444444" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="2.670" y="98.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">drill</text>
+<rect x="3.500" y="98.170" width="0.130" height="0.080" fill="#F4C84A" opacity="1.0" stroke="#5A4500" stroke-width="0.005" />
+<text x="3.670" y="98.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">planer</text>
+<rect x="4.500" y="98.170" width="0.130" height="0.080" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.005" />
+<text x="4.670" y="98.240" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+<polygon points="0.630,97.920 0.605,97.963 0.555,97.963 0.530,97.920 0.555,97.877 0.605,97.877" fill="#000" stroke="#000" stroke-width="0.004" opacity="1.0" />
+<text x="0.700" y="97.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">lag bolt</text>
+<line x1="1.540" y1="97.920" x2="1.620" y2="97.920" stroke="#000000" stroke-width="0.012" />
+<line x1="1.580" y1="97.880" x2="1.580" y2="97.960" stroke="#000000" stroke-width="0.012" />
+<text x="1.700" y="97.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">wood screw</text>
+<circle cx="2.580" cy="97.920" r="0.050" fill="#000" stroke="#000" stroke-width="0.004" />
+<text x="2.700" y="97.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">machine bolt</text>
+<circle cx="3.580" cy="97.920" r="0.060" fill="#FFF" stroke="#000" stroke-width="0.012" />
+<text x="3.700" y="97.940" font-size="0.09" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">hose clamp</text>
+</svg>
