@@ -1,146 +1,148 @@
 # Planer Vertical Lift - Hardware Bill of Materials
 
 This is the buildable hardware spec for the planer vertical lift cavity
-in the L-bench's left leg. Read before buying. There's an honest
-discussion of why gas struts + drawer slides is a fussy mechanism for
-this geometry, and a simpler alternative if you want to skip that whole
-problem.
+in the L-bench's short leg. The primary recommended mechanism is a
+**Harbor Freight scissor stabilizer driven by an old drill through a
+socket adapter** - cheap, strong, easy to motorize, simple geometry.
 
-## Are 3D-printed brackets OK?
+## Quick answer on PLA brackets
 
-**No.** You're right to be skeptical.
+**Don't use them.** PLA creeps under sustained load and becomes brittle
+in shear. A 92 lb planer + cyclical loading will cause failure in
+months. Use steel brackets only. The mechanism below avoids the
+custom-bracket problem entirely by using off-the-shelf stamped steel.
 
-- PLA at any practical bracket thickness will creep (slowly deform under
-  sustained load) and become brittle over months. A 92 lb planer + 4 gas
-  struts pulling on PLA brackets will fail in months, possibly at the
-  worst moment.
-- PETG is better but still not appropriate for a part that experiences
-  shear + tension cycles every time you raise/lower the planer.
-- Even Onyx or CF-nylon (which we assume you don't have a printer for)
-  would be marginal for the strut mounts.
+## Primary mechanism: Scissor stabilizer + drill motor
 
-**Steel brackets only.** Either store-bought stamped-steel angle brackets
-or simple shop-made plates from flat bar. Both are cheap.
+### Parts (Harbor Freight + Home Depot)
 
-## Reality check on the gas-strut mechanism
+| Item | Source / SKU | Qty | Approx |
+| --- | --- | --- | --- |
+| HAUL-MASTER 2.5 Ton Trailer/RV Scissor Stabilizer | HF #96406 | 1 | $38 |
+| Old corded or cordless drill (your shelf find) | already owned | 1 | $0 |
+| 1/4" hex to 3/4" socket adapter (your jack input is most likely 3/4" or 13/16") | HD or Amazon | 1 | $5 |
+| Magnetic reed switch or limit switch (for top-of-travel cutoff) | Amazon (any) | 2 | $10 ea |
+| 12V relay rated for drill amperage (or auto-stop drill circuit) | Amazon | 1 | $8 |
+| 1/2" x 6" steel hitch pin (for positive lock at working height) | HD #660429 | 1 | $4 |
+| 1/2" pipe coupling (pin receiver) | HD #392104 | 2 | $3 ea |
+| 2 in x 2 in x 1/8 in steel angle (for jack mount brackets) | HD or local steel | 1 ft | $5 |
+| Lag bolts 5/16 x 2 in (mount jack base to plywood platform) | HD bulk | 8 | $4 |
+| Wood screws #10 x 1.5 in (drill bracket + general assembly) | HD bulk | 1 box | $7 |
 
-The plan model spec is "4 gas struts for near-neutral buoyancy, one
-beside each drawer slide." That works in principle, but the geometry is
-fussy:
+**Approximate total: $90-110**, plus the drill which you have.
 
-- Sled vertical travel: ~14 in (planer top must drop below 37 in bench
-  surface when stored, planer bed must rise to 37 in when working).
-- Typical hardware-store gas struts have a stroke of 5-8 in. That's a
-  lot less than 14.
-- To use a short-stroke strut for a 14 in travel, you mount it at a
-  steep angle (closer to horizontal than vertical). At a 60-degree
-  angle from vertical, a 7 in stroke covers 14 in of vertical travel,
-  but the vertical component of the strut's force is half of its rated
-  force. So you need ~2x as much rated strut force.
+### Design
 
-**Strut spec that actually fits 14 in travel:**
+The scissor jack rises straight up - parallelogram linkage keeps the
+top plate parallel to the base. The screw input shaft rotates in place;
+its position does not change as the jack extends. This means:
 
-- 4 struts, ~24 in extended / ~12 in compressed (12 in stroke)
-- ~40-50 lb force each
-- 10 mm ball-stud ends (standard automotive / hood-lift size)
-- Mounted at ~30 degrees from vertical
-- Total vertical lift force: 4 x 45 x cos(30) = ~156 lb (vs ~102 lb
-  for planer + sled; gives ~50 lb of net upward bias for easy lifting,
-  pin holds the bench down when stored)
+- **The drill does NOT need to float.** Mount it rigidly to a bracket
+  bolted to the jack's BASE plate. The drill stays put while the jack
+  raises the sled.
+- Drill chuck holds a 1/4" hex socket adapter. Socket adapter holds a
+  3/4" or 13/16" socket. Socket engages the jack's hex input shaft.
 
-Sources: Amazon "lift support struts" or lift-supports-depot.com. Home
-Depot does **not** stock these in any useful length / force / end type
-combination. Buy a 4-pack with included ball studs.
+### Geometry
 
-## Honest alternative: a trailer tongue jack
+- Cavity: PLANER_X0..+W, PLANER_Y0..+D, full bench height (37 in).
+- The jack base sits on a 3/4 in plywood platform inside the cavity at
+  z = 4 in (above the toe-kick height).
+- HF #96406 advertised max height is in the 17-23 in range (check the
+  unit in store; both versions have been sold under this SKU).
+- With base on platform at z=4 and jack at min height ~4.5 in, sled
+  bottom starts at z ~ 8.5 in. Planer top ends at z ~ 26 in - just
+  below bench surface. Cover with the planer-storage insert panel and
+  the bench reads flush.
+- Cranked to max, sled bottom reaches z ~ 22-27 in. Planer base sits on
+  sled at ~ z=23-28. Bed (4 in above planer base) reaches z=27-32. To
+  bring bed to z=37, you may need spacers between jack top and sled
+  (1-9 in depending on which version of the jack you got). Measure when
+  the jack is in hand.
 
-If the gas-strut sourcing + geometry feels fragile, here's a cheaper,
-simpler, stronger option that uses one part:
+### Safety - mandatory
 
-- **Harbor Freight 1000 lb trailer tongue jack** (~$30). It's a hand
-  crank that turns a screw to raise/lower a 1000 lb load. Designed for
-  trailers; perfectly suited for lifting a 100 lb planer 14 in.
-- Mount it inverted (crank handle accessible at the front of the
-  cavity, screw lifting the sled).
-- Drawer slides become unnecessary - the jack's screw provides positive
-  vertical positioning at any height.
-- No struts, no springs, no balance issues. Crank up to use, crank down
-  to stow.
+1. **End-stop switches** at top and bottom of travel. Magnetic reed
+   switches with magnets on the moving sled, switches mounted on the
+   cavity wall. Wire them in series with the drill's power lead through
+   a relay so the drill loses power at either end of travel. Otherwise:
+   drill keeps spinning, jack input shaft snaps or strips socket.
+2. **Drill clutch as backup.** Set the clutch torque just above the
+   needed lifting torque. Clutch slips if you hit an obstruction. Both
+   protections, belt-and-suspenders.
+3. **Hitch pin lock at working height, non-negotiable.** Once the sled
+   is at the top, slide the pin through the receiver in the cavity
+   wall, through the sled. Now the sled cannot drop even if the jack
+   fails. Test by pushing down on the unpowered planer - sled should
+   not move.
 
-I'd genuinely recommend this over the gas-strut approach. It's $30,
-it's overkill for the load, and there's no geometry to get wrong.
+### Drill mounting bracket
 
-The downside: you crank by hand for the full 14 in of travel (which is
-30-60 seconds). Gas struts give you near-instant lift. Your call.
+Bolted to the steel angle that anchors the jack to the cavity floor:
+- Drill body cradled in a half-pipe of 1.5 in PVC or sheet-metal, with
+  two hose clamps. The drill's pistol-grip rests in a cradle cut from
+  a 2x4 scrap, screwed to the steel angle.
+- Trigger held DOWN by a zip tie or velcro strap; the actual on/off
+  is done by the relay + limit switches.
+- Direction switch on the drill body remains accessible. You flip it
+  by hand to reverse direction (raise vs lower).
+- Alternative: foot pedal switch in series with the drill power so you
+  hands-free start/stop while guiding the planer in.
 
-## Home Depot BOM if you stick with gas struts
+## Alternative 1: Trailer tongue jack + drill motor
 
-For mounting the struts (assumes you buy struts + ball studs together
-from Amazon):
+Same approach as the scissor stabilizer, different jack type. Tongue
+jacks (e.g., Bulldog 500-1000 lb capacity) have an exposed shaft input
+on top. Mount jack inverted (head down, shaft up out of the cavity), or
+sideways with a 90-degree adapter. More complex to integrate than the
+scissor stabilizer; same drill-motor concept. Skip unless you have a
+strong reason.
+
+## Alternative 2: Gas struts
+
+The original spec called for 4 gas struts mounted at angle. Here's the
+honest assessment if you still want to go this route:
+
+- Sled travel ~14 in. Hardware-store gas struts have 5-8 in stroke. To
+  cover 14 in with a 7 in stroke you mount at ~60 degrees from
+  vertical, which halves the vertical lift component.
+- Realistic spec: 4 struts, 24-30 in extended, 12-14 in stroke,
+  25-30 lb force each, 10 mm ball-stud ends. Sources: lift-supports-
+  depot.com, Amazon ("gas spring 30 inch 14 inch stroke 25 lb"). Home
+  Depot does NOT stock this combination.
+- Brand names worth searching: Suspa, Bansbach, Apexstone, StrongArm,
+  BOXI. Buy a 4-pack plus 8 ball studs and 8 stamped-steel L-brackets.
+- Mount geometry: ~30 degrees from vertical, lower mount at cavity
+  floor corner, upper mount at sled-bottom opposite corner.
+
+**Why this is worse than the scissor stabilizer:**
+- Sourcing fussier (no HD/HF option).
+- Struts weaken over years; need replacement.
+- No positive position holding - drift over time as gas pressure drops.
+- Counterbalance only; you still lift by hand.
+- Mounting brackets need careful steel selection.
+
+If you want the BOM anyway:
 
 | Item | HD SKU / Spec | Qty | Approx |
 | --- | --- | --- | --- |
-| Simpson Strong-Tie A23 angle bracket (2 in x 1.5 in) | 100375103 | 8 | $1.50 ea |
-| Heavy-duty 24 in vertical drawer slides (220 lb rated) | (not at HD - order Accuride 7434 or KV 8400 from Amazon / Woodcraft) | 4 | $35-50 ea |
-| #10 x 1.5 in zinc wood screws (100 ct) | 100143031 | 1 box | $7 |
-| 1/4 in x 1.5 in carriage bolts | 304097 | 16 | $0.30 ea |
-| 1/4 in flat washers (100 ct) | 100052381 | 1 box | $4 |
-| 1/4 in nylon-insert lock nuts (100 ct) | 100132555 | 1 box | $5 |
+| 4-pack gas struts 28 in / 14 stroke / 25 lb / 10 mm ball end | Amazon | 1 | $40-60 |
+| 8 stamped steel L-brackets, Simpson A23 | HD #100375103 | 8 | $1.50 ea |
+| Heavy-duty 24 in vertical drawer slides, 220 lb | Accuride 7434 (Woodcraft/Amazon) | 4 | $35-50 ea |
+| #10 x 1.5 in zinc wood screws | HD #100143031 | 1 box | $7 |
 
-**Bracket layout per strut (one of 4):**
-- Lower bracket: A23 angle mounted to cavity wall near floor.
-  Ball stud threads through the bracket's perpendicular face.
-- Upper bracket: A23 angle mounted to underside of sled.
-  Ball stud threads through the bracket's perpendicular face.
-- Each ball stud secured with washer + lock nut on the back side of the
-  bracket.
+Plus the pin lock parts from the main BOM. **Total $250-350**, vs $90
+for the scissor stabilizer path.
 
-**Bracket location on the bench (model coordinates, inches):**
-- Lower-left-back: x=2.5, y=42.5, z=4 (toe-kick top)
-- Lower-left-front: x=2.5, y=71.5, z=4
-- Lower-right-back: x=33.5, y=42.5, z=4
-- Lower-right-front: x=33.5, y=71.5, z=4
-- Upper mounts on sled, 1.5 in inset from each corner, mirror-image.
+## Safety summary (all designs)
 
-## Home Depot BOM if you go with the trailer jack
-
-| Item | HD SKU / Spec | Qty | Approx |
-| --- | --- | --- | --- |
-| Trailer tongue jack 1000 lb (or Harbor Freight equiv) | (HF item 38644) | 1 | $30 |
-| 2 in x 2 in x 1/8 in steel angle (3 ft length) | (HD or local steel) | 1 | $15 |
-| 1/4-20 x 1 in machine bolts (10-pack) | 803395 | 1 | $4 |
-| 1/4-20 nuts + washers | 100132555 / 100052381 | as above | - |
-| Linear bearings or 24 in drawer slides | (optional - jack provides vertical position; slides help with side-to-side stability) | 0-4 | optional |
-
-**Mounting:** the jack screws to a 2x2 steel angle anchored to the
-cavity floor. The lifting head bolts up through the sled. Sled is
-constrained against tilting by 2 vertical guide bars (3/4 in steel rod
-or 2 light-duty drawer slides at front and back).
-
-## Pin lock (both designs)
-
-Regardless of lift mechanism, you want a **positive mechanical lock**
-at the working height. The bench top should NOT depend on the lift
-mechanism alone to hold position - a sled that drops while you're
-feeding a board through is a serious injury risk.
-
-| Item | HD SKU / Spec | Qty | Approx |
-| --- | --- | --- | --- |
-| 1/2 in x 6 in steel hitch pin | 660429 | 1 | $4 |
-| 1/2 in steel pipe coupling (the receiver) | 392104 | 2 | $3 ea |
-| #14 x 1.5 in self-tap screws (to mount coupling) | various | 4 | - |
-
-Mount one coupling on the cavity wall, drill a matching hole through
-the sled. When sled is raised, slide the pin through the coupling and
-through the sled hole. Now the sled cannot drop even if the lift
-mechanism fails.
-
-## Safety summary
-
-- Pin lock is non-negotiable. Even with brand-new gas struts or a
-  trailer jack, a mechanical pin is your last line of defense.
-- Test the lock with the planer mounted but powered off, by pushing
-  down on the planer firmly. The sled should not move.
-- Re-tighten ball-stud nuts after the first 10 cycles (initial settling).
-- If gas struts: replace at the first sign of weakening (struts lose
-  force over years). Cheap. Buy 8 so you have a spare set.
+- **Mechanical pin lock at working height. Always.** The lift mechanism
+  is for raising and lowering only. The pin holds during use.
+- Re-tighten all bolted joints after the first 10 cycles (initial
+  settling).
+- Test with the planer mounted but powered off, pushing down firmly on
+  the planer. Nothing should move.
+- Replace gas struts at the first sign of weakening. Buy spares.
+- Inspect drill brush condition annually if going the motorized route;
+  cordless drills are fine for occasional use but expect ~1 year of
+  service for daily use.
