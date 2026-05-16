@@ -1136,47 +1136,146 @@ def write_svg(scene: Scene, svg_path: str) -> None:
 # ---------------------------------------------------------------------------
 
 def write_cutlist(scene: Scene, csv_path: str) -> None:
-    """Group identical parts by (lumber, cutlist_part, dims) and report
-    quantity. Parts with the same name but different dimensions get separate
-    rows so the cut list is actually usable.
+    """Group identical parts by (lumber, cutlist_part, dims) so the cut list
+    is actually usable for buying lumber.
     """
-    def round_dim(v: float) -> float:
-        return round(v, 2)
+    with open(csv_path, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["lumber", "part", "quantity",
+                    "length_in", "width_in", "thickness_in",
+                    "example_names"])
+        for g in _grouped_parts(scene).values():
+            w.writerow([g["lumber"], g["part"], g["qty"],
+                        f"{g['length']:.2f}", f"{g['width']:.2f}",
+                        f"{g['thickness']:.2f}",
+                        "; ".join(g["examples"])])
 
+
+def _grouped_parts(scene: Scene):
+    """Shared aggregator: groups boxes by (lumber, cutlist_part, dims).
+    Returns OrderedDict so output order matches creation order.
+    """
+    def r(v: float) -> float: return round(v, 2)
     groups: OrderedDict[tuple, dict] = OrderedDict()
     for b in scene.boxes:
         if not b.cutlist_part:
             continue
-        # Cut-list dimension = the LONGEST dimension is the "length" of the
-        # piece; the other two are width and thickness.
         dims = sorted([b.w, b.d, b.h], reverse=True)
-        key = (b.lumber, b.cutlist_part,
-               round_dim(dims[0]), round_dim(dims[1]), round_dim(dims[2]))
+        key = (b.lumber, b.cutlist_part, r(dims[0]), r(dims[1]), r(dims[2]))
         if key not in groups:
             groups[key] = {
-                "lumber": b.lumber,
-                "part": b.cutlist_part,
-                "qty": 0,
-                "length": dims[0],
-                "width": dims[1],
-                "thickness": dims[2],
+                "lumber": b.lumber, "part": b.cutlist_part, "qty": 0,
+                "length": dims[0], "width": dims[1], "thickness": dims[2],
                 "examples": [],
             }
         g = groups[key]
         g["qty"] += 1
         if len(g["examples"]) < 3:
             g["examples"].append(b.name)
+    return groups
 
-    with open(csv_path, "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["lumber", "part", "quantity",
-                    "length_in", "width_in", "thickness_in",
-                    "example_names"])
-        for g in groups.values():
-            w.writerow([g["lumber"], g["part"], g["qty"],
-                        f"{g['length']:.2f}", f"{g['width']:.2f}",
-                        f"{g['thickness']:.2f}",
-                        "; ".join(g["examples"])])
+
+def write_part_sheets(scene: Scene, svg_path: str) -> None:
+    """One card per unique cut. Shows part name, lumber, quantity, scaled
+    rectangle with dimensions labeled. Grouped 3 per row.
+    """
+    groups = list(_grouped_parts(scene).values())
+    cols = 3
+    rows = (len(groups) + cols - 1) // cols
+    card_w, card_h = 300, 220
+    margin = 40
+    title_h = 80
+    width = margin * 2 + cols * card_w
+    height = margin * 2 + title_h + rows * card_h
+
+    svg = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'width="{width}" height="{height}" '
+        f'font-family="Helvetica, Arial, sans-serif" font-size="11">',
+        '<style>'
+        '.title{font-size:18px;font-weight:bold;fill:#111;}'
+        '.subtitle{font-size:11px;fill:#444;}'
+        '.cardname{font-size:13px;font-weight:bold;fill:#111;}'
+        '.lumber{font-size:10px;fill:#555;}'
+        '.qty{font-size:18px;font-weight:bold;fill:#2980b9;}'
+        '.dim{font-size:10px;fill:#222;}'
+        '.thick{font-size:10px;fill:#444;}'
+        '.examples{font-size:8px;fill:#888;font-style:italic;}'
+        '</style>',
+        '<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>',
+        f'<text class="title" x="{margin}" y="{margin + 24}">'
+        f'L-Bench - Per-Piece Part Sheets</text>',
+        f'<text class="subtitle" x="{margin}" y="{margin + 44}">'
+        f'One card per unique cut. All dimensions in inches. '
+        f'Bench top "1.5 thick" = 2 layers of 3/4 plywood glued + screwed.</text>',
+        f'<text class="subtitle" x="{margin}" y="{margin + 60}">'
+        f'Buy 2 sheets of 3/4 ply per top section. Stud + rail lengths assume '
+        f'square cuts (add ~2in scrap per piece for waste).</text>',
+    ]
+
+    for i, g in enumerate(groups):
+        col, row = i % cols, i // cols
+        cx = margin + col * card_w
+        cy = margin + title_h + row * card_h
+
+        # Card frame
+        svg.append(
+            f'<rect x="{cx + 6}" y="{cy + 6}" width="{card_w - 12}" '
+            f'height="{card_h - 12}" fill="#fafafa" stroke="#999" stroke-width="1"/>')
+
+        # Header strip
+        svg.append(
+            f'<rect x="{cx + 6}" y="{cy + 6}" width="{card_w - 12}" '
+            f'height="46" fill="#eef3f7" stroke="#999" stroke-width="1"/>')
+        # Part name (wrap if long)
+        name = g["part"]
+        if len(name) > 38:
+            name = name[:36] + "..."
+        svg.append(f'<text class="cardname" x="{cx + 14}" y="{cy + 24}">{name}</text>')
+        svg.append(f'<text class="lumber" x="{cx + 14}" y="{cy + 40}">{g["lumber"]}</text>')
+        svg.append(f'<text class="qty" x="{cx + card_w - 14}" y="{cy + 32}" '
+                   f'text-anchor="end">x{g["qty"]}</text>')
+
+        # Scaled rectangle of part shape (length x width)
+        draw_w_max = card_w - 80
+        draw_h_max = card_h - 130
+        length, w = g["length"], g["width"]
+        if length < 0.01: length = 0.5
+        if w < 0.01: w = 0.5
+        scale = min(draw_w_max / length, draw_h_max / w)
+        # Don't blow up tiny parts more than 10 px/in
+        scale = min(scale, 10.0)
+        dw = length * scale
+        dh = w * scale
+        dx = cx + (card_w - dw) / 2
+        dy = cy + 70 + (draw_h_max - dh) / 2
+
+        # Fill color by lumber
+        fill = "#e8d6a8" if "ply" in g["lumber"].lower() else "#d9b380"
+        svg.append(f'<rect x="{dx}" y="{dy}" width="{dw}" height="{dh}" '
+                   f'fill="{fill}" stroke="#5a4622" stroke-width="1.2"/>')
+
+        # Dimension labels: length below, width on right
+        svg.append(f'<text class="dim" x="{cx + card_w / 2}" '
+                   f'y="{dy + dh + 16}" text-anchor="middle">'
+                   f'{length:.2f} in</text>')
+        # Width as vertical-ish label on the right
+        svg.append(f'<text class="dim" x="{dx + dw + 6}" y="{dy + dh / 2 + 4}" '
+                   f'text-anchor="start">{w:.2f} in</text>')
+
+        # Thickness + examples at bottom
+        svg.append(f'<text class="thick" x="{cx + 14}" y="{cy + card_h - 28}">'
+                   f'Thickness: {g["thickness"]:.2f} in</text>')
+        ex = "; ".join(g["examples"][:2])
+        if g["qty"] > 2:
+            ex += f" (+{g['qty'] - len(g['examples'])} more)" if g["qty"] > len(g["examples"]) else ""
+        if len(ex) > 50: ex = ex[:48] + "..."
+        svg.append(f'<text class="examples" x="{cx + 14}" y="{cy + card_h - 14}">'
+                   f'IDs: {ex}</text>')
+
+    svg.append('</svg>')
+    with open(svg_path, "w") as f:
+        f.write("\n".join(svg))
 
 
 def write_objects_csv(scene: Scene, csv_path: str) -> None:
@@ -1224,10 +1323,12 @@ def main() -> None:
     svg = os.path.join(OUT_DIR, "l_bench.svg")
     cut = os.path.join(OUT_DIR, "l_bench_cutlist.csv")
     objs_csv = os.path.join(OUT_DIR, "l_bench_objects.csv")
+    sheets = os.path.join(OUT_DIR, "l_bench_partsheets.svg")
     write_dae(scene, dae)
     write_obj_mtl(scene, obj, mtl)
     write_svg(scene, svg)
     write_cutlist(scene, cut)
+    write_part_sheets(scene, sheets)
     write_objects_csv(scene, objs_csv)
     warnings_ = sanity_checks(scene)
     print(f"Wrote {dae}")
@@ -1235,6 +1336,7 @@ def main() -> None:
     print(f"Wrote {mtl}")
     print(f"Wrote {svg}")
     print(f"Wrote {cut}")
+    print(f"Wrote {sheets}")
     print(f"Wrote {objs_csv}")
     print(f"Boxes: {len(scene.boxes)}  Cylinders: {len(scene.cylinders)}")
     if warnings_:

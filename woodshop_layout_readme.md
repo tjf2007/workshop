@@ -27,7 +27,9 @@ zones, and lift cavities before you cut wood.
 | `l_bench.obj` + `.mtl` | Wavefront for free tools (Tinkercad, FreeCAD, MeshLab). No units in file - import as inches or scale by 0.0254. |
 | `l_bench.svg` | Top-down plan with cavities, framing, hardware, legend. |
 | `l_bench_cutlist.csv` | Aggregated cut list. Identical parts grouped with quantity. |
+| `l_bench_partsheets.svg` | One card per unique cut, with dimensions + scaled diagram. Print and check off as you cut. |
 | `l_bench_objects.csv` | Flat list of every modeled L-bench part. |
+| `planer_lift_bom.md` | Honest write-up of the gas-strut mechanism, the simpler trailer-jack alternative, and Home Depot BOM for both. |
 
 **Cut-list note on the bench top:** the cut list shows each top section as
 a 1.5 in thick piece. That's the *finished* lamination of two 3/4 in
