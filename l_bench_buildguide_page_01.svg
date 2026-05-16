@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 0.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
-<rect x="0.000" y="0.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
-<text x="4.250" y="2.000" font-size="0.9" fill="#1A1A1A" font-weight="bold" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">L-BENCH</text>
-<text x="4.250" y="2.700" font-size="0.5" fill="#2E2A26" font-weight="bold" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">BUILD GUIDE</text>
-<line x1="2.000" y1="3.000" x2="6.500" y2="3.000" stroke="#2E2A26" stroke-width="0.02" />
-<text x="4.250" y="3.400" font-size="0.22" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Step-by-step cut + assembly</text>
-<text x="4.250" y="3.700" font-size="0.16" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">(Planer lift mechanism not included - leave cavity open)</text>
-<rect x="2.450" y="4.500" width="3.600" height="0.900" fill="#D4C8A5" opacity="1.0" stroke="#8E7E55" stroke-width="0.015" />
-<rect x="2.450" y="5.400" width="0.900" height="2.100" fill="#D4C8A5" opacity="1.0" stroke="#8E7E55" stroke-width="0.015" />
-<rect x="3.700" y="4.550" width="0.900" height="0.750" fill="#E8B97A" opacity="1.0" stroke="#7C5530" stroke-width="0.01" />
-<text x="4.150" y="4.950" font-size="0.1" fill="#333" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">MITER</text>
-<rect x="5.150" y="4.600" width="0.600" height="0.800" fill="#AAA" opacity="1.0" stroke="#444" stroke-width="0.01" />
-<text x="5.450" y="5.050" font-size="0.09" fill="#333" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">ROUTER</text>
-<rect x="2.525" y="5.550" width="0.750" height="0.750" fill="#E8D26A" opacity="1.0" stroke="#7A6520" stroke-width="0.01" />
-<text x="2.900" y="6.000" font-size="0.09" fill="#333" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">PLANER</text>
-<rect x="2.500" y="6.600" width="0.800" height="0.800" fill="#E8D26A" opacity="1.0" stroke="#7A6520" stroke-width="0.01" />
-<text x="2.900" y="7.050" font-size="0.1" fill="#333" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">SAW</text>
-<text x="4.250" y="8.500" font-size="0.18" fill="#1A1A1A" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">144 in long  x  120 in deep  x  37 in tall</text>
-<text x="4.250" y="8.900" font-size="0.14" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">22 studs  /  16 stretchers  /  6 sheets 3/4 in plywood</text>
-<text x="4.250" y="9.200" font-size="0.14" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Build time: 6 weekend days (one person)</text>
-<text x="4.250" y="10.500" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">19 pages total - print this whole document</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 0.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="4.250" y="2.000" font-size="1.1" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">L-BENCH</text>
+<text x="4.250" y="2.700" font-size="0.55" fill="#000000" font-weight="600" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">BUILD GUIDE</text>
+<line x1="2.000" y1="3.000" x2="6.500" y2="3.000" stroke="#000000" stroke-width="0.02" />
+<text x="4.250" y="3.400" font-size="0.22" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step-by-step cut + assembly</text>
+<text x="4.250" y="3.700" font-size="0.15" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(planer lift mechanism not included - leave cavity open)</text>
+<rect x="2.234" y="4.500" width="4.032" height="1.008" fill="#EFE6D2" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="2.234" y="5.508" width="1.008" height="2.352" fill="#EFE6D2" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="3.634" y="4.556" width="1.008" height="0.840" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.008" />
+<text x="4.138" y="5.004" font-size="0.1" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">MITER</text>
+<rect x="5.258" y="4.612" width="0.672" height="0.896" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.008" />
+<text x="5.594" y="5.088" font-size="0.1" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ROUTER</text>
+<rect x="2.318" y="5.676" width="0.840" height="0.840" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.008" />
+<text x="2.738" y="6.124" font-size="0.1" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">PLANER</text>
+<rect x="2.290" y="6.852" width="0.896" height="0.896" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.008" />
+<text x="2.738" y="7.328" font-size="0.1" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">SAW</text>
+<text x="4.250" y="8.600" font-size="0.2" fill="#000000" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">144 in long  x  120 in deep  x  37 in tall</text>
+<text x="4.250" y="8.950" font-size="0.14" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">22 studs  /  22 stretchers  /  6 sheets 3/4 in plywood</text>
+<text x="4.250" y="9.200" font-size="0.14" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Build time: 6 weekend days (one person)</text>
+<text x="4.250" y="10.500" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">19 pages total - print the whole document</text>
 </svg>

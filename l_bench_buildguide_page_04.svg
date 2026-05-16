@@ -1,51 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 33.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
-<rect x="0.000" y="33.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
-<rect x="0.500" y="33.500" width="7.500" height="0.550" fill="#2E2A26" opacity="1.0" rx="0.06" ry="0.06" />
-<text x="0.680" y="33.900" font-size="0.26" fill="#FFFFFF" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cut Day 1: 2x4 Lumber</text>
-<text x="4.250" y="43.700" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Page 4 of 19</text>
-<line x1="0.000" y1="33.000" x2="8.500" y2="33.000" stroke="#DDD8C8" stroke-width="0.015" stroke-dasharray="0.08,0.08" />
-<text x="0.700" y="34.500" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cross-cut order (longest first):</text>
-<text x="0.900" y="34.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="34.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">4 x 144 in rails (top leg front + back)</text>
-<text x="5.700" y="34.850" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(12 ft stock)</text>
-<text x="0.900" y="35.150" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="35.150" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">4 x 84 in rails (short leg sides)</text>
-<text x="5.700" y="35.150" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(8 ft stock)</text>
-<text x="0.900" y="35.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="35.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">22 x 28.5 in studs (verticals)</text>
-<text x="5.700" y="35.450" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(8 ft = 3 studs)</text>
-<text x="0.900" y="35.750" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="35.750" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">22 x 29 in cross stretchers</text>
-<text x="5.700" y="35.750" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(8 ft = 3 stretchers)</text>
-<text x="0.900" y="36.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="36.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">2 x 32 in saw sled cleats</text>
-<text x="5.700" y="36.050" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(scrap)</text>
-<text x="0.900" y="36.350" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="36.350" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">2 x 25 in saw sled cleats</text>
-<text x="5.700" y="36.350" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(scrap)</text>
-<text x="0.900" y="36.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="36.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">2 x 36 in miter blocking</text>
-<text x="5.700" y="36.650" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(scrap)</text>
-<text x="0.900" y="36.950" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">-</text>
-<text x="1.100" y="36.950" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">2 x 23 in miter blocking</text>
-<text x="5.700" y="36.950" font-size="0.11" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">(scrap)</text>
-<rect x="0.500" y="38.950" width="7.500" height="3.950" fill="#FFFFFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
-<rect x="6.000" y="39.050" width="1.900" height="3.750" fill="#F2EFE2" opacity="1.0" rx="0.04" ry="0.04" />
-<text x="6.120" y="39.300" font-size="0.11" fill="#4A6FA5" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TOOLS</text>
-<text x="6.120" y="39.480" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Miter saw</text>
-<text x="6.120" y="39.660" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Tape measure</text>
-<text x="6.120" y="39.840" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Pencil</text>
-<text x="6.120" y="40.020" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Sharpie</text>
-<text x="6.120" y="40.380" font-size="0.11" fill="#6C8C3B" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TIME</text>
-<text x="6.120" y="40.560" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">3-4 hours</text>
-<text x="0.750" y="39.350" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Instructions</text>
-<text x="0.750" y="39.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cull bad boards first - reject visible twist, crown &gt; 1/4 in,</text>
-<text x="0.750" y="39.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">and knots larger than 1 in at edges.</text>
-<text x="0.750" y="40.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Cut longest pieces first to leave usable offcuts.</text>
-<text x="0.750" y="40.250" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Stamp each piece with its name (sharpie on the end grain).</text>
-<text x="0.750" y="40.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Stack by length, separated by 1/4 in spacers if storing &gt; 1 day.</text>
-<rect x="0.750" y="42.530" width="0.180" height="0.100" fill="#F18F4C" opacity="1.0" stroke="#9A3F0A" stroke-width="0.005" />
-<text x="0.990" y="42.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">New this step</text>
-<rect x="2.250" y="42.530" width="0.180" height="0.100" fill="#E4DECF" opacity="1.0" stroke="#BBB2A0" stroke-width="0.005" />
-<text x="2.490" y="42.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Already built</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 33.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="33.850" font-size="0.34" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cut Day 1: 2x4 Lumber</text>
+<line x1="0.500" y1="34.050" x2="8.000" y2="34.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="43.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4 / 19</text>
+<text x="0.700" y="34.500" font-size="0.16" fill="#000000" font-weight="600" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cross-cut order (longest first):</text>
+<text x="0.900" y="34.850" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="34.850" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4 x 144 in rails (top leg front + back)</text>
+<text x="5.700" y="34.850" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(12 ft stock)</text>
+<text x="0.900" y="35.150" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="35.150" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">4 x 84 in rails (short leg sides)</text>
+<text x="5.700" y="35.150" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(8 ft stock)</text>
+<text x="0.900" y="35.450" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="35.450" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">22 x 28.5 in studs (verticals)</text>
+<text x="5.700" y="35.450" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(8 ft = 3 studs)</text>
+<text x="0.900" y="35.750" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="35.750" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">22 x 29 in cross stretchers</text>
+<text x="5.700" y="35.750" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(8 ft = 3 stretchers)</text>
+<text x="0.900" y="36.050" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="36.050" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2 x 32 in saw sled cleats</text>
+<text x="5.700" y="36.050" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(scrap)</text>
+<text x="0.900" y="36.350" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="36.350" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2 x 25 in saw sled cleats</text>
+<text x="5.700" y="36.350" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(scrap)</text>
+<text x="0.900" y="36.650" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="36.650" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2 x 36 in miter blocking</text>
+<text x="5.700" y="36.650" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(scrap)</text>
+<text x="0.900" y="36.950" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">-</text>
+<text x="1.100" y="36.950" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">2 x 23 in miter blocking</text>
+<text x="5.700" y="36.950" font-size="0.11" fill="#555555" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">(scrap)</text>
+<line x1="0.500" y1="37.900" x2="8.000" y2="37.900" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="38.000" x2="6.000" y2="43.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="38.220" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="38.540" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cull bad boards first - reject visible twist, crown &gt; 1/4 in,</text>
+<text x="0.500" y="38.760" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">and knots larger than 1 in at edges.</text>
+<text x="0.500" y="38.980" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Cut longest pieces first to leave usable offcuts.</text>
+<text x="0.500" y="39.200" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Stamp each piece with its name (sharpie on the end grain).</text>
+<text x="0.500" y="39.420" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Stack by length, separated by 1/4 in spacers if storing &gt; 1 day.</text>
+<text x="6.100" y="38.220" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="38.480" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Miter saw</text>
+<text x="6.100" y="38.680" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Tape measure</text>
+<text x="6.100" y="38.880" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Pencil</text>
+<text x="6.100" y="39.080" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Sharpie</text>
+<text x="6.100" y="39.460" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="39.720" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">3-4 hours</text>
+<rect x="0.500" y="43.220" width="0.140" height="0.090" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.014" />
+<text x="0.700" y="43.300" font-size="0.1" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+<rect x="1.900" y="43.220" width="0.140" height="0.090" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="2.100" y="43.300" font-size="0.1" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">already built</text>
 </svg>

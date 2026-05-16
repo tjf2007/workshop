@@ -1,39 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 198.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
-<rect x="0.000" y="198.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
-<rect x="0.500" y="198.500" width="7.500" height="0.550" fill="#2E2A26" opacity="1.0" rx="0.06" ry="0.06" />
-<text x="0.680" y="198.900" font-size="0.26" fill="#FFFFFF" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Final Sanity Check</text>
-<text x="4.250" y="208.700" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Page 19 of 19</text>
-<line x1="0.000" y1="198.000" x2="8.500" y2="198.000" stroke="#DDD8C8" stroke-width="0.015" stroke-dasharray="0.08,0.08" />
-<text x="0.700" y="199.500" font-size="0.18" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Before you declare the frame done:</text>
-<rect x="0.500" y="199.750" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="199.900" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Bench top is level corner-to-corner within 1/8 in across 12 ft.</text>
-<rect x="0.500" y="200.070" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="200.220" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Push hard on the front edge of the top leg - it should not move &gt; 1/8 in.</text>
-<rect x="0.500" y="200.390" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="200.540" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">If it does, re-tighten wall lags or add a diagonal brace in a bay.</text>
-<rect x="0.500" y="200.710" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="200.860" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Miter recess is exactly 36 x 30 in opening, 4 in deep. Saw sits flush.</text>
-<rect x="0.500" y="201.030" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="201.180" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Router insert plate sits flush with the surrounding top - no proud edges.</text>
-<rect x="0.500" y="201.350" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="201.500" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Saw sled drops in cleanly; deck flush at 37 in. Lifts out by hand.</text>
-<rect x="0.500" y="201.670" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="201.820" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Planer cavity is FULLY OPEN - no obstructions in the 30 x 30 x 37 hole.</text>
-<rect x="0.500" y="201.990" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="202.140" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Bottom of planer cavity is clear floor (no internal blocking).</text>
-<rect x="0.500" y="202.310" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="202.460" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Toe kicks are recessed 3 in from front faces (left + right of L).</text>
-<rect x="0.500" y="202.630" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="202.780" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">All cavities have framed studs at every boundary - no cantilever.</text>
-<rect x="0.500" y="202.950" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="203.100" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Top doubled panels are SCREWED + GLUED, not just screwed.</text>
-<rect x="0.500" y="203.270" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="203.420" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">End panels installed at the visible ends (X=144, Y=120).</text>
-<rect x="0.500" y="203.590" width="0.200" height="0.220" fill="#FFF" opacity="1.0" stroke="#666" stroke-width="0.012" rx="0.02" ry="0.02" />
-<text x="0.900" y="203.740" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Finish has cured at least 24 hours before placing tools.</text>
-<rect x="0.500" y="204.460" width="7.500" height="1.300" fill="#FFF6E0" opacity="1.0" stroke="#D6BA60" stroke-width="0.01" rx="0.05" ry="0.05" />
-<text x="0.700" y="204.760" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Next up: planer lift mechanism</text>
-<text x="0.700" y="205.060" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Drop a temporary 30 x 30 ply cover over the planer hole.</text>
-<text x="0.700" y="205.310" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">When ready, see planer_lift_bom.md for the BOM and</text>
-<text x="0.700" y="205.560" font-size="0.12" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">the scissor-stabilizer + drill mechanism build.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 198.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="198.850" font-size="0.34" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Final Sanity Check</text>
+<line x1="0.500" y1="199.050" x2="8.000" y2="199.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="208.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">19 / 19</text>
+<text x="0.500" y="199.600" font-size="0.18" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Before you declare the frame done:</text>
+<line x1="0.500" y1="199.950" x2="8.000" y2="199.950" stroke="#777777" stroke-width="0.006" />
+<rect x="0.500" y="200.070" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="200.200" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Bench top is level corner-to-corner within 1/8 in across 12 ft.</text>
+<rect x="0.500" y="200.350" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="200.480" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Push hard on the front edge of the top leg - it should not move &gt; 1/8 in.</text>
+<rect x="0.500" y="200.630" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="200.760" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">If it does, re-tighten wall lags or add a diagonal brace in a bay.</text>
+<rect x="0.500" y="200.910" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="201.040" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Miter recess is exactly 36 x 30 in opening, 4 in deep. Saw sits flush.</text>
+<rect x="0.500" y="201.190" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="201.320" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Router insert plate sits flush with the surrounding top.</text>
+<rect x="0.500" y="201.470" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="201.600" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Saw sled drops in cleanly; deck flush at 37 in. Lifts out by hand.</text>
+<rect x="0.500" y="201.750" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="201.880" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Planer cavity is FULLY OPEN - no obstructions in the 30 x 30 x 37 hole.</text>
+<rect x="0.500" y="202.030" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="202.160" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Bottom of planer cavity is clear floor (no internal blocking).</text>
+<rect x="0.500" y="202.310" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="202.440" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Toe kicks are recessed 3 in from front faces (left + right of L).</text>
+<rect x="0.500" y="202.590" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="202.720" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">All cavities have framed studs at every boundary - no cantilever.</text>
+<rect x="0.500" y="202.870" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="203.000" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Top doubled panels are SCREWED + GLUED, not just screwed.</text>
+<rect x="0.500" y="203.150" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="203.280" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">End panels installed at the visible ends (X=144, Y=120).</text>
+<rect x="0.500" y="203.430" width="0.160" height="0.160" fill="none" opacity="1.0" stroke="#000000" stroke-width="0.01" />
+<text x="0.850" y="203.560" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Finish has cured at least 24 hours before placing tools.</text>
+<line x1="0.500" y1="204.240" x2="8.000" y2="204.240" stroke="#000000" stroke-width="0.015" />
+<text x="0.500" y="204.560" font-size="0.16" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">NEXT UP: PLANER LIFT MECHANISM</text>
+<text x="0.500" y="204.860" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Drop a temporary 30 x 30 ply cover over the planer hole.</text>
+<text x="0.500" y="205.100" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">When ready, see planer_lift_bom.md for the BOM and</text>
+<text x="0.500" y="205.340" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">the scissor-stabilizer + drill mechanism build.</text>
 </svg>

@@ -39,38 +39,105 @@ MARGIN = 0.5
 # Bench dimensions (inches in shop coords)
 BENCH_X_MIN, BENCH_X_MAX = 0, 144     # top leg X range
 BENCH_Y_MIN, BENCH_Y_MAX = 0, 120     # full L Y range
+BENCH_Z_MAX = 37
 
-# Diagram window inside each page
-DIAG_X = MARGIN
+# Diagram window inside each page - now split into two halves
 DIAG_Y = 1.2                           # below title bar
-DIAG_W = PAGE_W - 2 * MARGIN
-DIAG_H = 4.5                           # plenty for the L shape
+DIAG_H = 3.5                           # height of both diagrams
+DIAG_GAP = 0.25                        # gap between left and right diagram
+DIAG_W_HALF = (PAGE_W - 2 * MARGIN - DIAG_GAP) / 2
 
-# Scale: fit bench into diagram window
-SCALE = min(DIAG_W / (BENCH_X_MAX - BENCH_X_MIN),
-            DIAG_H / (BENCH_Y_MAX - BENCH_Y_MIN))
-# Center the diagram in the window
-DIAG_OFFSET_X = DIAG_X + (DIAG_W - (BENCH_X_MAX - BENCH_X_MIN) * SCALE) / 2
-DIAG_OFFSET_Y = DIAG_Y + (DIAG_H - (BENCH_Y_MAX - BENCH_Y_MIN) * SCALE) / 2
+# LEFT diagram = top-down plan view
+DIAG_PLAN_X = MARGIN
+DIAG_PLAN_W = DIAG_W_HALF
+PLAN_SCALE = min(DIAG_PLAN_W / (BENCH_X_MAX - BENCH_X_MIN),
+                  DIAG_H / (BENCH_Y_MAX - BENCH_Y_MIN))
+PLAN_OFFSET_X = (DIAG_PLAN_X
+                  + (DIAG_PLAN_W - (BENCH_X_MAX - BENCH_X_MIN) * PLAN_SCALE) / 2)
+PLAN_OFFSET_Y_REL = (DIAG_H - (BENCH_Y_MAX - BENCH_Y_MIN) * PLAN_SCALE) / 2
 
-# Colors
-COL_BG = "#FBFAF6"
-COL_PAGE_RULE = "#DDD8C8"
-COL_TITLE_BAR = "#2E2A26"
-COL_TITLE_TEXT = "#FFFFFF"
-COL_TEXT = "#1A1A1A"
-COL_SUBTLE = "#555"
-COL_BUILT_FILL = "#E4DECF"
-COL_BUILT_STROKE = "#BBB2A0"
-COL_NEW_FILL = "#F18F4C"
-COL_NEW_STROKE = "#9A3F0A"
-COL_CAVITY = "#D8D8D8"
-COL_SHADOW = "#00000010"
-COL_INSTR_BG = "#FFFFFF"
-COL_INSTR_BORDER = "#E0DCC8"
-COL_SIDEBAR_BG = "#F2EFE2"
-COL_TOOL_TAG = "#4A6FA5"
-COL_TIME_TAG = "#6C8C3B"
+# RIGHT diagram = isometric view (camera at high X, high Y, high Z)
+DIAG_ISO_X = MARGIN + DIAG_W_HALF + DIAG_GAP
+DIAG_ISO_W = DIAG_W_HALF
+# Isometric projection
+ISO_COS = 0.8660254  # cos(30)
+ISO_SIN = 0.5        # sin(30)
+
+def iso_project(x: float, y: float, z: float) -> tuple[float, float]:
+    """Isometric projection (camera at +X, +Y, +Z). Returns (sx, sy) in
+    inches before scaling/offsetting."""
+    sx = (x - y) * ISO_COS
+    sy = -z + (x + y) * ISO_SIN
+    return sx, sy
+
+# Iso bench bounds in screen-coords
+_iso_corners = [
+    iso_project(0, 0, 0), iso_project(144, 0, 0),
+    iso_project(0, 36, 0), iso_project(144, 36, 0),
+    iso_project(0, 36, 0), iso_project(36, 120, 0),
+    iso_project(0, 0, 37), iso_project(144, 0, 37),
+    iso_project(0, 36, 37), iso_project(144, 36, 37),
+    iso_project(0, 120, 37), iso_project(36, 120, 37),
+    iso_project(36, 120, 0), iso_project(36, 36, 0),
+]
+ISO_X_MIN = min(c[0] for c in _iso_corners)
+ISO_X_MAX = max(c[0] for c in _iso_corners)
+ISO_Y_MIN = min(c[1] for c in _iso_corners)
+ISO_Y_MAX = max(c[1] for c in _iso_corners)
+ISO_W_RAW = ISO_X_MAX - ISO_X_MIN
+ISO_H_RAW = ISO_Y_MAX - ISO_Y_MIN
+ISO_SCALE = min(DIAG_ISO_W / ISO_W_RAW, DIAG_H / ISO_H_RAW)
+ISO_OFFSET_X = (DIAG_ISO_X
+                + (DIAG_ISO_W - ISO_W_RAW * ISO_SCALE) / 2
+                - ISO_X_MIN * ISO_SCALE)
+ISO_OFFSET_Y_REL = (DIAG_H - ISO_H_RAW * ISO_SCALE) / 2 - ISO_Y_MIN * ISO_SCALE
+
+
+def iso_to_screen(x: float, y: float, z: float,
+                   page_y0: float) -> tuple[float, float]:
+    sx, sy = iso_project(x, y, z)
+    return (ISO_OFFSET_X + sx * ISO_SCALE,
+            page_y0 + DIAG_Y + ISO_OFFSET_Y_REL + sy * ISO_SCALE)
+
+
+def plan_to_screen(x: float, y: float, page_y0: float) -> tuple[float, float]:
+    return (PLAN_OFFSET_X + x * PLAN_SCALE,
+            page_y0 + DIAG_Y + PLAN_OFFSET_Y_REL + y * PLAN_SCALE)
+
+
+def darken(hex_color: str, factor: float) -> str:
+    r = int(hex_color[1:3], 16)
+    g = int(hex_color[3:5], 16)
+    b = int(hex_color[5:7], 16)
+    r, g, b = (max(0, min(255, int(c * factor))) for c in (r, g, b))
+    return f"#{r:02X}{g:02X}{b:02X}"
+
+# Palette: white page background (no toner waste), filled parts are OK.
+COL_TEXT = "#000000"
+COL_SUBTLE = "#555555"
+COL_RULE = "#000000"
+COL_RULE_LIGHT = "#777777"
+COL_GRID = "#CCCCCC"
+
+# Wood-tone fills for parts in the diagrams (light, easy on toner)
+COL_BUILT_FILL = "#EFE6D2"      # light tan (already-built)
+COL_BUILT_STROKE = "#9A8E70"
+COL_NEW_FILL = "#F2B26A"        # warm highlight (new this step)
+COL_NEW_STROKE = "#000000"
+COL_NEW_HATCH = "#7A4A12"
+COL_FOOTPRINT = "#AAAAAA"
+
+# Iso-face shading: top brightest, front mid, right darkest
+COL_BUILT_TOP = "#F4ECDA"
+COL_BUILT_FRONT = "#E1D5B7"
+COL_BUILT_RIGHT = "#CFC09A"
+COL_NEW_TOP = "#F4BB70"
+COL_NEW_FRONT = "#E89D45"
+COL_NEW_RIGHT = "#CC7F20"
+
+# Fonts (loaded via HTML wrapper for printing)
+FONT_TITLE = "'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+FONT_BODY = "'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 
 # ---------------------------------------------------------------------------
@@ -392,43 +459,59 @@ STEPS = [
 # ---------------------------------------------------------------------------
 
 def svg_open(width_in: float, height_in: float) -> list[str]:
-    parts = [
+    return [
         f'<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{width_in}in" height="{height_in}in" '
-        f'viewBox="0 0 {width_in} {height_in}" '
-        f'style="background:{COL_BG};font-family:Helvetica,Arial,sans-serif;">',
-        # Light page-break ruler lines drawn at each page boundary later
+        f'viewBox="0 0 {width_in} {height_in}">',
+        # Font import for browser/HTML print context. Standalone SVG viewers
+        # will silently fall back to sans-serif.
+        '<defs><style type="text/css">'
+        '@import url("https://fonts.googleapis.com/css2?'
+        'family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");'
+        '</style></defs>',
     ]
-    return parts
 
 
-def rect(x, y, w, h, fill, stroke=None, stroke_w=0.005, opacity=1.0,
-         rx=0.0):
+def rect(x, y, w, h, fill="none", stroke=None, stroke_w=0.005, opacity=1.0,
+         rx=0.0, dasharray=None):
     s = (f'<rect x="{x:.3f}" y="{y:.3f}" width="{w:.3f}" height="{h:.3f}" '
          f'fill="{fill}" opacity="{opacity}"')
     if stroke:
         s += f' stroke="{stroke}" stroke-width="{stroke_w}"'
     if rx > 0:
         s += f' rx="{rx}" ry="{rx}"'
+    if dasharray:
+        s += f' stroke-dasharray="{dasharray}"'
     s += ' />'
     return s
 
 
 def text(x, y, txt, size=0.14, fill=None, bold=False, anchor="start",
-         family="Helvetica,Arial,sans-serif"):
+         family=None):
     f = fill if fill else COL_TEXT
-    weight = "bold" if bold else "normal"
-    # Escape special XML
+    weight = "600" if bold else "400"
+    fam = family if family else FONT_BODY
     txt = (str(txt).replace("&", "&amp;").replace("<", "&lt;")
            .replace(">", "&gt;"))
     return (f'<text x="{x:.3f}" y="{y:.3f}" font-size="{size}" '
             f'fill="{f}" font-weight="{weight}" text-anchor="{anchor}" '
-            f'font-family="{family}">{txt}</text>')
+            f'font-family="{fam}">{txt}</text>')
 
 
-def line(x1, y1, x2, y2, stroke, stroke_w=0.01, dasharray=None):
+def line(x1, y1, x2, y2, stroke=COL_RULE, stroke_w=0.01, dasharray=None):
     s = (f'<line x1="{x1:.3f}" y1="{y1:.3f}" x2="{x2:.3f}" y2="{y2:.3f}" '
          f'stroke="{stroke}" stroke-width="{stroke_w}"')
+    if dasharray:
+        s += f' stroke-dasharray="{dasharray}"'
+    s += ' />'
+    return s
+
+
+def polygon(points: list[tuple[float, float]], fill="none", stroke=COL_RULE,
+            stroke_w=0.008, opacity=1.0, dasharray=None):
+    pts = " ".join(f"{p[0]:.3f},{p[1]:.3f}" for p in points)
+    s = (f'<polygon points="{pts}" fill="{fill}" stroke="{stroke}" '
+         f'stroke-width="{stroke_w}" opacity="{opacity}"')
     if dasharray:
         s += f' stroke-dasharray="{dasharray}"'
     s += ' />'
@@ -445,171 +528,222 @@ def page_origin(page_idx: int) -> float:
 
 def render_page_chrome(page_idx: int, title: str, subtitle: str = "",
                        total_pages: int = 0) -> list[str]:
-    """Title bar + page-number footer; returns SVG string fragments."""
+    """Title (Abel) + thin rule + footer page number. No backgrounds."""
     y0 = page_origin(page_idx)
     out = []
-    # Page background
-    out.append(rect(0, y0, PAGE_W, PAGE_H, COL_BG))
-    # Title bar
-    out.append(rect(MARGIN, y0 + MARGIN, PAGE_W - 2 * MARGIN, 0.55,
-                    COL_TITLE_BAR, rx=0.06))
-    out.append(text(MARGIN + 0.18, y0 + MARGIN + 0.4, title,
-                    size=0.26, fill=COL_TITLE_TEXT, bold=True))
+    # Title (no background bar)
+    out.append(text(MARGIN, y0 + MARGIN + 0.35, title,
+                    size=0.34, fill=COL_TEXT, bold=True, family=FONT_TITLE))
     if subtitle:
-        out.append(text(PAGE_W - MARGIN - 0.18, y0 + MARGIN + 0.4, subtitle,
-                        size=0.15, fill=COL_TITLE_TEXT, anchor="end"))
+        out.append(text(PAGE_W - MARGIN, y0 + MARGIN + 0.35, subtitle,
+                        size=0.14, fill=COL_SUBTLE, anchor="end",
+                        family=FONT_BODY))
+    # Rule under the title
+    out.append(line(MARGIN, y0 + MARGIN + 0.55,
+                     PAGE_W - MARGIN, y0 + MARGIN + 0.55,
+                     COL_RULE, stroke_w=0.012))
     # Footer page number
     out.append(text(PAGE_W / 2, y0 + PAGE_H - 0.3,
-                    f"Page {page_idx + 1} of {total_pages}",
-                    size=0.12, fill=COL_SUBTLE, anchor="middle"))
-    # Page-break rule between pages
-    if page_idx > 0:
-        out.append(line(0, y0, PAGE_W, y0, COL_PAGE_RULE,
-                        stroke_w=0.015, dasharray="0.08,0.08"))
+                    f"{page_idx + 1} / {total_pages}",
+                    size=0.11, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
     return out
 
 
 def render_bench_plan(page_idx: int, built_patterns: list[str],
                       new_patterns: list[str], parts: list[Part]) -> list[str]:
-    """Top-down view of the bench, with built parts gray + new parts highlighted."""
+    """Top-down view (LEFT half of page). Outlines only, no fills.
+    New parts: bold black outline + light diagonal hatch.
+    Built parts: thin gray outline."""
     y0 = page_origin(page_idx)
     out = []
-    # Diagram window border
-    out.append(rect(DIAG_X, y0 + DIAG_Y, DIAG_W, DIAG_H, "#FFF",
-                    stroke=COL_INSTR_BORDER, stroke_w=0.01, rx=0.05))
+    # Caption
+    out.append(text(DIAG_PLAN_X, y0 + DIAG_Y - 0.05,
+                    "TOP-DOWN PLAN  (back wall = top)",
+                    size=0.10, fill=COL_SUBTLE, family=FONT_TITLE))
 
-    # Light grid every 6 in
-    for gx in range(0, BENCH_X_MAX + 1, 6):
-        sx = DIAG_OFFSET_X + gx * SCALE
-        out.append(line(sx, y0 + DIAG_OFFSET_Y, sx,
-                        y0 + DIAG_OFFSET_Y + BENCH_Y_MAX * SCALE,
-                        "#EEE7D3", stroke_w=0.005))
-    for gy in range(0, BENCH_Y_MAX + 1, 6):
-        sy = y0 + DIAG_OFFSET_Y + gy * SCALE
-        out.append(line(DIAG_OFFSET_X, sy,
-                        DIAG_OFFSET_X + BENCH_X_MAX * SCALE, sy,
-                        "#EEE7D3", stroke_w=0.005))
+    # 6-inch grid (very light)
+    for gx in range(0, BENCH_X_MAX + 1, 12):
+        sx, _ = plan_to_screen(gx, 0, y0)
+        _, sy_end = plan_to_screen(0, BENCH_Y_MAX, y0)
+        _, sy_start = plan_to_screen(0, 0, y0)
+        out.append(line(sx, sy_start, sx, sy_end, COL_GRID, stroke_w=0.004))
+    for gy in range(0, BENCH_Y_MAX + 1, 12):
+        sx_start, sy = plan_to_screen(0, gy, y0)
+        sx_end, _ = plan_to_screen(BENCH_X_MAX, gy, y0)
+        out.append(line(sx_start, sy, sx_end, sy, COL_GRID, stroke_w=0.004))
 
-    # L-bench overall outline (top leg + short leg) as a faint "footprint"
-    out.append(rect(DIAG_OFFSET_X + 0 * SCALE,
-                    y0 + DIAG_OFFSET_Y + 0 * SCALE,
-                    144 * SCALE, 36 * SCALE,
-                    "#F8F4E3", stroke="#D8D0B0", stroke_w=0.005))
-    out.append(rect(DIAG_OFFSET_X + 0 * SCALE,
-                    y0 + DIAG_OFFSET_Y + 36 * SCALE,
-                    36 * SCALE, 84 * SCALE,
-                    "#F8F4E3", stroke="#D8D0B0", stroke_w=0.005))
+    # L-bench footprint outline (thin dashed)
+    fx, fy = plan_to_screen(0, 0, y0)
+    out.append(rect(fx, fy, 144 * PLAN_SCALE, 36 * PLAN_SCALE,
+                    fill="none", stroke=COL_FOOTPRINT, stroke_w=0.008,
+                    dasharray="0.04,0.03"))
+    fx, fy = plan_to_screen(0, 36, y0)
+    out.append(rect(fx, fy, 36 * PLAN_SCALE, 84 * PLAN_SCALE,
+                    fill="none", stroke=COL_FOOTPRINT, stroke_w=0.008,
+                    dasharray="0.04,0.03"))
 
     def matches(name: str, patterns: list[str]) -> bool:
         return any(p in name for p in patterns)
 
-    # Render parts: built first (gray), then new (highlight) on top
-    for part in parts:
-        if part.shape != "box":
+    # Two-pass render: built first (light tan), then new (highlight on top)
+    for want_new in [False, True]:
+        for part in parts:
+            if part.shape != "box" or part.category == "ghost":
+                continue
+            is_new = matches(part.name, new_patterns)
+            is_built = matches(part.name, built_patterns)
+            if want_new and not is_new:
+                continue
+            if (not want_new) and (is_new or not is_built):
+                continue
+
+            sx, sy = plan_to_screen(part.x, part.y, y0)
+            sw = max(part.w * PLAN_SCALE, 0.015)
+            sd = max(part.d * PLAN_SCALE, 0.015)
+            if is_new:
+                out.append(rect(sx, sy, sw, sd, fill=COL_NEW_FILL,
+                                stroke=COL_NEW_STROKE, stroke_w=0.015))
+            else:
+                out.append(rect(sx, sy, sw, sd, fill=COL_BUILT_FILL,
+                                stroke=COL_BUILT_STROKE, stroke_w=0.005))
+    return out
+
+
+def render_bench_iso(page_idx: int, built_patterns: list[str],
+                     new_patterns: list[str], parts: list[Part]) -> list[str]:
+    """Isometric view (RIGHT half of page). Camera at +X, +Y, +Z.
+    Built parts in thin gray; new parts in bold black outline + hatch on
+    top face."""
+    y0 = page_origin(page_idx)
+    out = []
+    out.append(text(DIAG_ISO_X, y0 + DIAG_Y - 0.05,
+                    "ISOMETRIC  (front-right view)",
+                    size=0.10, fill=COL_SUBTLE, family=FONT_TITLE))
+
+    # Ground-plane footprint of the L (faint dashed)
+    def iso_pt(x, y, z):
+        return iso_to_screen(x, y, z, y0)
+
+    # L footprint at z=0
+    out.append(polygon([iso_pt(0, 0, 0), iso_pt(144, 0, 0),
+                         iso_pt(144, 36, 0), iso_pt(36, 36, 0),
+                         iso_pt(36, 120, 0), iso_pt(0, 120, 0)],
+                        fill="none", stroke=COL_FOOTPRINT,
+                        stroke_w=0.006, dasharray="0.04,0.03"))
+
+    def matches(name, patterns):
+        return any(p in name for p in patterns)
+
+    # Collect drawable parts and sort by depth (far first)
+    def depth_key(p: Part) -> float:
+        # Camera at +X, +Y, +Z. Larger sum = closer; smaller = farther.
+        return (p.x + p.w / 2) + (p.y + p.d / 2) + (p.z + p.h / 2)
+
+    drawable = []
+    for p in parts:
+        if p.shape != "box" or p.category == "ghost":
             continue
-        if part.category == "ghost":
-            continue
-        is_new = matches(part.name, new_patterns)
-        is_built = matches(part.name, built_patterns)
+        is_new = matches(p.name, new_patterns)
+        is_built = matches(p.name, built_patterns)
         if not (is_new or is_built):
             continue
-        if is_new and is_built:
-            is_built = False  # new wins
+        drawable.append((p, is_new))
+    drawable.sort(key=lambda pn: depth_key(pn[0]))  # far first
 
-        # Position + size in inches, scaled
-        x = DIAG_OFFSET_X + part.x * SCALE
-        y = y0 + DIAG_OFFSET_Y + part.y * SCALE
-        w = max(part.w * SCALE, 0.015)
-        d = max(part.d * SCALE, 0.015)
+    for p, is_new in drawable:
+        x0, y0_, z0 = p.x, p.y, p.z
+        x1, y1, z1 = p.x + p.w, p.y + p.d, p.z + p.h
+        # 3 visible faces: top (z=z1), right (x=x1), front (y=y1)
+        top = [iso_pt(x0, y0_, z1), iso_pt(x1, y0_, z1),
+                iso_pt(x1, y1, z1), iso_pt(x0, y1, z1)]
+        right = [iso_pt(x1, y0_, z0), iso_pt(x1, y1, z0),
+                 iso_pt(x1, y1, z1), iso_pt(x1, y0_, z1)]
+        front = [iso_pt(x0, y1, z0), iso_pt(x1, y1, z0),
+                 iso_pt(x1, y1, z1), iso_pt(x0, y1, z1)]
         if is_new:
-            fill = COL_NEW_FILL
-            stroke = COL_NEW_STROKE
-            opacity = 0.95
+            out.append(polygon(right, fill=COL_NEW_RIGHT,
+                                stroke=COL_NEW_STROKE, stroke_w=0.012))
+            out.append(polygon(front, fill=COL_NEW_FRONT,
+                                stroke=COL_NEW_STROKE, stroke_w=0.012))
+            out.append(polygon(top, fill=COL_NEW_TOP,
+                                stroke=COL_NEW_STROKE, stroke_w=0.012))
         else:
-            fill = COL_BUILT_FILL
-            stroke = COL_BUILT_STROKE
-            opacity = 0.7
-        out.append(rect(x, y, w, d, fill, stroke=stroke,
-                        stroke_w=0.008, opacity=opacity))
-
-    # Axis labels (small)
-    out.append(text(DIAG_OFFSET_X, y0 + DIAG_OFFSET_Y - 0.06,
-                    "X = back wall (in)", size=0.09, fill=COL_SUBTLE))
-    out.append(text(DIAG_OFFSET_X - 0.05,
-                    y0 + DIAG_OFFSET_Y + BENCH_Y_MAX * SCALE + 0.12,
-                    "Y = depth into room (in)", size=0.09, fill=COL_SUBTLE))
-
-    # Compass / orientation note
-    out.append(text(DIAG_X + DIAG_W - 0.18,
-                    y0 + DIAG_Y + 0.18,
-                    "BACK WALL (windows) is at TOP of plan",
-                    size=0.09, fill=COL_SUBTLE, anchor="end"))
-    out.append(text(DIAG_X + DIAG_W - 0.18,
-                    y0 + DIAG_Y + 0.32,
-                    "LHS wall (garage door side) is at LEFT",
-                    size=0.09, fill=COL_SUBTLE, anchor="end"))
+            out.append(polygon(right, fill=COL_BUILT_RIGHT,
+                                stroke=COL_BUILT_STROKE, stroke_w=0.004))
+            out.append(polygon(front, fill=COL_BUILT_FRONT,
+                                stroke=COL_BUILT_STROKE, stroke_w=0.004))
+            out.append(polygon(top, fill=COL_BUILT_TOP,
+                                stroke=COL_BUILT_STROKE, stroke_w=0.004))
     return out
 
 
 def render_instructions(page_idx: int, instructions: list[str],
                         tools: list[str] = None, time_est: str = "") -> list[str]:
-    """Render the instruction block below the diagram."""
+    """Instructions block (no backgrounds). Vertical rule separates the
+    instruction list from the tools/time sidebar."""
     y0 = page_origin(page_idx)
     out = []
-    # Instructions panel
-    instr_y = y0 + DIAG_Y + DIAG_H + 0.25
-    instr_h = PAGE_H - DIAG_Y - DIAG_H - 0.25 - 0.6 - MARGIN
-    out.append(rect(MARGIN, instr_y, PAGE_W - 2 * MARGIN, instr_h,
-                    COL_INSTR_BG, stroke=COL_INSTR_BORDER,
-                    stroke_w=0.01, rx=0.05))
 
-    # Sidebar with tools / time
+    # Position: below diagrams
+    instr_y = y0 + DIAG_Y + DIAG_H + 0.30
+    instr_bottom = y0 + PAGE_H - 0.55
+    instr_h = instr_bottom - instr_y
+
+    # Sidebar split: right ~1.9in is tools/time
     sidebar_w = 1.9
-    sidebar_x = PAGE_W - MARGIN - sidebar_w - 0.1
-    sidebar_y = instr_y + 0.1
-    sidebar_h = instr_h - 0.2
-    out.append(rect(sidebar_x, sidebar_y, sidebar_w, sidebar_h,
-                    COL_SIDEBAR_BG, rx=0.04))
+    sidebar_x = PAGE_W - MARGIN - sidebar_w
+    instr_text_w = sidebar_x - MARGIN - 0.2
 
-    # Sidebar content
-    sy = sidebar_y + 0.25
-    out.append(text(sidebar_x + 0.12, sy, "TOOLS",
-                    size=0.11, fill=COL_TOOL_TAG, bold=True))
-    sy += 0.18
+    # Thin horizontal rule above the instructions
+    out.append(line(MARGIN, instr_y - 0.10,
+                     PAGE_W - MARGIN, instr_y - 0.10,
+                     COL_RULE_LIGHT, stroke_w=0.006))
+
+    # Vertical rule separating instructions and sidebar
+    out.append(line(sidebar_x - 0.1, instr_y, sidebar_x - 0.1, instr_bottom,
+                     COL_RULE_LIGHT, stroke_w=0.006))
+
+    # Instructions heading (Abel)
+    ix = MARGIN
+    iy = instr_y + 0.22
+    out.append(text(ix, iy, "INSTRUCTIONS",
+                    size=0.14, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    iy += 0.32
+    for instr in instructions:
+        out.append(text(ix, iy, instr, size=0.13, fill=COL_TEXT,
+                        family=FONT_BODY))
+        iy += 0.22
+
+    # Sidebar: TOOLS heading + list
+    sy = instr_y + 0.22
+    out.append(text(sidebar_x, sy, "TOOLS",
+                    size=0.13, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    sy += 0.26
     if tools:
         for t in tools:
-            out.append(text(sidebar_x + 0.12, sy, f"- {t}",
-                            size=0.11, fill=COL_TEXT))
-            sy += 0.18
+            out.append(text(sidebar_x, sy, "- " + t,
+                            size=0.12, fill=COL_TEXT, family=FONT_BODY))
+            sy += 0.20
     sy += 0.18
     if time_est:
-        out.append(text(sidebar_x + 0.12, sy, "TIME",
-                        size=0.11, fill=COL_TIME_TAG, bold=True))
-        sy += 0.18
-        out.append(text(sidebar_x + 0.12, sy, time_est,
-                        size=0.11, fill=COL_TEXT))
+        out.append(text(sidebar_x, sy, "TIME",
+                        size=0.13, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+        sy += 0.26
+        out.append(text(sidebar_x, sy, time_est,
+                        size=0.12, fill=COL_TEXT, family=FONT_BODY))
 
-    # Instructions content (text wrapped lines)
-    ix = MARGIN + 0.25
-    iy = instr_y + 0.4
-    line_h = 0.20
-    out.append(text(ix, iy, "Instructions",
-                    size=0.16, fill=COL_TEXT, bold=True))
-    iy += 0.30
-    for instr in instructions:
-        out.append(text(ix, iy, instr, size=0.13, fill=COL_TEXT))
-        iy += line_h
-
-    # Legend at bottom of instructions panel
-    legend_y = instr_y + instr_h - 0.25
-    out.append(rect(ix, legend_y - 0.12, 0.18, 0.10,
-                    COL_NEW_FILL, stroke=COL_NEW_STROKE, stroke_w=0.005))
-    out.append(text(ix + 0.24, legend_y - 0.04, "New this step",
-                    size=0.10, fill=COL_TEXT))
-    out.append(rect(ix + 1.5, legend_y - 0.12, 0.18, 0.10,
-                    COL_BUILT_FILL, stroke=COL_BUILT_STROKE, stroke_w=0.005))
-    out.append(text(ix + 1.74, legend_y - 0.04, "Already built",
-                    size=0.10, fill=COL_TEXT))
+    # Legend at bottom-left of instructions area
+    legend_y = instr_bottom - 0.10
+    out.append(rect(ix, legend_y - 0.13, 0.14, 0.09,
+                    fill=COL_NEW_FILL, stroke=COL_NEW_STROKE, stroke_w=0.014))
+    out.append(text(ix + 0.20, legend_y - 0.05, "new this step",
+                    size=0.10, fill=COL_TEXT, family=FONT_BODY))
+    out.append(rect(ix + 1.4, legend_y - 0.13, 0.14, 0.09,
+                    fill=COL_BUILT_FILL, stroke=COL_BUILT_STROKE,
+                    stroke_w=0.005))
+    out.append(text(ix + 1.6, legend_y - 0.05, "already built",
+                    size=0.10, fill=COL_TEXT, family=FONT_BODY))
 
     return out
 
@@ -621,69 +755,71 @@ def render_instructions(page_idx: int, instructions: list[str],
 def render_cover(page_idx: int, total_pages: int) -> list[str]:
     y0 = page_origin(page_idx)
     out = []
-    out.append(rect(0, y0, PAGE_W, PAGE_H, COL_BG))
 
-    # Big title
+    # Big title (Abel)
     out.append(text(PAGE_W / 2, y0 + 2.0, "L-BENCH",
-                    size=0.9, fill=COL_TEXT, bold=True, anchor="middle"))
+                    size=1.1, fill=COL_TEXT, bold=True, anchor="middle",
+                    family=FONT_TITLE))
     out.append(text(PAGE_W / 2, y0 + 2.7, "BUILD GUIDE",
-                    size=0.5, fill=COL_TITLE_BAR, bold=True, anchor="middle"))
+                    size=0.55, fill=COL_TEXT, bold=True, anchor="middle",
+                    family=FONT_TITLE))
     out.append(line(MARGIN + 1.5, y0 + 3.0, PAGE_W - MARGIN - 1.5, y0 + 3.0,
-                    COL_TITLE_BAR, stroke_w=0.02))
+                    COL_RULE, stroke_w=0.02))
     out.append(text(PAGE_W / 2, y0 + 3.4,
                     "Step-by-step cut + assembly",
-                    size=0.22, fill=COL_SUBTLE, anchor="middle"))
+                    size=0.22, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
     out.append(text(PAGE_W / 2, y0 + 3.7,
-                    "(Planer lift mechanism not included - leave cavity open)",
-                    size=0.16, fill=COL_SUBTLE, anchor="middle"))
+                    "(planer lift mechanism not included - leave cavity open)",
+                    size=0.15, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
 
-    # Bench preview (drawn iso-like as top-down)
+    # Bench preview with wood-tone fills
     preview_y = y0 + 4.5
-    scale = 0.025
+    scale = 0.028
     ox = PAGE_W / 2 - 144 * scale / 2
     oy = preview_y
     # Top leg
     out.append(rect(ox, oy, 144 * scale, 36 * scale,
-                    "#D4C8A5", stroke="#8E7E55", stroke_w=0.015))
+                    fill=COL_BUILT_FILL, stroke=COL_RULE, stroke_w=0.015))
     # Short leg
     out.append(rect(ox, oy + 36 * scale, 36 * scale, 84 * scale,
-                    "#D4C8A5", stroke="#8E7E55", stroke_w=0.015))
-    # Tool cavities
-    out.append(rect(ox + 50 * scale, oy + 2 * scale,
-                    36 * scale, 30 * scale,
-                    "#E8B97A", stroke="#7C5530", stroke_w=0.01))
-    out.append(text(ox + 68 * scale, oy + 18 * scale, "MITER",
-                    size=0.1, fill="#333", anchor="middle"))
-    out.append(rect(ox + 108 * scale, oy + 4 * scale,
-                    24 * scale, 32 * scale,
-                    "#AAA", stroke="#444", stroke_w=0.01))
-    out.append(text(ox + 120 * scale, oy + 22 * scale, "ROUTER",
-                    size=0.09, fill="#333", anchor="middle"))
-    out.append(rect(ox + 3 * scale, oy + 42 * scale,
-                    30 * scale, 30 * scale,
-                    "#E8D26A", stroke="#7A6520", stroke_w=0.01))
-    out.append(text(ox + 18 * scale, oy + 60 * scale, "PLANER",
-                    size=0.09, fill="#333", anchor="middle"))
-    out.append(rect(ox + 2 * scale, oy + 84 * scale,
-                    32 * scale, 32 * scale,
-                    "#E8D26A", stroke="#7A6520", stroke_w=0.01))
-    out.append(text(ox + 18 * scale, oy + 102 * scale, "SAW",
-                    size=0.10, fill="#333", anchor="middle"))
+                    fill=COL_BUILT_FILL, stroke=COL_RULE, stroke_w=0.015))
+    # Tool cavities (highlighted fill)
+    cavities = [
+        (50, 2, 36, 30, "MITER"),
+        (108, 4, 24, 32, "ROUTER"),
+        (3, 42, 30, 30, "PLANER"),
+        (2, 84, 32, 32, "SAW"),
+    ]
+    for cx, cy, cw, cd, label in cavities:
+        out.append(rect(ox + cx * scale, oy + cy * scale,
+                         cw * scale, cd * scale,
+                         fill=COL_NEW_FILL, stroke=COL_RULE, stroke_w=0.008))
+        out.append(text(ox + (cx + cw / 2) * scale,
+                         oy + (cy + cd / 2 + 1) * scale,
+                         label, size=0.10, fill=COL_TEXT, anchor="middle",
+                         family=FONT_TITLE))
 
     # Stats
-    stats_y = y0 + 8.5
-    out.append(text(PAGE_W / 2, stats_y, "144 in long  x  120 in deep  x  37 in tall",
-                    size=0.18, fill=COL_TEXT, anchor="middle"))
-    out.append(text(PAGE_W / 2, stats_y + 0.4,
-                    "22 studs  /  16 stretchers  /  6 sheets 3/4 in plywood",
-                    size=0.14, fill=COL_SUBTLE, anchor="middle"))
-    out.append(text(PAGE_W / 2, stats_y + 0.7,
+    stats_y = y0 + 8.6
+    out.append(text(PAGE_W / 2, stats_y,
+                    "144 in long  x  120 in deep  x  37 in tall",
+                    size=0.20, fill=COL_TEXT, anchor="middle",
+                    family=FONT_BODY))
+    out.append(text(PAGE_W / 2, stats_y + 0.35,
+                    "22 studs  /  22 stretchers  /  6 sheets 3/4 in plywood",
+                    size=0.14, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
+    out.append(text(PAGE_W / 2, stats_y + 0.60,
                     "Build time: 6 weekend days (one person)",
-                    size=0.14, fill=COL_SUBTLE, anchor="middle"))
+                    size=0.14, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
 
     out.append(text(PAGE_W / 2, y0 + PAGE_H - 0.5,
-                    f"{total_pages} pages total - print this whole document",
-                    size=0.12, fill=COL_SUBTLE, anchor="middle"))
+                    f"{total_pages} pages total - print the whole document",
+                    size=0.11, fill=COL_SUBTLE, anchor="middle",
+                    family=FONT_BODY))
     return out
 
 
@@ -691,43 +827,50 @@ def render_lumber_checklist(page_idx: int, total_pages: int) -> list[str]:
     out = render_page_chrome(page_idx, "Materials: 2x4 SPF Lumber",
                              total_pages=total_pages)
     y0 = page_origin(page_idx)
-    cy = y0 + 1.5
+    cy = y0 + 1.6
 
     items = [
-        ("2x4 x 8 ft SPF stud", "26", "Buy 26 to have spares - cull bowed boards"),
-        ("2x4 x 12 ft SPF", "2", "For the 144 in top + bottom rails on top leg"),
+        ("2x4 x 8 ft SPF stud", "26", "Buy spares - cull bowed boards"),
+        ("2x4 x 12 ft SPF", "2", "For 144 in top + bottom rails (top leg)"),
         ("Total board feet (approx)", "172 bf", "30% waste already included"),
     ]
 
-    out.append(text(MARGIN + 0.2, cy, "Quantity to buy",
-                    size=0.20, fill=COL_TEXT, bold=True))
-    cy += 0.45
+    out.append(text(MARGIN, cy, "Quantity to buy",
+                    size=0.20, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.4
 
-    # Header row
-    out.append(rect(MARGIN, cy, PAGE_W - 2 * MARGIN, 0.35,
-                    "#E8E1C8", rx=0.04))
-    out.append(text(MARGIN + 0.15, cy + 0.23, "Item",
-                    size=0.13, fill=COL_TEXT, bold=True))
-    out.append(text(MARGIN + 4.0, cy + 0.23, "Qty",
-                    size=0.13, fill=COL_TEXT, bold=True))
-    out.append(text(MARGIN + 4.8, cy + 0.23, "Note",
-                    size=0.13, fill=COL_TEXT, bold=True))
-    cy += 0.45
+    # Header row (rule only)
+    out.append(text(MARGIN + 0.35, cy + 0.15, "Item",
+                    size=0.12, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    out.append(text(MARGIN + 4.0, cy + 0.15, "Qty",
+                    size=0.12, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    out.append(text(MARGIN + 4.8, cy + 0.15, "Note",
+                    size=0.12, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.30
+    out.append(line(MARGIN, cy, PAGE_W - MARGIN, cy, COL_RULE, stroke_w=0.008))
+    cy += 0.18
 
     for item, qty, note in items:
-        out.append(rect(MARGIN, cy - 0.15, 0.20, 0.22, "#FFF",
-                        stroke="#999", stroke_w=0.01))  # checkbox
-        out.append(text(MARGIN + 0.35, cy, item, size=0.13, fill=COL_TEXT))
+        # Checkbox (outline only)
+        out.append(rect(MARGIN, cy - 0.13, 0.16, 0.16,
+                        fill="none", stroke=COL_RULE, stroke_w=0.01))
+        out.append(text(MARGIN + 0.35, cy, item, size=0.13, fill=COL_TEXT,
+                        family=FONT_BODY))
         out.append(text(MARGIN + 4.0, cy, qty, size=0.13, fill=COL_TEXT,
-                        bold=True))
-        out.append(text(MARGIN + 4.8, cy, note, size=0.11, fill=COL_SUBTLE))
-        cy += 0.4
+                        bold=True, family=FONT_BODY))
+        out.append(text(MARGIN + 4.8, cy, note, size=0.11, fill=COL_SUBTLE,
+                        family=FONT_BODY))
+        cy += 0.36
 
-    # Subtotal cut list
-    cy += 0.3
-    out.append(text(MARGIN + 0.2, cy, "Pieces you will cut from this stock",
-                    size=0.16, fill=COL_TEXT, bold=True))
-    cy += 0.35
+    # Section divider
+    cy += 0.25
+    out.append(line(MARGIN, cy, PAGE_W - MARGIN, cy, COL_RULE_LIGHT,
+                     stroke_w=0.006))
+    cy += 0.30
+
+    out.append(text(MARGIN, cy, "Pieces you will cut from this stock",
+                    size=0.18, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.32
 
     cuts = [
         ("Stud, vertical (28.5 in)", "22"),
@@ -740,16 +883,22 @@ def render_lumber_checklist(page_idx: int, total_pages: int) -> list[str]:
         ("Saw sled cleats (25 in)", "2"),
     ]
     for desc, qty in cuts:
-        out.append(text(MARGIN + 0.4, cy, "-", size=0.13, fill=COL_TEXT))
-        out.append(text(MARGIN + 0.6, cy, desc, size=0.13, fill=COL_TEXT))
-        out.append(text(MARGIN + 5.0, cy, qty, size=0.13, fill=COL_TEXT,
-                        bold=True))
+        out.append(text(MARGIN + 0.15, cy, "-",
+                        size=0.13, fill=COL_TEXT, family=FONT_BODY))
+        out.append(text(MARGIN + 0.35, cy, desc,
+                        size=0.13, fill=COL_TEXT, family=FONT_BODY))
+        out.append(text(MARGIN + 5.0, cy, qty, size=0.13,
+                        fill=COL_TEXT, bold=True, family=FONT_BODY))
         cy += 0.24
 
-    cy += 0.3
-    out.append(text(MARGIN + 0.2, cy, "Pick straight boards from the middle "
-                                       "of the stack. Reject knots > 1 in.",
-                    size=0.13, fill=COL_SUBTLE))
+    cy += 0.30
+    out.append(text(MARGIN, cy,
+                    "Pick straight boards from the middle of the stack.",
+                    size=0.12, fill=COL_SUBTLE, family=FONT_BODY))
+    cy += 0.20
+    out.append(text(MARGIN, cy,
+                    "Reject knots > 1 in. Reject any board with twist > 1/8 in.",
+                    size=0.12, fill=COL_SUBTLE, family=FONT_BODY))
     return out
 
 
@@ -757,70 +906,58 @@ def render_ply_checklist(page_idx: int, total_pages: int) -> list[str]:
     out = render_page_chrome(page_idx, "Materials: Plywood + Hardware",
                              total_pages=total_pages)
     y0 = page_origin(page_idx)
-    cy = y0 + 1.5
+    cy = y0 + 1.6
 
-    out.append(text(MARGIN + 0.2, cy, "Sheet goods",
-                    size=0.18, fill=COL_TEXT, bold=True))
-    cy += 0.35
+    def section(title_text: str, items: list[tuple], cy: float) -> float:
+        out.append(text(MARGIN, cy, title_text,
+                        size=0.18, fill=COL_TEXT, bold=True,
+                        family=FONT_TITLE))
+        cy += 0.30
+        out.append(line(MARGIN, cy, PAGE_W - MARGIN, cy, COL_RULE_LIGHT,
+                         stroke_w=0.006))
+        cy += 0.20
+        for item, qty in items:
+            out.append(rect(MARGIN, cy - 0.13, 0.16, 0.16,
+                            fill="none", stroke=COL_RULE, stroke_w=0.01))
+            out.append(text(MARGIN + 0.35, cy, item,
+                            size=0.12, fill=COL_TEXT, family=FONT_BODY))
+            out.append(text(MARGIN + 6.0, cy, qty,
+                            size=0.12, fill=COL_TEXT, bold=True,
+                            family=FONT_BODY))
+            cy += 0.28
+        return cy
 
-    sheets = [
+    cy = section("Sheet goods", [
         ("3/4 in birch or sande plywood, 4 x 8 sheet", "6"),
         ("(Optional) 1/4 in skin plywood, 4 x 8 sheet", "1"),
-    ]
-    for item, qty in sheets:
-        out.append(rect(MARGIN, cy - 0.15, 0.20, 0.22, "#FFF",
-                        stroke="#999", stroke_w=0.01))
-        out.append(text(MARGIN + 0.35, cy, item, size=0.13, fill=COL_TEXT))
-        out.append(text(MARGIN + 6.5, cy, qty, size=0.13, fill=COL_TEXT,
-                        bold=True))
-        cy += 0.35
+    ], cy)
+    cy += 0.20
 
-    cy += 0.2
-    out.append(text(MARGIN + 0.2, cy, "Fasteners + adhesives",
-                    size=0.18, fill=COL_TEXT, bold=True))
-    cy += 0.35
-
-    fast = [
+    cy = section("Fasteners + adhesives", [
         ("#9 x 2.5 in construction screws (GRK or SPAX)", "1 lb"),
         ("#8 x 1.25 in wood screws", "1 lb"),
         ("1/4 x 3.5 in lag screws + washers", "8"),
         ("3/8 x 4 in lag screws (Husky tie-down)", "4"),
         ("Loctite PL Premium construction adhesive", "2 tubes"),
         ("Titebond II or III wood glue", "1 qt"),
-    ]
-    for item, qty in fast:
-        out.append(rect(MARGIN, cy - 0.15, 0.20, 0.22, "#FFF",
-                        stroke="#999", stroke_w=0.01))
-        out.append(text(MARGIN + 0.35, cy, item, size=0.12, fill=COL_TEXT))
-        out.append(text(MARGIN + 6.0, cy, qty, size=0.12, fill=COL_TEXT,
-                        bold=True))
-        cy += 0.3
+    ], cy)
+    cy += 0.20
 
-    cy += 0.2
-    out.append(text(MARGIN + 0.2, cy, "Finish",
-                    size=0.18, fill=COL_TEXT, bold=True))
-    cy += 0.35
-
-    finish = [
+    cy = section("Finish", [
         ("BLO or General Finishes Arm-R-Seal (1 qt)", "1"),
         ("Mineral spirits (1 qt)", "1"),
         ("Foam brushes / lint-free rags", "bulk"),
         ("Sandpaper 80, 120, 220 grit", "1 pack each"),
-    ]
-    for item, qty in finish:
-        out.append(rect(MARGIN, cy - 0.15, 0.20, 0.22, "#FFF",
-                        stroke="#999", stroke_w=0.01))
-        out.append(text(MARGIN + 0.35, cy, item, size=0.12, fill=COL_TEXT))
-        out.append(text(MARGIN + 6.0, cy, qty, size=0.12, fill=COL_TEXT,
-                        bold=True))
-        cy += 0.3
+    ], cy)
 
-    cy += 0.4
-    out.append(text(MARGIN + 0.2, cy, "Approx total bench-only cost (no lift): $560 - $760",
-                    size=0.14, fill=COL_TEXT, bold=True))
-    out.append(text(MARGIN + 0.2, cy + 0.25,
+    cy += 0.40
+    out.append(text(MARGIN, cy,
+                    "Approx total bench-only cost (no lift): $560 - $760",
+                    size=0.14, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.24
+    out.append(text(MARGIN, cy,
                     "See SHOPPING_LIST.md for full breakdown and store routing.",
-                    size=0.12, fill=COL_SUBTLE))
+                    size=0.12, fill=COL_SUBTLE, family=FONT_BODY))
     return out
 
 
@@ -828,19 +965,21 @@ def render_final_check(page_idx: int, total_pages: int) -> list[str]:
     out = render_page_chrome(page_idx, "Final Sanity Check",
                              total_pages=total_pages)
     y0 = page_origin(page_idx)
-    cy = y0 + 1.5
+    cy = y0 + 1.6
 
-    out.append(text(MARGIN + 0.2, cy,
-                    "Before you declare the frame done:",
-                    size=0.18, fill=COL_TEXT, bold=True))
-    cy += 0.4
+    out.append(text(MARGIN, cy, "Before you declare the frame done:",
+                    size=0.18, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.35
+    out.append(line(MARGIN, cy, PAGE_W - MARGIN, cy, COL_RULE_LIGHT,
+                     stroke_w=0.006))
+    cy += 0.25
 
     checks = [
         "Bench top is level corner-to-corner within 1/8 in across 12 ft.",
         "Push hard on the front edge of the top leg - it should not move > 1/8 in.",
         "If it does, re-tighten wall lags or add a diagonal brace in a bay.",
         "Miter recess is exactly 36 x 30 in opening, 4 in deep. Saw sits flush.",
-        "Router insert plate sits flush with the surrounding top - no proud edges.",
+        "Router insert plate sits flush with the surrounding top.",
         "Saw sled drops in cleanly; deck flush at 37 in. Lifts out by hand.",
         "Planer cavity is FULLY OPEN - no obstructions in the 30 x 30 x 37 hole.",
         "Bottom of planer cavity is clear floor (no internal blocking).",
@@ -851,26 +990,30 @@ def render_final_check(page_idx: int, total_pages: int) -> list[str]:
         "Finish has cured at least 24 hours before placing tools.",
     ]
     for c in checks:
-        out.append(rect(MARGIN, cy - 0.15, 0.20, 0.22, "#FFF",
-                        stroke="#666", stroke_w=0.012, rx=0.02))
-        out.append(text(MARGIN + 0.4, cy, c, size=0.12, fill=COL_TEXT))
-        cy += 0.32
+        out.append(rect(MARGIN, cy - 0.13, 0.16, 0.16,
+                        fill="none", stroke=COL_RULE, stroke_w=0.01))
+        out.append(text(MARGIN + 0.35, cy, c, size=0.12, fill=COL_TEXT,
+                        family=FONT_BODY))
+        cy += 0.28
 
     cy += 0.4
-    out.append(rect(MARGIN, cy, PAGE_W - 2 * MARGIN, 1.3,
-                    "#FFF6E0", stroke="#D6BA60", stroke_w=0.01, rx=0.05))
-    out.append(text(MARGIN + 0.2, cy + 0.3,
-                    "Next up: planer lift mechanism",
-                    size=0.16, fill=COL_TEXT, bold=True))
-    out.append(text(MARGIN + 0.2, cy + 0.6,
+    out.append(line(MARGIN, cy, PAGE_W - MARGIN, cy, COL_RULE,
+                     stroke_w=0.015))
+    cy += 0.32
+    out.append(text(MARGIN, cy, "NEXT UP: PLANER LIFT MECHANISM",
+                    size=0.16, fill=COL_TEXT, bold=True, family=FONT_TITLE))
+    cy += 0.30
+    out.append(text(MARGIN, cy,
                     "Drop a temporary 30 x 30 ply cover over the planer hole.",
-                    size=0.12, fill=COL_TEXT))
-    out.append(text(MARGIN + 0.2, cy + 0.85,
+                    size=0.13, fill=COL_TEXT, family=FONT_BODY))
+    cy += 0.24
+    out.append(text(MARGIN, cy,
                     "When ready, see planer_lift_bom.md for the BOM and",
-                    size=0.12, fill=COL_TEXT))
-    out.append(text(MARGIN + 0.2, cy + 1.10,
+                    size=0.13, fill=COL_TEXT, family=FONT_BODY))
+    cy += 0.24
+    out.append(text(MARGIN, cy,
                     "the scissor-stabilizer + drill mechanism build.",
-                    size=0.12, fill=COL_TEXT))
+                    size=0.13, fill=COL_TEXT, family=FONT_BODY))
     return out
 
 
@@ -951,6 +1094,8 @@ def render_page(i: int, step: dict, parts: list[Part],
         out.extend(render_page_chrome(i, step["title"], total_pages=total_pages))
         out.extend(render_bench_plan(i, built_patterns,
                                       step.get("patterns", []), parts))
+        out.extend(render_bench_iso(i, built_patterns,
+                                     step.get("patterns", []), parts))
         out.extend(render_instructions(i, step["instructions"],
                                         tools=step.get("tools"),
                                         time_est=step.get("time", "")))
@@ -971,10 +1116,16 @@ def write_html_wrapper(html_path: Path, total_pages: int):
     html = f"""<!doctype html>
 <html><head><meta charset="utf-8">
 <title>L-Bench Build Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
 @page {{ size: 8.5in 11in; margin: 0; }}
 * {{ box-sizing: border-box; }}
-html, body {{ margin: 0; padding: 0; background: #888; }}
+html, body {{
+    margin: 0; padding: 0; background: #DDD;
+    font-family: 'Barlow', sans-serif;
+}}
 .page {{
     width: 8.5in;
     height: 11in;
@@ -985,10 +1136,10 @@ html, body {{ margin: 0; padding: 0; background: #888; }}
     overflow: hidden;
 }}
 .page:last-child {{ page-break-after: auto; }}
-object {{ display: block; }}
+object {{ display: block; width: 100%; height: 100%; }}
 @media print {{
     html, body {{ background: white; }}
-    .page {{ margin: 0; }}
+    .page {{ margin: 0; background: white; }}
 }}
 </style></head><body>
 {''.join(pages_html)}
@@ -1032,9 +1183,11 @@ def main():
         single = [
             f'<svg xmlns="http://www.w3.org/2000/svg" '
             f'width="{PAGE_W}in" height="{PAGE_H}in" '
-            f'viewBox="0 {y0} {PAGE_W} {PAGE_H}" '
-            f'style="background:{COL_BG};'
-            f'font-family:Helvetica,Arial,sans-serif;">',
+            f'viewBox="0 {y0} {PAGE_W} {PAGE_H}">',
+            '<defs><style type="text/css">'
+            '@import url("https://fonts.googleapis.com/css2?'
+            'family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");'
+            '</style></defs>',
         ]
         single.extend(page_svg)
         single.append("</svg>")

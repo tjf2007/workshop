@@ -1,99 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 66.0 8.5 11.0" style="background:#FBFAF6;font-family:Helvetica,Arial,sans-serif;">
-<rect x="0.000" y="66.000" width="8.500" height="11.000" fill="#FBFAF6" opacity="1.0" />
-<rect x="0.500" y="66.500" width="7.500" height="0.550" fill="#2E2A26" opacity="1.0" rx="0.06" ry="0.06" />
-<text x="0.680" y="66.900" font-size="0.26" fill="#FFFFFF" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Step 2: Top Leg Front Wall Frame</text>
-<text x="4.250" y="76.700" font-size="0.12" fill="#555" font-weight="normal" text-anchor="middle" font-family="Helvetica,Arial,sans-serif">Page 7 of 19</text>
-<line x1="0.000" y1="66.000" x2="8.500" y2="66.000" stroke="#DDD8C8" stroke-width="0.015" stroke-dasharray="0.08,0.08" />
-<rect x="0.500" y="67.200" width="7.500" height="4.500" fill="#FFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
-<line x1="1.550" y1="67.200" x2="1.550" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.775" y1="67.200" x2="1.775" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="2.000" y1="67.200" x2="2.000" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="2.225" y1="67.200" x2="2.225" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="2.450" y1="67.200" x2="2.450" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="2.675" y1="67.200" x2="2.675" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="2.900" y1="67.200" x2="2.900" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="3.125" y1="67.200" x2="3.125" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="3.350" y1="67.200" x2="3.350" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="3.575" y1="67.200" x2="3.575" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="3.800" y1="67.200" x2="3.800" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="4.025" y1="67.200" x2="4.025" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="4.250" y1="67.200" x2="4.250" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="4.475" y1="67.200" x2="4.475" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="4.700" y1="67.200" x2="4.700" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="4.925" y1="67.200" x2="4.925" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="5.150" y1="67.200" x2="5.150" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="5.375" y1="67.200" x2="5.375" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="5.600" y1="67.200" x2="5.600" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="5.825" y1="67.200" x2="5.825" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="6.050" y1="67.200" x2="6.050" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="6.275" y1="67.200" x2="6.275" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="6.500" y1="67.200" x2="6.500" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="6.725" y1="67.200" x2="6.725" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="6.950" y1="67.200" x2="6.950" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="67.200" x2="6.950" y2="67.200" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="67.425" x2="6.950" y2="67.425" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="67.650" x2="6.950" y2="67.650" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="67.875" x2="6.950" y2="67.875" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="68.100" x2="6.950" y2="68.100" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="68.325" x2="6.950" y2="68.325" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="68.550" x2="6.950" y2="68.550" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="68.775" x2="6.950" y2="68.775" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="69.000" x2="6.950" y2="69.000" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="69.225" x2="6.950" y2="69.225" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="69.450" x2="6.950" y2="69.450" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="69.675" x2="6.950" y2="69.675" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="69.900" x2="6.950" y2="69.900" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="70.125" x2="6.950" y2="70.125" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="70.350" x2="6.950" y2="70.350" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="70.575" x2="6.950" y2="70.575" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="70.800" x2="6.950" y2="70.800" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="71.025" x2="6.950" y2="71.025" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="71.250" x2="6.950" y2="71.250" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="71.475" x2="6.950" y2="71.475" stroke="#EEE7D3" stroke-width="0.005" />
-<line x1="1.550" y1="71.700" x2="6.950" y2="71.700" stroke="#EEE7D3" stroke-width="0.005" />
-<rect x="1.550" y="67.200" width="5.400" height="1.350" fill="#F8F4E3" opacity="1.0" stroke="#D8D0B0" stroke-width="0.005" />
-<rect x="1.550" y="68.550" width="1.350" height="3.150" fill="#F8F4E3" opacity="1.0" stroke="#D8D0B0" stroke-width="0.005" />
-<rect x="1.550" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="2.450" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="3.294" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="4.775" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="5.469" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="6.500" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="6.819" y="68.494" width="0.131" height="0.056" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="1.550" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="2.450" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="3.294" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="4.775" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="5.469" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="6.500" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="6.819" y="67.200" width="0.131" height="0.056" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="1.550" y="68.419" width="5.400" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="1.550" y="68.419" width="5.400" height="0.131" fill="#F18F4C" opacity="0.95" stroke="#9A3F0A" stroke-width="0.008" />
-<rect x="1.550" y="67.200" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<rect x="1.550" y="67.200" width="5.400" height="0.131" fill="#E4DECF" opacity="0.7" stroke="#BBB2A0" stroke-width="0.008" />
-<text x="1.550" y="67.140" font-size="0.09" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">X = back wall (in)</text>
-<text x="1.500" y="71.820" font-size="0.09" fill="#555" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Y = depth into room (in)</text>
-<text x="7.820" y="67.380" font-size="0.09" fill="#555" font-weight="normal" text-anchor="end" font-family="Helvetica,Arial,sans-serif">BACK WALL (windows) is at TOP of plan</text>
-<text x="7.820" y="67.520" font-size="0.09" fill="#555" font-weight="normal" text-anchor="end" font-family="Helvetica,Arial,sans-serif">LHS wall (garage door side) is at LEFT</text>
-<rect x="0.500" y="71.950" width="7.500" height="3.950" fill="#FFFFFF" opacity="1.0" stroke="#E0DCC8" stroke-width="0.01" rx="0.05" ry="0.05" />
-<rect x="6.000" y="72.050" width="1.900" height="3.750" fill="#F2EFE2" opacity="1.0" rx="0.04" ry="0.04" />
-<text x="6.120" y="72.300" font-size="0.11" fill="#4A6FA5" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TOOLS</text>
-<text x="6.120" y="72.480" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Drill</text>
-<text x="6.120" y="72.660" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Impact driver</text>
-<text x="6.120" y="72.840" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Square</text>
-<text x="6.120" y="73.020" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Tape</text>
-<text x="6.120" y="73.200" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Glue</text>
-<text x="6.120" y="73.380" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">- Screws</text>
-<text x="6.120" y="73.740" font-size="0.11" fill="#6C8C3B" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">TIME</text>
-<text x="6.120" y="73.920" font-size="0.11" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">1 hour</text>
-<text x="0.750" y="72.350" font-size="0.16" fill="#1A1A1A" font-weight="bold" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Instructions</text>
-<text x="0.750" y="72.650" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Identical procedure to back wall (same 7 stud positions).</text>
-<text x="0.750" y="72.850" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Lay flat on floor, glue + screw, check square.</text>
-<text x="0.750" y="73.050" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Set both wall frames aside vertically against a wall.</text>
-<text x="0.750" y="73.250" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Front face has cavity openings, but FRAMING is identical -</text>
-<text x="0.750" y="73.450" font-size="0.13" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">the openings are in the top PANELS, not the studs.</text>
-<rect x="0.750" y="75.530" width="0.180" height="0.100" fill="#F18F4C" opacity="1.0" stroke="#9A3F0A" stroke-width="0.005" />
-<text x="0.990" y="75.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">New this step</text>
-<rect x="2.250" y="75.530" width="0.180" height="0.100" fill="#E4DECF" opacity="1.0" stroke="#BBB2A0" stroke-width="0.005" />
-<text x="2.490" y="75.610" font-size="0.1" fill="#1A1A1A" font-weight="normal" text-anchor="start" font-family="Helvetica,Arial,sans-serif">Already built</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 66.0 8.5 11.0">
+<defs><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Abel&amp;family=Barlow:wght@400;600;700&amp;display=swap");</style></defs>
+<text x="0.500" y="66.850" font-size="0.34" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">Step 2: Top Leg Front Wall Frame</text>
+<line x1="0.500" y1="67.050" x2="8.000" y2="67.050" stroke="#000000" stroke-width="0.012" />
+<text x="4.250" y="76.700" font-size="0.11" fill="#555555" font-weight="400" text-anchor="middle" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">7 / 19</text>
+<text x="0.500" y="67.150" font-size="0.1" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOP-DOWN PLAN  (back wall = top)</text>
+<line x1="0.500" y1="67.440" x2="0.500" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.802" y1="67.440" x2="0.802" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.104" y1="67.440" x2="1.104" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.406" y1="67.440" x2="1.406" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="1.708" y1="67.440" x2="1.708" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.010" y1="67.440" x2="2.010" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.312" y1="67.440" x2="2.312" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.615" y1="67.440" x2="2.615" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="2.917" y1="67.440" x2="2.917" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.219" y1="67.440" x2="3.219" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.521" y1="67.440" x2="3.521" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="3.823" y1="67.440" x2="3.823" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="4.125" y1="67.440" x2="4.125" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="67.440" x2="4.125" y2="67.440" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="67.742" x2="4.125" y2="67.742" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.044" x2="4.125" y2="68.044" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.346" x2="4.125" y2="68.346" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.648" x2="4.125" y2="68.648" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="68.950" x2="4.125" y2="68.950" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="69.252" x2="4.125" y2="69.252" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="69.554" x2="4.125" y2="69.554" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="69.856" x2="4.125" y2="69.856" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="70.158" x2="4.125" y2="70.158" stroke="#CCCCCC" stroke-width="0.004" />
+<line x1="0.500" y1="70.460" x2="4.125" y2="70.460" stroke="#CCCCCC" stroke-width="0.004" />
+<rect x="0.500" y="67.440" width="3.625" height="0.906" fill="none" opacity="1.0" stroke="#AAAAAA" stroke-width="0.008" stroke-dasharray="0.04,0.03" />
+<rect x="0.500" y="68.346" width="0.906" height="2.115" fill="none" opacity="1.0" stroke="#AAAAAA" stroke-width="0.008" stroke-dasharray="0.04,0.03" />
+<rect x="0.500" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="1.104" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="1.671" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="2.665" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="3.131" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="3.823" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="4.037" y="67.440" width="0.088" height="0.038" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="0.500" y="67.440" width="3.625" height="0.088" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="0.500" y="67.440" width="3.625" height="0.088" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<rect x="0.500" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="1.104" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="1.671" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="2.665" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="3.131" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="3.823" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="4.037" y="68.308" width="0.088" height="0.038" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="0.500" y="68.258" width="3.625" height="0.088" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<rect x="0.500" y="68.258" width="3.625" height="0.088" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.015" />
+<text x="4.375" y="67.150" font-size="0.1" fill="#555555" font-weight="400" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">ISOMETRIC  (front-right view)</text>
+<polygon points="6.023,68.530 8.000,69.671 7.506,69.957 6.023,69.101 4.869,69.767 4.375,69.481" fill="none" stroke="#AAAAAA" stroke-width="0.006" opacity="1.0" stroke-dasharray="0.04,0.03" />
+<polygon points="6.071,68.470 6.050,68.482 6.050,68.030 6.071,68.019" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.002,68.455 6.050,68.482 6.050,68.030 6.002,68.003" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.023,67.991 6.071,68.019 6.050,68.030 6.002,68.003" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.400,68.661 6.380,68.673 6.380,68.221 6.400,68.209" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.332,68.645 6.380,68.673 6.380,68.221 6.332,68.193" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.352,68.181 6.400,68.209 6.380,68.221 6.332,68.193" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.597,68.744 5.576,68.756 5.576,68.304 5.597,68.292" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.528,68.728 5.576,68.756 5.576,68.304 5.528,68.276" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.549,68.264 5.597,68.292 5.576,68.304 5.528,68.276" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.709,68.839 6.689,68.851 6.689,68.399 6.709,68.387" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.641,68.823 6.689,68.851 6.689,68.399 6.641,68.371" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.661,68.359 6.709,68.387 6.689,68.399 6.641,68.371" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="8.000,69.608 7.952,69.636 7.952,69.612 8.000,69.584" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.975,68.494 7.952,69.636 7.952,69.612 5.975,68.470" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.023,68.443 8.000,69.584 7.952,69.612 5.975,68.470" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.927,68.934 5.906,68.946 5.906,68.494 5.927,68.482" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.858,68.918 5.906,68.946 5.906,68.494 5.858,68.466" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.879,68.455 5.927,68.482 5.906,68.494 5.858,68.466" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.236,69.113 6.215,69.124 6.215,68.673 6.236,68.661" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.167,69.097 6.215,69.124 6.215,68.673 6.167,68.645" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.188,68.633 6.236,68.661 6.215,68.673 6.167,68.645" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.252,69.152 7.231,69.164 7.231,68.712 7.252,68.700" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.183,69.136 7.231,69.164 7.231,68.712 7.183,68.684" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.204,68.673 7.252,68.700 7.231,68.712 7.183,68.684" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="8.000,69.132 7.952,69.160 7.952,69.136 8.000,69.109" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="5.975,68.019 7.952,69.160 7.952,69.136 5.975,67.995" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="6.023,67.967 8.000,69.109 7.952,69.136 5.975,67.995" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.554,69.866 7.506,69.893 7.506,69.870 7.554,69.842" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.528,68.752 7.506,69.893 7.506,69.870 5.528,68.728" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.576,68.700 7.554,69.842 7.506,69.870 5.528,68.728" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.506,69.299 7.485,69.311 7.485,68.859 7.506,68.847" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.437,69.283 7.485,69.311 7.485,68.859 7.437,68.831" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.458,68.819 7.506,68.847 7.485,68.859 7.437,68.831" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.554,69.390 7.506,69.418 7.506,69.394 7.554,69.366" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.528,68.276 7.506,69.418 7.506,69.394 5.528,68.252" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="5.576,68.225 7.554,69.366 7.506,69.394 5.528,68.252" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.778,69.426 6.757,69.438 6.757,68.986 6.778,68.974" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.709,69.410 6.757,69.438 6.757,68.986 6.709,68.958" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.730,68.946 6.778,68.974 6.757,68.986 6.709,68.958" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.883,69.517 7.863,69.529 7.863,69.077 7.883,69.065" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.815,69.501 7.863,69.529 7.863,69.077 7.815,69.049" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.835,69.037 7.883,69.065 7.863,69.077 7.815,69.049" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.032,69.572 7.011,69.584 7.011,69.132 7.032,69.120" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.963,69.556 7.011,69.584 7.011,69.132 6.963,69.105" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="6.984,69.093 7.032,69.120 7.011,69.132 6.963,69.105" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="8.000,69.584 7.979,69.596 7.979,69.144 8.000,69.132" fill="#CFC09A" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.931,69.568 7.979,69.596 7.979,69.144 7.931,69.116" fill="#E1D5B7" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.952,69.105 8.000,69.132 7.979,69.144 7.931,69.116" fill="#F4ECDA" stroke="#9A8E70" stroke-width="0.004" opacity="1.0" />
+<polygon points="7.410,69.790 7.389,69.802 7.389,69.350 7.410,69.338" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.341,69.774 7.389,69.802 7.389,69.350 7.341,69.323" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.362,69.311 7.410,69.338 7.389,69.350 7.341,69.323" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.526,69.858 7.506,69.870 7.506,69.418 7.526,69.406" fill="#CC7F20" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.458,69.842 7.506,69.870 7.506,69.418 7.458,69.390" fill="#E89D45" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<polygon points="7.478,69.378 7.526,69.406 7.506,69.418 7.458,69.390" fill="#F4BB70" stroke="#000000" stroke-width="0.012" opacity="1.0" />
+<line x1="0.500" y1="70.900" x2="8.000" y2="70.900" stroke="#777777" stroke-width="0.006" />
+<line x1="6.000" y1="71.000" x2="6.000" y2="76.450" stroke="#777777" stroke-width="0.006" />
+<text x="0.500" y="71.220" font-size="0.14" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">INSTRUCTIONS</text>
+<text x="0.500" y="71.540" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Identical procedure to back wall (same 7 stud positions).</text>
+<text x="0.500" y="71.760" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Lay flat on floor, glue + screw, check square.</text>
+<text x="0.500" y="71.980" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Set both wall frames aside vertically against a wall.</text>
+<text x="0.500" y="72.200" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">Front face has cavity openings, but FRAMING is identical -</text>
+<text x="0.500" y="72.420" font-size="0.13" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">the openings are in the top PANELS, not the studs.</text>
+<text x="6.100" y="71.220" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TOOLS</text>
+<text x="6.100" y="71.480" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Drill</text>
+<text x="6.100" y="71.680" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Impact driver</text>
+<text x="6.100" y="71.880" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Square</text>
+<text x="6.100" y="72.080" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Tape</text>
+<text x="6.100" y="72.280" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Glue</text>
+<text x="6.100" y="72.480" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">- Screws</text>
+<text x="6.100" y="72.860" font-size="0.13" fill="#000000" font-weight="600" text-anchor="start" font-family="'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif">TIME</text>
+<text x="6.100" y="73.120" font-size="0.12" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">1 hour</text>
+<rect x="0.500" y="76.220" width="0.140" height="0.090" fill="#F2B26A" opacity="1.0" stroke="#000000" stroke-width="0.014" />
+<text x="0.700" y="76.300" font-size="0.1" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">new this step</text>
+<rect x="1.900" y="76.220" width="0.140" height="0.090" fill="#EFE6D2" opacity="1.0" stroke="#9A8E70" stroke-width="0.005" />
+<text x="2.100" y="76.300" font-size="0.1" fill="#000000" font-weight="400" text-anchor="start" font-family="'Barlow', 'Helvetica Neue', Helvetica, Arial, sans-serif">already built</text>
 </svg>
