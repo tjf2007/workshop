@@ -23,7 +23,8 @@ zones, and lift cavities before you cut wood.
 | File | Purpose |
 | --- | --- |
 | `generate_l_bench.py` | Stick-frame L-bench generator. Every 2x4 + panel is a named part. |
-| `l_bench.dae` | Collada for SketchUp. 110+ named parts; explode in SketchUp to edit. |
+| `l_bench.dae` | Collada for SketchUp Pro / Blender / FreeCAD. 110+ named parts. Units in file (inches). |
+| `l_bench.obj` + `.mtl` | Wavefront for free tools (Tinkercad, FreeCAD, MeshLab). No units in file - import as inches or scale by 0.0254. |
 | `l_bench.svg` | Top-down plan with cavities, framing, hardware, legend. |
 | `l_bench_cutlist.csv` | Aggregated cut list. Identical parts grouped with quantity. |
 | `l_bench_objects.csv` | Flat list of every modeled L-bench part. |

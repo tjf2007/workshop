@@ -984,6 +984,49 @@ def write_dae(scene: Scene, dae_path: str) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Wavefront OBJ + MTL writer
+# ---------------------------------------------------------------------------
+
+def write_obj_mtl(scene: Scene, obj_path: str, mtl_path: str) -> None:
+    """Write geometry as Wavefront OBJ with a sibling MTL.
+
+    OBJ does NOT carry units, so importers default to meters / their own
+    scene units. The bench is in inches; in tools like FreeCAD / Blender /
+    Tinkercad you need to import-as-inches or scale by 0.0254 to get meters.
+    """
+    with open(mtl_path, "w") as f:
+        for m in MATERIALS.values():
+            r, g, b = m.rgb
+            f.write(f"newmtl {m.name}\n")
+            f.write(f"Ka {r:.3f} {g:.3f} {b:.3f}\n")
+            f.write(f"Kd {r:.3f} {g:.3f} {b:.3f}\n")
+            f.write("Ks 0.05 0.05 0.05\nNs 16\n")
+            f.write(f"d {m.alpha:.3f}\nillum 2\n\n")
+
+    with open(obj_path, "w") as f:
+        f.write(f"# L-bench geometry. Units: inches.\n")
+        f.write(f"# Importing into a tool that assumes meters? Scale by 0.0254.\n")
+        f.write(f"mtllib {os.path.basename(mtl_path)}\n")
+        vertex_offset = 1
+        for box in scene.boxes:
+            v, t = box_mesh(box)
+            f.write(f"\no {box.name}\nusemtl {box.material}\n")
+            for vx, vy, vz in v:
+                f.write(f"v {vx:.4f} {vy:.4f} {vz:.4f}\n")
+            for a, b_, c_ in t:
+                f.write(f"f {a + vertex_offset} {b_ + vertex_offset} {c_ + vertex_offset}\n")
+            vertex_offset += len(v)
+        for cyl in scene.cylinders:
+            v, t = cylinder_mesh(cyl)
+            f.write(f"\no {cyl.name}\nusemtl {cyl.material}\n")
+            for vx, vy, vz in v:
+                f.write(f"v {vx:.4f} {vy:.4f} {vz:.4f}\n")
+            for a, b_, c_ in t:
+                f.write(f"f {a + vertex_offset} {b_ + vertex_offset} {c_ + vertex_offset}\n")
+            vertex_offset += len(v)
+
+
+# ---------------------------------------------------------------------------
 # 2D top-down SVG plan
 # ---------------------------------------------------------------------------
 
@@ -1176,18 +1219,23 @@ def sanity_checks(scene: Scene) -> list[str]:
 def main() -> None:
     scene = build_scene()
     dae = os.path.join(OUT_DIR, "l_bench.dae")
+    obj = os.path.join(OUT_DIR, "l_bench.obj")
+    mtl = os.path.join(OUT_DIR, "l_bench.mtl")
     svg = os.path.join(OUT_DIR, "l_bench.svg")
     cut = os.path.join(OUT_DIR, "l_bench_cutlist.csv")
-    obj = os.path.join(OUT_DIR, "l_bench_objects.csv")
+    objs_csv = os.path.join(OUT_DIR, "l_bench_objects.csv")
     write_dae(scene, dae)
+    write_obj_mtl(scene, obj, mtl)
     write_svg(scene, svg)
     write_cutlist(scene, cut)
-    write_objects_csv(scene, obj)
+    write_objects_csv(scene, objs_csv)
     warnings_ = sanity_checks(scene)
     print(f"Wrote {dae}")
+    print(f"Wrote {obj}")
+    print(f"Wrote {mtl}")
     print(f"Wrote {svg}")
     print(f"Wrote {cut}")
-    print(f"Wrote {obj}")
+    print(f"Wrote {objs_csv}")
     print(f"Boxes: {len(scene.boxes)}  Cylinders: {len(scene.cylinders)}")
     if warnings_:
         print(f"WARNINGS ({len(warnings_)}):")

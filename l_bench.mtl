@@ -1,0 +1,168 @@
+newmtl stud
+Ka 0.820 0.680 0.450
+Kd 0.820 0.680 0.450
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl rail
+Ka 0.780 0.620 0.400
+Kd 0.780 0.620 0.400
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl stretcher
+Ka 0.740 0.580 0.360
+Kd 0.740 0.580 0.360
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl blocking
+Ka 0.700 0.550 0.320
+Kd 0.700 0.550 0.320
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ply_top
+Ka 0.880 0.740 0.500
+Kd 0.880 0.740 0.500
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ply_panel
+Ka 0.800 0.660 0.420
+Kd 0.800 0.660 0.420
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ply_recess
+Ka 0.920 0.780 0.550
+Kd 0.920 0.780 0.550
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ply_router
+Ka 0.550 0.420 0.250
+Kd 0.550 0.420 0.250
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl router_insert
+Ka 0.550 0.550 0.580
+Kd 0.550 0.550 0.580
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl saw_sled
+Ka 0.850 0.700 0.450
+Kd 0.850 0.700 0.450
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl saw_body
+Ka 0.950 0.780 0.050
+Kd 0.950 0.780 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl planer_sled
+Ka 0.850 0.700 0.450
+Kd 0.850 0.700 0.450
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl planer_body
+Ka 0.950 0.780 0.050
+Kd 0.950 0.780 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl drawer_slide
+Ka 0.550 0.550 0.580
+Kd 0.550 0.550 0.580
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl gas_strut
+Ka 0.300 0.300 0.320
+Kd 0.300 0.300 0.320
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl lock_pin
+Ka 0.850 0.300 0.200
+Kd 0.850 0.300 0.200
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl lock_recv
+Ka 0.450 0.450 0.500
+Kd 0.450 0.450 0.500
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl husky
+Ka 0.100 0.100 0.120
+Kd 0.100 0.100 0.120
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
+newmtl ghost
+Ka 0.300 0.550 0.950
+Kd 0.300 0.550 0.950
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.180
+illum 2
+
+newmtl ghost_cavity
+Ka 0.950 0.300 0.300
+Kd 0.950 0.300 0.300
+Ks 0.05 0.05 0.05
+Ns 16
+d 0.120
+illum 2
+
+newmtl label
+Ka 0.050 0.050 0.050
+Kd 0.050 0.050 0.050
+Ks 0.05 0.05 0.05
+Ns 16
+d 1.000
+illum 2
+
