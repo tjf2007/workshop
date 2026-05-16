@@ -153,30 +153,27 @@ TOE_RECESS = 3.0
 RAIL_T = LUM_25
 STUD_H = BENCH_H - TOE_H - 2 * RAIL_T - PLY_TOP    # 28.5"
 
-# L-bench overall footprint - MIRRORED per user request
-# Short leg is now on the RIGHT side of the bench (was on the left).
+# L-bench overall footprint
 TOP_LEG_X0, TOP_LEG_Y0 = 0.0, 0.0
 TOP_LEG_W, TOP_LEG_D = 144.0, 36.0   # 12 ft x 3 ft
 
-SHORT_LEG_X0, SHORT_LEG_Y0 = 108.0, 36.0     # was at x=0, mirrored to right
-SHORT_LEG_W, SHORT_LEG_D = 36.0, 84.0        # 3 ft x 7 ft
+LEFT_LEG_X0, LEFT_LEG_Y0 = 0.0, 36.0
+LEFT_LEG_W, LEFT_LEG_D = 36.0, 84.0  # 3 ft x 7 ft (corner is part of top leg)
 
-# Cavity geometry - after mirror + miter/router swap
-# Top leg: MITER now FAR from new corner (left end), ROUTER CLOSE to new corner
-MITER_X0, MITER_W = 0.0, 36.0      # at the very left end of the top leg
+# Cavity geometry (in shop coordinates)
+MITER_X0, MITER_W = 50.0, 36.0
 MITER_Y0, MITER_D = 2.0,  30.0
-MITER_RECESS_DROP = 4.0
+MITER_RECESS_DROP = 4.0          # recess depth below bench top
 
-ROUTER_X0, ROUTER_W = 84.0, 24.0   # ends right at the new corner (x=108)
+ROUTER_X0, ROUTER_W = 108.0, 24.0
 ROUTER_Y0, ROUTER_D = 4.0,  32.0
-ROUTER_INSERT_W, ROUTER_INSERT_D = 11.75, 9.25
+ROUTER_INSERT_W, ROUTER_INSERT_D = 11.75, 9.25   # standard router insert
 
-# Short leg: per user swap, SAW now CLOSE to corner, PLANER FAR from corner
-SAW_X0, SAW_W = 110.0, 32.0          # mirrored to right-side leg
-SAW_Y0, SAW_D = 42.0, 32.0            # was 84 - now close to corner (y=36)
+PLANER_X0, PLANER_W = 3.0, 30.0
+PLANER_Y0, PLANER_D = 42.0, 30.0
 
-PLANER_X0, PLANER_W = 111.0, 30.0   # mirrored to right-side leg
-PLANER_Y0, PLANER_D = 84.0, 30.0    # was 42 - now far from corner
+SAW_X0, SAW_W = 2.0, 32.0
+SAW_Y0, SAW_D = 84.0, 32.0
 SAW_DECK_DROP = 13.0    # DWE7491 saw body height below deck (approx)
 
 
@@ -247,13 +244,14 @@ def build_scene() -> Scene:
     # Stud X-positions along the front face (face="front_or_back" -> 3.5" wide
     # along X). The list is the LEFT EDGE of each stud's 3.5" footprint, so
     # adjacent studs sit edge-to-edge against cavity boundaries.
-    # Miter sits at the very left (x=0..36), router right against the new
-    # corner (x=84..108). Husky lives in the open bay x=40..80 between them.
     top_front_stud_x = [
-        MITER_X0 + MITER_W,               # right of miter (x=36)
-        ROUTER_X0 - LUM_4,                # left of router (x=80.5)
-        ROUTER_X0 + ROUTER_W,             # right of router / start of corner (x=108)
-        TOP_LEG_W - LUM_4,                # far right end at x=140.5 (wall side)
+        0.0,                              # left end
+        24.0,                             # mid-span left bay
+        MITER_X0 - LUM_4,                 # left of miter recess
+        MITER_X0 + MITER_W,               # right of miter recess
+        ROUTER_X0 - LUM_4,                # left of router cutout
+        ROUTER_X0 + ROUTER_W,             # right of router cutout
+        TOP_LEG_W - LUM_4,                # right end
     ]
 
     # Front studs at Y=36-1.5 (1.5" deep, flush to front face at Y=36)
@@ -361,60 +359,61 @@ def build_scene() -> Scene:
     # =========================================================================
     # LEFT LEG FRAME (3 ft x 7 ft, perpendicular to top leg)
     # =========================================================================
-    # Short leg is on the RIGHT side of the bench (x=108..144).
-    # Room-facing side at X=108 (inner). Wall side at X=144 (outer).
+    # Front face is at X=36 (toward room). Back face is at X=0 (left wall).
     # Studs distributed along Y at cavity boundaries.
 
-    short_face_stud_y = [
-        SAW_Y0 - LUM_4,                          # left of saw (close to corner)
-        SAW_Y0 + SAW_D,                          # right of saw
-        PLANER_Y0 - LUM_4,                       # left of planer
-        PLANER_Y0 + PLANER_D,                    # right of planer
+    left_face_stud_y = [
+        PLANER_Y0 - LUM_4,                        # left of planer (38.5)
+        PLANER_Y0 + PLANER_D,                     # right of planer (72)
+        SAW_Y0 - LUM_4,                           # left of saw (80.5)
+        SAW_Y0 + SAW_D,                           # right of saw (116)
     ]
-    # Corner stud (y=36) is provided by TOP LEG's right-end studs (at x=140.5).
-    # Front-end edge (y=120) is framed by the planer-boundary stud + end panel.
-    for i, sy in enumerate(short_face_stud_y):
-        add_stud(s, f"ShortLeg_RoomSideStud_{i}", SHORT_LEG_X0, sy,
+    # Note: the corner stud (y=36) is provided by the TOP LEG's front studs at
+    # x=0, which butt against the left leg. The front-end edge (y=120) is
+    # framed by the saw-boundary stud at y=116 plus the end panel.
+    for i, sy in enumerate(left_face_stud_y):
+        # Left-leg studs face into Y direction (3.5" along Y, 1.5" along X)
+        add_stud(s, f"LeftLeg_LeftSideStud_{i}", 0.0, sy,
                  face="side",
                  cutlist_part="Stud, frame vertical (28.5in)")
-        add_stud(s, f"ShortLeg_WallSideStud_{i}",
-                 SHORT_LEG_X0 + SHORT_LEG_W - LUM_25, sy,
+        add_stud(s, f"LeftLeg_RightSideStud_{i}", LEFT_LEG_W - LUM_25, sy,
                  face="side",
                  cutlist_part="Stud, frame vertical (28.5in)")
 
-    # Top + bottom rails along the room-facing and wall-facing sides.
-    add_horiz_2x4(s, "ShortLeg_RoomTopRail",
-                  SHORT_LEG_X0, SHORT_LEG_Y0,
+    # Top + bottom rails along the LEFT and RIGHT (long) faces of the left leg.
+    add_horiz_2x4(s, "LeftLeg_LeftTopRail",
+                  0, LEFT_LEG_Y0,
                   BENCH_H - PLY_TOP - RAIL_T,
-                  SHORT_LEG_D, axis="y",
-                  cutlist_part="Top rail, short leg sides (84in)")
-    add_horiz_2x4(s, "ShortLeg_WallTopRail",
-                  SHORT_LEG_X0 + SHORT_LEG_W - LUM_4, SHORT_LEG_Y0,
+                  LEFT_LEG_D, axis="y",
+                  cutlist_part="Top rail, left leg sides (84in)")
+    add_horiz_2x4(s, "LeftLeg_RightTopRail",
+                  LEFT_LEG_W - LUM_4, LEFT_LEG_Y0,
                   BENCH_H - PLY_TOP - RAIL_T,
-                  SHORT_LEG_D, axis="y",
-                  cutlist_part="Top rail, short leg sides (84in)")
-    add_horiz_2x4(s, "ShortLeg_RoomBottomRail",
-                  SHORT_LEG_X0, SHORT_LEG_Y0, TOE_H,
-                  SHORT_LEG_D, axis="y",
-                  cutlist_part="Bottom rail, short leg sides (84in)")
-    add_horiz_2x4(s, "ShortLeg_WallBottomRail",
-                  SHORT_LEG_X0 + SHORT_LEG_W - LUM_4, SHORT_LEG_Y0, TOE_H,
-                  SHORT_LEG_D, axis="y",
-                  cutlist_part="Bottom rail, short leg sides (84in)")
+                  LEFT_LEG_D, axis="y",
+                  cutlist_part="Top rail, left leg sides (84in)")
+    add_horiz_2x4(s, "LeftLeg_LeftBottomRail",
+                  0, LEFT_LEG_Y0,
+                  TOE_H,
+                  LEFT_LEG_D, axis="y",
+                  cutlist_part="Bottom rail, left leg sides (84in)")
+    add_horiz_2x4(s, "LeftLeg_RightBottomRail",
+                  LEFT_LEG_W - LUM_4, LEFT_LEG_Y0,
+                  TOE_H,
+                  LEFT_LEG_D, axis="y",
+                  cutlist_part="Bottom rail, left leg sides (84in)")
 
-    # Cross stretchers between room-side and wall-side rails.
-    cross_len = SHORT_LEG_W - 2 * LUM_4   # 29 in
-    for i, sy in enumerate(short_face_stud_y):
-        add_horiz_2x4(s, f"ShortLeg_TopStretcher_{i}",
-                      SHORT_LEG_X0 + LUM_4, sy,
-                      BENCH_H - PLY_TOP - RAIL_T,
+    # Cross stretchers between left and right side rails of the left leg.
+    cross_len = LEFT_LEG_W - 2 * LUM_4   # 36 - 7 = 29 in
+    for i, sy in enumerate(left_face_stud_y):
+        add_horiz_2x4(s, f"LeftLeg_TopStretcher_{i}",
+                      LUM_4, sy, BENCH_H - PLY_TOP - RAIL_T,
                       cross_len, axis="x",
-                      cutlist_part="Cross stretcher, short leg (29in)",
+                      cutlist_part="Cross stretcher, left leg (29in)",
                       material="stretcher")
-        add_horiz_2x4(s, f"ShortLeg_BottomStretcher_{i}",
-                      SHORT_LEG_X0 + LUM_4, sy, TOE_H,
+        add_horiz_2x4(s, f"LeftLeg_BottomStretcher_{i}",
+                      LUM_4, sy, TOE_H,
                       cross_len, axis="x",
-                      cutlist_part="Cross stretcher, short leg (29in)",
+                      cutlist_part="Cross stretcher, left leg (29in)",
                       material="stretcher")
 
     # =========================================================================
@@ -498,50 +497,47 @@ def build_scene() -> Scene:
               cutlist_part="Top panel, top leg sections",
               material="ply_top")
 
-    # Short leg top: solid except for saw + planer cavities.
-    # Saw is CLOSE to corner (y=42..74), planer is FAR (y=84..114).
-    # From corner (Y=36) down to start of saw cavity (Y=42).
-    add_panel(s, "ShortLeg_Top_AboveSaw",
-              SHORT_LEG_X0, SHORT_LEG_Y0, top_z,
-              SHORT_LEG_W, SAW_Y0 - SHORT_LEG_Y0, PLY_TOP,
-              cutlist_part="Top panel, short leg sections",
+    # Left leg top: solid except for planer + saw cavities.
+    # From corner (Y=36) down to start of planer cavity (Y=42).
+    add_panel(s, "LeftLeg_Top_AbovePlaner",
+              0, LEFT_LEG_Y0, top_z,
+              LEFT_LEG_W, PLANER_Y0 - LEFT_LEG_Y0, PLY_TOP,
+              cutlist_part="Top panel, left leg sections",
               material="ply_top")
-    # Sides of the saw cavity (between cavity and bench edge along X)
-    add_panel(s, "ShortLeg_Top_SawRoomStrip",
-              SHORT_LEG_X0, SAW_Y0, top_z,
-              SAW_X0 - SHORT_LEG_X0, SAW_D, PLY_TOP,
-              cutlist_part="Top panel, saw cavity strips",
-              material="ply_top")
-    add_panel(s, "ShortLeg_Top_SawWallStrip",
-              SAW_X0 + SAW_W, SAW_Y0, top_z,
-              SHORT_LEG_X0 + SHORT_LEG_W - (SAW_X0 + SAW_W), SAW_D, PLY_TOP,
-              cutlist_part="Top panel, saw cavity strips",
-              material="ply_top")
-    # Between saw and planer cavities
-    add_panel(s, "ShortLeg_Top_BetweenCavities",
-              SHORT_LEG_X0, SAW_Y0 + SAW_D, top_z,
-              SHORT_LEG_W, PLANER_Y0 - (SAW_Y0 + SAW_D), PLY_TOP,
-              cutlist_part="Top panel, short leg sections",
-              material="ply_top")
-    # Sides of the planer cavity
-    add_panel(s, "ShortLeg_Top_PlanerRoomStrip",
-              SHORT_LEG_X0, PLANER_Y0, top_z,
-              PLANER_X0 - SHORT_LEG_X0, PLANER_D, PLY_TOP,
+    # Sides of the planer cavity (between cavity and bench edge along X)
+    add_panel(s, "LeftLeg_Top_PlanerLeftStrip",
+              0, PLANER_Y0, top_z,
+              PLANER_X0, PLANER_D, PLY_TOP,
               cutlist_part="Top panel, planer cavity strips",
               material="ply_top")
-    add_panel(s, "ShortLeg_Top_PlanerWallStrip",
+    add_panel(s, "LeftLeg_Top_PlanerRightStrip",
               PLANER_X0 + PLANER_W, PLANER_Y0, top_z,
-              SHORT_LEG_X0 + SHORT_LEG_W - (PLANER_X0 + PLANER_W), PLANER_D,
-              PLY_TOP,
+              LEFT_LEG_W - (PLANER_X0 + PLANER_W), PLANER_D, PLY_TOP,
               cutlist_part="Top panel, planer cavity strips",
               material="ply_top")
-    # End strip past planer (front of bay)
-    add_panel(s, "ShortLeg_Top_End",
-              SHORT_LEG_X0, PLANER_Y0 + PLANER_D, top_z,
-              SHORT_LEG_W,
-              SHORT_LEG_Y0 + SHORT_LEG_D - (PLANER_Y0 + PLANER_D),
+    # Between planer and saw cavities
+    add_panel(s, "LeftLeg_Top_BetweenCavities",
+              0, PLANER_Y0 + PLANER_D, top_z,
+              LEFT_LEG_W, SAW_Y0 - (PLANER_Y0 + PLANER_D), PLY_TOP,
+              cutlist_part="Top panel, left leg sections",
+              material="ply_top")
+    # Sides of the saw cavity
+    add_panel(s, "LeftLeg_Top_SawLeftStrip",
+              0, SAW_Y0, top_z,
+              SAW_X0, SAW_D, PLY_TOP,
+              cutlist_part="Top panel, saw cavity strips",
+              material="ply_top")
+    add_panel(s, "LeftLeg_Top_SawRightStrip",
+              SAW_X0 + SAW_W, SAW_Y0, top_z,
+              LEFT_LEG_W - (SAW_X0 + SAW_W), SAW_D, PLY_TOP,
+              cutlist_part="Top panel, saw cavity strips",
+              material="ply_top")
+    # End strip past saw
+    add_panel(s, "LeftLeg_Top_End",
+              0, SAW_Y0 + SAW_D, top_z,
+              LEFT_LEG_W, LEFT_LEG_Y0 + LEFT_LEG_D - (SAW_Y0 + SAW_D),
               PLY_TOP,
-              cutlist_part="Top panel, short leg sections",
+              cutlist_part="Top panel, left leg sections",
               material="ply_top")
 
     # =========================================================================
@@ -559,44 +555,44 @@ def build_scene() -> Scene:
               TOP_LEG_W, PLY_34, TOE_H,
               cutlist_part="Toe kick board (4in tall)",
               material="ply_panel")
-    # Top leg LEFT end toe kick (new visible end after mirror)
-    add_panel(s, "TopLeg_ToeKick_LeftEnd",
-              0, 0, 0,
+    # Top leg right end toe kick
+    add_panel(s, "TopLeg_ToeKick_RightEnd",
+              TOP_LEG_W - PLY_34, 0, 0,
               PLY_34, TOP_LEG_D, TOE_H,
               cutlist_part="Toe kick end cap (4 x 36)",
               material="ply_panel")
-    # Short leg room-facing toe kick (X=108 face, recessed 3in toward wall)
-    add_panel(s, "ShortLeg_ToeKick_Room",
-              SHORT_LEG_X0 + TOE_RECESS, SHORT_LEG_Y0, 0,
-              PLY_34, SHORT_LEG_D, TOE_H,
+    # Left leg front toe kick (right side of leg, facing into room)
+    add_panel(s, "LeftLeg_ToeKick_Right",
+              LEFT_LEG_W - TOE_RECESS - PLY_34, LEFT_LEG_Y0, 0,
+              PLY_34, LEFT_LEG_D, TOE_H,
               cutlist_part="Toe kick board (4in tall)",
               material="ply_panel")
-    # Short leg wall-side toe kick (X=144, against side wall)
-    add_panel(s, "ShortLeg_ToeKick_Wall",
-              SHORT_LEG_X0 + SHORT_LEG_W - PLY_34, SHORT_LEG_Y0, 0,
-              PLY_34, SHORT_LEG_D, TOE_H,
+    # Left leg back toe kick (left side, against wall or curtain edge)
+    add_panel(s, "LeftLeg_ToeKick_Left",
+              0, LEFT_LEG_Y0, 0,
+              PLY_34, LEFT_LEG_D, TOE_H,
               cutlist_part="Toe kick board (4in tall)",
               material="ply_panel")
-    # Short leg front-end toe kick (the Y=120 visible face)
-    add_panel(s, "ShortLeg_ToeKick_FrontEnd",
-              SHORT_LEG_X0, SHORT_LEG_Y0 + SHORT_LEG_D - PLY_34, 0,
-              SHORT_LEG_W, PLY_34, TOE_H,
+    # Left leg front-end toe kick
+    add_panel(s, "LeftLeg_ToeKick_FrontEnd",
+              0, LEFT_LEG_Y0 + LEFT_LEG_D - PLY_34, 0,
+              LEFT_LEG_W, PLY_34, TOE_H,
               cutlist_part="Toe kick end cap (4 x 36)",
               material="ply_panel")
 
     # =========================================================================
     # END / BACK PANELS (3/4 ply skin on visible faces)
     # =========================================================================
-    # LEFT end of top leg (visible end past existing bench area)
-    add_panel(s, "TopLeg_EndPanel_Left",
-              0, 0, TOE_H,
+    # Right end of top leg (visible end past existing bench area)
+    add_panel(s, "TopLeg_EndPanel_Right",
+              TOP_LEG_W - PLY_34, 0, TOE_H,
               PLY_34, TOP_LEG_D, BENCH_H - TOE_H,
               cutlist_part="End panel (33 x 36 x 3/4)",
               material="ply_panel")
-    # Front end of short leg (visible front face past planer cavity)
-    add_panel(s, "ShortLeg_EndPanel_Front",
-              SHORT_LEG_X0, SHORT_LEG_Y0 + SHORT_LEG_D - PLY_34, TOE_H,
-              SHORT_LEG_W, PLY_34, BENCH_H - TOE_H,
+    # Front end of left leg (visible front face past saw cavity)
+    add_panel(s, "LeftLeg_EndPanel_Front",
+              0, LEFT_LEG_Y0 + LEFT_LEG_D - PLY_34, TOE_H,
+              LEFT_LEG_W, PLY_34, BENCH_H - TOE_H,
               cutlist_part="End panel (33 x 36 x 3/4)",
               material="ply_panel")
 
@@ -774,20 +770,44 @@ def build_scene() -> Scene:
     # =========================================================================
     # HUSKY CHESTS (free-standing, sit under top leg, slide-in)
     # =========================================================================
-    # Tall Husky in the 40in bay between miter (x=4..40) and router (x=80..104).
+    # Tall Husky between left end of bench and miter recess (50in clear bay).
     HUSKY_TALL_W = 40.0
     HUSKY_TALL_D = 18.0
     HUSKY_TALL_H = 36.0
-    husky_tall_x = MITER_X0 + MITER_W + LUM_4 + 0.5   # 0+36+3.5+0.5 = 40
-    husky_tall_y = TOP_LEG_D - HUSKY_TALL_D - 1.0     # slide-in from front
+    HUSKY_SHORT_H = 20.0
+    HUSKY_SHORT_PLINTH = 16.0  # sits on a plinth so its top reaches under the bench top
+    # Tall Husky in left bay of top leg (clear width 50, fit 40W in middle)
+    husky_tall_x = 5.0
+    husky_tall_y = TOP_LEG_D - HUSKY_TALL_D - 1.0   # slide-in from front
     s.box("Tall_Husky_40x18x36",
           husky_tall_x, husky_tall_y, 0,
           HUSKY_TALL_W, HUSKY_TALL_D, HUSKY_TALL_H,
           "husky", category="cabinet",
-          note="Tall Husky chest, slides in from front between miter and router")
-    # Short Husky: no clean home inside the L-bench after the layout swap.
-    # Per the shop-level model, it lives under the existing 3x8 workbench
-    # to the LEFT of the new L-bench (mirrored shop layout).
+          note="Tall Husky chest, slides in from front (no wheels)")
+    # Short Husky between miter and router (only 22in clear - short Husky 40in
+    # too wide). Place it ELSE: under far-right past router cutout.
+    # Far-right bay is x=132..144 = 12in wide (too narrow). Best home for the
+    # short Husky is under the existing 3x8 bench, OR rotated 90 degrees in
+    # the gap. For now, place inside the left leg's between-cavities bay
+    # (x=0..36, y=72..84 = 12in deep, too shallow).
+    # Compromise: place short Husky on its 16in plinth at the right end of the
+    # top leg, tucked into the 12in slot - which doesn't fit either.
+    # Better: locate at the CORNER of the L (under the 36 x 36 corner area),
+    # where there is clear room (no cavity). Slide in from the front of the
+    # top leg.
+    husky_short_x = LEFT_LEG_W + 4.0   # past the left leg into the top leg corner
+    husky_short_y = TOP_LEG_D - HUSKY_TALL_D - 1.0
+    # Plinth for short Husky
+    s.box("Short_Husky_Plinth",
+          husky_short_x, husky_short_y, 0,
+          HUSKY_TALL_W, HUSKY_TALL_D, HUSKY_SHORT_PLINTH,
+          "husky", category="cabinet",
+          note="16in plinth for short Husky chest")
+    s.box("Short_Husky_40x18x20",
+          husky_short_x, husky_short_y, HUSKY_SHORT_PLINTH,
+          HUSKY_TALL_W, HUSKY_TALL_D, HUSKY_SHORT_H,
+          "husky", category="cabinet",
+          note="Short Husky chest, slides in from front (sits on plinth)")
 
     # =========================================================================
     # GHOST: working zones above the bench
@@ -1053,8 +1073,8 @@ def write_svg(scene: Scene, svg_path: str) -> None:
     # L-bench outline
     parts.append(f'<rect x="{sx(0)}" y="{sy(0)}" width="{TOP_LEG_W * px}" '
                  f'height="{TOP_LEG_D * px}" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>')
-    parts.append(f'<rect x="{sx(SHORT_LEG_X0)}" y="{sy(SHORT_LEG_Y0)}" '
-                 f'width="{SHORT_LEG_W * px}" height="{SHORT_LEG_D * px}" '
+    parts.append(f'<rect x="{sx(0)}" y="{sy(LEFT_LEG_Y0)}" '
+                 f'width="{LEFT_LEG_W * px}" height="{LEFT_LEG_D * px}" '
                  f'fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>')
 
     layer_order = ["frame", "panel", "cabinet", "hardware", "tool", "ghost"]
